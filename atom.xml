@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>古客</title>
+  <title>古客的Hexo</title>
   
   <subtitle>人生匆匆，来者是客</subtitle>
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2020-12-08T23:45:03.495Z</updated>
+  <updated>2020-12-09T01:15:38.730Z</updated>
   <id>http://example.com/</id>
   
   <author>
-    <name>远方客</name>
+    <name>古客</name>
     
   </author>
   
@@ -21,14 +21,15 @@
     <link href="http://example.com/2020/12/09/hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%85%A8%E8%BF%87%E7%A8%8B/"/>
     <id>http://example.com/2020/12/09/hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%85%A8%E8%BF%87%E7%A8%8B/</id>
     <published>2020-12-08T23:33:38.000Z</published>
-    <updated>2020-12-08T23:45:03.495Z</updated>
+    <updated>2020-12-09T01:15:38.730Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h2 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;安装&lt;/h2&gt;&lt;h2 id=&quot;&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;headerlink&quot; title=&quot;&quot;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;pre</summary>
+    <summary type="html">&lt;h2 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot; title=&quot;概述&quot;&gt;&lt;/a&gt;概述&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Hexo是什么？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;GitHub</summary>
         
       
     
