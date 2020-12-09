@@ -1526,6 +1526,14 @@ $(function () {
     
     <!-- 背景樱花飘落特效 -->
     
+        <script type="text/javascript">
+        //只在桌面版网页启用特效，更换了链接，樱花数量变少
+			var windowWidth = $(window).width();
+			if (windowWidth > 768) {
+				document.write('<script src="https://cdn.jsdelivr.net/gh/fz6m/Private-web@1.2/js/sakura/sakura-reduce.js"><\/script>');
+			}
+        </script>
+    
 
     <!-- 背景雪花飘落特效 -->
     
