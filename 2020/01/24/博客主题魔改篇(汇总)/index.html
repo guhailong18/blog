@@ -682,14 +682,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    6.6k
+                    6.7k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    27 分
+                    28 分
                 </div>
                 
 
@@ -1116,7 +1116,7 @@ encrypt: # hexo-blog-encrypt
 
 
 <p>相信看了以上的示例,聪明的读者已经学会如何做一个</p>
-<p>代码雨:</p>
+<p>代码雨: <a target="_blank" rel="noopener" href="https://www.cnblogs.com/zhengbin/p/5023640.html">https://www.cnblogs.com/zhengbin/p/5023640.html</a></p>
 <h2 id="添加鼠标点击出现文字特效"><a href="#添加鼠标点击出现文字特效" class="headerlink" title="添加鼠标点击出现文字特效"></a>添加鼠标点击出现文字特效</h2><h3 id="CND版"><a href="#CND版" class="headerlink" title="CND版"></a>CND版</h3><p>然后在 /themes/matery/layout/layout.ejs 中添加如下代码：</p>
 <pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token operator">&lt;</span><span class="token operator">%</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>theme<span class="token punctuation">.</span>wenzi<span class="token punctuation">.</span>enable<span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token operator">%</span><span class="token operator">&gt;</span>
     <span class="token operator">&lt;</span>script src<span class="token operator">=</span><span class="token string">"https://cdn.jsdelivr.net/gh/guhailong18/guhailong18.github.io/js/wenzi.js"</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">&gt;</span>
@@ -1194,7 +1194,14 @@ encrypt: # hexo-blog-encrypt
 
 
 
-<h2 id="更换鼠标样式"><a href="#更换鼠标样式" class="headerlink" title="更换鼠标样式"></a>更换鼠标样式</h2><h3 id="CDN版-2"><a href="#CDN版-2" class="headerlink" title="CDN版"></a>CDN版</h3><pre class="line-numbers language-none"><code class="language-none"><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h2 id="更换鼠标样式"><a href="#更换鼠标样式" class="headerlink" title="更换鼠标样式"></a><a target="_blank" rel="noopener" href="https://cniter.github.io/posts/b1e9411b.html">更换鼠标样式</a></h2><h3 id="CDN版-2"><a href="#CDN版-2" class="headerlink" title="CDN版"></a>CDN版</h3><pre class="line-numbers language-none"><code class="language-none">&lt;% if (theme.cursor.on){ %&gt;
+    &lt;style&gt;
+        body{
+            background: #3f3f3f;
+            cursor: url(&lt;%- config.root %&gt;&lt;%- theme.cursor.cursor_0 %&gt;), url("&lt;%- config.root %&gt;&lt;%- theme.cursor.cursor_1 %&gt;"), auto;
+        }
+    &lt;/style&gt;
+&lt;% } %&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <p>cdn链接可以替换为如下的或自己的：</p>
 <p>github:</p>
@@ -2189,7 +2196,7 @@ gulp<span class="token punctuation">.</span><span class="token function">task</s
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">67k</span>&nbsp;字
+                class="white-color">67.1k</span>&nbsp;字
             
             
             
@@ -2479,6 +2486,8 @@ $(function () {
 
     <!-- 鼠标点击文字特效-->
     
+    
+    <!-- 更改鼠标样式-->
     
     <!-- 古客魔改 End -->
     
