@@ -1280,8 +1280,8 @@ docker run -it ubuntu
                         <div class="card-content article-content">
                             <div class="summary block-with-text">
                                 
-                                    相信有很多小伙伴在选择了自己的主题，并且在官方文档的指导下配置了自己的主题后，仍然对其中的有些方面不太满意，但是又不想换主题的时候，那么config的配置已经不能满足你了，让我们从源文件下手，对其进行大刀阔斧的改革吧！
-想要修改源文件，那么
+                                    概述相信有很多小伙伴在选择了自己的主题，并且在官方文档的指导下配置了自己的主题后，仍然对其中的有些方面不太满意，但是又不想换主题的时候，那么config的配置已经不能满足你了，让我们从源文件下手，对其进行大刀阔斧的改革吧！
+想要修改源文件，
                                 
                             </div>
                             <div class="publish-info">
@@ -1417,7 +1417,7 @@ docker run -it ubuntu
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">62.1k</span>&nbsp;字
+                class="white-color">67k</span>&nbsp;字
             
             
             
@@ -1675,7 +1675,33 @@ $(function () {
     
     <script async src="https://cdn.jsdelivr.net/gh/guhailong18/blog/libs/others/busuanzi.pure.mini.js"></script>
     
+    <!-- 古客魔改 Start -->
+    <!-- 标签页文字效果 -->
+    <script type="text/javascript">
+        var OriginTitile = document.title,
+        st;
+        document.addEventListener("visibilitychange", function () {
+            document.hidden ? (document.title = "主人，你竟然抛弃了我(；′⌒`)", clearTimeout(st)) : (document.title =
+                "主人回来啦٩(๑>◡<๑)۶ ", st = setTimeout(function () {
+                    document.title = OriginTitile
+                }, 3e3))
+        })
+    </script>
 
+    <!-- 鼠标点击烟花爆炸效果 -->
+    
+    
+    <!-- 背景樱花飘落特效 -->
+    
+
+    <!-- 背景雪花飘落特效 -->
+    
+
+    <!-- 鼠标点击文字特效-->
+    
+    
+    <!-- 古客魔改 End -->
+    
     
 
     
