@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="博客主题魔改篇(汇总), 动漫,编程,数学,读书,古客,IT,python,book,music,spider,爬虫,笔记,share,分享,学习">
+    <meta name="keywords" content="2020,古客">
     <meta name="description" content="动漫，编程，数学，读书，相信会有一个是你需要的">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -174,7 +174,7 @@
       </li>
       
       <li>
-        <a href="/AV">
+        <a href="/movies">
           
           <i class="fas fa-film" style="margin-top: -20px; zoom: 0.6;"></i>
           
@@ -205,7 +205,7 @@
           
           <i class="fas fa-film" style="margin-top: -20px; zoom: 0.6;"></i>
           
-          <span>动漫</span>
+          <span>追番</span>
         </a>
       </li>
       
@@ -421,7 +421,7 @@
               
                 <li>
 
-                  <a href="/AV " style="margin-left:50px">
+                  <a href="/movies " style="margin-left:50px">
 				  
 				   <i class="fa fas fa-film" style="position: absolute;left:28px" ></i>
 			      
@@ -455,7 +455,7 @@
 				  
 				   <i class="fa fas fa-film" style="position: absolute;left:28px" ></i>
 			      
-		          <span>动漫</span>
+		          <span>追番</span>
                   </a>
                 </li>
               
@@ -656,6 +656,10 @@
                                 <span class="chip bg-color">主题</span>
                             </a>
                         
+                            <a href="/tags/%E9%AB%98%E8%83%BD/">
+                                <span class="chip bg-color">高能</span>
+                            </a>
+                        
                     </div>
                     
                 </div>
@@ -682,14 +686,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    6.7k
+                    7.1k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    28 分
+                    29 分
                 </div>
                 
 
@@ -1011,7 +1015,54 @@ encrypt: # hexo-blog-encrypt
 
 <p> <strong>d. 你的CDN</strong></p>
 <p>如果你是没有CDN会死星人,直接将 <code>.model.json</code> 的url地址输入 <code>model.use</code>.</p>
-<h1 id="2-魔改"><a href="#2-魔改" class="headerlink" title="2.魔改"></a>2.魔改</h1><h2 id="添加樱花特效"><a href="#添加樱花特效" class="headerlink" title="添加樱花特效"></a>添加樱花特效</h2><h3 id="CDN版"><a href="#CDN版" class="headerlink" title="CDN版"></a>CDN版</h3><p>然后在 /themes/matery/layout/layout.ejs 中添加如下代码：</p>
+<h2 id="添加追番页面"><a href="#添加追番页面" class="headerlink" title="添加追番页面"></a>添加追番页面</h2><pre class="line-numbers language-none"><code class="language-none">npm install hexo-bilibili-bangumi --save<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+
+
+<p>将下面的配置写入站点的配置文件 <code>_config.yml</code> 里(不是主题的配置文件).</p>
+<pre class="line-numbers language-none"><code class="language-none">bangumi:
+  enable: true
+  path:
+  vmid:
+  title: '追番列表'
+  quote: '生命不息，追番不止！'
+  show: 1
+  loading:
+  metaColor:
+  color:
+  webp:
+  progress:<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<ul>
+<li>  <strong>enable</strong>: 是否启用</li>
+<li>  <strong>path</strong>: 番剧页面路径，默认<code>bangumis/index.html</code></li>
+<li>  <strong>vmid</strong>: 哔哩哔哩番剧页面的 <code>vmid(uid)</code>,<a target="_blank" rel="noopener" href="https://github.com/HCLonely/hexo-bilibili-bangumi#%E8%8E%B7%E5%8F%96uid">如何获取？</a></li>
+<li>  <strong>title</strong>: 该页面的标题</li>
+<li>  <strong>quote</strong>: 写在页面开头的一段话，支持 html 语法，可留空。</li>
+<li>  <strong>show</strong>: 初始显示页面：<code>0: 想看</code>, <code>1: 在看</code>, <code>2: 看过</code>，默认为<code>1</code></li>
+<li>  <strong>loading</strong>: 图片加载完成前的 loading 图片</li>
+<li>  <strong>metaColor</strong>: meta 部分(简介上方)字体颜色</li>
+<li>  <strong>color</strong>: 简介字体颜色</li>
+<li>  <strong>webp</strong>: 番剧封面使用<code>webp</code>格式(此格式在<code>safari</code>浏览器下不显示，但是图片大小可以缩小 100 倍左右), 默认<code>true</code></li>
+<li>  <strong>progress</strong>: 获取番剧数据时是否显示进度条，默认<code>true</code></li>
+</ul>
+<h1 id="2-魔改"><a href="#2-魔改" class="headerlink" title="2.魔改"></a>2.魔改</h1><h2 id="官方功能增强"><a href="#官方功能增强" class="headerlink" title="官方功能增强"></a>官方功能增强</h2><blockquote>
+<p>  在官方的基础上进行修改。</p>
+</blockquote>
+<h3 id="修改-banner-图和文章特色图"><a href="#修改-banner-图和文章特色图" class="headerlink" title="修改 banner 图和文章特色图"></a>修改 banner 图和文章特色图</h3><p>你可以直接在 <code>/source/medias/banner</code> 文件夹中更换你喜欢的 <code>banner</code> 图片，主题代码中是每天动态切换一张，只需 <code>7</code> 张即可。如果你会 <code>JavaScript</code> 代码，可以修改成你自己喜欢切换逻辑，如：随机切换等，<code>banner</code> 切换的代码位置在 <code>/layout/_partial/bg-cover-content.ejs</code> 文件的 <code>&lt;script&gt;&lt;/script&gt;</code> 代码中：</p>
+<p>修改为如下代码，则有60种随机图</p>
+<pre class="line-numbers language-ejs" data-language="ejs"><code class="language-ejs"><span class="token ejs language-ejs"><span class="token delimiter punctuation">&lt;%</span><span class="token language-javascript"> <span class="token keyword">if</span> <span class="token punctuation">(</span>theme<span class="token punctuation">.</span>banner<span class="token punctuation">.</span>enable<span class="token punctuation">)</span> <span class="token punctuation">{</span> </span><span class="token delimiter punctuation">%&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+    <span class="token comment">// 每天切换 banner 图.  Switch banner image every day.</span>
+    <span class="token keyword">var</span> bannerUrl <span class="token operator">=</span> <span class="token string">"<span class="token ejs language-ejs"><span class="token delimiter punctuation">&lt;%-</span><span class="token language-javascript"> theme<span class="token punctuation">.</span>jsDelivr<span class="token punctuation">.</span>url </span><span class="token delimiter punctuation">%&gt;</span></span><span class="token ejs language-ejs"><span class="token delimiter punctuation">&lt;%-</span><span class="token language-javascript"> <span class="token function">url_for</span><span class="token punctuation">(</span><span class="token string">'/medias/banner/'</span><span class="token punctuation">)</span> </span><span class="token delimiter punctuation">%&gt;</span></span>"</span> <span class="token operator">+</span> <span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getMinutes</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">'.jpg'</span><span class="token punctuation">;</span>
+    <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'.bg-cover'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">css</span><span class="token punctuation">(</span><span class="token string">'background-image'</span><span class="token punctuation">,</span> <span class="token string">'url('</span> <span class="token operator">+</span> bannerUrl <span class="token operator">+</span> <span class="token string">')'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+
+
+<h2 id="添加樱花特效"><a href="#添加樱花特效" class="headerlink" title="添加樱花特效"></a>添加樱花特效</h2><h3 id="CDN版"><a href="#CDN版" class="headerlink" title="CDN版"></a>CDN版</h3><p>然后在 /themes/matery/layout/layout.ejs 中添加如下代码：</p>
 <pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"> <span class="token operator">&lt;</span><span class="token operator">%</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>theme<span class="token punctuation">.</span>sakura<span class="token punctuation">.</span>enable<span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token operator">%</span><span class="token operator">&gt;</span>
      <span class="token operator">&lt;</span>script type<span class="token operator">=</span><span class="token string">"text/javascript"</span><span class="token operator">&gt;</span>
      <span class="token comment">//只在桌面版网页启用特效，更换了链接，樱花数量变少</span>
@@ -1520,8 +1571,11 @@ gulp<span class="token punctuation">.</span><span class="token function">task</s
 
 
 
-<h1 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h1><h5 id="参考链接："><a href="#参考链接：" class="headerlink" title="参考链接："></a><strong>参考链接</strong>：</h5><p><a target="_blank" rel="noopener" href="https://github.com/blinkfox/hexo-theme-matery/blob/develop/README_CN.md">官方文档</a></p>
+<h1 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h1><p>如果你想更深入的进行代码的修改，建议先去学习一下ejs的基本语法，这对魔改非常有帮助！！</p>
+<p>也可以看看这篇《》</p>
+<h5 id="参考链接："><a href="#参考链接：" class="headerlink" title="参考链接："></a><strong>参考链接</strong>：</h5><p><a target="_blank" rel="noopener" href="https://github.com/blinkfox/hexo-theme-matery/blob/develop/README_CN.md">官方文档</a></p>
 <p><a target="_blank" rel="noopener" href="https://sunhwee.com/posts/6e8839eb.html">Hexo+Github博客搭建完全教程</a>（洪卫）</p>
+<p><a target="_blank" rel="noopener" href="https://www.itrhx.com/2018/08/27/A04-Hexo-blog-topic-personalization/">Hexo 博客主题个性化</a></p>
 
                 
             </div>
@@ -1596,6 +1650,10 @@ gulp<span class="token punctuation">.</span><span class="token function">task</s
                             
                                 <a href="/tags/%E4%B8%BB%E9%A2%98/">
                                     <span class="chip bg-color">主题</span>
+                                </a>
+                            
+                                <a href="/tags/%E9%AB%98%E8%83%BD/">
+                                    <span class="chip bg-color">高能</span>
                                 </a>
                             
                         </div>
@@ -2196,7 +2254,7 @@ gulp<span class="token punctuation">.</span><span class="token function">task</s
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">67.1k</span>&nbsp;字
+                class="white-color">67.5k</span>&nbsp;字
             
             
             
@@ -2476,7 +2534,7 @@ $(function () {
         //只在桌面版网页启用特效，更换了链接，樱花数量变少
 			var windowWidth = $(window).width();
 			if (windowWidth > 768) {
-				document.write('<script src="https://cdn.jsdelivr.net/gh/fz6m/Private-web@1.2/js/sakura/sakura-reduce.js"><\/script>');
+				document.write('<script src="https://cdn.jsdelivr.net/gh/fz6m/Private-web@1.2/js/sakura/sakura-small.js"><\/script>');
 			}
         </script>
     
