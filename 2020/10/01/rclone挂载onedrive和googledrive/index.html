@@ -651,6 +651,15 @@
                 </div>
                 <div class="col s5 right-align">
                     
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E5%B0%8F%E6%8A%80%E5%B7%A7/" class="post-category">
+                                小技巧
+                            </a>
+                        
+                    </div>
+                    
                 </div>
             </div>
 
@@ -665,7 +674,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-12-08
+                    2020-12-10
                 </div>
                 
 
@@ -715,7 +724,7 @@ o-gzip-encoding --no-check-certificate --allow-other --allow-non-empty --umask 0
 <h3 id="开机自动挂载"><a href="#开机自动挂载" class="headerlink" title="开机自动挂载"></a>开机自动挂载</h3><ul>
 <li>  下载并编辑自启脚本</li>
 </ul>
-<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"><span class="token function">wget</span> -N git.io/rcloned <span class="token operator">&amp;&amp;</span> <span class="token function">nano</span> rcloned<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">wget -N git.io/rcloned &amp;&amp; nano rcloned<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <ul>
 <li>  修改内容：</li>
@@ -727,11 +736,11 @@ LOCAL='/Onedrive'  #挂载地址，VPS本地挂载目录<span aria-hidden="true"
 <ul>
 <li>  设置开机自启</li>
 </ul>
-<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"><span class="token function">mv</span> rcloned /etc/init.d/rcloned
-<span class="token function">chmod</span> +x /etc/init.d/rcloned
-update-rc.d -f rcloned defaults <span class="token comment"># Debian/Ubuntu</span>
-<span class="token function">chkconfig</span> rcloned on <span class="token comment"># CentOS</span>
-<span class="token function">bash</span> /etc/init.d/rcloned start<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">mv rcloned /etc/init.d/rcloned
+chmod +x /etc/init.d/rcloned
+update-rc.d -f rcloned defaults # Debian/Ubuntu
+chkconfig rcloned on # CentOS
+bash /etc/init.d/rcloned start<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <p>看到 <code>[信息] rclone 启动成功 !</code> 即可。</p>
 <h4 id="管理"><a href="#管理" class="headerlink" title="管理"></a>管理</h4><p>开始挂载 <code>bash /etc/init.d/rcloned start</code></p>
@@ -815,7 +824,7 @@ rclone dedupe - 交互式查找重复文件，进行删除/重命名操作。
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://example.com/2020/10/01/rclone%E6%8C%82%E8%BD%BDonedrive%E5%92%8Cgoogledrive/">http://example.com/2020/10/01/rclone%E6%8C%82%E8%BD%BDonedrive%E5%92%8Cgoogledrive/</a>
+                    <a href="http://blog.guke.cf/2020/10/01/rclone%E6%8C%82%E8%BD%BDonedrive%E5%92%8Cgoogledrive/">http://blog.guke.cf/2020/10/01/rclone%E6%8C%82%E8%BD%BDonedrive%E5%92%8Cgoogledrive/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -1099,11 +1108,23 @@ rclone dedupe - 交互式查找重复文件，进行删除/重命名操作。
                         </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            古客
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/JAVA/" class="post-category">
+                                    JAVA
+                                </a>
+                            
                             
                         </span>
                     </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/JAVA/">
+                        <span class="chip bg-color">JAVA</span>
+                    </a>
+                    
                 </div>
                 
             </div>
@@ -1115,12 +1136,13 @@ rclone dedupe - 交互式查找重复文件，进行删除/重命名操作。
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/10/01/GD%E4%B8%8A%E4%BC%A0/">
+                <a href="/2020/07/19/Lingo%E7%AC%94%E8%AE%B0%E4%B8%80/">
                     <div class="card-image">
                         
-                        <img src="https://pic.rmb.bdstatic.com/bjh/e460db0816a1e27963396c348062a61b.jpeg" class="responsive-img" alt="GD上传">
                         
-                        <span class="card-title">GD上传</span>
+                        <img src="/medias/featureimages/25.jpg" class="responsive-img" alt="Lingo笔记一">
+                        
+                        <span class="card-title">Lingo笔记一</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1131,19 +1153,27 @@ rclone dedupe - 交互式查找重复文件，进行删除/重命名操作。
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-10-01
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-19
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/GD/" class="post-category">
-                                    GD
+                            <a href="/categories/%E6%95%B0%E6%A8%A1/" class="post-category">
+                                    数模
                                 </a>
                             
                             
                         </span>
                     </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E6%95%B0%E6%A8%A1/">
+                        <span class="chip bg-color">数模</span>
+                    </a>
+                    
                 </div>
                 
             </div>
@@ -1274,7 +1304,7 @@ rclone dedupe - 交互式查找重复文件，进行删除/重命名操作。
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">70.7k</span>&nbsp;字
+                class="white-color">70.6k</span>&nbsp;字
             
             
             
