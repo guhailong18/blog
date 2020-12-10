@@ -40,11 +40,21 @@
 
     <script src="https://cdn.jsdelivr.net/gh/guhailong18/blog/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 5.2.0">
+<meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="/atom.xml" title="古客的Hexo" type="application/atom+xml">
+
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
-<link rel="alternate" href="/atom.xml" title="古客的Hexo" type="application/atom+xml">
 </head>
 
+
+
+   <style>
+    body{
+       background-image: url(https://cdn.jsdelivr.net/gh/Tokisaki-Galaxy/res/site/medias/background.jpg);
+       background-repeat:no-repeat;
+       background-size:cover;
+       background-attachment:fixed;
+    }
+</style>
 
 
 
@@ -258,6 +268,15 @@
           <i class="fas fa-image" style="margin-top: -20px; zoom: 0.6;"></i>
           
           <span>导航</span>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/test">
+          
+          <i class="fas fa-film" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>聊天室</span>
         </a>
       </li>
       
@@ -516,6 +535,16 @@
               
                 <li>
 
+                  <a href="/test " style="margin-left:50px">
+				  
+				   <i class="fa fas fa-film" style="position: absolute;left:28px" ></i>
+			      
+		          <span>聊天室</span>
+                  </a>
+                </li>
+              
+                <li>
+
                   <a href="/position " style="margin-left:50px">
 				  
 				   <i class="fa fas fa-book" style="position: absolute;left:28px" ></i>
@@ -541,7 +570,7 @@
         
         <li><div class="divider"></div></li>
         <li>
-            <a href="https://github.com/blinkfox/hexo-theme-matery" class="waves-effect waves-light" target="_blank">
+            <a href="https://github.com/guhailong18/blog" class="waves-effect waves-light" target="_blank">
                 <i class="fab fa-github-square fa-fw"></i>Fork Me
             </a>
         </li>
@@ -598,7 +627,7 @@
     }
 </style>
 
-<a href="https://github.com/blinkfox/hexo-theme-matery" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+<a href="https://github.com/guhailong18/blog" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
    data-tooltip="Fork Me" data-position="left" data-delay="50">
     <svg viewBox="0 0 250 250" aria-hidden="true">
         <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
@@ -614,6 +643,19 @@
 </header>
 
     
+<script src="https://cdn.jsdelivr.net/gh/guhailong18/blog/libs/cryptojs/crypto-js.min.js"></script>
+<script>
+    (function() {
+        let pwd = '';
+        if (pwd && pwd.length > 0) {
+            if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
+                alert('密码错误，将返回主页！');
+                location.href = '/';
+            }
+        }
+    })();
+</script>
+
 
 
 
@@ -691,7 +733,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    302
+                    14
                 </div>
                 
 
@@ -718,16 +760,15 @@
         
 
         
+        <!-- 代码块折行 -->
+        <style type="text/css">
+            code[class*="language-"], pre[class*="language-"] { white-space: pre-wrap !important; }
+        </style>
+        
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <ul>
-<li><h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2></li>
-</ul>
-<p>由于不会码html，CSS,js等前端代码<del>（懒得学了）</del>，所以喜欢去网上看看有没有大佬码好了代码可以给我这种懒癌患者使用，不过想找到质量比较高，符合我(一个狂热的动漫爱好者)审美的网站确实很难找，就算找到了也是要钱的。。。不过互联网那么大，总能找到一些乐于分享的博主，今天我就把我找到的分享给大家，大家一起来建站啊！！！</p>
-<p><a target="_blank" rel="noopener" href="https://www.lanzous.com/b00nemm8f">蓝奏云</a> ：合集全都放这啦，下面是各位大佬代码的介绍，可能会持续更新哦！<br>密码:giw8</p>
-<h2 id="1-微大佬的源码"><a href="#1-微大佬的源码" class="headerlink" title="1.微大佬的源码"></a>1.微大佬的源码</h2><p>第一个推荐的就是微大佬的分享的代码啦，这个也是十分喜欢动漫的博主，所以他写的网页也是十分对我的口味，所以几乎把他分享的源码都下载下来了，原本想直接放出大佬的博客让大家自行去下载的，可惜那些资源全都是百度云的链接，对于像我这种没有会员的人十分不友好啊！</p>
-<h2 id="2"><a href="#2" class="headerlink" title="2."></a>2.</h2><h2 id="3"><a href="#3" class="headerlink" title="3."></a>3.</h2><h2 id="4"><a href="#4" class="headerlink" title="4."></a>4.</h2><h2 id="5"><a href="#5" class="headerlink" title="5."></a>5.</h2><h6 id="参考链接："><a href="#参考链接：" class="headerlink" title="参考链接："></a><strong>参考链接：</strong></h6>
+                <div id="hexo-blog-encrypt" data-wpm="非常抱歉, 这个密码看着不太对, 请您再试试吧." data-whm="很抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容."><div class="hbe-input-container"><input type="password" id="hbePass" placeholder="您好, 这里需要密码才能查看哦." /><label>您好, 这里需要密码才能查看哦.</label><div class="bottom-line"></div></div><script id="hbeData" type="hbeData" data-hmacdigest="a57252cbaefe178b723fab306bce4c4a0536fa7a17c583e0fdbb7ddacc1d415f">b7ade61700690a5cb48ee866b3e778728eb45d87e015bcf295fe7cd37cb83efc31b5e14245dbfd92132e410236b262eb84c79e717555ecc13ff61036402fb9ba32f2ad85e9db4587033fd266f48c4049dde72632f5c67e311077845cd3c598e54daf9591db4e53c90e34c18c202c2be2a31ca59b40ecb4f265cd8cab5d157a9eaf81dbef3493213d0f13a6c9893d3427a5a3607dac5905484a391ed0cd9b607cbb18c719948443e78255afdb4df75005e212c5ea05bddae864437a8a22ae916e986f155de28c1cae3d70d52169fb20d6f9e93cefc30f0b9651d7eb3154fd8a1cc52b521151fbcada25832be60e01f62429bd3061251d08600875aace75dc353e3d8064541ef2ffc582f69ee1d8d659d698ab36cba1fe6473511f616e8bd5ca41eddf22ff901862417f0c67530066651dccaa112b250aacde22a406b9fca57592665a70cf57aa450216220186d846d518b833e39cd4c8df812b8daa11e26e01329624ccd79e207c0f14bc52692b10db4932faf0c4d6467cc12fbb385dcaf826eb7b4e1d46fe08f15b4eec57736849700e3426bcb7b86083c95259cfba4bdfedc69338db8d12b87de9f15c9e08d6e629b74d777e0a001ba4471be21094ba3e1ed2d7e68867b263c9b735ba2ca4c986b3ee5ee47a4884f2623701b10b62d6e10597c7771125d55052970d2760bcf8833b3ad4dcb1b8b0df98c7067f5518a463c4bb2199dd06a60ee47c0064cfbe39cff721dd91584d867c694fc30af79f23deca92254116a94811eb4dd3692dd55741214ea8934883309250f4791bf54cf320fa3cfa2b70cbfe501d08f87f36b435cb5642017b19ed909ace7a97c3fa121acc8e00d5ac8881c92ed665cbdaabcd3de864c00eea614eaae16d0f892b9bb3896d73b4ab83e8fcfd47c9b17c49fcfef3ded7810418ebcbc5d53c2663570faf97940ed4d29913c1a0127f1e1d0e090640132114625a3b368d2a87dbe328a3e6197702d154ce5e605aedcafc5a1d04d23f094f077b7ac940d7589384df8c868415d85ded7d86ae68fad2b750fdc08d1e48bc0ff7a1e3f9aae37f005a3e6f2df9fc4a06240dd144f327e9dcc435621a406c88583326c38c1aa00ffd68de499b630f4c9997d24df9b493f0060915b1dcecbe8a91033229df20d31cc9b66705712171f3a984bfc203e7685cc76ea8f2733ee5e131f4f66d1441f89e8875c1b5c293ee78f94767a80930b5a94d02aba5c3bb1654cdd0479402fa47a1a19263e2e43faa02c78f1d4eb6af0dcff9dc3b3a0157ed756b66db637022800cccd8fb29097a4729558f82cb85c7119ab7e5331b64daec568de61a7c848bbc35655eb1e190ca47fd99bd810b444706f2201c54be79d847b2c9904ed663ade718f886a6a2243ebeded5d81d29afbc613b40d490c8af1241b5a580eea9f36e7c87794eaf090fd7a58208a61ea60e986333ad0ab9c1311c1a042e0bd09885228a08af181175221c440e8011469f3dac51d320a032251c5d4fe9f2819b8741fe45b1fe07bff9d53db3541d554cf9ff8a919acb36157aa78eef1329ebda839d8a8f70877ffe5286369a95d87c6bec4c5da7c049d4a80f0275e30573a20b16d7c32de1dfa38b97ddf369c9fb8a57b9b38496b79a4c9c833bb1d4c19564ae176d3a114967246cd58e4eeb8e25f18432f8ef4bf72f6e6d9bc5c2003fd01cb4d2058ce966692689dc0c3a50aef76085eeb189eca55ffb07852294d942c996277a516f4737b916cc132ec447f0e3c32972d81810ca62269559646cf2a134cfb15d07044863c91a93a8be9521d6518d855d4dabb8a2b0532bd956357687875eb38fabd2b3f5438b09a337a69a7f3932c5507ef8bf5fa85004313bddd151409be8fd8ad02833179c85b151b8eef0136e0a02a9597598c502f6b7ea800e0960b4ac541b4efdc3ebdbf31d4adec82314ace0dc9fd4c8d988bdd708154f60e66ff075fa1f0b78d5f91756347b7592c3cd2e7bc8c80b68c2763acdee8652777b5b76ae1d6134a76f49ee3df8574b04ba4c900dc88747aa8e9a03f1e07dacef72ac9c354a97990bc96347ab1aca295ff650d14999f343f42a97b96242ac819f2293cbcb6e3785ca55877e380d566cc1d200a208c60cb3fff0c2ebc53f915cd623bde47f552239e5ea0ac26da0e155abb689fefc9d9eefc183927f68cf40f44c6472ace1dedee55f3fd5e6a6c80d465c7e6443bd319ab85273cbbb2ff678a755ba1eae0e0ab65e0a0f897f1e98f7c96f5e01876d83f965e923714487e1d35be86b7c23a18bddfa6aed6a7823dd871f9223cddce657bc4ebca46e0804b17ea9e5678962483eca67b38ab29b80f7dc956d45c7cd9c3e424290c3e5bf6b660c131b1f2301</script></div><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">
                 
             </div>
             <hr/>
@@ -960,269 +1001,52 @@
     
 
     
+
+    
         <style>
-    .valine-card {
+    .mvaline-card {
         margin: 1.5rem auto;
     }
 
-    .valine-card .card-content {
+    .mvaline-card .card-content {
         padding: 20px 20px 5px 20px;
-    }
-
-    #vcomments textarea {
-        box-sizing: border-box;
-        background: url("/medias/comment_bg.png") 100% 100% no-repeat;
-    }
-
-    #vcomments p {
-        margin: 2px 2px 10px;
-        font-size: 1.05rem;
-        line-height: 1.78rem;
-    }
-
-    #vcomments blockquote p {
-        text-indent: 0.2rem;
-    }
-
-    #vcomments a {
-        padding: 0 2px;
-        color: #4cbf30;
-        font-weight: 500;
-        text-decoration: none;
-    }
-
-    #vcomments img {
-        max-width: 100%;
-        height: auto;
-        cursor: pointer;
-    }
-
-    #vcomments ol li {
-        list-style-type: decimal;
-    }
-
-    #vcomments ol,
-    ul {
-        display: block;
-        padding-left: 2em;
-        word-spacing: 0.05rem;
-    }
-
-    #vcomments ul li,
-    ol li {
-        display: list-item;
-        line-height: 1.8rem;
-        font-size: 1rem;
-    }
-
-    #vcomments ul li {
-        list-style-type: disc;
-    }
-
-    #vcomments ul ul li {
-        list-style-type: circle;
-    }
-
-    #vcomments table, th, td {
-        padding: 12px 13px;
-        border: 1px solid #dfe2e5;
-    }
-
-    #vcomments table, th, td {
-        border: 0;
-    }
-
-    table tr:nth-child(2n), thead {
-        background-color: #fafafa;
-    }
-
-    #vcomments table th {
-        background-color: #f2f2f2;
-        min-width: 80px;
-    }
-
-    #vcomments table td {
-        min-width: 80px;
-    }
-
-    #vcomments h1 {
-        font-size: 1.85rem;
-        font-weight: bold;
-        line-height: 2.2rem;
-    }
-
-    #vcomments h2 {
-        font-size: 1.65rem;
-        font-weight: bold;
-        line-height: 1.9rem;
-    }
-
-    #vcomments h3 {
-        font-size: 1.45rem;
-        font-weight: bold;
-        line-height: 1.7rem;
-    }
-
-    #vcomments h4 {
-        font-size: 1.25rem;
-        font-weight: bold;
-        line-height: 1.5rem;
-    }
-
-    #vcomments h5 {
-        font-size: 1.1rem;
-        font-weight: bold;
-        line-height: 1.4rem;
-    }
-
-    #vcomments h6 {
-        font-size: 1rem;
-        line-height: 1.3rem;
-    }
-
-    #vcomments p {
-        font-size: 1rem;
-        line-height: 1.5rem;
-    }
-
-    #vcomments hr {
-        margin: 12px 0;
-        border: 0;
-        border-top: 1px solid #ccc;
-    }
-
-    #vcomments blockquote {
-        margin: 15px 0;
-        border-left: 5px solid #42b983;
-        padding: 1rem 0.8rem 0.3rem 0.8rem;
-        color: #666;
-        background-color: rgba(66, 185, 131, .1);
-    }
-
-    #vcomments pre {
-        font-family: monospace, monospace;
-        padding: 1.2em;
-        margin: .5em 0;
-        background: #272822;
-        overflow: auto;
-        border-radius: 0.3em;
-        tab-size: 4;
-    }
-
-    #vcomments code {
-        font-family: monospace, monospace;
-        padding: 1px 3px;
-        font-size: 0.92rem;
-        color: #e96900;
-        background-color: #f8f8f8;
-        border-radius: 2px;
-    }
-
-    #vcomments pre code {
-        font-family: monospace, monospace;
-        padding: 0;
-        color: #e8eaf6;
-        background-color: #272822;
-    }
-
-    #vcomments pre[class*="language-"] {
-        padding: 1.2em;
-        margin: .5em 0;
-    }
-
-    #vcomments code[class*="language-"],
-    pre[class*="language-"] {
-        color: #e8eaf6;
-    }
-
-    #vcomments [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
-        position: inherit;
-        margin-left: -1.3rem;
-        margin-right: 0.4rem;
-        margin-top: -1px;
-        vertical-align: middle;
-        left: unset;
-        visibility: visible;
-    }
-
-    #vcomments b,
-    strong {
-        font-weight: bold;
-    }
-
-    #vcomments dfn {
-        font-style: italic;
-    }
-
-    #vcomments small {
-        font-size: 85%;
-    }
-
-    #vcomments cite {
-        font-style: normal;
-    }
-
-    #vcomments mark {
-        background-color: #fcf8e3;
-        padding: .2em;
-    }
-
-    #vcomments table, th, td {
-        padding: 12px 13px;
-        border: 1px solid #dfe2e5;
-    }
-
-    table tr:nth-child(2n), thead {
-        background-color: #fafafa;
-    }
-
-    #vcomments table th {
-        background-color: #f2f2f2;
-        min-width: 80px;
-    }
-
-    #vcomments table td {
-        min-width: 80px;
-    }
-
-    #vcomments [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
-        position: inherit;
-        margin-left: -1.3rem;
-        margin-right: 0.4rem;
-        margin-top: -1px;
-        vertical-align: middle;
-        left: unset;
-        visibility: visible;
     }
 </style>
 
-<div class="card valine-card" data-aos="fade-up">
+<div class="card mvaline-card" data-aos="fade-up">
     <div class="comment_headling" style="font-size: 20px; font-weight: 700; position: relative; padding-left: 20px; top: 15px; padding-bottom: 5px;">
         <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
         <span>评论</span>
     </div>
-    <div id="vcomments" class="card-content" style="display: grid">
+    <div id="mvcomments" class="card-content" style="display: grid">
     </div>
 </div>
 
-<script src="https://cdn.jsdelivr.net/gh/guhailong18/blog/libs/valine/av-min.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/guhailong18/blog/libs/valine/Valine.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/guhailong18/blog/libs/minivaline/MiniValine.js"></script>
 <script>
-    new Valine({
-        el: '#vcomments',
-        appId: 'LPIqVlVtqMbzVVEgNMkypuf3-gzGzoHsz',
-        appKey: 'HIC60BbouXpFkGyo3r0ut4mb',
-        notify: 'true' === 'true',
-        verify: 'false' === 'true',
-        visitor: 'true' === 'true',
-        avatar: 'http://1.gravatar.com/avatar/05ae6ede6e4bce2c4ecfc767c37d3db6',
-        pageSize: '12',
-        lang: 'zh-cn',
-        placeholder: '快来写下你的观点一起交流吧ヾﾉ≧∀≦)o'
+    new MiniValine({
+        el: '#mvcomments',
+        appId: 'uuXPTye7mxEAjQx58AfUwVN8-MdYXbMMI',
+        appKey: 'xupIB338p0ioh3sBKKFa4etA',
+        mode: 'DesertsP',
+        placeholder: 'Write a Comment',
+        pathname: window.location.pathname,
+        lang: '',
+        adminEmailMd5: 'de8a7aa53d07e6b6bceb45c64027763d',
+        tagMeta: ["管理员", "小伙伴", "访客"],
+        master: ["de8a7aa53d07e6b6bceb45c64027763d"],
+        friends: ["b5bd5d836c7a0091aa8473e79ed4c25e", "adb7d1cd192658a55c0ad22a3309cecf", "3ce1e6c77b4910f1871106cb30dc62b0", "cfce8dc43725cc14ffcd9fb4892d5bfc"],
+        math: true,
+        md: true,
+        enableQQ: false,
+        NoRecordIP: false,
+        visitor: true,
+        maxNest: 6,
+        pageSize: 6,
+        serverURLs: '',
+        emoticonUrl: ["https://cdn.jsdelivr.net/npm/alus@latest", "https://cdn.jsdelivr.net/gh/MiniValine/qq@latest", "https://cdn.jsdelivr.net/gh/MiniValine/Bilibilis@latest", "https://cdn.jsdelivr.net/gh/MiniValine/tieba@latest", "https://cdn.jsdelivr.net/gh/MiniValine/twemoji@latest", "https://cdn.jsdelivr.net/gh/MiniValine/weibo@latest"],
     });
 </script>
-
-    
 
     
 
@@ -1396,6 +1220,47 @@
 
     <footer class="page-footer bg-color">
     
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/guhailong18/blog/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server=""
+                   type=""
+                   id=""
+                   fixed='true'
+                   autoplay='false'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='false'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/gh/guhailong18/blog/libs/aplayer/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
+    
     <div class="container row center-align" style="margin-bottom: 15px !important;">
         <div class="col s12 m8 l8 copy-right">
             Copyright&nbsp;&copy;
@@ -1409,7 +1274,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">67.5k</span>&nbsp;字
+                class="white-color">66.4k</span>&nbsp;字
             
             
             
@@ -1719,7 +1584,7 @@ $(function () {
     
     <script type="text/javascript" color="0,0,255"
         pointColor="0,0,255" opacity='0.7'
-        zIndex="-1" count="99"
+        zIndex="-1" count="89"
         src="https://cdn.jsdelivr.net/gh/guhailong18/blog/libs/background/canvas-nest.js"></script>
     
 

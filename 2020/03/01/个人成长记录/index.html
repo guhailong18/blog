@@ -40,11 +40,21 @@
 
     <script src="https://cdn.jsdelivr.net/gh/guhailong18/blog/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 5.2.0">
+<meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="/atom.xml" title="古客的Hexo" type="application/atom+xml">
+
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
-<link rel="alternate" href="/atom.xml" title="古客的Hexo" type="application/atom+xml">
 </head>
 
+
+
+   <style>
+    body{
+       background-image: url(https://cdn.jsdelivr.net/gh/Tokisaki-Galaxy/res/site/medias/background.jpg);
+       background-repeat:no-repeat;
+       background-size:cover;
+       background-attachment:fixed;
+    }
+</style>
 
 
 
@@ -258,6 +268,15 @@
           <i class="fas fa-image" style="margin-top: -20px; zoom: 0.6;"></i>
           
           <span>导航</span>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/test">
+          
+          <i class="fas fa-film" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>聊天室</span>
         </a>
       </li>
       
@@ -516,6 +535,16 @@
               
                 <li>
 
+                  <a href="/test " style="margin-left:50px">
+				  
+				   <i class="fa fas fa-film" style="position: absolute;left:28px" ></i>
+			      
+		          <span>聊天室</span>
+                  </a>
+                </li>
+              
+                <li>
+
                   <a href="/position " style="margin-left:50px">
 				  
 				   <i class="fa fas fa-book" style="position: absolute;left:28px" ></i>
@@ -541,7 +570,7 @@
         
         <li><div class="divider"></div></li>
         <li>
-            <a href="https://github.com/blinkfox/hexo-theme-matery" class="waves-effect waves-light" target="_blank">
+            <a href="https://github.com/guhailong18/blog" class="waves-effect waves-light" target="_blank">
                 <i class="fab fa-github-square fa-fw"></i>Fork Me
             </a>
         </li>
@@ -598,7 +627,7 @@
     }
 </style>
 
-<a href="https://github.com/blinkfox/hexo-theme-matery" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+<a href="https://github.com/guhailong18/blog" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
    data-tooltip="Fork Me" data-position="left" data-delay="50">
     <svg viewBox="0 0 250 250" aria-hidden="true">
         <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
@@ -614,6 +643,19 @@
 </header>
 
     
+<script src="https://cdn.jsdelivr.net/gh/guhailong18/blog/libs/cryptojs/crypto-js.min.js"></script>
+<script>
+    (function() {
+        let pwd = '';
+        if (pwd && pwd.length > 0) {
+            if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
+                alert('密码错误，将返回主页！');
+                location.href = '/';
+            }
+        }
+    })();
+</script>
+
 
 
 
@@ -691,7 +733,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    385
+                    14
                 </div>
                 
 
@@ -718,132 +760,15 @@
         
 
         
+        <!-- 代码块折行 -->
+        <style type="text/css">
+            code[class*="language-"], pre[class*="language-"] { white-space: pre-wrap !important; }
+        </style>
+        
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <ul>
-<li><h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2></li>
-</ul>
-<p><strong>记录一些个人的成长和进步，加油，愿自己变得更加美好，活出自己最喜欢的样子！</strong></p>
-<h1 id="古客网站一览表"><a href="#古客网站一览表" class="headerlink" title="古客网站一览表"></a>古客网站一览表</h1><table>
-<thead>
-<tr>
-<th align="center">网站名称</th>
-<th>备用网址</th>
-<th align="center">管理员登录</th>
-<th align="center">简单描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center"><a target="_blank" rel="noopener" href="https://cf.dream18.xyz/">古客</a></td>
-<td><a target="_blank" rel="noopener" href="https://guke.cf/">https://guke.cf</a></td>
-<td align="center"></td>
-<td align="center">一个记录生活，学习笔记和分享知识的个人博客（hexo）</td>
-</tr>
-<tr>
-<td align="center"><a target="_blank" rel="noopener" href="https://guke.ml/">古客的壁纸站</a></td>
-<td><a target="_blank" rel="noopener" href="https://guke.ml/">https://guke.ml</a></td>
-<td align="center"></td>
-<td align="center">一个分享壁纸，爱好二次元,upupoo的网站,</td>
-</tr>
-<tr>
-<td align="center"><a target="_blank" rel="noopener" href="http://2.dream18.xyz/">视频网站集合</a></td>
-<td></td>
-<td align="center"></td>
-<td align="center">集合了一些主流视频网站的资源，已去广告，但Bug挺多的</td>
-</tr>
-<tr>
-<td align="center"><a target="_blank" rel="noopener" href="http://1.dream18.xyz/">视频解析</a></td>
-<td></td>
-<td align="center"></td>
-<td align="center">可以对一些主流的视频网站进行解析，下载，随时失效</td>
-</tr>
-<tr>
-<td align="center"><a target="_blank" rel="noopener" href="https://b.dream18.xyz/">云端桌面</a></td>
-<td></td>
-<td align="center"></td>
-<td align="center">可用于团队协作和服务器可视化管理，虽然我还没有团队。。。</td>
-</tr>
-<tr>
-<td align="center"><a target="_blank" rel="noopener" href="http://c.dream18.xyz/">WorldPress</a></td>
-<td></td>
-<td align="center"></td>
-<td align="center">一个准备商业化的网站，名字还没想好！</td>
-</tr>
-<tr>
-<td align="center"><a target="_blank" rel="noopener" href="https://5.dream18.xyz/">加密音乐格式转换</a></td>
-<td></td>
-<td align="center"></td>
-<td align="center">目前支持的格式：QQ音乐格式 (.qmc0/.qmc3/.qmcflac/.qmcogg/.tkm)，网易……<a target="_blank" rel="noopener" href="https://github.com/ix64/unlock-music/blob/master/README.md">详情</a></td>
-</tr>
-<tr>
-<td align="center"><a href="">Lsky Pro图床</a></td>
-<td></td>
-<td align="center"></td>
-<td align="center">一个简单清新的图床，目前只够自用</td>
-</tr>
-<tr>
-<td align="center"><a target="_blank" rel="noopener" href="https://ee.dream18.xyz/">ONEdrive目录索引</a></td>
-<td></td>
-<td align="center"></td>
-<td align="center">资源分享，一个简单快速的索引，备用</td>
-</tr>
-<tr>
-<td align="center"><a target="_blank" rel="noopener" href="http://m.dream18.xyz/web/index.php?c=user&amp;a=login&amp;">微擎</a></td>
-<td></td>
-<td align="center"></td>
-<td align="center">一个公众号，小程序的开发辅助网站</td>
-</tr>
-<tr>
-<td align="center"><a target="_blank" rel="noopener" href="https://a.dream18.xyz/home">古客的分享站</a></td>
-<td></td>
-<td align="center"></td>
-<td align="center">又一个目录索引</td>
-</tr>
-<tr>
-<td align="center"><a target="_blank" rel="noopener" href="https://a.dream18.xyz/home">发卡平台</a></td>
-<td></td>
-<td align="center"></td>
-<td align="center">售卖自己或别人的一些商品和资源，欢迎入驻</td>
-</tr>
-<tr>
-<td align="center"><a target="_blank" rel="noopener" href="https://www.dream18.xyz/">樱花庄的古客</a></td>
-<td></td>
-<td align="center"></td>
-<td align="center">又是一个WordPress站点，好看就完事</td>
-</tr>
-<tr>
-<td align="center"><a href="">图床</a></td>
-<td></td>
-<td align="center"></td>
-<td align="center">仅供自用</td>
-</tr>
-<tr>
-<td align="center"><a target="_blank" rel="noopener" href="https://e.dream18.xyz/home/1">UPUPOO分享站</a></td>
-<td><a target="_blank" rel="noopener" href="https://bb.dream18.xyz/home/1">https://bb.dream18.xyz/home/1</a></td>
-<td align="center"><a target="_blank" rel="noopener" href="https://e.dream18.xyz/admin">https://e.dream18.xyz/admin</a></td>
-<td align="center">多账号<a target="_blank" rel="noopener" href="https://wangningkai.github.io/OLAINDEX/#/other?id=%e5%90%8e%e5%8f%b0%e7%99%bb%e5%bd%95">ondrive目录索引</a>，仅供自用</td>
-</tr>
-<tr>
-<td align="center"></td>
-<td></td>
-<td align="center"></td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center"></td>
-<td></td>
-<td align="center"></td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center"></td>
-<td></td>
-<td align="center"></td>
-<td align="center"></td>
-</tr>
-</tbody></table>
-<h6 id="参考链接："><a href="#参考链接：" class="headerlink" title="参考链接："></a><strong>参考链接：</strong></h6>
+                <div id="hexo-blog-encrypt" data-wpm="非常抱歉, 这个密码看着不太对, 请您再试试吧." data-whm="很抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容."><div class="hbe-input-container"><input type="password" id="hbePass" placeholder="您好, 这里需要密码才能查看哦." /><label>您好, 这里需要密码才能查看哦.</label><div class="bottom-line"></div></div><script id="hbeData" type="hbeData" data-hmacdigest="8e24bd2da6f85140723efc13e8415dc0ddd50b072d468ec984ec5f032fcd9ccd">c14864013e9ce8d6ca2c8d4b018e8e275434b50d9457daff11e67414e38a570bab13c9c78e4c3dcc2b75cd00e561624b6d92e5930579b37ea4d35f32d3cd37205622ff61b68737efc4bdcd2dc55154ac75e29755d50ec345424a2fcf46575d5c0331db0e901c6c6eb27f093c39f82f430194148efa212c3fd6ba1bd8b2a90e78ac95767c6d9da9f9c6bd18f07a8f37874eba3c538a8d50cf03364d3b7613855e589a0c0b442ca108b5b2074002dad07e7aacfced5a5d3047f84a0dd957ca47ce1a2c4c8c6f06a4636bd0300090e4104b533587185553b431005d06ce555868a8db9f77a3b85b6e172f9179c246e0a0a554cbe39dae7c064daa324239f69c88d0fb3a37e82e9bab04934fe10c87f5bc9aa3d490e9eb743c498b8be15ee28ef66e93cb772225fbb891500639c4181adcd90cb6aeb1a89c2e7ea286b5c746e24ab449f419b383f26289e0aadfbbfa3651b9ed01b20577e9ce30c0e67b569af2df4c34ffb15d90eb7381e2fe189ba3a8a9daef3890cf39d0d4719bf1a9ce9e7b06ed0d14f69c4238991a3f1597d2b1ac8c5836ad095603cf6e08eb8283b1898b3e884d1a34e95e6472570418dacfd887ffc754a8e0d15d4137ea2e507036bcc2163e6fd05290ce082c5b75a22bd8f93df79e8752cdfcc4bf75224903ccb5ebdebd76a1c33924cef0bb49bf12760e8ef62fcf25835e18a3f7640cda5354c84b5760e7d38504434aad881f0e445913700724a8d07385c2d29c516d3dc648362e78aa3b993c2c6e9396236a32574134a073598676bb18b8f45a02ae42cf436abdfd563a26bc9f100b58c02f8861d8575d19d18f7ddc2ae972e32838300927fcffe65aae2be3785b612008690c5faf88807b7a1dc9ac3cb155fd01b76e14e8ccb30d3eb04b5ab5113d5cccf112f81139624abd36435f12d5ecf9ccd38bf4a350841ea2777992ec16eadcada96e776c7dfd32979448374a3c11abe3ee08e9fc6e1846795e2ed8c44beb9782ef8e7dc460c6655acbc46fb21bd9a6bde7ca87357a342540319ae72ee31463ff5de9c06757ae482eb020ec5c4020200c9e2453248c6082fc157b27a68e83589b189c729aec8ba24923bc2c92c7639240a955d2c0174b69d01e870dd92db3f7a27abd64184c98315642ab77e9abe4d502f2bd511d0ee9f40b7268c4a5922342442f0ce9be8ca45a4f6a53202790417dd73f209e192c1564c09bb72d8f7b8ec5e8639f246142a7553da0fa4b40929782b99071b56e5a9b19c06b15f8950ced9f24500115f12418fb85fc4c55c09aa42c588bfa45fb0847d46c094359bb590c2661adf21fc750f9746c452793ca5b47f6fd14ad2e618b163d151059d4f67133887f6865380448cfac4ff6338f0ac74ba6c63adc93932b0a88d3daf372fd193bfd96c6e567dd15288f952bfe65b55e0a4df170524d889239b4c2681371dfa874f76b42a7ed7217f43db4f0602655b8aaa134b9b0107dde29135d0ca377ab0b0355fe97bf391493d5a0e8bf8f6774cb6346d329021b830b8ed8bb1dfdd83b8369ab1dd61d916c8589eacd2230869a0e65c004dfd18b569b11aa22a4fb02d23b4cd6ed0d157b37424f032a2232dbb54ab35148b9e5cd6bfba2e69a88b2842e202284009871b4f8f375c7f3d9e1d039b6a03df3e64c8b96fffe6445724f93c50706a7131935c0246479a3b11af30cefc78b362d93e7d5f429d8f3437742c80e868beb8ce25e719ec349cc4d86737f37eec2ca2bd1a79df958346e1c11d5327d603737b632d6db06c1fea03ff477f2158938ce7745c5f5ca386b58cfc61c72fb3a895ca297e8dbd52008f29a795cbafd557df4487a78b562dfd9a00c3d3fc1481ded5f843e7a927936dcc9495d6a62296d3bf65cf4d20ef555fcd4efaed37552e61e344ca60cd47337282d95a64a174831154cc3eed1bc8d537340cb3ca1f4bbea53d3dea3f0fe7580e760994ecd9fb8e8c10ff217a985bb0aa7dec4ef563fd7518f57d79be3996d366e0b3f3d24f74e422e6557b7e8d517cc9e43e92ac6b50a397faeb624bec0e26688ac2a5f383f6cca9dbdd922128647f3ddd0b14458eed61d6417ca0a2445c85b7088da85bb590a781a09f7d1840ff5c32ac4867b9e499f0d18fba30cd1d89f6599b7320f31d07926a87cd188fcd28becadcdebc21ea71a55f06f604b29621e9cf21d2289e5380cc8c13912dbfdf5de5cf5890e2794a73e6e1f5582248609d7c53f52201d00cba351ab3b98070048abfd1e466fd1946956b00c12be810394536d449adadf810cc3251f4fcc0ccce2de22b1b7eb85fae431d66c4132c8a073e1574c1ce78bb783c973709acb2e4f326ee323860c9875b39316752f01fb9dd45149ea211d98557f7be8385361e207d80d14375860667082d1922c47717419bb4041858627fa50e0dfa8b12ed4d67ed1a3415b9afb535585ca5898b7c569e21336df8b682f98c3bce7673dca8c0edb021828af2780dad6f33f209a6df7b9e73585499c3662c69f99ced412cf0d3ee8c151788cf5efd2a0ae6ff89b398319aebb9653e7dbf982e2e41743daa1c91742f1c55c0e4ee1b1ccc22b4bf35cc1966112f12a481acb721157efc060ca38388a41ef46e37fc0159af4ed15b2dcf8ee6f2ee2e41a0ed4641fd1b6e8622a69bbdd05927e8e585765c3d691728a2ed8bc573ba1355106e3c10251bce691fda98b73e6aacb4fa83aeb7096623b38f62dfba8d78030d6f7d7ef93fc4159a115d20b0bf781f8cbcb658644a5f4ef7fa69acf8b6db8c80be9996c4b088a980cf06ea6800e08e8db248c84b9eee6b4028fe6f367d10b0c222833806e6389fcd5c0148ce07d5b328e4b819dac1da0c15b4200a8a08b75c98a8e167323f6c2606955d4cdf4aadc0a7608f5021692fbed7eb4bc51d5c3c25716b165650a3b296b1db135d12f9afe3208241728a93bcb65429c19f88053682f2b53135f286d89fca5c5dcb82a45715befefa56eb2f9255ce9b776e2bab42029b5228760c1f85848e02834b7c00ebe4647976dd05748b6d540d1c14eb8b797e840c409acce8369ed8a592e7120d799d182f3358d8455d1101252426e5f3bf457b8a61915c359a279e433e16da33a8a89f23ddbc0f80609bd308f3f3dabdf6fd09a293a9fab9f883392663641003d888ec57dfa1570fc15eb1ce18ba8872428896afcd1e7d2453bacc846476350868bdf1abf715d0313e00d422993251964ca6ec8ba4f09b8cfbcdded9a9e314a5e64aad5ac18bf063cb15e879fee9468fa667ce49edff07dcc80c43805e4d6d542a4519cf16f4a8ff93993ab91377fa0d97ab6f4703bccd16271107e3a64696932b3ab01e7deb3a4c2e47a62fdabe2e7f07fa7590a0bf936174e555631b4340483678c62ddddc4a4e0d346e9f32d05a33755a63050bdc264692e11996e61c8f608286f604c2cdf5c6d03fecf0262d26c4f81b8bbd1303f939ced5a09655e8665534fe4c497eef30f2e26b3ef61a18e00682f891103ce362757171d53bc48cf0b7c15eb5001c77ec030286163a550dd279f5cbfdc4a5bd1e201b635079ec9426a3697bc2d1c91b9e42b4dec832999daca2441be26b517258c462baa953c69f862d83c8bcd5560cf90eab569da3528d470c4bb75a4b22ed27c95c0c6f8b6b31d2d04c7a96d05eead89933e51d02ca3eeb2fc0c0992f1fc1c32aa115c156de6648be716c13ba32bb8e1323dff858739248280b4b3c22f1b3a724c02a2994aa5912d52eb257d147cecb65c4a2b760e9b6200b439cd7fa96fe972338445a20cb744d42d4e090a19897e377f48edaaf94f27456eed71f1a41daf3eb9fc5f9af9ded4ae17cf7f7e0b7e5a07a08a873b53b68d0e579f2ef148f4cd75fb87732c1f6b1ce3135f21cac246634efa60ee3fbf7047082302816a82cf180df1f0c3f1ca5dc668ee90ae9073eb326aaca2d2d02c2af6e025fd687be6b5a63c1afa84f84e3e306db8f4c396506775052e5c0b91df60afed0acdb8ce7316f930731841fdeaa3eb802766206cac15ae93b3b7e6e49e086a168f7df702edc06db937d82a391cc8524862d9d2e6b34fe53392a659c81443b0639e24949d8d9d2710f097fabec2a011385a828ae0b3eeff8963076fec4f9d26fc92be783935462b4fc95df4bba08b3e3ba04e4a036992cfc6bea19fe7a0d72194a39cb9fcba3960bde116f9627aeeb8884facfa92204972f3960752a92e460bf421ad198389ca28e52e7b6c2b43cd7437fefe56634d9bde273af99126f72c1d46b849f9a47ea31d9eb2b1b6ab9435d92be23ed57e73c8d59af880969355aae98526add88c1c78b1dc6f8d99a6037bba55e8d1df08576aede1b4f6ec49540fa119eef1cf621d5bed9c729d9007d047c4d17e45d68af58b1a648f6235864fdfb59d87b25a03a15c73a6aa05391f383682329739cae58802a0ea11d879317315b09ca7e04d8bc8fd4c372c25e24a77c903f40038911355ca67edcde1405b792320cb0b2be8ddd1f0a70f911c00371032e4b01b61885d94d22b12b248aa4b6a394e286bbcf15c604ddc881cd9b3366c40bce73ceb0b0a3efbe958c937a9704debae097396b6d64e4ddec70d689021a12fbc03303bf1f3c6d7ce972625f19a8b0090fcf94589c52f610d95c7b9c0f059a1b0849025d6f48c0edc6f065d445b08d4b5a42be233ea2403a88fda46a0249aafb4103fa21fccaba270b86d87824d495e6261a98f621496b262f299fb6f2ccc9519b6f10142ec9f8d69682916edff09d6272491cc730b585645de7509733aae1968c46da4ef84de854e665269d4b8a412451702cab392e89addb2178ea67e75a76ddb5be822030e832f0371b19460723db2f2b91ca930dedd7c67dec19440151aa2fb1d0c9a11bb40e0aaf9134ab934c2fa2bdaa76049a512c568929762c0c94bec6c28d503775e3cff580256cd4e0604252d33904b774bd5ad9f6cb821b8fd157ce1189a713601fbce79cf84764f22d328cfe9a4052f35728312254cd5b4c1ac2e5e44cf7111044c9231014cd345b9417c990aea59449bb25d4dc679f4046736375f9322945a52078b4f794b8f1f0f68bdb0db078279d39b9e4c60e92072f04b9013a2d0b61c37f047cc75d91d96b4b5910a027ee24e44ac30210babe3416d8ce4f956040ef07ebb6f4b4ce3d5f793338107927bd31f9d908ee80da1f9442a444d312f191cc63735d9b3f2805d5c0f8d1b728d2b53f4b8d0f799bbca4c337832f0d349bfa98c662a4c6780856637421966e921cb3f2dc55473cffde784a734e19636eea301e9f5c086e053f67267110b02acb837a6fae7976595b76f08adf4c0c0b9b629b1ede330657936af3b91397b1e8247e423e4ab8eea0714deed391d707aee683e033fa5b06fdd9d81f49b73855492f5ef065dbc1ea1cffcfdb93cfa71032ee584b1f27df5316635fb5071c9c24c54e5c2371e6af85a07f740bbfaf51617e2e3620a6ae416a1fcc7a0920c373cc06709fd9022447ff061523d3562c6c78c10f08aff53a38bf61d12a0e1cea693c21897fbb51829185022a621869babbca7420ad2df8a0181d1fd4d5e8ed949167a348977615937d90e68499a275600c60a3b3e443dc706b9c739dca9cb8b2b98f3f176b68f18a47c75487e6f28cefbf703b91cca72731194397d2b663a0955826ee940e280c28ac5e9f24119f9a07569bb5855aeda24f19568a16d474e502b00568917662235e30406923f53b870b0890403d4158802a2c17525ac68eb02c9fe7cee01a1357d74e402653cc2f1094d688c080094cd774bf452a965c6713c0d5ce0e59fdfbdac4c904c7cb062e63db783606658fee13ff93ee3b149e118fb25fbbc11936f24a226bf467c6b7c58e087aa11efb60e7651b6cacb9c79c0b0556de2311022146392fd7841c37d8ec7b75c89936c363f28671f760ae7c76638f7ce953ab33f15cca0f9c368f0d287ff68b4731a7e1a06e41fb496e590fe58a3bca5a134fdd115d841ee8890622eb46af05a828fcabbaa3e9c49724d19f125eb2e157bbe8e6d04d74c2d13498221527f5aa47c8c0da02098c192fa171e689012777bafa932315f5a24428403ad5877339fb05c9a51b83067281a933feccc183e2755872d8dac476219486d6c9a44353d98bceb5a7fc247b0112871f6a1d1cbcf93f4595e9e9a419cdf1593aadca21a1d40261f61d0f5d8f4854f8932682ccac46e31c125a9946f959d45de38e587bf8eaa481ee1a0f2e087d9c71d8a433fcc7c71a5d38fccbb63514ba1f9ba21767d144c438c4e1699f1d68d3615f834d82723214146c65c352119d4743cd8</script></div><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">
                 
             </div>
             <hr/>
@@ -1076,269 +1001,52 @@
     
 
     
+
+    
         <style>
-    .valine-card {
+    .mvaline-card {
         margin: 1.5rem auto;
     }
 
-    .valine-card .card-content {
+    .mvaline-card .card-content {
         padding: 20px 20px 5px 20px;
-    }
-
-    #vcomments textarea {
-        box-sizing: border-box;
-        background: url("/medias/comment_bg.png") 100% 100% no-repeat;
-    }
-
-    #vcomments p {
-        margin: 2px 2px 10px;
-        font-size: 1.05rem;
-        line-height: 1.78rem;
-    }
-
-    #vcomments blockquote p {
-        text-indent: 0.2rem;
-    }
-
-    #vcomments a {
-        padding: 0 2px;
-        color: #4cbf30;
-        font-weight: 500;
-        text-decoration: none;
-    }
-
-    #vcomments img {
-        max-width: 100%;
-        height: auto;
-        cursor: pointer;
-    }
-
-    #vcomments ol li {
-        list-style-type: decimal;
-    }
-
-    #vcomments ol,
-    ul {
-        display: block;
-        padding-left: 2em;
-        word-spacing: 0.05rem;
-    }
-
-    #vcomments ul li,
-    ol li {
-        display: list-item;
-        line-height: 1.8rem;
-        font-size: 1rem;
-    }
-
-    #vcomments ul li {
-        list-style-type: disc;
-    }
-
-    #vcomments ul ul li {
-        list-style-type: circle;
-    }
-
-    #vcomments table, th, td {
-        padding: 12px 13px;
-        border: 1px solid #dfe2e5;
-    }
-
-    #vcomments table, th, td {
-        border: 0;
-    }
-
-    table tr:nth-child(2n), thead {
-        background-color: #fafafa;
-    }
-
-    #vcomments table th {
-        background-color: #f2f2f2;
-        min-width: 80px;
-    }
-
-    #vcomments table td {
-        min-width: 80px;
-    }
-
-    #vcomments h1 {
-        font-size: 1.85rem;
-        font-weight: bold;
-        line-height: 2.2rem;
-    }
-
-    #vcomments h2 {
-        font-size: 1.65rem;
-        font-weight: bold;
-        line-height: 1.9rem;
-    }
-
-    #vcomments h3 {
-        font-size: 1.45rem;
-        font-weight: bold;
-        line-height: 1.7rem;
-    }
-
-    #vcomments h4 {
-        font-size: 1.25rem;
-        font-weight: bold;
-        line-height: 1.5rem;
-    }
-
-    #vcomments h5 {
-        font-size: 1.1rem;
-        font-weight: bold;
-        line-height: 1.4rem;
-    }
-
-    #vcomments h6 {
-        font-size: 1rem;
-        line-height: 1.3rem;
-    }
-
-    #vcomments p {
-        font-size: 1rem;
-        line-height: 1.5rem;
-    }
-
-    #vcomments hr {
-        margin: 12px 0;
-        border: 0;
-        border-top: 1px solid #ccc;
-    }
-
-    #vcomments blockquote {
-        margin: 15px 0;
-        border-left: 5px solid #42b983;
-        padding: 1rem 0.8rem 0.3rem 0.8rem;
-        color: #666;
-        background-color: rgba(66, 185, 131, .1);
-    }
-
-    #vcomments pre {
-        font-family: monospace, monospace;
-        padding: 1.2em;
-        margin: .5em 0;
-        background: #272822;
-        overflow: auto;
-        border-radius: 0.3em;
-        tab-size: 4;
-    }
-
-    #vcomments code {
-        font-family: monospace, monospace;
-        padding: 1px 3px;
-        font-size: 0.92rem;
-        color: #e96900;
-        background-color: #f8f8f8;
-        border-radius: 2px;
-    }
-
-    #vcomments pre code {
-        font-family: monospace, monospace;
-        padding: 0;
-        color: #e8eaf6;
-        background-color: #272822;
-    }
-
-    #vcomments pre[class*="language-"] {
-        padding: 1.2em;
-        margin: .5em 0;
-    }
-
-    #vcomments code[class*="language-"],
-    pre[class*="language-"] {
-        color: #e8eaf6;
-    }
-
-    #vcomments [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
-        position: inherit;
-        margin-left: -1.3rem;
-        margin-right: 0.4rem;
-        margin-top: -1px;
-        vertical-align: middle;
-        left: unset;
-        visibility: visible;
-    }
-
-    #vcomments b,
-    strong {
-        font-weight: bold;
-    }
-
-    #vcomments dfn {
-        font-style: italic;
-    }
-
-    #vcomments small {
-        font-size: 85%;
-    }
-
-    #vcomments cite {
-        font-style: normal;
-    }
-
-    #vcomments mark {
-        background-color: #fcf8e3;
-        padding: .2em;
-    }
-
-    #vcomments table, th, td {
-        padding: 12px 13px;
-        border: 1px solid #dfe2e5;
-    }
-
-    table tr:nth-child(2n), thead {
-        background-color: #fafafa;
-    }
-
-    #vcomments table th {
-        background-color: #f2f2f2;
-        min-width: 80px;
-    }
-
-    #vcomments table td {
-        min-width: 80px;
-    }
-
-    #vcomments [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
-        position: inherit;
-        margin-left: -1.3rem;
-        margin-right: 0.4rem;
-        margin-top: -1px;
-        vertical-align: middle;
-        left: unset;
-        visibility: visible;
     }
 </style>
 
-<div class="card valine-card" data-aos="fade-up">
+<div class="card mvaline-card" data-aos="fade-up">
     <div class="comment_headling" style="font-size: 20px; font-weight: 700; position: relative; padding-left: 20px; top: 15px; padding-bottom: 5px;">
         <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
         <span>评论</span>
     </div>
-    <div id="vcomments" class="card-content" style="display: grid">
+    <div id="mvcomments" class="card-content" style="display: grid">
     </div>
 </div>
 
-<script src="https://cdn.jsdelivr.net/gh/guhailong18/blog/libs/valine/av-min.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/guhailong18/blog/libs/valine/Valine.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/guhailong18/blog/libs/minivaline/MiniValine.js"></script>
 <script>
-    new Valine({
-        el: '#vcomments',
-        appId: 'LPIqVlVtqMbzVVEgNMkypuf3-gzGzoHsz',
-        appKey: 'HIC60BbouXpFkGyo3r0ut4mb',
-        notify: 'true' === 'true',
-        verify: 'false' === 'true',
-        visitor: 'true' === 'true',
-        avatar: 'http://1.gravatar.com/avatar/05ae6ede6e4bce2c4ecfc767c37d3db6',
-        pageSize: '12',
-        lang: 'zh-cn',
-        placeholder: '快来写下你的观点一起交流吧ヾﾉ≧∀≦)o'
+    new MiniValine({
+        el: '#mvcomments',
+        appId: 'uuXPTye7mxEAjQx58AfUwVN8-MdYXbMMI',
+        appKey: 'xupIB338p0ioh3sBKKFa4etA',
+        mode: 'DesertsP',
+        placeholder: 'Write a Comment',
+        pathname: window.location.pathname,
+        lang: '',
+        adminEmailMd5: 'de8a7aa53d07e6b6bceb45c64027763d',
+        tagMeta: ["管理员", "小伙伴", "访客"],
+        master: ["de8a7aa53d07e6b6bceb45c64027763d"],
+        friends: ["b5bd5d836c7a0091aa8473e79ed4c25e", "adb7d1cd192658a55c0ad22a3309cecf", "3ce1e6c77b4910f1871106cb30dc62b0", "cfce8dc43725cc14ffcd9fb4892d5bfc"],
+        math: true,
+        md: true,
+        enableQQ: false,
+        NoRecordIP: false,
+        visitor: true,
+        maxNest: 6,
+        pageSize: 6,
+        serverURLs: '',
+        emoticonUrl: ["https://cdn.jsdelivr.net/npm/alus@latest", "https://cdn.jsdelivr.net/gh/MiniValine/qq@latest", "https://cdn.jsdelivr.net/gh/MiniValine/Bilibilis@latest", "https://cdn.jsdelivr.net/gh/MiniValine/tieba@latest", "https://cdn.jsdelivr.net/gh/MiniValine/twemoji@latest", "https://cdn.jsdelivr.net/gh/MiniValine/weibo@latest"],
     });
 </script>
-
-    
 
     
 
@@ -1492,6 +1200,47 @@
 
     <footer class="page-footer bg-color">
     
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/guhailong18/blog/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server=""
+                   type=""
+                   id=""
+                   fixed='true'
+                   autoplay='false'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='false'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/gh/guhailong18/blog/libs/aplayer/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
+    
     <div class="container row center-align" style="margin-bottom: 15px !important;">
         <div class="col s12 m8 l8 copy-right">
             Copyright&nbsp;&copy;
@@ -1505,7 +1254,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">67.5k</span>&nbsp;字
+                class="white-color">66.4k</span>&nbsp;字
             
             
             
@@ -1815,7 +1564,7 @@ $(function () {
     
     <script type="text/javascript" color="0,0,255"
         pointColor="0,0,255" opacity='0.7'
-        zIndex="-1" count="99"
+        zIndex="-1" count="89"
         src="https://cdn.jsdelivr.net/gh/guhailong18/blog/libs/background/canvas-nest.js"></script>
     
 

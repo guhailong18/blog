@@ -40,11 +40,21 @@
 
     <script src="https://cdn.jsdelivr.net/gh/guhailong18/blog/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 5.2.0">
+<meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="/atom.xml" title="古客的Hexo" type="application/atom+xml">
+
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
-<link rel="alternate" href="/atom.xml" title="古客的Hexo" type="application/atom+xml">
 </head>
 
+
+
+   <style>
+    body{
+       background-image: url(https://cdn.jsdelivr.net/gh/Tokisaki-Galaxy/res/site/medias/background.jpg);
+       background-repeat:no-repeat;
+       background-size:cover;
+       background-attachment:fixed;
+    }
+</style>
 
 
 
@@ -258,6 +268,15 @@
           <i class="fas fa-image" style="margin-top: -20px; zoom: 0.6;"></i>
           
           <span>导航</span>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/test">
+          
+          <i class="fas fa-film" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>聊天室</span>
         </a>
       </li>
       
@@ -516,6 +535,16 @@
               
                 <li>
 
+                  <a href="/test " style="margin-left:50px">
+				  
+				   <i class="fa fas fa-film" style="position: absolute;left:28px" ></i>
+			      
+		          <span>聊天室</span>
+                  </a>
+                </li>
+              
+                <li>
+
                   <a href="/position " style="margin-left:50px">
 				  
 				   <i class="fa fas fa-book" style="position: absolute;left:28px" ></i>
@@ -541,7 +570,7 @@
         
         <li><div class="divider"></div></li>
         <li>
-            <a href="https://github.com/blinkfox/hexo-theme-matery" class="waves-effect waves-light" target="_blank">
+            <a href="https://github.com/guhailong18/blog" class="waves-effect waves-light" target="_blank">
                 <i class="fab fa-github-square fa-fw"></i>Fork Me
             </a>
         </li>
@@ -598,7 +627,7 @@
     }
 </style>
 
-<a href="https://github.com/blinkfox/hexo-theme-matery" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+<a href="https://github.com/guhailong18/blog" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
    data-tooltip="Fork Me" data-position="left" data-delay="50">
     <svg viewBox="0 0 250 250" aria-hidden="true">
         <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
@@ -614,6 +643,19 @@
 </header>
 
     
+<script src="https://cdn.jsdelivr.net/gh/guhailong18/blog/libs/cryptojs/crypto-js.min.js"></script>
+<script>
+    (function() {
+        let pwd = '';
+        if (pwd && pwd.length > 0) {
+            if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
+                alert('密码错误，将返回主页！');
+                location.href = '/';
+            }
+        }
+    })();
+</script>
+
 
 
 
@@ -791,6 +833,11 @@
         
 
         
+        <!-- 代码块折行 -->
+        <style type="text/css">
+            code[class*="language-"], pre[class*="language-"] { white-space: pre-wrap !important; }
+        </style>
+        
 
         <div class="card-content article-card-content">
             <div id="articleContent">
@@ -798,10 +845,10 @@
 
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
             <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
-            <div id="mmedia-kRYJurzT" style="margin-bottom: 20px; width: "></div>
+            <div id="mmedia-wCJxnXrC" style="margin-bottom: 20px; width: "></div>
         <script>
-          var ap_kRYJurzT = new APlayer({
-            element: document.getElementById("mmedia-kRYJurzT"),
+          var ap_wCJxnXrC = new APlayer({
+            element: document.getElementById("mmedia-wCJxnXrC"),
             narrow: false,
             autoplay: false,
             showlrc: false,
@@ -815,7 +862,7 @@
             undefined
           });
           window.aplayers || (window.aplayers = []);
-          window.aplayers.push(ap_kRYJurzT);
+          window.aplayers.push(ap_wCJxnXrC);
         </script>
 
 
@@ -823,10 +870,10 @@
 
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
             <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
-            <div id="mmedia-mxIIJajN" style="margin-bottom: 20px; width: "></div>
+            <div id="mmedia-uaLplynz" style="margin-bottom: 20px; width: "></div>
         <script>
-          var ap_mxIIJajN = new APlayer({
-            element: document.getElementById("mmedia-mxIIJajN"),
+          var ap_uaLplynz = new APlayer({
+            element: document.getElementById("mmedia-uaLplynz"),
             narrow: false,
             autoplay: false,
             showlrc: false,
@@ -840,16 +887,16 @@
             undefined
           });
           window.aplayers || (window.aplayers = []);
-          window.aplayers.push(ap_mxIIJajN);
+          window.aplayers.push(ap_uaLplynz);
         </script>
 
 
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
             <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
-            <div id="mmedia-TCYfhhIM" style="margin-bottom: 20px; width: "></div>
+            <div id="mmedia-mvAqsCbV" style="margin-bottom: 20px; width: "></div>
         <script>
-          var ap_TCYfhhIM = new APlayer({
-            element: document.getElementById("mmedia-TCYfhhIM"),
+          var ap_mvAqsCbV = new APlayer({
+            element: document.getElementById("mmedia-mvAqsCbV"),
             narrow: false,
             autoplay: true,
             showlrc: false,
@@ -863,19 +910,19 @@
             undefined
           });
           window.aplayers || (window.aplayers = []);
-          window.aplayers.push(ap_TCYfhhIM);
+          window.aplayers.push(ap_mvAqsCbV);
         </script>
 
 
 
                 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
                 <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
-                <div id="mmedia-WepUIPNq" style="margin-bottom: 20px; width: ">
+                <div id="mmedia-MnnNmCpA" style="margin-bottom: 20px; width: ">
                     <pre class="aplayer-lrc-content">[00:04.76]你怎么说[00:26.31]我没忘记你忘记我[00:32.53]连名字你都说错[00:50.51]你说过两天来看我[00:56.04]一走就是一年多[01:01.36]三百六十五个日子不好过[01:07.93]你心里根本没有我[01:14.37]把我的爱情还给我[01:43.60]我没忘记你忘记我[01:49.80]连名字你都说错[01:55.97]证明你一切都是在骗我[02:01.95]看今天你怎么说[02:07.16]你说过两天来看我[02:13.20]一等就是一年多[02:18.26]三百六十五个日子不好过[02:25.22]你心里根本没有我[02:31.43]把我的爱情还给我[02:36.75]红尘客栈[02:39.13]天涯的尽头是风沙[02:44.59]红尘的故事叫牵挂[02:50.01]封刀隐没在寻常人家东篱下[02:55.53]闲云野鹤古剎[03:03.19]快马在江湖里厮杀[03:08.92]无非是名跟利放不下[03:14.01]心中有江山的人岂能快意潇洒[03:19.91]我只求与你共华发[03:27.01]剑出鞘 恩怨了 谁笑[03:31.61]我只求今朝拥你入怀抱[03:37.02]红尘客栈风似刀[03:41.08]骤雨落宿命敲[03:46.26]任武林谁领风骚我却[03:49.76]只为你折腰[03:52.82]你回眸多娇我泪中带笑[03:58.36]酒招旗风中萧萧[04:02.41]剑出鞘恩怨了[04:08.58]千里之外[04:13.09]我送你离开千里之外[04:17.64]你无声黑白[04:21.62]沉默年代或许不该[04:25.62]太遥远的相爱[04:29.59]我送你离开天涯之外[04:33.79]你是否还在[04:37.85]琴声何来生死难猜[04:41.90]用一生去等待</pre>
                 </div>
             <script>
-              var ap_WepUIPNq = new APlayer({
-                element: document.getElementById("mmedia-WepUIPNq"),
+              var ap_MnnNmCpA = new APlayer({
+                element: document.getElementById("mmedia-MnnNmCpA"),
                 narrow: false,
                 autoplay: true,
                 showlrc: false,
@@ -888,7 +935,7 @@
                 undefined
               });
               window.aplayers || (window.aplayers = []);
-              window.aplayers.push(ap_WepUIPNq);
+              window.aplayers.push(ap_MnnNmCpA);
             </script>
 
 
@@ -903,12 +950,12 @@
 
 <hr>
 
-    <div id="cplayer-38431626"></div>
+    <div id="cplayer-27823939"></div>
     <script>
       (function(){
         function loadcplayer() {
           if (typeof window.cplayerList === 'undefined') window.cplayerList = {};
-          if (typeof window.cplayerList["cplayer-38431626"] !== 'undefined') return;
+          if (typeof window.cplayerList["cplayer-27823939"] !== 'undefined') return;
           if (!cplayer.prototype.add163) cplayer.prototype.add163 = function add163(id) {
             if (!id) throw new Error("Unable Property.");
             return fetch("https://music.huaji8.top/?id=" + id).then(function(res){return res.json()}).then(function(data){
@@ -925,15 +972,15 @@
             }.bind(this))
           }
 
-          window.cplayerList["cplayer-38431626"] = new cplayer({
-            element: document.getElementById("cplayer-38431626"),
+          window.cplayerList["cplayer-27823939"] = new cplayer({
+            element: document.getElementById("cplayer-27823939"),
             playlist: [{"name":"チルドレンレコード","artist":"96猫,伊東歌詞太郎","poster":"https://cplayer.js.org/801422833716a4f0f96ff6dff1f77dfe.jpg","src":"https://cplayer.js.org/8af423669c27d265bb129d04a927044f.mp3"}],
             generateBeforeElement: true,
             deleteElementAfterGenerate: true,
             autoplay: true
           });
 
-          window.cplayerList["cplayer-38431626"].add163(27955597)
+          window.cplayerList["cplayer-27823939"].add163(27955597)
         }
         
         if (typeof window.cplayer === 'undefined' && !document.getElementById("cplayer-script")) {
@@ -1376,269 +1423,52 @@
     
 
     
+
+    
         <style>
-    .valine-card {
+    .mvaline-card {
         margin: 1.5rem auto;
     }
 
-    .valine-card .card-content {
+    .mvaline-card .card-content {
         padding: 20px 20px 5px 20px;
-    }
-
-    #vcomments textarea {
-        box-sizing: border-box;
-        background: url("/medias/comment_bg.png") 100% 100% no-repeat;
-    }
-
-    #vcomments p {
-        margin: 2px 2px 10px;
-        font-size: 1.05rem;
-        line-height: 1.78rem;
-    }
-
-    #vcomments blockquote p {
-        text-indent: 0.2rem;
-    }
-
-    #vcomments a {
-        padding: 0 2px;
-        color: #4cbf30;
-        font-weight: 500;
-        text-decoration: none;
-    }
-
-    #vcomments img {
-        max-width: 100%;
-        height: auto;
-        cursor: pointer;
-    }
-
-    #vcomments ol li {
-        list-style-type: decimal;
-    }
-
-    #vcomments ol,
-    ul {
-        display: block;
-        padding-left: 2em;
-        word-spacing: 0.05rem;
-    }
-
-    #vcomments ul li,
-    ol li {
-        display: list-item;
-        line-height: 1.8rem;
-        font-size: 1rem;
-    }
-
-    #vcomments ul li {
-        list-style-type: disc;
-    }
-
-    #vcomments ul ul li {
-        list-style-type: circle;
-    }
-
-    #vcomments table, th, td {
-        padding: 12px 13px;
-        border: 1px solid #dfe2e5;
-    }
-
-    #vcomments table, th, td {
-        border: 0;
-    }
-
-    table tr:nth-child(2n), thead {
-        background-color: #fafafa;
-    }
-
-    #vcomments table th {
-        background-color: #f2f2f2;
-        min-width: 80px;
-    }
-
-    #vcomments table td {
-        min-width: 80px;
-    }
-
-    #vcomments h1 {
-        font-size: 1.85rem;
-        font-weight: bold;
-        line-height: 2.2rem;
-    }
-
-    #vcomments h2 {
-        font-size: 1.65rem;
-        font-weight: bold;
-        line-height: 1.9rem;
-    }
-
-    #vcomments h3 {
-        font-size: 1.45rem;
-        font-weight: bold;
-        line-height: 1.7rem;
-    }
-
-    #vcomments h4 {
-        font-size: 1.25rem;
-        font-weight: bold;
-        line-height: 1.5rem;
-    }
-
-    #vcomments h5 {
-        font-size: 1.1rem;
-        font-weight: bold;
-        line-height: 1.4rem;
-    }
-
-    #vcomments h6 {
-        font-size: 1rem;
-        line-height: 1.3rem;
-    }
-
-    #vcomments p {
-        font-size: 1rem;
-        line-height: 1.5rem;
-    }
-
-    #vcomments hr {
-        margin: 12px 0;
-        border: 0;
-        border-top: 1px solid #ccc;
-    }
-
-    #vcomments blockquote {
-        margin: 15px 0;
-        border-left: 5px solid #42b983;
-        padding: 1rem 0.8rem 0.3rem 0.8rem;
-        color: #666;
-        background-color: rgba(66, 185, 131, .1);
-    }
-
-    #vcomments pre {
-        font-family: monospace, monospace;
-        padding: 1.2em;
-        margin: .5em 0;
-        background: #272822;
-        overflow: auto;
-        border-radius: 0.3em;
-        tab-size: 4;
-    }
-
-    #vcomments code {
-        font-family: monospace, monospace;
-        padding: 1px 3px;
-        font-size: 0.92rem;
-        color: #e96900;
-        background-color: #f8f8f8;
-        border-radius: 2px;
-    }
-
-    #vcomments pre code {
-        font-family: monospace, monospace;
-        padding: 0;
-        color: #e8eaf6;
-        background-color: #272822;
-    }
-
-    #vcomments pre[class*="language-"] {
-        padding: 1.2em;
-        margin: .5em 0;
-    }
-
-    #vcomments code[class*="language-"],
-    pre[class*="language-"] {
-        color: #e8eaf6;
-    }
-
-    #vcomments [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
-        position: inherit;
-        margin-left: -1.3rem;
-        margin-right: 0.4rem;
-        margin-top: -1px;
-        vertical-align: middle;
-        left: unset;
-        visibility: visible;
-    }
-
-    #vcomments b,
-    strong {
-        font-weight: bold;
-    }
-
-    #vcomments dfn {
-        font-style: italic;
-    }
-
-    #vcomments small {
-        font-size: 85%;
-    }
-
-    #vcomments cite {
-        font-style: normal;
-    }
-
-    #vcomments mark {
-        background-color: #fcf8e3;
-        padding: .2em;
-    }
-
-    #vcomments table, th, td {
-        padding: 12px 13px;
-        border: 1px solid #dfe2e5;
-    }
-
-    table tr:nth-child(2n), thead {
-        background-color: #fafafa;
-    }
-
-    #vcomments table th {
-        background-color: #f2f2f2;
-        min-width: 80px;
-    }
-
-    #vcomments table td {
-        min-width: 80px;
-    }
-
-    #vcomments [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
-        position: inherit;
-        margin-left: -1.3rem;
-        margin-right: 0.4rem;
-        margin-top: -1px;
-        vertical-align: middle;
-        left: unset;
-        visibility: visible;
     }
 </style>
 
-<div class="card valine-card" data-aos="fade-up">
+<div class="card mvaline-card" data-aos="fade-up">
     <div class="comment_headling" style="font-size: 20px; font-weight: 700; position: relative; padding-left: 20px; top: 15px; padding-bottom: 5px;">
         <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
         <span>评论</span>
     </div>
-    <div id="vcomments" class="card-content" style="display: grid">
+    <div id="mvcomments" class="card-content" style="display: grid">
     </div>
 </div>
 
-<script src="https://cdn.jsdelivr.net/gh/guhailong18/blog/libs/valine/av-min.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/guhailong18/blog/libs/valine/Valine.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/guhailong18/blog/libs/minivaline/MiniValine.js"></script>
 <script>
-    new Valine({
-        el: '#vcomments',
-        appId: 'LPIqVlVtqMbzVVEgNMkypuf3-gzGzoHsz',
-        appKey: 'HIC60BbouXpFkGyo3r0ut4mb',
-        notify: 'true' === 'true',
-        verify: 'false' === 'true',
-        visitor: 'true' === 'true',
-        avatar: 'http://1.gravatar.com/avatar/05ae6ede6e4bce2c4ecfc767c37d3db6',
-        pageSize: '12',
-        lang: 'zh-cn',
-        placeholder: '快来写下你的观点一起交流吧ヾﾉ≧∀≦)o'
+    new MiniValine({
+        el: '#mvcomments',
+        appId: 'uuXPTye7mxEAjQx58AfUwVN8-MdYXbMMI',
+        appKey: 'xupIB338p0ioh3sBKKFa4etA',
+        mode: 'DesertsP',
+        placeholder: 'Write a Comment',
+        pathname: window.location.pathname,
+        lang: '',
+        adminEmailMd5: 'de8a7aa53d07e6b6bceb45c64027763d',
+        tagMeta: ["管理员", "小伙伴", "访客"],
+        master: ["de8a7aa53d07e6b6bceb45c64027763d"],
+        friends: ["b5bd5d836c7a0091aa8473e79ed4c25e", "adb7d1cd192658a55c0ad22a3309cecf", "3ce1e6c77b4910f1871106cb30dc62b0", "cfce8dc43725cc14ffcd9fb4892d5bfc"],
+        math: true,
+        md: true,
+        enableQQ: false,
+        NoRecordIP: false,
+        visitor: true,
+        maxNest: 6,
+        pageSize: 6,
+        serverURLs: '',
+        emoticonUrl: ["https://cdn.jsdelivr.net/npm/alus@latest", "https://cdn.jsdelivr.net/gh/MiniValine/qq@latest", "https://cdn.jsdelivr.net/gh/MiniValine/Bilibilis@latest", "https://cdn.jsdelivr.net/gh/MiniValine/tieba@latest", "https://cdn.jsdelivr.net/gh/MiniValine/twemoji@latest", "https://cdn.jsdelivr.net/gh/MiniValine/weibo@latest"],
     });
 </script>
-
-    
 
     
 
@@ -1889,6 +1719,47 @@
 
     <footer class="page-footer bg-color">
     
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/guhailong18/blog/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server=""
+                   type=""
+                   id=""
+                   fixed='true'
+                   autoplay='false'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='false'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/gh/guhailong18/blog/libs/aplayer/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
+    
     <div class="container row center-align" style="margin-bottom: 15px !important;">
         <div class="col s12 m8 l8 copy-right">
             Copyright&nbsp;&copy;
@@ -1902,7 +1773,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">67.5k</span>&nbsp;字
+                class="white-color">66.4k</span>&nbsp;字
             
             
             
@@ -2212,7 +2083,7 @@ $(function () {
     
     <script type="text/javascript" color="0,0,255"
         pointColor="0,0,255" opacity='0.7'
-        zIndex="-1" count="99"
+        zIndex="-1" count="89"
         src="https://cdn.jsdelivr.net/gh/guhailong18/blog/libs/background/canvas-nest.js"></script>
     
 
