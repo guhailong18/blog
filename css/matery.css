@@ -4,10 +4,12 @@
     .container {
         width: 95%;
     }
-    .title.center-align {
-		font-size:10px;
-		text-align:center;
-    }
+    .bg-cover .title {
+		font-size: 2rem;
+		line-height: 1.2em;
+		margin-bottom: 20px;
+		position: relative;
+	}
 }
 
 /*中等屏幕下(平板类)的样式*/
