@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="matlab,矩阵,高代,math">
+    <meta name="keywords" content="2020">
     <meta name="description" content="动漫，编程，数学，读书，相信会有一个是你需要的">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -27,7 +27,7 @@
 </script>
 
 
-    <title>Matlab矩阵及其相关运算 | 古客的Hexo</title>
+    <title>CSS语法入门 | 古客的Hexo</title>
     <link rel="icon" type="image/png" href="https://cdn.jsdelivr.net/gh/guhailong18/blog/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/guhailong18/blog/libs/awesome/css/all.css">
@@ -611,12 +611,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/guhailong18/blog/medias/featureimages/8.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/guhailong18/blog/medias/featureimages/4.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Matlab矩阵及其相关运算</h1>
+                    <h1 class="description center-align post-title">CSS语法入门</h1>
                 </div>
             </div>
         </div>
@@ -638,35 +638,14 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/matlab/">
-                                <span class="chip bg-color">matlab</span>
-                            </a>
-                        
-                            <a href="/tags/math/">
-                                <span class="chip bg-color">math</span>
-                            </a>
-                        
-                            <a href="/tags/%E7%9F%A9%E9%98%B5/">
-                                <span class="chip bg-color">矩阵</span>
-                            </a>
-                        
-                            <a href="/tags/%E9%AB%98%E4%BB%A3/">
-                                <span class="chip bg-color">高代</span>
+                            <a href="/tags/2020/">
+                                <span class="chip bg-color">2020</span>
                             </a>
                         
                     </div>
                     
                 </div>
                 <div class="col s5 right-align">
-                    
-                    <div class="post-cate">
-                        <i class="fas fa-bookmark fa-fw icon-category"></i>
-                        
-                            <a href="/categories/matlab/" class="post-category">
-                                matlab
-                            </a>
-                        
-                    </div>
                     
                 </div>
             </div>
@@ -675,21 +654,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-03-08
+                    2020-12-10
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-12-08
+                    2020-12-10
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    479
+                    63
                 </div>
                 
 
@@ -724,52 +703,8 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <ul>
-<li><h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2></li>
-</ul>
-<p>经过了简单的入门后，就要开始对Matlab的矩阵相关的运算开始学习了，因为矩阵在数据分析和处理方面起到相当重要的作用，必须得好好学习并且能熟练运用。（虽然之前的基础也没有打好，有时间就去回顾吧！)</p>
-<h2 id="1-矩阵的创建"><a href="#1-矩阵的创建" class="headerlink" title="1.矩阵的创建"></a>1.<strong>矩阵的创建</strong></h2><p>matlab矩阵的创建方式有如下几种：直接输入、读取外部数据、内置函数、M文件编程</p>
-<p>(a) 直接输入：直接创建矩阵要注意如下规则：矩阵元素必须在方括号[ ]内；矩阵同行元素之间用空格或逗号(,)隔开；矩阵的行与列之间用分号(;)隔开。</p>
-<p>例1.1</p>
-<p>&gt;&gt; A = [1 2 3;4,5,6;7 8 9]</p>
-<p>A =</p>
-<p>   1   2   3</p>
-<p>   4   5   6</p>
-<p>   7   8   9</p>
-<p>(b) 读取外部数据</p>
-<p>通过load, importdata, xlsread等函数直接导入外部文件中的矩阵数据。</p>
-<p>例1.2</p>
-<p>% 读取数据 trees</p>
-<p>load trees  </p>
-<p>% 读取二进制数据文件</p>
-<p>image(X)   </p>
-<p>% 以图像的形式显示数组 X</p>
-<p>colormap(map) </p>
-<p>% 设置颜色查找表为map</p>
-<p>(c) 内置函数</p>
-<p>在MATLAB中，有很多系统内置特殊函数可直接用于创建矩阵，如下表：</p>
-<img src="https://i.loli.net/2020/03/08/F9REhPaStLCuQeg.jpg" alt="20200308170840" style="zoom:80%;">
-
-<p>例1.3</p>
-<p>Z1=zeros(4,4) </p>
-<p>% 产生4*4全为0的矩阵</p>
-<p>Z2=ones(4,4)  </p>
-<p>% 产生4*4 全为1的矩阵</p>
-<p>Z3=eye(4,4)  </p>
-<p>% 产生4*4的单位矩阵</p>
-<p>Z4=rand(4,4)  </p>
-<p>% 产生4*4的在（0,1）区间均匀分布的随机阵</p>
-<p>Z5=randn(4,4) </p>
-<p>% 产生4*4的均值为0,方差为1的标准正态分布随机矩阵</p>
-<p>Z6=hilb(3)   </p>
-<p>% 产生3维的Hilbert阵</p>
-<p>Z7=magic(3)  </p>
-<p>% 产生3阶的魔方阵</p>
-<p>(d) M文件编程</p>
-<p>用M文件编程来实现创建，以.m格式保存该文件，此法也是matlab编程中最常用的。</p>
-<p>例1.4</p>
-<h2 id="2"><a href="#2" class="headerlink" title="2."></a>2.</h2><h2 id="3"><a href="#3" class="headerlink" title="3."></a>3.</h2><h2 id="4"><a href="#4" class="headerlink" title="4."></a>4.</h2><h2 id="5"><a href="#5" class="headerlink" title="5."></a>5.</h2><h6 id="原文链接："><a href="#原文链接：" class="headerlink" title="原文链接："></a><strong>原文链接：</strong></h6><p><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/HWLKuVzHtKFoIPPFsBck9A">https://mp.weixin.qq.com/s/HWLKuVzHtKFoIPPFsBck9A</a></p>
-
+                <h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><h2 id="1"><a href="#1" class="headerlink" title="1."></a>1.</h2><h2 id="2-id-和-class-选择器"><a href="#2-id-和-class-选择器" class="headerlink" title="2.id 和 class 选择器"></a>2.id 和 class 选择器</h2><p>css选择器的格式，规定不带空格的选择条件之间是“且”关系，带空格的是“父子”关系，并且可以是非直接的“父子”关系</p>
+<h2 id="3"><a href="#3" class="headerlink" title="3."></a>3.</h2><h2 id="4"><a href="#4" class="headerlink" title="4."></a>4.</h2><h2 id="5"><a href="#5" class="headerlink" title="5."></a>5.</h2><h6 id="参考链接："><a href="#参考链接：" class="headerlink" title="参考链接："></a><strong>参考链接：</strong></h6>
                 
             </div>
             <hr/>
@@ -795,7 +730,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://example.com/2020/03/08/Matlab%E7%9F%A9%E9%98%B5%E5%8F%8A%E5%85%B6%E7%9B%B8%E5%85%B3%E8%BF%90%E7%AE%97/">http://example.com/2020/03/08/Matlab%E7%9F%A9%E9%98%B5%E5%8F%8A%E5%85%B6%E7%9B%B8%E5%85%B3%E8%BF%90%E7%AE%97/</a>
+                    <a href="http://example.com/2020/12/10/CSS%E8%AF%AD%E6%B3%95%E5%85%A5%E9%97%A8/">http://example.com/2020/12/10/CSS%E8%AF%AD%E6%B3%95%E5%85%A5%E9%97%A8/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -833,20 +768,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/matlab/">
-                                    <span class="chip bg-color">matlab</span>
-                                </a>
-                            
-                                <a href="/tags/math/">
-                                    <span class="chip bg-color">math</span>
-                                </a>
-                            
-                                <a href="/tags/%E7%9F%A9%E9%98%B5/">
-                                    <span class="chip bg-color">矩阵</span>
-                                </a>
-                            
-                                <a href="/tags/%E9%AB%98%E4%BB%A3/">
-                                    <span class="chip bg-color">高代</span>
+                                <a href="/tags/2020/">
+                                    <span class="chip bg-color">2020</span>
                                 </a>
                             
                         </div>
@@ -1062,17 +985,18 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2020/03/08/python%E4%B9%8B%E7%9F%A9%E9%98%B5%E7%9A%84%E8%BF%90%E7%AE%97%E5%8F%8A%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/">
+                <a href="/2020/12/10/CSS%E8%AF%AD%E6%B3%95%E5%85%A5%E9%97%A8/">
                     <div class="card-image">
                         
                         
-                        <img src="https://cdn.jsdelivr.net/gh/guhailong18/blog/medias/featureimages/14.jpg" class="responsive-img" alt="python之矩阵的运算及使用方法">
+                        <img src="https://cdn.jsdelivr.net/gh/guhailong18/blog/medias/featureimages/4.jpg" class="responsive-img" alt="CSS语法入门">
                         
-                        <span class="card-title">python之矩阵的运算及使用方法</span>
+                        <span class="card-title">CSS语法入门</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1082,9 +1006,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-03-08
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-12-10
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -1092,6 +1016,15 @@
                             
                         </span>
                     </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/2020/">
+                        <span class="chip bg-color">2020</span>
+                    </a>
+                    
                 </div>
                 
             </div>
@@ -1103,13 +1036,13 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/03/07/python%E7%9F%A5%E8%AF%86%E5%A4%87%E5%BF%98%E5%BD%95/">
+                <a href="/2020/12/10/ejs%E8%AF%AD%E6%B3%95%E5%85%A5%E9%97%A8/">
                     <div class="card-image">
                         
                         
-                        <img src="https://cdn.jsdelivr.net/gh/guhailong18/blog/medias/featureimages/4.jpg" class="responsive-img" alt="python知识备忘录">
+                        <img src="https://cdn.jsdelivr.net/gh/guhailong18/blog/medias/featureimages/27.jpg" class="responsive-img" alt="ejs语法入门">
                         
-                        <span class="card-title">python知识备忘录</span>
+                        <span class="card-title">ejs语法入门</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1120,20 +1053,12 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-07
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-12-10
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/python/" class="post-category">
-                                    python
-                                </a>
-                            
-                            <a href="/categories/python/%E5%A4%87%E5%BF%98%E5%BD%95/" class="post-category">
-                                    备忘录
-                                </a>
-                            
+                            <i class="fas fa-user fa-fw"></i>
+                            古客
                             
                         </span>
                     </div>
@@ -1141,16 +1066,20 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/python/">
-                        <span class="chip bg-color">python</span>
+                    <a href="/tags/2020/">
+                        <span class="chip bg-color">2020</span>
                     </a>
                     
-                    <a href="/tags/%E5%A4%87%E5%BF%98%E5%BD%95/">
-                        <span class="chip bg-color">备忘录</span>
+                    <a href="/tags/%E5%85%A5%E9%97%A8/">
+                        <span class="chip bg-color">入门</span>
                     </a>
                     
-                    <a href="/tags/%E7%9F%A5%E8%AF%86%E7%82%B9/">
-                        <span class="chip bg-color">知识点</span>
+                    <a href="/tags/%E6%95%99%E7%A8%8B/">
+                        <span class="chip bg-color">教程</span>
+                    </a>
+                    
+                    <a href="/tags/ejs/">
+                        <span class="chip bg-color">ejs</span>
                     </a>
                     
                 </div>

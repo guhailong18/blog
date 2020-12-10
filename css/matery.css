@@ -4,8 +4,9 @@
     .container {
         width: 95%;
     }
-    header .brand-logo .logo-span {
-        font-size: 1rem;
+    .title.center-align {
+		font-size:10px;
+		text-align:center;
     }
 }
 
@@ -14,8 +15,9 @@
     .container {
         width: 90%;
     }
-    header .brand-logo .logo-span {
-        font-size: 2rem;
+    .title.center-align {
+		font-size:15px;
+		text-align:center;
     }
 }
 
