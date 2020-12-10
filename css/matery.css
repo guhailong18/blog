@@ -247,7 +247,9 @@ mark {
 }
 
 .bg-color {
-  background-image: linear-gradient(to right,#623AA2 0%,#F97794 100%);
+    background-image: linear-gradient(to right, #bf30ac 0%, #0f9d58 100%);
+    opacity: 0.9;
+    /* 透明度*/
 }
 
 .text-color {
@@ -259,13 +261,14 @@ mark {
 }
 
 .progress-bar {
-    height: 4px;
+    height: 5px;
     position: fixed;
     bottom: 0;
     z-index: 300;
-    background: linear-gradient(to right, #4cbf30 0%, #0f9d58 100%);
-    opacity: 0.8;
+    background: linear-gradient(to right, #bf30ac 0%, #0f9d58 100%);
+    opacity: 0.7;
 }
+
 
 .sidenav-overlay {
     z-index: 500;
