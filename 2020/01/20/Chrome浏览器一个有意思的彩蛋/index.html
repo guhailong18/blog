@@ -1420,7 +1420,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">70.8k</span>&nbsp;字
+                class="white-color">71.7k</span>&nbsp;字
             
             
             
@@ -1720,6 +1720,48 @@ $(function () {
 			}
 		</style>
 	
+	<!-- 预加载-->
+	
+<div id='loader'>
+	
+	<div class="outer_box">
+	<div class='loader_overlay'></div>
+	<div class='loader_cogs'>
+		<div class='loader_cogs__top'>
+			<div class='top_part'></div>
+			<div class='top_part'></div>
+			<div class='top_part'></div>
+			<div class='top_hole'></div>
+		</div>
+		<div class='loader_cogs__left'>
+			<div class='left_part'></div>
+			<div class='left_part'></div>
+			<div class='left_part'></div>
+			<div class='left_hole'></div>
+		</div>
+		<div class='loader_cogs__bottom'>
+			<div class='bottom_part'></div>
+			<div class='bottom_part'></div>
+			<div class='bottom_part'></div>
+			<div class='bottom_hole'></div>
+		</div>
+		<p style="text-align:center">&nbsp;&nbsp;&nbsp;loading...</p>
+	</div>
+	</div>
+  
+</div>
+
+<script>
+  var endLoading = function () {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loader').classList.add("loading");
+  }
+  window.addEventListener('load',endLoading);
+</script>
+
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/zyoushuo/Blog@latest/hexo/css/loading_style_1.css" >
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/zyoushuo/Blog@latest/hexo/css/loading_style_2.css" >
     <!-- 古客魔改 End -->
     
     

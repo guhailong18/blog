@@ -1207,18 +1207,17 @@ p {
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;本篇
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2020/12/10/CSS%E8%AF%AD%E6%B3%95%E5%85%A5%E9%97%A8/">
+                <a href="/2020/12/11/git%E7%9A%84%E4%BD%BF%E7%94%A8/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="CSS语法入门">
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="git的使用">
                         
-                        <span class="card-title">CSS语法入门</span>
+                        <span class="card-title">git的使用</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1228,22 +1227,17 @@ p {
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-12-10
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-12-11
+                        </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/CSS/" class="post-category">
-                                    CSS
-                                </a>
-                            
+                            <i class="fas fa-user fa-fw"></i>
+                            古客
                             
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
@@ -1536,7 +1530,7 @@ p {
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">70.8k</span>&nbsp;字
+                class="white-color">71.7k</span>&nbsp;字
             
             
             
@@ -1836,6 +1830,48 @@ $(function () {
 			}
 		</style>
 	
+	<!-- 预加载-->
+	
+<div id='loader'>
+	
+	<div class="outer_box">
+	<div class='loader_overlay'></div>
+	<div class='loader_cogs'>
+		<div class='loader_cogs__top'>
+			<div class='top_part'></div>
+			<div class='top_part'></div>
+			<div class='top_part'></div>
+			<div class='top_hole'></div>
+		</div>
+		<div class='loader_cogs__left'>
+			<div class='left_part'></div>
+			<div class='left_part'></div>
+			<div class='left_part'></div>
+			<div class='left_hole'></div>
+		</div>
+		<div class='loader_cogs__bottom'>
+			<div class='bottom_part'></div>
+			<div class='bottom_part'></div>
+			<div class='bottom_part'></div>
+			<div class='bottom_hole'></div>
+		</div>
+		<p style="text-align:center">&nbsp;&nbsp;&nbsp;loading...</p>
+	</div>
+	</div>
+  
+</div>
+
+<script>
+  var endLoading = function () {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loader').classList.add("loading");
+  }
+  window.addEventListener('load',endLoading);
+</script>
+
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/zyoushuo/Blog@latest/hexo/css/loading_style_1.css" >
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/zyoushuo/Blog@latest/hexo/css/loading_style_2.css" >
     <!-- 古客魔改 End -->
     
     
