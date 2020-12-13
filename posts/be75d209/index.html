@@ -767,21 +767,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-12-12
+                    2020-12-13
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    3.2k
+                    3.5k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    14 分
+                    15 分
                 </div>
                 
 
@@ -1089,10 +1089,10 @@ abbrlink:
 
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
             <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
-            <div id="mmedia-nxKXukUq" style="margin-bottom: 20px; width: "></div>
+            <div id="mmedia-CBnUqmAF" style="margin-bottom: 20px; width: "></div>
         <script>
-          var ap_nxKXukUq = new APlayer({
-            element: document.getElementById("mmedia-nxKXukUq"),
+          var ap_CBnUqmAF = new APlayer({
+            element: document.getElementById("mmedia-CBnUqmAF"),
             narrow: false,
             autoplay: false,
             showlrc: 3,
@@ -1106,7 +1106,7 @@ abbrlink:
             undefined
           });
           window.aplayers || (window.aplayers = []);
-          window.aplayers.push(ap_nxKXukUq);
+          window.aplayers.push(ap_CBnUqmAF);
         </script>
 
 
@@ -1211,10 +1211,10 @@ abbrlink:
 
 <p>演示效果：</p>
 <p>1、</p>
-<div id="mmedia-VCGhTkRw"></div><script src="https://cdn.jsdelivr.net/npm/dplayer/dist/DPlayer.min.js"></script>
+<div id="mmedia-EnEqjmeY"></div><script src="https://cdn.jsdelivr.net/npm/dplayer/dist/DPlayer.min.js"></script>
       <script>
-        var dp_VCGhTkRw = new DPlayer({
-            container: document.getElementById('mmedia-VCGhTkRw'),
+        var dp_EnEqjmeY = new DPlayer({
+            container: document.getElementById('mmedia-EnEqjmeY'),
             autoplay: false,
             theme: '#b7daff',
             loop: false,
@@ -1232,7 +1232,7 @@ abbrlink:
             highlight: [],
             undefined
         });
-        dp_VCGhTkRw.on("fullscreen", function () { if (/Android|webOS|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) { screen.orientation.lock("landscape"); }});
+        dp_EnEqjmeY.on("fullscreen", function () { if (/Android|webOS|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) { screen.orientation.lock("landscape"); }});
         
       </script>
         
@@ -1436,12 +1436,12 @@ abbrlink:
 
         <style>.bbplayer{width: 100%; max-width: 850px; margin: auto}</style>
         <div class="bbplayer">
-        <iframe class="bbplayer" id="mmedia-RCgympPp" src="//player.bilibili.com/player.html?aid=60016166&amp;page=1&amp;high_quality=1&amp;danmaku=true" allowfullscreen="no" scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts allow-popups"></iframe>
+        <iframe class="bbplayer" id="mmedia-NvgcFMWD" src="//player.bilibili.com/player.html?aid=60016166&amp;page=1&amp;high_quality=1&amp;danmaku=true" allowfullscreen="no" scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts allow-popups"></iframe>
         </div>
         <script>
-            document.getElementById("mmedia-RCgympPp").style.height=document.getElementById("mmedia-RCgympPp").scrollWidth*0.76+"px";
+            document.getElementById("mmedia-NvgcFMWD").style.height=document.getElementById("mmedia-NvgcFMWD").scrollWidth*0.76+"px";
             window.onresize = function(){
-              document.getElementById("mmedia-RCgympPp").style.height=document.getElementById("mmedia-RCgympPp").scrollWidth*0.76+"px";
+              document.getElementById("mmedia-NvgcFMWD").style.height=document.getElementById("mmedia-NvgcFMWD").scrollWidth*0.76+"px";
             };
         </script>
         
@@ -1642,6 +1642,31 @@ encrypt: # hexo-blog-encrypt
 <li>  <strong>webp</strong>: 番剧封面使用<code>webp</code>格式(此格式在<code>safari</code>浏览器下不显示，但是图片大小可以缩小 100 倍左右), 默认<code>true</code></li>
 <li>  <strong>progress</strong>: 获取番剧数据时是否显示进度条，默认<code>true</code></li>
 </ul>
+<h2 id="图片懒加载"><a href="#图片懒加载" class="headerlink" title="图片懒加载"></a>图片懒加载</h2><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><pre class="line-numbers language-none"><code class="language-none">npm install hexo-lazyload-image --save<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h3 id="用法-1"><a href="#用法-1" class="headerlink" title="用法"></a>用法</h3><p>首先<code>_config.yml</code>从您的hexo项目中添加配置。</p>
+<pre class="line-numbers language-none"><code class="language-none">lazyload：
+   enable：true 
+  onlypost：false ＃可选
+  loadingImg：＃可选，例如./images/loading.gif 
+  isSPA：false ＃可选<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><strong>Onlypost</strong></p>
+<ul>
+<li>  如果为true，则仅帖子或页面中的图像将支持延迟加载。</li>
+<li>  如果为false，则网站的整个图像将使用延迟加载，包括与主题距离较远的图像，但不包括CSS样式的背景图像。</li>
+</ul>
+<p><strong>loadingImg</strong></p>
+<ul>
+<li>  如果不设置任何值（默认情况下），则它将使用默认的加载图像。</li>
+<li>  如果要自定义图像，则需要将加载的图像复制到当前主题图像文件夹中，然后更改此路径以进行查找。</li>
+</ul>
+<p><strong>isSPA</strong> 为了性能考虑，添加了<strong>isSPA</strong>。如果您的主题是SPA页面，请将该主题设置为true以使延迟加载有效，</p>
+<ul>
+<li>  如果为true，则在滚动过程中搜索每个图像以支持SPA页面，</li>
+<li>  如果为false（默认值），则性能将最佳。</li>
+</ul>
+<p><a target="_blank" rel="noopener" href="https://giphy.com/explore/loading">这里</a>可以找到一些有趣的loading.gif，</p>
 <h6 id="参考链接："><a href="#参考链接：" class="headerlink" title="参考链接："></a><strong>参考链接：</strong></h6>
                 
             </div>
@@ -2250,7 +2275,7 @@ encrypt: # hexo-blog-encrypt
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">72.1k</span>&nbsp;字
+                class="white-color">72.5k</span>&nbsp;字
             
             
             
@@ -2618,6 +2643,11 @@ $(function () {
     <script src="https://cdn.jsdelivr.net/gh/guhailong18/blog/libs/instantpage/instantpage.js" type="module"></script>
     
 
-<script src="https://cdn.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js"></script><script>L2Dwidget.init({"model":{"jsonPath":"https://cdn.jsdelivr.net/npm/live2d-widget-model-z16@1.0.5/assets/z16.model.json"},"display":{"position":"left","width":120,"height":250},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+<script>
+            window.imageLazyLoadSetting = {
+                isSPA: false,
+                processImages: null,
+            };
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=i;var e=n.imageLazyLoadSetting.isSPA,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function i(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight||document.documentElement.clientHeight)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},n.src=i}()}i(),n.addEventListener("scroll",function(){var t,e;t=i,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script><script src="https://cdn.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js"></script><script>L2Dwidget.init({"model":{"jsonPath":"https://cdn.jsdelivr.net/npm/live2d-widget-model-z16@1.0.5/assets/z16.model.json"},"display":{"position":"left","width":120,"height":250},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
 
 </html>
