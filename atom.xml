@@ -6,7 +6,7 @@
   <link href="http://blog.guke.cf/atom.xml" rel="self"/>
   
   <link href="http://blog.guke.cf/"/>
-  <updated>2020-12-13T00:19:40.268Z</updated>
+  <updated>2020-12-13T14:08:46.057Z</updated>
   <id>http://blog.guke.cf/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://blog.guke.cf/posts/9a1758ca/"/>
     <id>http://blog.guke.cf/posts/9a1758ca/</id>
     <published>2020-12-13T00:19:40.000Z</published>
-    <updated>2020-12-13T00:19:40.268Z</updated>
+    <updated>2020-12-13T14:08:46.057Z</updated>
     
     
       
@@ -33,6 +33,8 @@
       
     
     
+    
+    <category term="uncategorized" scheme="http://blog.guke.cf/categories/uncategorized/"/>
     
     
     <category term="2020" scheme="http://blog.guke.cf/tags/2020/"/>
