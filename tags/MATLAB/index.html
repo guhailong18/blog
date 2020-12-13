@@ -706,11 +706,11 @@
                 </a>
                 
                 
-                <a href="/tags/2020/" title="2020: 10">
+                <a href="/tags/2020/" title="2020: 9">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
                             data-tagname="2020" style="background-color: #82E0AA;">2020
-                        <span class="tag-length">10</span>
+                        <span class="tag-length">9</span>
                     </span>
                 </a>
                 
@@ -1643,28 +1643,28 @@
         <div class="row tags-posts">
             
             
-            <div class="article tag-post col s12 m6 l4" data-tags="matlab, 数学建模, 灰度预测" data-aos="fade-up">
+            <div class="article tag-post col s12 m6 l4" data-tags="Matlab" data-aos="fade-up">
                 <div class="card">
-                    <a href="/posts/a764b71d/">
+                    <a href="/posts/5f4eb293/">
                         <div class="card-image tag-image">
                             
                             
-                            <img src="https://cdn.jsdelivr.net/gh/guhailong18/blog/medias/featureimages/8.jpg" class="responsive-img" alt="matlab之灰度预测">
+                            <img src="https://cdn.jsdelivr.net/gh/guhailong18/blog/medias/featureimages/7.jpg" class="responsive-img" alt="Matlab之数据处理">
                             
-                            <span class="card-title">matlab之灰度预测</span>
+                            <span class="card-title">Matlab之数据处理</span>
                         </div>
                     </a>
                     <div class="card-content article-content">
                         <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-16
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-09
                             </span>
                             <span class="publish-author">
                                 
                                 <i class="fas fa-bookmark fa-fw icon-category"></i>
                                 
-                                <a href="/categories/matlab/" class="post-category">
-                                matlab
+                                <a href="/categories/Matlab/" class="post-category">
+                                Matlab
                                 </a>
                                 
                                 
@@ -1675,28 +1675,28 @@
             </div>
             
             
-            <div class="article tag-post col s12 m6 l4" data-tags="matlab, 矩阵, 高代, math" data-aos="fade-up">
+            <div class="article tag-post col s12 m6 l4" data-tags="Matlab" data-aos="fade-up">
                 <div class="card">
-                    <a href="/posts/7f9aa56f/">
+                    <a href="/posts/808a9a84/">
                         <div class="card-image tag-image">
                             
                             
-                            <img src="https://cdn.jsdelivr.net/gh/guhailong18/blog/medias/featureimages/8.jpg" class="responsive-img" alt="Matlab矩阵及其相关运算">
+                            <img src="https://cdn.jsdelivr.net/gh/guhailong18/blog/medias/featureimages/10.jpg" class="responsive-img" alt="Matlab之蚂蚁算法的实现">
                             
-                            <span class="card-title">Matlab矩阵及其相关运算</span>
+                            <span class="card-title">Matlab之蚂蚁算法的实现</span>
                         </div>
                     </a>
                     <div class="card-content article-content">
                         <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-08
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-09
                             </span>
                             <span class="publish-author">
                                 
                                 <i class="fas fa-bookmark fa-fw icon-category"></i>
                                 
-                                <a href="/categories/matlab/" class="post-category">
-                                matlab
+                                <a href="/categories/Matlab/" class="post-category">
+                                Matlab
                                 </a>
                                 
                                 
@@ -1707,15 +1707,15 @@
             </div>
             
             
-            <div class="article tag-post col s12 m6 l4" data-tags="笔记, matlab, math, 入门" data-aos="fade-up">
+            <div class="article tag-post col s12 m6 l4" data-tags="Matlab" data-aos="fade-up">
                 <div class="card">
-                    <a href="/posts/60cd3000/">
+                    <a href="/posts/74688fe1/">
                         <div class="card-image tag-image">
                             
                             
-                            <img src="https://cdn.jsdelivr.net/gh/guhailong18/blog/medias/featureimages/14.jpg" class="responsive-img" alt="Matlab基础入门笔记">
+                            <img src="https://cdn.jsdelivr.net/gh/guhailong18/blog/medias/featureimages/3.jpg" class="responsive-img" alt="Matlab求定积分的部分方法">
                             
-                            <span class="card-title">Matlab基础入门笔记</span>
+                            <span class="card-title">Matlab求定积分的部分方法</span>
                         </div>
                     </a>
                     <div class="card-content article-content">
@@ -1727,8 +1727,8 @@
                                 
                                 <i class="fas fa-bookmark fa-fw icon-category"></i>
                                 
-                                <a href="/categories/matlab/" class="post-category">
-                                matlab
+                                <a href="/categories/Matlab/" class="post-category">
+                                Matlab
                                 </a>
                                 
                                 
@@ -1844,6 +1844,7 @@
                     var todaySecond = today.getSeconds();
                     var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
                     var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+                todayHour, todayMinute, todaySecond);
                     var diff = t2 - t1;
                     var diffYears = Math.floor(diff / years);
                     var diffDays = Math.floor((diff / days) - diffYears * 365);
@@ -1929,8 +1930,7 @@ $(function () {
                 // get the contents from search data
                 var datas = $("entry", xmlResponse).map(function () {
                     return {
-                        title: $("title", this).text(),
-                        content: $("content", this).text(),
+                        titlntent: $("content", this).text()                    content: $("content", this).text(),
                         url: $("url", this).text()
                     };
                 }).get();

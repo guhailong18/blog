@@ -9,13 +9,6 @@
 
 
     <url>
-        <loc>http://blog.guke.cf/categories/uncategorized/</loc>
-        <lastmod>2020-12-13T14:08:46.057Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>http://blog.guke.cf/categories/hexo/</loc>
         <lastmod>2020-12-13T13:55:09.436Z</lastmod>
         <changefreq>weekly</changefreq>
