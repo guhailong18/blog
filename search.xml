@@ -4,13 +4,25 @@
   
     
     <entry>
-      <title></title>
-      <link href="posts/0/"/>
-      <url>posts/0/</url>
+      <title>HTML简单入门</title>
+      <link href="posts/1d2ff39b/"/>
+      <url>posts/1d2ff39b/</url>
       
-        <content type="html"><![CDATA[<p>title: HTML简单入门<br>tags:</p><ul><li>2020<br>author: 古客<br>keywords:</li><li>2020<br>mathjax: false<br>date: 2020-12-13 08:19:11<br>categories:<br>img:<br>top:<br>cover:<br>password:<br>summary:</li></ul><h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>HTML是标签语言，只要了解一些常见标签的意思，便可以看懂HTML了</p><h2 id="1"><a href="#1" class="headerlink" title="1."></a>1.</h2><h2 id="2"><a href="#2" class="headerlink" title="2."></a>2.</h2><h2 id="3"><a href="#3" class="headerlink" title="3."></a>3.</h2><h2 id="4"><a href="#4" class="headerlink" title="4."></a>4.</h2><h2 id="5"><a href="#5" class="headerlink" title="5."></a>5.</h2><h6 id="参考链接："><a href="#参考链接：" class="headerlink" title="参考链接："></a><strong>参考链接：</strong></h6>]]></content>
+        <content type="html"><![CDATA[<h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>HTML是标签语言，只要了解一些常见标签的意思，便可以看懂HTML了</p><h2 id="1"><a href="#1" class="headerlink" title="1."></a>1.</h2><h2 id="2"><a href="#2" class="headerlink" title="2."></a>2.</h2><h2 id="3"><a href="#3" class="headerlink" title="3."></a>3.</h2><h2 id="4"><a href="#4" class="headerlink" title="4."></a>4.</h2><h2 id="5"><a href="#5" class="headerlink" title="5."></a>5.</h2><h6 id="参考链接："><a href="#参考链接：" class="headerlink" title="参考链接："></a><strong>参考链接：</strong></h6>]]></content>
       
       
+      <categories>
+          
+          <category> 前端 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 2020 </tag>
+            
+        </tags>
       
     </entry>
     
