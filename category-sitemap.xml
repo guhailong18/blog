@@ -9,15 +9,15 @@
 
 
     <url>
-        <loc>http://blog.guke.cf/categories/uncategorized/</loc>
-        <lastmod>2020-12-13T14:26:16.409Z</lastmod>
+        <loc>http://blog.guke.cf/categories/hexo/</loc>
+        <lastmod>2020-12-13T15:02:34.974Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>http://blog.guke.cf/categories/hexo/</loc>
-        <lastmod>2020-12-13T13:55:09.436Z</lastmod>
+        <loc>http://blog.guke.cf/categories/uncategorized/</loc>
+        <lastmod>2020-12-13T14:26:16.409Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
