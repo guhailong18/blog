@@ -735,16 +735,16 @@
                     
                     <div class="article-tag">
                         
+                            <a href="/tags/%E9%AD%94%E6%94%B9/">
+                                <span class="chip bg-color">魔改</span>
+                            </a>
+                        
                             <a href="/tags/hexo/">
                                 <span class="chip bg-color">hexo</span>
                             </a>
                         
                             <a href="/tags/%E4%B8%BB%E9%A2%98/">
                                 <span class="chip bg-color">主题</span>
-                            </a>
-                        
-                            <a href="/tags/%E9%AD%94%E6%94%B9/">
-                                <span class="chip bg-color">魔改</span>
                             </a>
                         
                             <a href="/tags/%E9%AB%98%E8%83%BD/">
@@ -829,7 +829,6 @@
 ├── scripts    Hexo 脚本（这是matery没有的，但是部分主题有）
 └── source     主题资源文件，包括页面样式，脚本，字体等
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-
 <p>博客的目录结构如下：</p>
 <pre class="line-numbers language-json" data-language="json"><code class="language-json">- node_modules
 - public
@@ -843,52 +842,20 @@
     - friends
     - tags
 - themes<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
 <p><code>node_modules</code>是<code>node.js</code>各种库的目录，<code>public</code>是生成的网页文件目录，<code>scaffolds</code>里面就三个文件，存储着新文章和新页面的初始设置，<code>source</code>是我们最常用到的一个目录，里面存放着文章、各类页面、图像等文件，<code>themes</code>存放着主题文件，一般也用不到。</p>
 <p>我们平时写文章只需要关注<code>source/_posts</code>这个文件夹就行了。</p>
 <h3 id="1-layout"><a href="#1-layout" class="headerlink" title="1.layout"></a>1.layout</h3><ul>
-<li><img src="./images/loading.gif" data-original="hexo%E4%B8%BB%E9%A2%98%E9%AD%94%E6%94%B9%E8%BF%9B%E9%98%B6%E7%AF%87%EF%BC%88%E4%B8%80%EF%BC%89/Snipaste_2020-01-29_13-11-30.png" alt="Snipaste_2020-01-29_13-11-30"></li>
+<li><img src="./images/loading.gif" data-original="hexo%E4%B8%BB%E9%A2%98%E9%AD%94%E6%94%B9%E8%BF%9B%E9%98%B6%E7%AF%87%EF%BC%88%E4%B8%80%EF%BC%89/Snipaste_2020-01-29_13-11-30.png" alt="Snipaste_2020-01-29_13-11-30" loading="lazy"></li>
 </ul>
 <p>每一个ejs对应的同名page的布局，例：contact是文章的布局，也有主题使用的article在_partial里的，一般如下：</p>
-<table>
-<thead>
-<tr>
-<th align="center">模板</th>
-<th align="center">用途</th>
-<th align="center">回调</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">index</td>
-<td align="center">首页</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">post</td>
-<td align="center">文章</td>
-<td align="center">index</td>
-</tr>
-<tr>
-<td align="center">page</td>
-<td align="center">分页</td>
-<td align="center">index</td>
-</tr>
-<tr>
-<td align="center">archive</td>
-<td align="center">归档</td>
-<td align="center">index</td>
-</tr>
-<tr>
-<td align="center">category</td>
-<td align="center">分类归档</td>
-<td align="center">archive</td>
-</tr>
-<tr>
-<td align="center">tag</td>
-<td align="center">标签归档</td>
-<td align="center">archive</td>
-</tr>
-</tbody></table>
+<p>|   模板   |   用途   |  回调   |
+| :——: | :——: | :—–: |
+|  index   |   首页   |         |
+|   post   |   文章   |  index  |
+|   page   |   分页   |  index  |
+| archive  |   归档   |  index  |
+| category | 分类归档 | archive |
+|   tag    | 标签归档 | archive |</p>
 <p>注：文件或文件夹开头名称为 _（下划线线）或隐藏的文件会被忽略</p>
 <h3 id="2-scripts"><a href="#2-scripts" class="headerlink" title="2.scripts"></a>2.scripts</h3><p>注：部分主题在source\js</p>
 <h3 id="3-source"><a href="#3-source" class="headerlink" title="3.source"></a>3.source</h3><h1 id="1-推荐插件"><a href="#1-推荐插件" class="headerlink" title="1.推荐插件"></a>1.推荐<a target="_blank" rel="noopener" href="https://hexo.io/plugins/">插件</a></h1><p>这里只讲了安装和简单的配置，想知道完整的使用教程可以跳转这篇《hexo插件推荐及简明使用教程》文章</p>
@@ -907,37 +874,25 @@ prismjs:
   preprocess: true
   line_number: true
   tab_replace: ''<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-
-
 <h2 id="搜索"><a href="#搜索" class="headerlink" title="搜索"></a>搜索</h2><p>本主题中还使用到了 <a target="_blank" rel="noopener" href="https://github.com/wzpan/hexo-generator-search">hexo-generator-search</a> 的 Hexo 插件来做内容搜索，安装命令如下：</p>
 <pre class="line-numbers language-none"><code class="language-none">npm install hexo-generator-search --save<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <p>在 Hexo 根目录下的 <code>_config.yml</code> 文件中，新增以下的配置项：</p>
 <pre class="line-numbers language-none"><code class="language-none">search:
   path: search.xml
   field: post<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-
-
-
 <h2 id="中文链接转拼音"><a href="#中文链接转拼音" class="headerlink" title="中文链接转拼音"></a>中文链接转拼音</h2><p>如果你的文章名称是中文的，那么 Hexo 默认生成的永久链接也会有中文，这样不利于 <code>SEO</code>，且 <code>gitment</code> 评论对中文链接也不支持。我们可以用 <a target="_blank" rel="noopener" href="https://github.com/viko16/hexo-permalink-pinyin">hexo-permalink-pinyin</a> Hexo 插件使在生成文章时生成中文拼音的永久链接。</p>
 <p>安装命令如下：</p>
 <pre class="line-numbers language-none"><code class="language-none">npm i hexo-permalink-pinyin --save<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-
-
 <p>在 Hexo 根目录下的 <code>_config.yml</code> 文件中，新增以下的配置项：</p>
 <pre class="line-numbers language-none"><code class="language-none">permalink_pinyin:
   enable: true
   separator: '-' # default: '-'<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-
 <blockquote>
 <p>  <strong>注</strong>：除了此插件外，<a target="_blank" rel="noopener" href="https://github.com/rozbo/hexo-abbrlink">hexo-abbrlink</a> 插件也可以生成非中文的链接。</p>
 </blockquote>
-<p>博主选择的是<a target="_blank" rel="noopener" href="https://github.com/rozbo/hexo-abbrlink">hexo-abbrlink</a> 插件，因为感觉拼音有点傻，而且这个配置可选项比较多<br>安装命令如下：</p>
+<p>博主选择的是<a target="_blank" rel="noopener" href="https://github.com/rozbo/hexo-abbrlink">hexo-abbrlink</a> 插件，因为感觉拼音有点傻，而且这个配置可选项比较多
+安装命令如下：</p>
 <pre class="line-numbers language-none"><code class="language-none">npm install hexo-abbrlink --save<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-
 <p>在 Hexo 根目录下的 <code>_config.yml</code> 文件中，新增以下的配置项：</p>
 <pre class="line-numbers language-none"><code class="language-none"># abbrlink config
 abbrlink:
@@ -953,13 +908,9 @@ abbrlink:
   auto_title: false #enable auto title, it can auto fill the title by path
   auto_date: false #enable auto date, it can auto fill the date by time today
   force: false #enable force mode,in this mode, the plugin will ignore the cache, and calc the abbrlink for every post even it already had abbrlink.<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-
-
 <h2 id="文章字数统计插件"><a href="#文章字数统计插件" class="headerlink" title="文章字数统计插件"></a><a target="_blank" rel="noopener" href="https://github.com/willin/hexo-wordcount">文章字数统计插件</a></h2><p>如果你想要在文章中显示文章字数、阅读时长信息，可以安装 <a target="_blank" rel="noopener" href="https://github.com/willin/hexo-wordcount">hexo-wordcount</a>插件。</p>
 <p>安装命令如下：</p>
 <pre class="line-numbers language-none"><code class="language-none">npm i --save hexo-wordcount<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <p>然后只需在本主题下的 <code>_config.yml</code> 文件中，将各个文章字数相关的配置激活即可：</p>
 <pre class="line-numbers language-none"><code class="language-none">postInfo:
   date: true
@@ -968,14 +919,10 @@ abbrlink:
   totalCount: false # 设置站点文章总字数统计为 true.
   min2read: false # 阅读时长.
   readCount: false # 阅读次数.<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-
 <h2 id="添加emoji表情支持"><a href="#添加emoji表情支持" class="headerlink" title="添加emoji表情支持"></a>添加emoji表情支持</h2><p>本主题新增了对<code>emoji</code>表情的支持，使用到了 <a target="_blank" rel="noopener" href="https://npm.taobao.org/package/hexo-filter-github-emojis">hexo-filter-github-emojis</a> 的 Hexo 插件来支持 <code>emoji</code>表情的生成，把对应的<code>markdown emoji</code>语法（<code>::</code>,例如：<code>:smile:</code>）转变成会跳跃的<code>emoji</code>表情，安装命令如下：</p>
 <pre class="line-numbers language-none"><code class="language-none"><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <h2 id="添加-RSS-订阅支持"><a href="#添加-RSS-订阅支持" class="headerlink" title="添加 RSS 订阅支持"></a>添加 RSS 订阅支持</h2><p>本主题中还使用到了 <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo-generator-feed">hexo-generator-feed</a> 的 Hexo 插件来做 <code>RSS</code>，安装命令如下：</p>
 <pre class="line-numbers language-none"><code class="language-none">npm install hexo-generator-feed --save<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <p>在 Hexo 根目录下的 <code>_config.yml</code> 文件中，新增以下的配置项：</p>
 <pre class="line-numbers language-none"><code class="language-none">feed:
   type: atom
@@ -986,7 +933,6 @@ abbrlink:
   content_limit: 140
   content_limit_delim: ' '
   order_by: -date<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
 <h2 id="添加视频"><a href="#添加视频" class="headerlink" title="添加视频"></a>添加<a target="_blank" rel="noopener" href="https://github.com/u2sb/hexo-tag-mmedia">视频</a></h2><p>hexo-tag-mmedia 是 MonoLogueChi 自用的一个媒体插入插件，在添加部分功能后发布给大家使用。</p>
 <p>已支持的平台</p>
 <ul>
@@ -996,8 +942,8 @@ abbrlink:
 </li>
 <li><p>   <a target="_blank" rel="noopener" href="https://github.com/DIYgod/DPlayer">Dplayer</a></p>
 </li>
-<li><p> <a target="_blank" rel="noopener" href="https://www.bilibili.com/">Bilibili</a></p>
-<p>  未来可能支持</p>
+<li><p><a target="_blank" rel="noopener" href="https://www.bilibili.com/">Bilibili</a></p>
+<p>未来可能支持</p>
 <ul>
 <li>  <a target="_blank" rel="noopener" href="https://www.u2sb.top/docs/hexo-tag-mmedia/">YouTube</a></li>
 <li>   <a target="_blank" rel="noopener" href="https://github.com/zhw2590582/ArtPlayer">ArtPlayer</a></li>
@@ -1016,7 +962,6 @@ abbrlink:
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">npm</span> uninstall hexo-tag-aplayer
 <span class="token function">npm</span> uninstall hexo-tag-dplayer
 <span class="token function">npm</span> uninstall hexo-tag-bilibili<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-
 <p>config.yml</p>
 <p>如果不需要自定义设置，不需要修改 <code>_config.yml</code> ，直接使用即可</p>
 <pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml"><span class="token key atrule">mmedia</span><span class="token punctuation">:</span>
@@ -1037,40 +982,20 @@ abbrlink:
     <span class="token key atrule">flv_cdn</span><span class="token punctuation">:</span> https<span class="token punctuation">:</span>//cdn.jsdelivr.net/npm/flv.js/dist/flv.min.js
     <span class="token key atrule">webtorrent_cdn</span><span class="token punctuation">:</span> https<span class="token punctuation">:</span>//cdn.jsdelivr.net/npm/webtorrent/webtorrent.min.js
     default<span class="token punctuation">:</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-
-
-
-
 <h3 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h3><p>代码：</p>
 <pre class="line-numbers language-none"><code class="language-none"><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <p>演示效果：</p>
 <h3 id="YOUTUBE"><a href="#YOUTUBE" class="headerlink" title="YOUTUBE"></a>YOUTUBE</h3><p>也可以等hexo-tag-mmedia插件支持</p>
 <pre class="line-numbers language-none"><code class="language-none">npm install hexo-tag-youtube-responsive --save<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-
-
 <h2 id="添加音乐"><a href="#添加音乐" class="headerlink" title="添加音乐"></a>添加音乐</h2><pre class="line-numbers language-none"><code class="language-none">npm install hexo-tag-cplayer --save<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <p>添加像这样的代码到你的文章中。<code>cplayer</code> 将会生成在那里。</p>
 <pre class="line-numbers language-none"><code class="language-none">{% cplayer [autoplay] [yaml|cson|json] %}
 # type your config here
 {% endcplayer %}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-
 <h2 id="SEO优化"><a href="#SEO优化" class="headerlink" title="SEO优化"></a>SEO优化</h2><pre class="line-numbers language-none"><code class="language-none">npm install hexo-generator-seo-friendly-sitemap --save<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-
-
 <pre class="line-numbers language-none"><code class="language-none">sitemap:
     path: sitemap.xml<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-
-
-
-
-
 <h2 id="文章加密"><a href="#文章加密" class="headerlink" title="文章加密"></a><a target="_blank" rel="noopener" href="https://github.com/D0n9X1n/hexo-blog-encrypt/blob/master/ReadMe.zh.md">文章加密</a></h2><pre class="line-numbers language-none"><code class="language-none">npm install --save hexo-blog-encrypt<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <p><code>_config.yml</code></p>
 <pre class="line-numbers language-none"><code class="language-none"># Security
 encrypt: # hexo-blog-encrypt
@@ -1082,10 +1007,8 @@ encrypt: # hexo-blog-encrypt
   template: &lt;div id="hexo-blog-encrypt" data-wpm="{{hbeWrongPassMessage}}" data-whm="{{hbeWrongHashMessage}}"&gt;&lt;div class="hbe-input-container"&gt;&lt;input type="password" id="hbePass" placeholder="{{hbeMessage}}" /&gt;&lt;label&gt;{{hbeMessage}}&lt;/label&gt;&lt;div class="bottom-line"&gt;&lt;/div&gt;&lt;/div&gt;&lt;script id="hbeData" type="hbeData" data-hmacdigest="{{hbeHmacDigest}}"&gt;{{hbeEncryptedData}}&lt;/script&gt;&lt;/div&gt;
   wrong_pass_message: 抱歉, 这个密码看着不太对, 请再试试.
   wrong_hash_message: 抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
 <h2 id="添加看板娘"><a href="#添加看板娘" class="headerlink" title="添加看板娘"></a>添加<a target="_blank" rel="noopener" href="https://github.com/EYHN/hexo-helper-live2d">看板娘</a></h2><p>安装模块:</p>
 <pre class="line-numbers language-none"><code class="language-none">npm install --save hexo-helper-live2d<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <blockquote>
 <p>  试试 <code>yarn add hexo-helper-live2d</code>, 据说高能的yarn会比垃圾npm少很多麻烦呢。 <a target="_blank" rel="noopener" href="https://yarn.bootcss.com/">Yarn</a></p>
 </blockquote>
@@ -1101,9 +1024,6 @@ encrypt: # hexo-blog-encrypt
 		height: 300      #模型高度
 	mobile:
 		show: false      #是否在手机端显示<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-
-
 <h3 id="用法"><a href="#用法" class="headerlink" title="用法"></a>用法</h3><p>有三种方法添加模块名</p>
 <p> <strong>a. live2d_models子目录名称</strong></p>
 <ol>
@@ -1117,15 +1037,9 @@ encrypt: # hexo-blog-encrypt
 <p>示例: <code>./wives/wanko</code></p>
 <p> <strong>c. npm 模块名</strong></p>
 <pre class="line-numbers language-none"><code class="language-none">npm install live2d-widget-model-z16<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-
-
 <p> <strong>d. 你的CDN</strong></p>
 <p>如果你是没有CDN会死星人,直接将 <code>.model.json</code> 的url地址输入 <code>model.use</code>.</p>
 <h2 id="添加追番页面"><a href="#添加追番页面" class="headerlink" title="添加追番页面"></a>添加追番页面</h2><pre class="line-numbers language-none"><code class="language-none">npm install hexo-bilibili-bangumi --save<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-
-
 <p>将下面的配置写入站点的配置文件 <code>_config.yml</code> 里(不是主题的配置文件).</p>
 <pre class="line-numbers language-none"><code class="language-none">bangumi:
   enable: true
@@ -1139,7 +1053,6 @@ encrypt: # hexo-blog-encrypt
   color:
   webp:
   progress:<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
 <ul>
 <li>  <strong>enable</strong>: 是否启用</li>
 <li>  <strong>path</strong>: 番剧页面路径，默认<code>bangumis/index.html</code></li>
@@ -1164,11 +1077,6 @@ encrypt: # hexo-blog-encrypt
     <span class="token keyword">var</span> bannerUrl <span class="token operator">=</span> <span class="token string">"<span class="token ejs language-ejs"><span class="token delimiter punctuation">&lt;%-</span><span class="token language-javascript"> theme<span class="token punctuation">.</span>jsDelivr<span class="token punctuation">.</span>url </span><span class="token delimiter punctuation">%&gt;</span></span><span class="token ejs language-ejs"><span class="token delimiter punctuation">&lt;%-</span><span class="token language-javascript"> <span class="token function">url_for</span><span class="token punctuation">(</span><span class="token string">'/medias/banner/'</span><span class="token punctuation">)</span> </span><span class="token delimiter punctuation">%&gt;</span></span>"</span> <span class="token operator">+</span> <span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getMinutes</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">'.jpg'</span><span class="token punctuation">;</span>
     <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'.bg-cover'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">css</span><span class="token punctuation">(</span><span class="token string">'background-image'</span><span class="token punctuation">,</span> <span class="token string">'url('</span> <span class="token operator">+</span> bannerUrl <span class="token operator">+</span> <span class="token string">')'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-
-
-
-
 <h2 id="添加樱花特效"><a href="#添加樱花特效" class="headerlink" title="添加樱花特效"></a>添加樱花特效</h2><h3 id="CDN版"><a href="#CDN版" class="headerlink" title="CDN版"></a>CDN版</h3><p>然后在 /themes/matery/layout/layout.ejs 中添加如下代码：</p>
 <pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"> <span class="token operator">&lt;</span><span class="token operator">%</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>theme<span class="token punctuation">.</span>sakura<span class="token punctuation">.</span>enable<span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token operator">%</span><span class="token operator">&gt;</span>
      <span class="token operator">&lt;</span>script type<span class="token operator">=</span><span class="token string">"text/javascript"</span><span class="token operator">&gt;</span>
@@ -1179,32 +1087,13 @@ encrypt: # hexo-blog-encrypt
 <span class="token punctuation">}</span>
      <span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">&gt;</span>
  <span class="token operator">&lt;</span><span class="token operator">%</span> <span class="token punctuation">}</span> <span class="token operator">%</span><span class="token operator">&gt;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
 <p>可以修改src的js文件名来改变樱花的数量</p>
-<table>
-<thead>
-<tr>
-<th>文件名</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>sakura-small.js</td>
-<td>少量樱花</td>
-</tr>
-<tr>
-<td>sakura-reduce.js</td>
-<td>樱花相对原效果减少 1/4</td>
-</tr>
-<tr>
-<td>sakura-original.js</td>
-<td>樱花数量不变（原效果）</td>
-</tr>
-<tr>
-<td>sakura-half.js</td>
-<td>樱花相对原效果数量减半</td>
-</tr>
-</tbody></table>
+<p>| 文件名             | 说明                   |
+| —————— | ———————- |
+| sakura-small.js    | 少量樱花               |
+| sakura-reduce.js   | 樱花相对原效果减少 1/4 |
+| sakura-original.js | 樱花数量不变（原效果） |
+| sakura-half.js     | 樱花相对原效果数量减半 |</p>
 <p>对于想安静阅读并且保持樱花效果的，这里推荐的是第一种少量 <code>sakura-small.js</code> 或第二种减半 <code>sakura-half.js</code></p>
 <h3 id="本地版"><a href="#本地版" class="headerlink" title="本地版"></a>本地版</h3><p>在 /themes/matery/source/js 新建文件 sakura.js，并添加如下代码</p>
 <p><a target="_blank" rel="noopener" href="http://49.235.106.229/js/sakura.js"> Download Now</a>,然后在 /themes/matery/layout/_partial/head.ejs 中添加如下代码：</p>
@@ -1217,25 +1106,12 @@ encrypt: # hexo-blog-encrypt
     <span class="token punctuation">}</span>
     <span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">&gt;</span>
 <span class="token operator">&lt;</span><span class="token operator">%</span> <span class="token punctuation">}</span> <span class="token operator">%</span><span class="token operator">&gt;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
 <p>在主题配置文件_config.yml中配置:</p>
 <pre class="line-numbers language-yml" data-language="yml"><code class="language-yml"><span class="token comment"># 页面樱花飘落动效</span>
 <span class="token key atrule">sakura</span><span class="token punctuation">:</span>
   <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">true</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-
-
-
-
-
-
 <pre class="line-numbers language-none"><code class="language-none"><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-
-
 <pre class="line-numbers language-none"><code class="language-none"><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-
-
 <h2 id="添加雪花特效"><a href="#添加雪花特效" class="headerlink" title="添加雪花特效"></a>添加雪花特效</h2><h3 id="CDN版-1"><a href="#CDN版-1" class="headerlink" title="CDN版"></a>CDN版</h3><p>然后在 /themes/matery/layout/_partial/head.ejs 中添加如下代码：</p>
 <pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token operator">&lt;</span><span class="token operator">%</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>theme<span class="token punctuation">.</span>xuehuapiaoluo<span class="token punctuation">.</span>enable<span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token operator">%</span><span class="token operator">&gt;</span>
     <span class="token operator">&lt;</span>script type<span class="token operator">=</span><span class="token string">"text/javascript"</span><span class="token operator">&gt;</span>
@@ -1245,13 +1121,10 @@ encrypt: # hexo-blog-encrypt
         <span class="token punctuation">}</span>
     <span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">&gt;</span>
 <span class="token operator">&lt;</span><span class="token operator">%</span> <span class="token punctuation">}</span> <span class="token operator">%</span><span class="token operator">&gt;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-
-
 <p>cdn链接可以替换为如下的或自己的：</p>
 <p>github:</p>
-<p>jsdelivr:<a target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/guhailong18/guhailong18.github.io/js/xuehuapiaoluo.js">https://cdn.jsdelivr.net/gh/guhailong18/guhailong18.github.io/js/xuehuapiaoluo.js</a></p>
-<p>gitee:<a target="_blank" rel="noopener" href="https://gitee.com/xuexizhe6/guke/raw/master/js/xuehuapiaoluo.js">https://gitee.com/xuexizhe6/guke/raw/master/js/xuehuapiaoluo.js</a></p>
+<p>jsdelivr:https://cdn.jsdelivr.net/gh/guhailong18/guhailong18.github.io/js/xuehuapiaoluo.js</p>
+<p>gitee:https://gitee.com/xuexizhe6/guke/raw/master/js/xuehuapiaoluo.js</p>
 <p>coding:</p>
 <h3 id="本地版-1"><a href="#本地版-1" class="headerlink" title="本地版"></a>本地版</h3><p>在 /themes/matery/source/js 新建文件 xuehuapiaoluo.js，并添加如下代码</p>
 <p><a target="_blank" rel="noopener" href="http://49.235.106.229/js/xuehuapiaoluo.js"> Download Now</a></p>
@@ -1265,66 +1138,38 @@ encrypt: # hexo-blog-encrypt
     <span class="token punctuation">}</span>
     <span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">&gt;</span>
 <span class="token operator">&lt;</span><span class="token operator">%</span> <span class="token punctuation">}</span> <span class="token operator">%</span><span class="token operator">&gt;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
 <p>在主题配置文件_config.yml中配置:</p>
 <pre class="line-numbers language-yml" data-language="yml"><code class="language-yml"><span class="token comment"># 页面雪花飘落动效</span>
 <span class="token key atrule">xuehuapiaoluo</span><span class="token punctuation">:</span>
   <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">true</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-
-
-
 <p>相信看了以上的示例,聪明的读者已经学会如何做一个</p>
-<p>代码雨: <a target="_blank" rel="noopener" href="https://www.cnblogs.com/zhengbin/p/5023640.html">https://www.cnblogs.com/zhengbin/p/5023640.html</a></p>
+<p>代码雨: https://www.cnblogs.com/zhengbin/p/5023640.html</p>
 <h2 id="添加鼠标点击出现文字特效"><a href="#添加鼠标点击出现文字特效" class="headerlink" title="添加鼠标点击出现文字特效"></a>添加鼠标点击出现文字特效</h2><h3 id="CND版"><a href="#CND版" class="headerlink" title="CND版"></a>CND版</h3><p>然后在 /themes/matery/layout/layout.ejs 中添加如下代码：</p>
 <pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token operator">&lt;</span><span class="token operator">%</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>theme<span class="token punctuation">.</span>wenzi<span class="token punctuation">.</span>enable<span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token operator">%</span><span class="token operator">&gt;</span>
     <span class="token operator">&lt;</span>script src<span class="token operator">=</span><span class="token string">"https://cdn.jsdelivr.net/gh/guhailong18/guhailong18.github.io/js/wenzi.js"</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">&gt;</span>
 <span class="token operator">&lt;</span><span class="token operator">%</span> <span class="token punctuation">}</span> <span class="token operator">%</span><span class="token operator">&gt;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-
 <p>cdn链接可以替换为如下的或自己的：</p>
 <p>github:</p>
-<p>jsdelivr: <a target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/guhailong18/guhailong18.github.io/js/wenzi.js">https://cdn.jsdelivr.net/gh/guhailong18/guhailong18.github.io/js/wenzi.js</a></p>
-<p>gitee:<a target="_blank" rel="noopener" href="https://gitee.com/xuexizhe6/guke/raw/master/js/wenzi.js">https://gitee.com/xuexizhe6/guke/raw/master/js/wenzi.js</a></p>
+<p>jsdelivr: https://cdn.jsdelivr.net/gh/guhailong18/guhailong18.github.io/js/wenzi.js</p>
+<p>gitee:https://gitee.com/xuexizhe6/guke/raw/master/js/wenzi.js</p>
 <p>coding:</p>
 <p>在主题配置文件_config.yml中配置:</p>
 <pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml"><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-
-
 <h3 id="本地版-2"><a href="#本地版-2" class="headerlink" title="本地版"></a>本地版</h3><pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token operator">&lt;</span><span class="token operator">%</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>theme<span class="token punctuation">.</span>wenzi<span class="token punctuation">.</span>enable<span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token operator">%</span><span class="token operator">&gt;</span>
     <span class="token operator">&lt;</span>script src<span class="token operator">=</span><span class="token string">"/js/wenzi.js"</span> type<span class="token operator">=</span><span class="token string">"text/javascript"</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">&gt;</span>
 <span class="token operator">&lt;</span><span class="token operator">%</span> <span class="token punctuation">}</span> <span class="token operator">%</span><span class="token operator">&gt;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-
-
-
-
-
-
-
-
-
-
-
-
 <h2 id="添加鼠标点击烟花爆炸效果"><a href="#添加鼠标点击烟花爆炸效果" class="headerlink" title="添加鼠标点击烟花爆炸效果"></a>添加鼠标点击烟花爆炸效果</h2><h3 id="CND版-1"><a href="#CND版-1" class="headerlink" title="CND版"></a>CND版</h3><p>然后在 /themes/matery/layout/layout.ejs 中添加如下代码：</p>
 <pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token operator">&lt;</span><span class="token operator">%</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>theme<span class="token punctuation">.</span>fireworks<span class="token punctuation">.</span>enable<span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token operator">%</span><span class="token operator">&gt;</span>
     <span class="token operator">&lt;</span>canvas <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">"fireworks"</span> style<span class="token operator">=</span><span class="token string">"position: fixed; left: 0; top: 0; z-index: 1; pointer-events: none;"</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>canvas<span class="token operator">&gt;</span>
     <span class="token operator">&lt;</span>script type<span class="token operator">=</span><span class="token string">"text/javascript"</span> src<span class="token operator">=</span><span class="token string">"//cdn.bootcss.com/animejs/2.2.0/anime.min.js"</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">&gt;</span>
     <span class="token operator">&lt;</span>script type<span class="token operator">=</span><span class="token string">"text/javascript"</span> src<span class="token operator">=</span><span class="token string">"/js/fireworks.js"</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">&gt;</span>
 <span class="token operator">&lt;</span><span class="token operator">%</span> <span class="token punctuation">}</span> <span class="token operator">%</span><span class="token operator">&gt;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
 <p>cdn链接可以替换为如下的或自己的：</p>
 <p>在主题配置文件_config.yml中配置:</p>
 <pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml"><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-
-
 <h3 id="本地版-3"><a href="#本地版-3" class="headerlink" title="本地版"></a>本地版</h3><pre class="line-numbers language-js" data-language="js"><code class="language-js"><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-
-
 <h2 id=""><a href="#" class="headerlink" title=""></a></h2><h3 id="CND版-2"><a href="#CND版-2" class="headerlink" title="CND版"></a>CND版</h3><p>然后在 /themes/matery/layout/_partial/head.ejs 中添加如下代码：</p>
 <pre class="line-numbers language-js" data-language="js"><code class="language-js"><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <p>cdn链接可以替换为如下的或自己的：</p>
 <p>github:</p>
 <p>jsdelivr:</p>
@@ -1332,11 +1177,7 @@ encrypt: # hexo-blog-encrypt
 <p>coding:</p>
 <p>在主题配置文件_config.yml中配置:</p>
 <pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml"><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-
-
 <h3 id="本地版-4"><a href="#本地版-4" class="headerlink" title="本地版"></a>本地版</h3><pre class="line-numbers language-js" data-language="js"><code class="language-js"><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <h2 id="添加标签页题目效果"><a href="#添加标签页题目效果" class="headerlink" title="添加标签页题目效果"></a>添加标签页题目效果</h2><pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token operator">&lt;</span>script type<span class="token operator">=</span><span class="token string">"text/javascript"</span><span class="token operator">&gt;</span>
     <span class="token keyword">var</span> OriginTitile <span class="token operator">=</span> document<span class="token punctuation">.</span>title<span class="token punctuation">,</span>
     st<span class="token punctuation">;</span>
@@ -1347,11 +1188,6 @@ encrypt: # hexo-blog-encrypt
             <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">3e3</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
     <span class="token punctuation">}</span><span class="token punctuation">)</span>
 <span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">&gt;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-
-
-
-
 <h2 id="更换鼠标样式"><a href="#更换鼠标样式" class="headerlink" title="更换鼠标样式"></a><a target="_blank" rel="noopener" href="https://cniter.github.io/posts/b1e9411b.html">更换鼠标样式</a></h2><h3 id="CDN版-2"><a href="#CDN版-2" class="headerlink" title="CDN版"></a>CDN版</h3><pre class="line-numbers language-none"><code class="language-none">&lt;% if (theme.cursor.on){ %&gt;
     &lt;style&gt;
         body{
@@ -1360,7 +1196,6 @@ encrypt: # hexo-blog-encrypt
         }
     &lt;/style&gt;
 &lt;% } %&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
 <p>cdn链接可以替换为如下的或自己的：</p>
 <p>github:</p>
 <p>jsdelivr:</p>
@@ -1405,7 +1240,7 @@ encrypt: # hexo-blog-encrypt
 </blockquote>
 <h3 id="1-2-让google收录你的站点"><a href="#1-2-让google收录你的站点" class="headerlink" title="1.2 让google收录你的站点"></a>1.2 让google收录你的站点</h3><hr>
 <h4 id="1-2-1-操作步骤"><a href="#1-2-1-操作步骤" class="headerlink" title="1.2.1 操作步骤"></a>1.2.1 操作步骤</h4><p>相比于百度，<code>google</code>的效率实在不能更快，貌似十分钟左右站点就被收录了，其实方法是和百度是一样的。</p>
-<p><code>google</code>站点平台：<a target="_blank" rel="noopener" href="https://www.google.com/webmasters/">https://www.google.com/webmasters/</a></p>
+<p><code>google</code>站点平台：https://www.google.com/webmasters/</p>
 <ul>
 <li>  注册账号</li>
 <li>  验证站点</li>
@@ -1415,20 +1250,17 @@ encrypt: # hexo-blog-encrypt
 <p>我的 <code>robots.txt</code> 文件内容如下：</p>
 <h3 id="1-4-优化你的url"><a href="#1-4-优化你的url" class="headerlink" title="1.4 优化你的url"></a>1.4 优化你的url</h3><hr>
 <pre class="line-numbers language-none"><code class="language-none">seo`搜索引擎优化认为，网站的最佳结构是**用户从首页点击三次就可以到达任何一个页面**，但是我们使用`hexo`编译的站点打开文章的`url`是：`sitename/year/mounth/day/title`四层的结构，这样的`url`结构很不利于`seo`，爬虫就会经常爬不到我们的文章，于是，我们需要优化一下网站文章`url<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <p>方案一：</p>
 <p>我们可以将<code>url</code>直接改成<code>sitename/title</code>的形式，并且<code>title</code>最好是用英文，在根目录的配置文件下修改<code>permalink</code>如下：</p>
 <pre class="line-numbers language-yml" data-language="yml"><code class="language-yml"><span class="token key atrule">url</span><span class="token punctuation">:</span> https<span class="token punctuation">:</span>//sunhwee.com
 <span class="token key atrule">root</span><span class="token punctuation">:</span> /
 <span class="token key atrule">permalink</span><span class="token punctuation">:</span> <span class="token punctuation">:</span>title.html
 permalink_defaults<span class="token punctuation">:</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-
 <p>方案二：</p>
 <p>使用插件优化<code>url</code></p>
 <p>插件<code>hexo-abbrlink</code>实现了这个功能，它将原来的<code>URL</code>地址重新进行了进制转换和再编码。</p>
 <p>安装<code>hexo-abbrlink</code>。</p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> hexo-abbrlink --save<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <p>Bash</p>
 <p>配置博客根目录下的_config.yml文件。</p>
 <pre class="line-numbers language-yml" data-language="yml"><code class="language-yml"><span class="token comment"># permalink: :title/</span>
@@ -1436,10 +1268,12 @@ permalink_defaults<span class="token punctuation">:</span><span aria-hidden="tru
 <span class="token key atrule">abbrlink</span><span class="token punctuation">:</span>
   <span class="token key atrule">alg</span><span class="token punctuation">:</span> crc32  <span class="token comment"># 算法：crc16(default) and crc32</span>
   <span class="token key atrule">rep</span><span class="token punctuation">:</span> hex    <span class="token comment"># 进制：dec(default) and hex</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
 <p>Yml</p>
 <p>运行<code>hexo clean</code>和<code>hexo g</code>命令来重新生成文件看看，可以清楚的看到，<code>URL</code>结构成功变为了3层。</p>
-<p>来源: 洪卫の博客<br>作者: 洪卫<br>文章链接: <a target="_blank" rel="noopener" href="https://sunhwee.com/posts/6e8839eb.html#toc-heading-59">https://sunhwee.com/posts/6e8839eb.html#toc-heading-59</a><br>本文章著作权归作者所有，任何形式的转载都请注明出处。</p>
+<p>来源: 洪卫の博客
+作者: 洪卫
+文章链接: https://sunhwee.com/posts/6e8839eb.html#toc-heading-59
+本文章著作权归作者所有，任何形式的转载都请注明出处。</p>
 <h3 id="1-5-其他seo优化"><a href="#1-5-其他seo优化" class="headerlink" title="1.5 其他seo优化"></a>1.5 其他seo优化</h3><hr>
 <p><code>seo</code>优化应该说是一个收益延迟的行为，可能你做的优化短期内看不到什么效果，但是一定要坚持，<code>seo</code>优化也是有很深的可以研究的东西，从我们最初的网站设计，和最基础的标签的选择都有很大的关系，网站设计就如我们刚刚说的，要让用户点击三次可以到达网站的任何一个页面，要增加高质量的外链，增加相关推荐（比如说我们经常见到右侧本站的最高阅读的排名列表），然后就是给每一个页面加上<code>keyword</code>和描述</p>
 <p>在代码中，我们应该写出能让浏览器识别的语义化<code>HTML</code>，这样有助于爬虫抓取更多的有效信息：爬虫依赖于标签来确定上下文和各个关键字的权重；并且对外链设置<code>nofollow</code>标签，避免<code>spider</code>爬着爬着就爬出去了（减少网站的跳出率），并且我们要尽量在一些比较大的网站增加我们站点的曝光率，因为<code>spider</code>会经常访问大站，比如我们在掘金等技术社区发表文章中带有我们的站点，这样<code>spider</code>是很有可能爬到我们中的站点的，so….</p>
@@ -1458,7 +1292,8 @@ permalink_defaults<span class="token punctuation">:</span><span aria-hidden="tru
 <h4 id="添加-nofollow-标签"><a href="#添加-nofollow-标签" class="headerlink" title="添加 nofollow 标签"></a>添加 nofollow 标签</h4><p>给非友情链接的出站链接添加「nofollow」标签，nofollow 标签是由谷歌领头创新的一个「反垃圾链接」的标签，并被百度、yahoo 等各大搜索引擎广泛支持，引用 nofollow 标签的目的是：用于指示搜索引擎不要追踪（即抓取）网页上的带有 nofollow 属性的任何出站链接，以减少垃圾链接的分散网站权重。</p>
 <h2 id="优化网站加载速度"><a href="#优化网站加载速度" class="headerlink" title="优化网站加载速度"></a>优化网站加载速度</h2><hr>
 <h3 id="3-1-优化图片加载"><a href="#3-1-优化图片加载" class="headerlink" title="3.1 优化图片加载"></a>3.1 优化图片加载</h3><hr>
-<p><code>issue</code>问题：<br>优化网站加载逻辑问题：图片最后加载，加入图片懒加载方法</p>
+<p><code>issue</code>问题：
+优化网站加载逻辑问题：图片最后加载，加入图片懒加载方法</p>
 <p>hexo-lazyload-image的作用原理是讲你博客里面img标签的src属性替换为一个loading image，把真实的图片地址放在data-origin属性下面。然后当你的网页翻到那张图片时（也就是图片在窗口中完全可见时），他会有一段js用data-origin的内容替换src，打到懒加载的目的。</p>
 <p>一般情况下懒加载和gallery插件会发生冲突，比如按照我上面所说，最终结果就会变成，可能只有第一张图片在gallery中打开是原图，右翻左翻都会是那张loading image，需要你掌握js，可以修改matery.js里面的内容，甚至可能换一个gallery，比如photosiwpe之类的</p>
 <p>解决方法：修改<code>/themes/matery/source/js</code>中的<code>matery.js</code>文件</p>
@@ -1469,19 +1304,17 @@ permalink_defaults<span class="token punctuation">:</span><span aria-hidden="tru
     subHtmlSelectorRelative<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
     showThumbByDefault<span class="token operator">:</span> <span class="token boolean">false</span>   <span class="token comment">//这句加上</span>
 <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
 <p>后面加上：</p>
 <pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token function">$</span><span class="token punctuation">(</span>document<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">find</span><span class="token punctuation">(</span><span class="token string">'img[data-original]'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">each</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
     <span class="token function">$</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">parent</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">attr</span><span class="token punctuation">(</span><span class="token string">"href"</span><span class="token punctuation">,</span> <span class="token function">$</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">attr</span><span class="token punctuation">(</span><span class="token string">"data-original"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-
-<p>再装个插件，<a target="_blank" rel="noopener" href="https://github.com/Troy-Yang/hexo-lazyload-image">https://github.com/Troy-Yang/hexo-lazyload-image</a><br>在博客根目录配置.yml文件加入对应字段，如下：</p>
+<p>再装个插件，https://github.com/Troy-Yang/hexo-lazyload-image
+在博客根目录配置.yml文件加入对应字段，如下：</p>
 <pre class="line-numbers language-yml" data-language="yml"><code class="language-yml"><span class="token comment"># lazyload configuration  2019.08.23</span>
 <span class="token key atrule">lazyload</span><span class="token punctuation">:</span>
   <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">true</span> 
   <span class="token key atrule">onlypost</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
   <span class="token key atrule">loadingImg</span><span class="token punctuation">:</span>     <span class="token comment"># eg ./images/loading.gif</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
 <p>Yml</p>
 <p>好了，这样实现了博客网站的图片懒加载。</p>
 <h3 id="3-2-Gulp实现代码压缩"><a href="#3-2-Gulp实现代码压缩" class="headerlink" title="3.2 Gulp实现代码压缩"></a>3.2 Gulp实现代码压缩</h3><hr>
@@ -1492,7 +1325,6 @@ permalink_defaults<span class="token punctuation">:</span><span aria-hidden="tru
 <span class="token function">npm</span> <span class="token function">install</span> gulp-htmlclean gulp-htmlmin gulp-minify-css gulp-uglify gulp-imagemin --save
 <span class="token comment"># 额外的功能模块</span>
 <span class="token function">npm</span> <span class="token function">install</span> gulp-debug gulp-clean-css gulp-changed gulp-if gulp-plumber gulp-babel babel-preset-es2015 del --save<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
 <p>2 接下来在博客的根目录下新建gulpfile.js文件，并复制下面的内容到文件中。</p>
 <pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token keyword">var</span> gulp <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">"gulp"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token keyword">var</span> debug <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">"gulp-debug"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -1662,22 +1494,13 @@ gulp<span class="token punctuation">.</span><span class="token function">task</s
   <span class="token punctuation">)</span>
 <span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token comment">//Gulp4最大的一个改变就是gulp.task函数现在只支持两个参数，分别是任务名和运行任务的函数</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
 <p>3 最后 <code>hexo clean</code> &amp;&amp; <code>hexo g</code> &amp;&amp; <code>gulp</code> &amp;&amp; <code>hexo d</code> 就可以了。</p>
 <blockquote>
 <p>  注意，很可能你会运行到第三步，也就是运行<code>gulp</code>压缩命令时会报错，如图所示：</p>
 </blockquote>
-<p><img src="./images/loading.gif" data-original="https://raw.githubusercontent.com/shw2018/cdn/master/blog_files/img/Hexo-Blog-Tutorial/42.png" alt="gulp运行错误"></p>
+<p><img src="./images/loading.gif" data-original="https://raw.githubusercontent.com/shw2018/cdn/master/blog_files/img/Hexo-Blog-Tutorial/42.png" alt="gulp运行错误" loading="lazy"></p>
 <p>那是因为gulp安装的本地版本和hexo自带的版本不对应导致，第三步gulp压缩可以用下面命令强制使用本地版本：</p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">node ./node_modules/gulp/bin/gulp.js<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-
-
-
-
-
-
-
 <h1 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h1><p>如果你想更深入的进行代码的修改，建议先去学习一下ejs的基本语法，这对魔改非常有帮助！！</p>
 <p>也可以看看这篇《ejs语法入门》</p>
 <h5 id="参考链接："><a href="#参考链接：" class="headerlink" title="参考链接："></a><strong>参考链接</strong>：</h5><p><a target="_blank" rel="noopener" href="https://github.com/blinkfox/hexo-theme-matery/blob/develop/README_CN.md">官方文档</a></p>
@@ -1747,16 +1570,16 @@ gulp<span class="token punctuation">.</span><span class="token function">task</s
                     
                         <div class="article-tag">
                             
+                                <a href="/tags/%E9%AD%94%E6%94%B9/">
+                                    <span class="chip bg-color">魔改</span>
+                                </a>
+                            
                                 <a href="/tags/hexo/">
                                     <span class="chip bg-color">hexo</span>
                                 </a>
                             
                                 <a href="/tags/%E4%B8%BB%E9%A2%98/">
                                     <span class="chip bg-color">主题</span>
-                                </a>
-                            
-                                <a href="/tags/%E9%AD%94%E6%94%B9/">
-                                    <span class="chip bg-color">魔改</span>
                                 </a>
                             
                                 <a href="/tags/%E9%AB%98%E8%83%BD/">
@@ -2651,11 +2474,11 @@ $(function () {
     <script src="https://cdn.jsdelivr.net/gh/guhailong18/blog/libs/instantpage/instantpage.js" type="module"></script>
     
 
-<script>
+<script src="https://cdn.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js"></script><script>L2Dwidget.init({"model":{"jsonPath":"https://cdn.jsdelivr.net/npm/live2d-widget-model-z16@1.0.5/assets/z16.model.json"},"display":{"position":"left","width":120,"height":250},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script><script>
             window.imageLazyLoadSetting = {
                 isSPA: false,
                 processImages: null,
             };
-        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=i;var e=n.imageLazyLoadSetting.isSPA,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function i(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight||document.documentElement.clientHeight)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},n.src=i}()}i(),n.addEventListener("scroll",function(){var t,e;t=i,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script><script src="https://cdn.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js"></script><script>L2Dwidget.init({"model":{"jsonPath":"https://cdn.jsdelivr.net/npm/live2d-widget-model-z16@1.0.5/assets/z16.model.json"},"display":{"position":"left","width":120,"height":250},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=i;var e=n.imageLazyLoadSetting.isSPA,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function i(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight||document.documentElement.clientHeight)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},n.src=i}()}i(),n.addEventListener("scroll",function(){var t,e;t=i,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script></body>
 
 </html>

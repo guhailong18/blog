@@ -768,7 +768,8 @@
                         <div class="card-content article-content">
                             <div class="summary block-with-text">
                                 
-                                    地址1地址2
+                                    地址1
+地址2
 在
 如果觉得樱花数量较多可以参考这篇文章
 
@@ -782,7 +783,6 @@
 
 
 参考链接
-
 https://blog.csdn.net/qq_44036990/article/de
                                 
                             </div>
@@ -856,11 +856,11 @@ https://blog.csdn.net/qq_44036990/article/de
                         
                         <div class="card-action article-tags">
                             
-                            <a href="/tags/%E9%AD%94%E6%94%B9/"><span class="chip bg-color">魔改</span></a>
-                            
                             <a href="/tags/HLML/"><span class="chip bg-color">HLML</span></a>
                             
                             <a href="/tags/%E6%8E%92%E7%89%88/"><span class="chip bg-color">排版</span></a>
+                            
+                            <a href="/tags/%E9%AD%94%E6%94%B9/"><span class="chip bg-color">魔改</span></a>
                             
                         </div>
                         
@@ -961,9 +961,8 @@ https://blog.csdn.net/qq_44036990/article/de
                                 
                                     概述简单记录一下如何用连接一些主流的数据库，虽然我暂时还用不上数据库，但是技多不压身嘛，先学了再说。
 1.MySQL安装pip3 install pymysql
-
 连接本地数据库import pymysql
-db = pymysql.con
+db = pymysql.conn
                                 
                             </div>
                             <div class="publish-info">
@@ -1026,11 +1025,9 @@ db = pymysql.con
                                 
                                     查看mysql 默认端口号和修改端口号先登录mysql
 mysql -u root -p
-
 再使用命令查看端口号
 show global variables like 'port';
-
-若要修改端口，编辑/etc/my.cnf文件（wind
+若要修改端口，编辑/etc/my.cnf文件（window
                                 
                             </div>
                             <div class="publish-info">
@@ -1159,7 +1156,6 @@ show global variables like 'port';
 
 
 conda create -n your_env_name python=X.X
-
 （2.7、3.6等）
 
 
@@ -1167,7 +1163,7 @@ conda create -n your_env_name python=X.X
 激活虚拟环境
 
 
-source activate your_env_name(虚拟
+source activate your_env_name(虚拟环
                                 
                             </div>
                             <div class="publish-info">
@@ -1228,7 +1224,6 @@ source activate your_env_name(虚拟
                                 
                                     若Python2 和 Python3 同时有 pip，则使用方法如下：Python2：
 python2 -m pip install XXX
-
 Python3:
 python3 -m pip install XXX
                                 
@@ -1290,9 +1285,8 @@ python3 -m pip install XXX
                                     docker images : 列出本地镜像。
 获取镜像例，载入 ubuntu 镜像
 docker pull ubuntu
-
 启动容器ubuntu 镜像启动一个容器，参数为以命令行模式进入该容器：
-docker run -it ubuntu
+docker run -it ubuntu 
                                 
                             </div>
                             <div class="publish-info">
@@ -1835,11 +1829,11 @@ $(function () {
     <script src="https://cdn.jsdelivr.net/gh/guhailong18/blog/libs/instantpage/instantpage.js" type="module"></script>
     
 
-<script>
+<script src="https://cdn.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js"></script><script>L2Dwidget.init({"model":{"jsonPath":"https://cdn.jsdelivr.net/npm/live2d-widget-model-z16@1.0.5/assets/z16.model.json"},"display":{"position":"left","width":120,"height":250},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script><script>
             window.imageLazyLoadSetting = {
                 isSPA: false,
                 processImages: null,
             };
-        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=i;var e=n.imageLazyLoadSetting.isSPA,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function i(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight||document.documentElement.clientHeight)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},n.src=i}()}i(),n.addEventListener("scroll",function(){var t,e;t=i,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script><script src="https://cdn.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js"></script><script>L2Dwidget.init({"model":{"jsonPath":"https://cdn.jsdelivr.net/npm/live2d-widget-model-z16@1.0.5/assets/z16.model.json"},"display":{"position":"left","width":120,"height":250},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=i;var e=n.imageLazyLoadSetting.isSPA,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function i(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight||document.documentElement.clientHeight)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},n.src=i}()}i(),n.addEventListener("scroll",function(){var t,e;t=i,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script></body>
 
 </html>

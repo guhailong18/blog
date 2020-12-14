@@ -826,7 +826,6 @@
 <h3 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h3><pre class="line-numbers language-markup" data-language="markup"><code class="language-markup">&lt;% if (user) { %&gt;
   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span><span class="token punctuation">&gt;</span></span>&lt;%= user.name %&gt;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h2</span><span class="token punctuation">&gt;</span></span>
 &lt;% } %&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-
 <h3 id="用法"><a href="#用法" class="headerlink" title="用法"></a>用法</h3><pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token keyword">let</span> template <span class="token operator">=</span> ejs<span class="token punctuation">.</span><span class="token function">compile</span><span class="token punctuation">(</span>str<span class="token punctuation">,</span> options<span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token function">template</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token comment">// =&gt; 输出渲染后的 HTML 字符串</span>
@@ -837,7 +836,6 @@ ejs<span class="token punctuation">.</span><span class="token function">render</
 ejs<span class="token punctuation">.</span><span class="token function">renderFile</span><span class="token punctuation">(</span>filename<span class="token punctuation">,</span> data<span class="token punctuation">,</span> options<span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">err<span class="token punctuation">,</span> str</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
     <span class="token comment">// str =&gt; 输出渲染后的 HTML 字符串</span>
 <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
 <h3 id="参数"><a href="#参数" class="headerlink" title="参数"></a>参数</h3><ul>
 <li>  <code>cache</code> 缓存编译后的函数，需要指定 <code>filename</code></li>
 <li>  <code>filename</code> 被 <code>cache</code> 参数用做键值，同时也用于 include 语句</li>
@@ -871,7 +869,6 @@ ejs<span class="token punctuation">.</span><span class="token function">renderFi
     &lt;%- include('user/show', {user: user}); %&gt;
   &lt;% }); %&gt;
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
 <h3 id="自定义分隔符"><a href="#自定义分隔符" class="headerlink" title="自定义分隔符"></a>自定义分隔符</h3><p>可针对单个模板或全局使用自定义分隔符：</p>
 <pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token keyword">let</span> ejs <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'ejs'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
     users <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'geddy'</span><span class="token punctuation">,</span> <span class="token string">'neil'</span><span class="token punctuation">,</span> <span class="token string">'alex'</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
@@ -885,12 +882,10 @@ ejs<span class="token punctuation">.</span><span class="token function">render</
 ejs<span class="token punctuation">.</span>delimiter <span class="token operator">=</span> <span class="token string">'$'</span><span class="token punctuation">;</span>
 ejs<span class="token punctuation">.</span><span class="token function">render</span><span class="token punctuation">(</span><span class="token string">'&lt;$= users.join(" | "); $&gt;'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>users<span class="token operator">:</span> users<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token comment">// =&gt; 'geddy | neil | alex'</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
 <h3 id="缓存"><a href="#缓存" class="headerlink" title="缓存"></a>缓存</h3><p>EJS 附带了一个基本的进程内缓存，用于缓在渲染模板过程中所生成的临时 JavaScript 函数。 通过 Node 的 <code>lru-cache</code> 库可以很容易地加入 LRU 缓存：</p>
 <pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token keyword">let</span> ejs <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'ejs'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
     <span class="token constant">LRU</span> <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'lru-cache'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 ejs<span class="token punctuation">.</span>cache <span class="token operator">=</span> <span class="token constant">LRU</span><span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 具有 100 条内容限制的 LRU 缓存</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-
 <p>如果要清除 EJS 缓存，调用 <code>ejs.clearCache</code> 即可。如果你正在使用的是 LRU 缓存并且需要设置不同的限额，则只需要将 <code>ejs.cache</code> 重置为 一个新的 LRU 实例即可。</p>
 <h3 id="自定义文件加载器"><a href="#自定义文件加载器" class="headerlink" title="自定义文件加载器"></a>自定义文件加载器</h3><p>默认的文件加载器是 <code>fs.readFileSync</code>，如果你想要的自定义它, 设置<code>ejs.fileLoader</code> 即可。</p>
 <pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token keyword">let</span> ejs <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'ejs'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -899,7 +894,6 @@ ejs<span class="token punctuation">.</span>cache <span class="token operator">=<
 <span class="token punctuation">}</span><span class="token punctuation">;</span>
 
 ejs<span class="token punctuation">.</span>fileLoader <span class="token operator">=</span> myFileLoad<span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
 <p>使用此功能，您可以在读取模板之前对其进行预处理。</p>
 <h3 id="布局（Layouts）"><a href="#布局（Layouts）" class="headerlink" title="布局（Layouts）"></a>布局（Layouts）</h3><p>EJS 并未对块（blocks）提供专门的支持，但是可以通过 包含页眉和页脚来实现布局，如下所示：</p>
 <pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token operator">&lt;</span><span class="token operator">%</span><span class="token operator">-</span> <span class="token function">include</span><span class="token punctuation">(</span><span class="token string">'header'</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token operator">-</span><span class="token operator">%</span><span class="token operator">&gt;</span>
@@ -910,7 +904,6 @@ ejs<span class="token punctuation">.</span>fileLoader <span class="token operato
   My page
 <span class="token operator">&lt;</span><span class="token operator">/</span>p<span class="token operator">&gt;</span>
 <span class="token operator">&lt;</span><span class="token operator">%</span><span class="token operator">-</span> <span class="token function">include</span><span class="token punctuation">(</span><span class="token string">'footer'</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token operator">-</span><span class="token operator">%</span><span class="token operator">&gt;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
 <h3 id="客户端支持"><a href="#客户端支持" class="headerlink" title="客户端支持"></a>客户端支持</h3><p>从<a target="_blank" rel="noopener" href="https://github.com/mde/ejs/releases/latest">latest release</a> 链接下载 <code>./ejs.js</code> 或 <code>./ejs.min.js</code> 文件。或者，你可以 clone 这个仓库并 通过执行 <code>jake build</code> 自己编译（或者执行 <code>$(npm bin)/jake build</code>，如果 jake 不是安装在全局环境的话）。</p>
 <p>在页面中包含上面的任意一个文件，然后 <code>ejs</code> 就全局可用了</p>
 <h4 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h4><pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token operator">&lt;</span>div id<span class="token operator">=</span><span class="token string">"output"</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
@@ -923,7 +916,6 @@ ejs<span class="token punctuation">.</span>fileLoader <span class="token operato
   <span class="token comment">// Vanilla JS:</span>
   document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'output'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>innerHTML <span class="token operator">=</span> html<span class="token punctuation">;</span>
 <span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">&gt;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
 <h4 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h4><p>大多数情况下，EJS 将会按照我们的预期运行; 但是, 仍然需要注意：</p>
 <ol>
 <li> 显然, 如果你没有文件系统的访问权限, <code>ejs.renderFile</code> 将无法正常工作。</li>
@@ -938,9 +930,6 @@ ejs<span class="token punctuation">.</span>fileLoader <span class="token operato
   <span class="token comment">// Put your code here</span>
   <span class="token comment">// Return the contents of file as a string</span>
 <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// returns rendered string</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-
-
 <h6 id="参考链接："><a href="#参考链接：" class="headerlink" title="参考链接："></a><strong>参考链接：</strong></h6>
                 
             </div>
@@ -1917,11 +1906,11 @@ $(function () {
     <script src="https://cdn.jsdelivr.net/gh/guhailong18/blog/libs/instantpage/instantpage.js" type="module"></script>
     
 
-<script>
+<script src="https://cdn.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js"></script><script>L2Dwidget.init({"model":{"jsonPath":"https://cdn.jsdelivr.net/npm/live2d-widget-model-z16@1.0.5/assets/z16.model.json"},"display":{"position":"left","width":120,"height":250},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script><script>
             window.imageLazyLoadSetting = {
                 isSPA: false,
                 processImages: null,
             };
-        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=i;var e=n.imageLazyLoadSetting.isSPA,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function i(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight||document.documentElement.clientHeight)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},n.src=i}()}i(),n.addEventListener("scroll",function(){var t,e;t=i,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script><script src="https://cdn.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js"></script><script>L2Dwidget.init({"model":{"jsonPath":"https://cdn.jsdelivr.net/npm/live2d-widget-model-z16@1.0.5/assets/z16.model.json"},"display":{"position":"left","width":120,"height":250},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=i;var e=n.imageLazyLoadSetting.isSPA,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function i(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight||document.documentElement.clientHeight)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},n.src=i}()}i(),n.addEventListener("scroll",function(){var t,e;t=i,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script></body>
 
 </html>

@@ -819,23 +819,19 @@
 <span class="token keyword">from</span> chatterbot<span class="token punctuation">.</span>trainers <span class="token keyword">import</span> ListTrainer
 chatbot <span class="token operator">=</span> ChatBot<span class="token punctuation">(</span><span class="token string">"my chat"</span><span class="token punctuation">)</span>
 trainer <span class="token operator">=</span> ListTrainer<span class="token punctuation">(</span>chatbot<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-
 <p><a target="_blank" rel="noopener" href="https://github.com/codemayq/chinese_chatbot_corpus">中文聊天语料</a></p>
 <p>注：需要将仓库克隆下来，main.py在那里，且目录与他描述的位置不同，看下报错或源码即可。</p>
 <p>载入语料</p>
 <pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token keyword">with</span> <span class="token function">open</span><span class="token punctuation">(</span><span class="token string">'xiaohuangji.tsv'</span><span class="token punctuation">,</span> encoding<span class="token operator">=</span><span class="token string">'utf-8'</span><span class="token punctuation">)</span> <span class="token keyword">as</span> f<span class="token operator">:</span>
   data <span class="token operator">=</span> f<span class="token punctuation">.</span><span class="token function">read</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">replace</span><span class="token punctuation">(</span><span class="token string">'\t'</span><span class="token punctuation">,</span> <span class="token string">'\n'</span><span class="token punctuation">)</span>
 <span class="token function">print</span><span class="token punctuation">(</span>data<span class="token punctuation">[</span><span class="token operator">:</span><span class="token number">100</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-
 <p>训练</p>
 <pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">trainer<span class="token punctuation">.</span><span class="token function">train</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <p>最后，等待训练完成之后，我们再把生成的 db.sqlite3 文件下载到本地。</p>
 <p>注：文件目录需放置正确，同一级即可</p>
 <p><a target="_blank" rel="noopener" href="https://github.com/guhailong18/chatter">微信公众号号聊天机器人</a>，欢迎星标，欢迎提交pr，其中的一些原理其实我也不是很懂，所以会用就拿去用吧！不会的话，那就另寻高明！</p>
 <h3 id="后文：踩坑记录"><a href="#后文：踩坑记录" class="headerlink" title="后文：踩坑记录"></a>后文：踩坑记录</h3><p>chatterbot，chatterbot-corpus使用pip安装时会出现依赖包Pyyaml所需版本不兼容的情况，这时候我真的想吐槽一下，明明是两个相互配合使用的，竟然连兼容性都有些不匹配。在<a target="_blank" rel="noopener" href="https://github.com/gunthercox/chatterbot-corpus/issues/127">issue</a>发现了问题的解决办法，但是不一定适用于所有人。</p>
 <pre class="line-numbers language-none"><code class="language-none">pipenv install git+https://github.com/gunthercox/chatterbot-corpus.git#egg=chatterbot-corpus<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <p>从源码进行安装</p>
 <p>顺便记一下pipenv的简单使用方法:</p>
 <ul>
@@ -1833,11 +1829,11 @@ $(function () {
     <script src="https://cdn.jsdelivr.net/gh/guhailong18/blog/libs/instantpage/instantpage.js" type="module"></script>
     
 
-<script>
+<script src="https://cdn.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js"></script><script>L2Dwidget.init({"model":{"jsonPath":"https://cdn.jsdelivr.net/npm/live2d-widget-model-z16@1.0.5/assets/z16.model.json"},"display":{"position":"left","width":120,"height":250},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script><script>
             window.imageLazyLoadSetting = {
                 isSPA: false,
                 processImages: null,
             };
-        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=i;var e=n.imageLazyLoadSetting.isSPA,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function i(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight||document.documentElement.clientHeight)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},n.src=i}()}i(),n.addEventListener("scroll",function(){var t,e;t=i,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script><script src="https://cdn.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js"></script><script>L2Dwidget.init({"model":{"jsonPath":"https://cdn.jsdelivr.net/npm/live2d-widget-model-z16@1.0.5/assets/z16.model.json"},"display":{"position":"left","width":120,"height":250},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=i;var e=n.imageLazyLoadSetting.isSPA,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function i(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight||document.documentElement.clientHeight)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},n.src=i}()}i(),n.addEventListener("scroll",function(){var t,e;t=i,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script></body>
 
 </html>

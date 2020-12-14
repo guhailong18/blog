@@ -831,7 +831,6 @@
 <h4 id="示例："><a href="#示例：" class="headerlink" title="示例："></a>示例：</h4><pre class="line-numbers language-swift" data-language="swift"><code class="language-swift"><span class="token keyword">import</span> torch 
 x <span class="token operator">=</span> torch<span class="token punctuation">.</span><span class="token function">ones</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">)</span> （两个三行四列的矩阵）
 <span class="token function">print</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span> <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-
 <pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token function">tensor</span><span class="token punctuation">(</span>[[[1.<span class="token punctuation">,</span> 1.<span class="token punctuation">,</span> 1.<span class="token punctuation">,</span> 1.]<span class="token punctuation">,</span>
         [1.<span class="token punctuation">,</span> 1.<span class="token punctuation">,</span> 1.<span class="token punctuation">,</span> 1.]<span class="token punctuation">,</span>
         [1.<span class="token punctuation">,</span> 1.<span class="token punctuation">,</span> 1.<span class="token punctuation">,</span> 1.]]<span class="token punctuation">,</span>
@@ -839,7 +838,6 @@ x <span class="token operator">=</span> torch<span class="token punctuation">.</
        [[1.<span class="token punctuation">,</span> 1.<span class="token punctuation">,</span> 1.<span class="token punctuation">,</span> 1.]<span class="token punctuation">,</span>
         [1.<span class="token punctuation">,</span> 1.<span class="token punctuation">,</span> 1.<span class="token punctuation">,</span> 1.]<span class="token punctuation">,</span>
         [1.<span class="token punctuation">,</span> 1.<span class="token punctuation">,</span> 1.<span class="token punctuation">,</span> 1.]]]<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
 <h4 id="三大特征："><a href="#三大特征：" class="headerlink" title="三大特征："></a>三大特征：</h4><h5 id="1-简洁"><a href="#1-简洁" class="headerlink" title="1.简洁"></a>1.简洁</h5><p>PyTorch 的设计遵循tensor→variable(autograd)→nn.Module 三个由低到高的抽象层次，分别代表高维数组（张量）、自动求导（变量）和神经网络（层/模块）</p>
 <h5 id="2-易用"><a href="#2-易用" class="headerlink" title="2.易用"></a>2.易用</h5><p>PyTorch的面向对象的接口设计来源于Torch，做调用API时比较方便！</p>
 <h5 id="3-动态"><a href="#3-动态" class="headerlink" title="3.动态"></a>3.动态</h5><p>pytorch的计算图是动态的，可以根据计算需要实时改变计算图。（这是与Tensorflow最大的区别）</p>
@@ -859,11 +857,10 @@ x<span class="token punctuation">,</span> y <span class="token operator">=</span
 <span class="token comment"># 绘制数据图像</span>
 plt<span class="token punctuation">.</span>scatter<span class="token punctuation">(</span>x<span class="token punctuation">.</span>data<span class="token punctuation">.</span>numpy<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> y<span class="token punctuation">.</span>data<span class="token punctuation">.</span>numpy<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
 plt<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
 <p>Variable：在torch中的Variable就是一个存放会变化的值的地理位置，里面的值会不断变化，就是在计算图中的坐标。（torch是用tensor计算的，tensor里面的参数都是variable的形式）</p>
 <p>其中<code>torch.linspace</code>是为了生成连续间断的数据，第一个参数表示起点，第二个参数表示终点，第三个参数表示将这个区间分成平均几份，即生成几个数据。因为<code>torch</code>只能处理二维的数据，所以我们用<code>torch.unsqueeze</code>给伪数据添加一个维度，<code>dim</code>表示添加在第几维。<code>torch.rand</code>返回的是[0,1)之间的均匀分布。</p>
 <p>生成：</p>
-<p><img src="./images/loading.gif" data-original="https://upload-images.jianshu.io/upload_images/6479023-7e835db421799c56.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/640/format/webp" alt="https://upload-images.jianshu.io/upload_images/6479023-7e835db421799c56.png?imageMogr2/auto-orient/strip|imageView2/2/w/640/format/webp"></p>
+<p><img src="./images/loading.gif" data-original="https://upload-images.jianshu.io/upload_images/6479023-7e835db421799c56.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/640/format/webp" alt="https://upload-images.jianshu.io/upload_images/6479023-7e835db421799c56.png?imageMogr2/auto-orient/strip|imageView2/2/w/640/format/webp" loading="lazy"></p>
 <h2 id="Tensorflow"><a href="#Tensorflow" class="headerlink" title="Tensorflow"></a>Tensorflow</h2><p>TensorFlow 是一个开源的、基于 Python 的机器学习框架，它由 Google 开发，并在图形分类、音频处理、推荐系统和自然语言处理等场景下有着丰富的应用，是目前最热门的机器学习框架。</p>
 <p>（深度学习库能够自动求导、开源、支持多种 CPU/GPU、拥有预训练模型，并支持常用的NN架构，如递归神经网络（RNN）、卷积神经网络（CNN）和深度置信网络（DBN）。）<code>请记住缩写</code></p>
 <h4 id="特点："><a href="#特点：" class="headerlink" title="特点："></a>特点：</h4><ul>
@@ -892,10 +889,9 @@ plt<span class="token punctuation">.</span>show<span class="token punctuation">(
 <li><p>为了执行计算图，利用 with 语句定义 Session，并使用 run 来运行：</p>
 <pre class="line-numbers language-none"><code class="language-none">with tf.Session() as sess:
   print(sess.run(message).decode())<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-
-<p>4.最后是在会话中打印的信息：</p>
+</li>
+<li><p>最后是在会话中打印的信息：</p>
 <pre class="line-numbers language-none"><code class="language-none">Welcome to the exciting world of Deep Neural Networks!<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <p>其它输出的信息可以先不管。</p>
 <h4 id="比较"><a href="#比较" class="headerlink" title="比较"></a>比较</h4><p>PyTorch相比TensorFlow，其最大的优点是建立的神经网络是动态的，相比静态的TensorFlow，它能更加有效地去处理一些问题，比如RNN变化时间长度的输出，TensorFlow相比PyTorch的有点在于分布式训练上。</p>
 </li>
@@ -1872,11 +1868,11 @@ $(function () {
     <script src="https://cdn.jsdelivr.net/gh/guhailong18/blog/libs/instantpage/instantpage.js" type="module"></script>
     
 
-<script>
+<script src="https://cdn.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js"></script><script>L2Dwidget.init({"model":{"jsonPath":"https://cdn.jsdelivr.net/npm/live2d-widget-model-z16@1.0.5/assets/z16.model.json"},"display":{"position":"left","width":120,"height":250},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script><script>
             window.imageLazyLoadSetting = {
                 isSPA: false,
                 processImages: null,
             };
-        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=i;var e=n.imageLazyLoadSetting.isSPA,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function i(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight||document.documentElement.clientHeight)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},n.src=i}()}i(),n.addEventListener("scroll",function(){var t,e;t=i,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script><script src="https://cdn.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js"></script><script>L2Dwidget.init({"model":{"jsonPath":"https://cdn.jsdelivr.net/npm/live2d-widget-model-z16@1.0.5/assets/z16.model.json"},"display":{"position":"left","width":120,"height":250},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=i;var e=n.imageLazyLoadSetting.isSPA,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function i(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight||document.documentElement.clientHeight)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},n.src=i}()}i(),n.addEventListener("scroll",function(){var t,e;t=i,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script></body>
 
 </html>

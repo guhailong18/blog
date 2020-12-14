@@ -816,7 +816,6 @@
                 <p>因为Markdown支持HTML元素（<kbd> <b> <i> <em> <sup> <sub> <br>）等，所以我们可以使用标签来是我们的文章变得更加的漂亮和特别！</sub></sup></em></i></b></kbd></p><b><i><em>
 <p>例：</p>
 <pre class="line-numbers language-none"><code class="language-none">使用 &lt;kbd&gt;Ctrl&lt;/kbd&gt;+&lt;kbd&gt;Alt&lt;/kbd&gt;+&lt;kbd&gt;Del&lt;/kbd&gt; 重启电脑<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <p>效果：<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Del</kbd></p>
 <h3 id="公式"><a href="#公式" class="headerlink" title="公式"></a>公式</h3><p>使用两个美元符 $$ 包裹 TeX 或 LaTeX 格式的数学公式来实现，并且在文章头开启渲染功能（不同主题可能会有不同）</p>
 <h3 id="画图"><a href="#画图" class="headerlink" title="画图"></a>画图</h3><p>使用 typora 的源码模式粘贴到编辑器中查看效果：</p>
@@ -829,7 +828,6 @@ A[方形] --&gt;B(圆角)
     C --&gt;|a=2| E[结果2]
     F[横向流程图]
 ​```<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
 <p><strong>2、竖向流程图源码格式：</strong></p>
 <pre class="line-numbers language-none"><code class="language-none">​```mermaid
 graph TD
@@ -839,7 +837,6 @@ A[方形] --&gt; B(圆角)
     C --&gt; |a=2| E[结果2]
     F[竖向流程图]
 ​```<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
 <p><strong>3、标准流程图源码格式：</strong></p>
 <pre class="line-numbers language-none"><code class="language-none">​```flow
 st=&gt;start: 开始框
@@ -852,7 +849,6 @@ st-&gt;op-&gt;cond
 cond(yes)-&gt;io-&gt;e
 cond(no)-&gt;sub1(right)-&gt;op
 ​```<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
 <p><strong>4、标准流程图源码格式（横向）：</strong></p>
 <pre class="line-numbers language-none"><code class="language-none">​```flow
 st=&gt;start: 开始框
@@ -865,7 +861,6 @@ st(right)-&gt;op(right)-&gt;cond
 cond(yes)-&gt;io(bottom)-&gt;e
 cond(no)-&gt;sub1(right)-&gt;op
 ​```<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
 <p><strong>5、UML时序图源码样例：</strong></p>
 <pre class="line-numbers language-none"><code class="language-none">​```sequence
 对象A-&gt;对象B: 对象B你好吗?（请求）
@@ -874,7 +869,6 @@ Note left of 对象A: 对象A的描述(提示)
 对象B--&gt;对象A: 我很好(响应)
 对象A-&gt;对象B: 你真的好吗？
 ​```<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
 <p><strong>6、UML时序图源码复杂样例：</strong></p>
 <pre class="line-numbers language-none"><code class="language-none">​```sequence
 Title: 标题：复杂使用
@@ -889,7 +883,6 @@ Note over 小三,对象B: 我们是朋友
 participant C
 Note right of C: 没人陪我玩
 ​```<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
 <p><strong>7、UML标准时序图样例：</strong></p>
 <pre class="line-numbers language-none"><code class="language-none">​```mermaid
 %% 时序图例子,-&gt; 直线，--&gt;虚线，-&gt;&gt;实线箭头
@@ -905,7 +898,6 @@ Note right of C: 没人陪我玩
     王五-&gt;李四: 你怎么样?
     李四--&gt;王五: 很好!
 ​```<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
 <p><strong>8、甘特图样例：</strong></p>
 <pre class="line-numbers language-none"><code class="language-none">​```mermaid
 %% 语法示例
@@ -928,16 +920,14 @@ Note right of C: 没人陪我玩
         压力测试                               :after a1  , 20h
         测试报告                               : 48h
 ​```<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
 <pre class="line-numbers language-mermaid" data-language="mermaid"><code class="language-mermaid">graph LR
 A[方形] --&gt;B(圆角)
     B --&gt; C{条件a}
     C --&gt;|a=1| D[结果1]
     C --&gt;|a=2| E[结果2]
     F[横向流程图]<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
 <p>示例图</p>
-<p>教程链接：<a target="_blank" rel="noopener" href="https://www.runoob.com/markdown/md-advance.html">https://www.runoob.com/markdown/md-advance.html</a></p>
+<p>教程链接：https://www.runoob.com/markdown/md-advance.html</p>
 </em></i></b>
                 
             </div>
@@ -1910,11 +1900,11 @@ $(function () {
     <script src="https://cdn.jsdelivr.net/gh/guhailong18/blog/libs/instantpage/instantpage.js" type="module"></script>
     
 
-<script>
+<script src="https://cdn.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js"></script><script>L2Dwidget.init({"model":{"jsonPath":"https://cdn.jsdelivr.net/npm/live2d-widget-model-z16@1.0.5/assets/z16.model.json"},"display":{"position":"left","width":120,"height":250},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script><script>
             window.imageLazyLoadSetting = {
                 isSPA: false,
                 processImages: null,
             };
-        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=i;var e=n.imageLazyLoadSetting.isSPA,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function i(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight||document.documentElement.clientHeight)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},n.src=i}()}i(),n.addEventListener("scroll",function(){var t,e;t=i,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script><script src="https://cdn.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js"></script><script>L2Dwidget.init({"model":{"jsonPath":"https://cdn.jsdelivr.net/npm/live2d-widget-model-z16@1.0.5/assets/z16.model.json"},"display":{"position":"left","width":120,"height":250},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=i;var e=n.imageLazyLoadSetting.isSPA,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function i(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight||document.documentElement.clientHeight)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},n.src=i}()}i(),n.addEventListener("scroll",function(){var t,e;t=i,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script></body>
 
 </html>

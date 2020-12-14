@@ -830,22 +830,18 @@ fish<span class="token punctuation">.</span>pop<span class="token punctuation">(
 <span class="token keyword">print</span><span class="token punctuation">(</span>fish<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">:</span><span class="token number">4</span><span class="token punctuation">]</span><span class="token punctuation">)</span>   <span class="token comment">#即1到3的元素</span>
 <span class="token keyword">print</span><span class="token punctuation">(</span>fish<span class="token punctuation">[</span><span class="token operator">-</span><span class="token number">5</span><span class="token punctuation">:</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">:</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">)</span>  <span class="token comment">#即倒三和倒5</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h4 id="简单操作："><a href="#简单操作：" class="headerlink" title="简单操作："></a>简单操作：</h4><h5 id="添加"><a href="#添加" class="headerlink" title="添加"></a>添加</h5><p>1 append() 追加单个元素到List的尾部，只接受一个参数，参数可以是任何数据类型，被追加的元素在List中保持着原结构类型。<br>此元素如果是一个list，那么这个list将作为一个整体进行追加，注意append()和extend()的区别。</p>
+<h4 id="简单操作："><a href="#简单操作：" class="headerlink" title="简单操作："></a>简单操作：</h4><h5 id="添加"><a href="#添加" class="headerlink" title="添加"></a>添加</h5><p>1 append() 追加单个元素到List的尾部，只接受一个参数，参数可以是任何数据类型，被追加的元素在List中保持着原结构类型。
+此元素如果是一个list，那么这个list将作为一个整体进行追加，注意append()和extend()的区别。</p>
 <pre class="line-numbers language-none"><code class="language-none">fish.append(‘咸鱼’)  #添加在末尾
 print(fish) <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-
 <p>2 extend() 将一个列表中每个元素分别添加到另一个列表中，只接受一个参数；extend()相当于是将list B 连接到list A上</p>
 <pre class="line-numbers language-none"><code class="language-none">house = ['big','small','good']
 fish.extend(house)
 fish.append(house)    #输出：['大鱼', '鱼', '小鱼', ['big', 'small', 'good']]<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-
 <p>3 insert() 将一个元素插入到列表中，但其参数有两个（如insert(1,”g”)），第一个参数是索引点，即插入的位置，第二个参数是插入的元素。</p>
 <pre class="line-numbers language-none"><code class="language-none">fish.insert(1,'鲨鱼')  #['大鱼', '鲨鱼', '鱼', '小鱼']<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <p>4 + 加号，将两个list相加，会返回到一个新的list对象，注意与前三种的区别。前面三种方法（append, extend, insert）可对列表增加元素的操作，他们没有返回值，是直接修改了原数据对象。 注意：将两个list相加，需要创建新的list对象，从而需要消耗额外的内存，特别是当list较大时，尽量不要使用“+”来添加list，而应该尽可能使用List的append()方法。</p>
 <pre class="line-numbers language-none"><code class="language-none">hh = fish+house  <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <h5 id="删除"><a href="#删除" class="headerlink" title="删除"></a>删除</h5><ol>
 <li> a.pop(index):删除列表a中index处的值,并且返回这个值.</li>
 <li> del(a[index]):删除列表a中index处的值,无返回值. del中的index可以是切片,所以可以实现批量删除.</li>
@@ -857,9 +853,6 @@ fish = ['大鱼','鱼','小鱼']
 fish.pop(1)  
 del(fish[1])
 fish.remove('小鱼') //或fish.remove(fish[2])<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-
-
 <pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">import</span> random
 random_list <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>   <span class="token comment">#生成10个随机数</span>
 i <span class="token operator">=</span> <span class="token number">0</span>
@@ -876,46 +869,32 @@ new_list <span class="token operator">=</span> <span class="token builtin">sorte
 <span class="token comment">#降序</span>
 new_list <span class="token operator">=</span> <span class="token builtin">sorted</span><span class="token punctuation">(</span>random_list<span class="token punctuation">,</span>reverse <span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span>
 <span class="token keyword">print</span><span class="token punctuation">(</span>new_list<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-
-
 <h3 id="tuple-元组"><a href="#tuple-元组" class="headerlink" title="tuple(元组)"></a>tuple(元组)</h3><p>与list类似，使用()，但是值得注意的是单个元素需要加逗号</p>
 <h5 id="例子："><a href="#例子：" class="headerlink" title="例子："></a>例子：</h5><pre class="line-numbers language-none"><code class="language-none">A = ('hello',)
 print(type(A))<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-
-
-
 <h5 id="简单操作：-1"><a href="#简单操作：-1" class="headerlink" title="简单操作："></a>简单操作：</h5><pre class="line-numbers language-none"><code class="language-none">a=[1,2,3,4]
 B=tuple(a)  #list转换为tuple
 print(B[-1])
 print(B*2)
 C=(2,3)+(4,6)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
 <p>函数</p>
 <pre class="line-numbers language-none"><code class="language-none">print(max(random_tuple))
 print(min(random_tuple))
 print(sum(random_tuple))
 print(len(random_tuple))<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-
-
-
 <h3 id="dictionary-字典"><a href="#dictionary-字典" class="headerlink" title="dictionary(字典)"></a>dictionary(字典)</h3><p>键值对应，符号{}      例：</p>
 <pre class="line-numbers language-none"><code class="language-none">dict = {'Alice': '2341', 'Beth': '9102', 'Cecil': '3258'}<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <h5 id="简单操作：-2"><a href="#简单操作：-2" class="headerlink" title="简单操作："></a>简单操作：</h5><p>提取字典的值</p>
 <pre class="line-numbers language-none"><code class="language-none">dict = {'A': 'apple','B': 'banana'}
 print("dict['B']:",dict['A'])<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-
 <p>添加</p>
 <p>删除</p>
 <h2 id="命名规范"><a href="#命名规范" class="headerlink" title="命名规范"></a>命名规范</h2><p>模块尽量使用小写命名，首字母保持小写，尽量不要用下划线(除非多个单词，且数量不多的情况)</p>
 <pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token comment"># 正确的模块名</span>
 <span class="token keyword">import</span> decoder<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-
 <p>类名使用驼峰(CamelCase)命名风格，首字母大写，私有类可用一个下划线开头</p>
 <pre class="line-numbers language-Python" data-language="Python"><code class="language-Python">class Farm():
     pass<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-
 <p><a target="_blank" rel="noopener" href="https://www.readwithu.com/Article/codeSpecification/codeSpecification_third.html">参考链接</a></p>
 
                 
@@ -1893,11 +1872,11 @@ $(function () {
     <script src="https://cdn.jsdelivr.net/gh/guhailong18/blog/libs/instantpage/instantpage.js" type="module"></script>
     
 
-<script>
+<script src="https://cdn.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js"></script><script>L2Dwidget.init({"model":{"jsonPath":"https://cdn.jsdelivr.net/npm/live2d-widget-model-z16@1.0.5/assets/z16.model.json"},"display":{"position":"left","width":120,"height":250},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script><script>
             window.imageLazyLoadSetting = {
                 isSPA: false,
                 processImages: null,
             };
-        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=i;var e=n.imageLazyLoadSetting.isSPA,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function i(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight||document.documentElement.clientHeight)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},n.src=i}()}i(),n.addEventListener("scroll",function(){var t,e;t=i,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script><script src="https://cdn.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js"></script><script>L2Dwidget.init({"model":{"jsonPath":"https://cdn.jsdelivr.net/npm/live2d-widget-model-z16@1.0.5/assets/z16.model.json"},"display":{"position":"left","width":120,"height":250},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=i;var e=n.imageLazyLoadSetting.isSPA,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function i(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight||document.documentElement.clientHeight)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},n.src=i}()}i(),n.addEventListener("scroll",function(){var t,e;t=i,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script></body>
 
 </html>

@@ -826,38 +826,25 @@ prismjs:
   preprocess: true
   line_number: true
   tab_replace: ''<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-
-
 <h2 id="搜索"><a href="#搜索" class="headerlink" title="搜索"></a>搜索</h2><p>本主题中还使用到了 <a target="_blank" rel="noopener" href="https://github.com/wzpan/hexo-generator-search">hexo-generator-search</a> 的 Hexo 插件来做内容搜索，安装命令如下：</p>
 <pre class="line-numbers language-none"><code class="language-none">npm install hexo-generator-search --save<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <p>在 Hexo 根目录下的 <code>_config.yml</code> 文件中，新增以下的配置项：</p>
 <pre class="line-numbers language-none"><code class="language-none">search:
   path: search.xml
   field: post<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-
-
-
 <h2 id="中文链接转拼音"><a href="#中文链接转拼音" class="headerlink" title="中文链接转拼音"></a>中文链接转拼音</h2><p>如果你的文章名称是中文的，那么 Hexo 默认生成的永久链接也会有中文，这样不利于 <code>SEO</code>，且 <code>gitment</code> 评论对中文链接也不支持。我们可以用 <a target="_blank" rel="noopener" href="https://github.com/viko16/hexo-permalink-pinyin">hexo-permalink-pinyin</a> Hexo 插件使在生成文章时生成中文拼音的永久链接。</p>
 <p>安装命令如下：</p>
 <pre class="line-numbers language-none"><code class="language-none">npm i hexo-permalink-pinyin --save<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-
-
 <p>在 Hexo 根目录下的 <code>_config.yml</code> 文件中，新增以下的配置项：</p>
 <pre class="line-numbers language-none"><code class="language-none">permalink_pinyin:
   enable: true
   separator: '-' # default: '-'<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-
 <blockquote>
 <p>  <strong>注</strong>：除了此插件外，<a target="_blank" rel="noopener" href="https://github.com/rozbo/hexo-abbrlink">hexo-abbrlink</a> 插件也可以生成非中文的链接。</p>
 </blockquote>
 <p>博主选择的是<a target="_blank" rel="noopener" href="https://github.com/rozbo/hexo-abbrlink">hexo-abbrlink</a> 插件，因为感觉拼音有点傻，而且这个配置可选项比较多
 安装命令如下：</p>
 <pre class="line-numbers language-none"><code class="language-none">npm install hexo-abbrlink --save<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-
 <p>在 Hexo 根目录下的 <code>_config.yml</code> 文件中，新增以下的配置项：</p>
 <pre class="line-numbers language-none"><code class="language-none"># abbrlink config
 abbrlink:
@@ -873,13 +860,9 @@ abbrlink:
   auto_title: false #enable auto title, it can auto fill the title by path
   auto_date: false #enable auto date, it can auto fill the date by time today
   force: false #enable force mode,in this mode, the plugin will ignore the cache, and calc the abbrlink for every post even it already had abbrlink.<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-
-
 <h2 id="文章字数统计插件"><a href="#文章字数统计插件" class="headerlink" title="文章字数统计插件"></a><a target="_blank" rel="noopener" href="https://github.com/willin/hexo-wordcount">文章字数统计插件</a></h2><p>如果你想要在文章中显示文章字数、阅读时长信息，可以安装 <a target="_blank" rel="noopener" href="https://github.com/willin/hexo-wordcount">hexo-wordcount</a>插件。</p>
 <p>安装命令如下：</p>
 <pre class="line-numbers language-none"><code class="language-none">npm i --save hexo-wordcount<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <p>然后只需在本主题下的 <code>_config.yml</code> 文件中，将各个文章字数相关的配置激活即可：</p>
 <pre class="line-numbers language-none"><code class="language-none">postInfo:
   date: true
@@ -888,14 +871,10 @@ abbrlink:
   totalCount: false # 设置站点文章总字数统计为 true.
   min2read: false # 阅读时长.
   readCount: false # 阅读次数.<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-
 <h2 id="添加emoji表情支持"><a href="#添加emoji表情支持" class="headerlink" title="添加emoji表情支持"></a>添加emoji表情支持</h2><p>本主题新增了对<code>emoji</code>表情的支持，使用到了 <a target="_blank" rel="noopener" href="https://npm.taobao.org/package/hexo-filter-github-emojis">hexo-filter-github-emojis</a> 的 Hexo 插件来支持 <code>emoji</code>表情的生成，把对应的<code>markdown emoji</code>语法（<code>::</code>,例如：<code>:smile:</code>）转变成会跳跃的<code>emoji</code>表情，安装命令如下：</p>
 <pre class="line-numbers language-none"><code class="language-none"><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <h2 id="添加-RSS-订阅支持"><a href="#添加-RSS-订阅支持" class="headerlink" title="添加 RSS 订阅支持"></a>添加 RSS 订阅支持</h2><p>本主题中还使用到了 <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo-generator-feed">hexo-generator-feed</a> 的 Hexo 插件来做 <code>RSS</code>，安装命令如下：</p>
 <pre class="line-numbers language-none"><code class="language-none">npm install hexo-generator-feed --save<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <p>在 Hexo 根目录下的 <code>_config.yml</code> 文件中，新增以下的配置项：</p>
 <pre class="line-numbers language-none"><code class="language-none">feed:
   type: atom
@@ -906,7 +885,6 @@ abbrlink:
   content_limit: 140
   content_limit_delim: ' '
   order_by: -date<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
 <h2 id="添加视频"><a href="#添加视频" class="headerlink" title="添加视频"></a>添加<a target="_blank" rel="noopener" href="https://github.com/u2sb/hexo-tag-mmedia">视频</a></h2><p>hexo-tag-mmedia 是 MonoLogueChi 自用的一个媒体插入插件，在添加部分功能后发布给大家使用。</p>
 <p>已支持的平台</p>
 <ul>
@@ -916,8 +894,8 @@ abbrlink:
 </li>
 <li><p>   <a target="_blank" rel="noopener" href="https://github.com/DIYgod/DPlayer">Dplayer</a></p>
 </li>
-<li><p> <a target="_blank" rel="noopener" href="https://www.bilibili.com/">Bilibili</a></p>
-<p>  未来可能支持</p>
+<li><p><a target="_blank" rel="noopener" href="https://www.bilibili.com/">Bilibili</a></p>
+<p>未来可能支持</p>
 <ul>
 <li>  <a target="_blank" rel="noopener" href="https://www.u2sb.top/docs/hexo-tag-mmedia/">YouTube</a></li>
 <li>   <a target="_blank" rel="noopener" href="https://github.com/zhw2590582/ArtPlayer">ArtPlayer</a></li>
@@ -936,7 +914,6 @@ abbrlink:
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">npm</span> uninstall hexo-tag-aplayer
 <span class="token function">npm</span> uninstall hexo-tag-dplayer
 <span class="token function">npm</span> uninstall hexo-tag-bilibili<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-
 <p>在 Hexo 根目录下的 <code>_config.yml</code> 文件中，新增以下的配置项：</p>
 <p>如果不需要自定义设置，不需要修改 <code>_config.yml</code> ，直接使用即可</p>
 <pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml"><span class="token key atrule">mmedia</span><span class="token punctuation">:</span>
@@ -957,32 +934,22 @@ abbrlink:
     <span class="token key atrule">flv_cdn</span><span class="token punctuation">:</span> https<span class="token punctuation">:</span>//cdn.jsdelivr.net/npm/flv.js/dist/flv.min.js
     <span class="token key atrule">webtorrent_cdn</span><span class="token punctuation">:</span> https<span class="token punctuation">:</span>//cdn.jsdelivr.net/npm/webtorrent/webtorrent.min.js
     default<span class="token punctuation">:</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-
-
-
-
 <h3 id="使用"><a href="#使用" class="headerlink" title="使用"></a><a target="_blank" rel="noopener" href="https://www.u2sb.top/docs/hexo-tag-mmedia/#config-yml">使用</a></h3><h4 id="MetingJS"><a href="#MetingJS" class="headerlink" title="MetingJS"></a><a target="_blank" rel="noopener" href="https://github.com/metowolf/MetingJS#option">MetingJS</a></h4><p>代码：</p>
 <pre class="line-numbers language-none"><code class="language-none">{% meting "001Mf4Ic1aNYYK" "tencent" "album" "order:random" "listmaxheight:180px" %}
 
 {% meting "auto:https://y.qq.com/n/yqq/song/001RGrEX3ija5X.html" "autoplay" %}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-
 <p>演示效果：</p>
 
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
             <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
             <script src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script>
             <meting-js id="001Mf4Ic1aNYYK" server="tencent" type="album" autoplay="false" mutex="true" listmaxheight="180px" preload="auto" theme="#ad7a86" order="random"></meting-js>
-
-
-
 <hr>
 
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
             <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
             <script src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script>
             <meting-js auto="https://y.qq.com/n/yqq/song/001RGrEX3ija5X.html" mode="circulation" autoplay="true" mutex="true" listmaxheight="340px" preload="auto" theme="#ad7a86"></meting-js>
-
 <p>| 配置项        | 默认       | 描述                                                         |
 | :———— | :——— | :———————————————————– |
 | id            | 必须       | 音乐 id，第一个参数                                          |
@@ -1008,17 +975,14 @@ abbrlink:
 <pre class="line-numbers language-text" data-language="text"><code class="language-text">{% aplayer "Caffeine" "Jeff Williams" "caffeine.mp3" "picture.jpg" "lrc:caffeine.txt" %}
 
 {% aplayer title author url [picture_url, narrow, autoplay, width:xxx, lrc:xxx] %}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-
-
-
 <p>演示效果：</p>
 
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
             <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
-            <div id="mmedia-vMvnMfsX" style="margin-bottom: 20px; width: "></div>
+            <div id="mmedia-gokvEpkT" style="margin-bottom: 20px; width: "></div>
         <script>
-          var ap_vMvnMfsX = new APlayer({
-            element: document.getElementById("mmedia-vMvnMfsX"),
+          var ap_gokvEpkT = new APlayer({
+            element: document.getElementById("mmedia-gokvEpkT"),
             narrow: false,
             autoplay: false,
             showlrc: false,
@@ -1032,11 +996,8 @@ abbrlink:
             undefined
           });
           window.aplayers || (window.aplayers = []);
-          window.aplayers.push(ap_vMvnMfsX);
+          window.aplayers.push(ap_gokvEpkT);
         </script>
-
-
-
 <p>| 配置项      | 默认    | 描述                                               |
 | :———- | :—— | :————————————————- |
 | title       | 必须    | 曲目标题，第一个参数                               |
@@ -1076,26 +1037,19 @@ abbrlink:
     ]
 }
 {% endaplayerlist %}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
 <p>演示效果：</p>
 
 			<script>
 				console.error("SyntaxError: Unexpected token / in JSON at position 35");
 			</script>
-
-
-
 <h4 id="Dplayer"><a href="#Dplayer" class="headerlink" title="Dplayer"></a><a target="_blank" rel="noopener" href="https://github.com/MoePlayer/hexo-tag-dplayer">Dplayer</a></h4><p>代码：</p>
 <pre class="line-numbers language-text" data-language="text"><code class="language-text">{% dplayer "url:KeyCastOW.mp4" "id:DDEC4F882C0B66FAD" "addition:addition0" "addition:addition1" %}<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-
-
 <p>演示效果：</p>
 <p>1、</p>
-<div id="mmedia-RSyNWWub"></div><script src="https://cdn.jsdelivr.net/npm/dplayer/dist/DPlayer.min.js"></script>
+<div id="mmedia-JLsTsgvl"></div><script src="https://cdn.jsdelivr.net/npm/dplayer/dist/DPlayer.min.js"></script>
       <script>
-        var dp_RSyNWWub = new DPlayer({
-            container: document.getElementById('mmedia-RSyNWWub'),
+        var dp_JLsTsgvl = new DPlayer({
+            container: document.getElementById('mmedia-JLsTsgvl'),
             autoplay: false,
             theme: '#b7daff',
             loop: false,
@@ -1113,20 +1067,16 @@ abbrlink:
             highlight: [],
             undefined
         });
-        dp_RSyNWWub.on("fullscreen", function () { if (/Android|webOS|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) { screen.orientation.lock("landscape"); }});
+        dp_JLsTsgvl.on("fullscreen", function () { if (/Android|webOS|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) { screen.orientation.lock("landscape"); }});
         
       </script>
         
-
-
-
 <p>2，</p>
 <hr>
 
 			<script>
 				console.error("TypeError: Cannot set property 'url=http' of undefined");
 			</script>
-
 <hr>
 <p>| 配置项      | 默认      | 描述                                                         |
 | :———- | :——– | :———————————————————– |
@@ -1162,21 +1112,19 @@ abbrlink:
 | code        |           | 额外代码，不懂不要填，需要写的请参考源码                     |</p>
 <h4 id="Bilibili"><a href="#Bilibili" class="headerlink" title="Bilibili"></a>Bilibili</h4><p>代码：</p>
 <pre class="line-numbers language-text" data-language="text"><code class="language-text">{% bilibili "aid:60016166" "quality:high" "danmaku" "allowfullscreen" %}<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <p>演示效果：</p>
 
         <style>.bbplayer{width: 100%; max-width: 850px; margin: auto}</style>
         <div class="bbplayer">
-        <iframe class="bbplayer" id="mmedia-cVyATFwE" src="//player.bilibili.com/player.html?aid=60016166&amp;page=1&amp;high_quality=1&amp;danmaku=true" allowfullscreen="no" scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts allow-popups"></iframe>
+        <iframe class="bbplayer" id="mmedia-gSSFGvKW" src="//player.bilibili.com/player.html?aid=60016166&amp;page=1&amp;high_quality=1&amp;danmaku=true" allowfullscreen="no" scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts allow-popups"></iframe>
         </div>
         <script>
-            document.getElementById("mmedia-cVyATFwE").style.height=document.getElementById("mmedia-cVyATFwE").scrollWidth*0.76+"px";
+            document.getElementById("mmedia-gSSFGvKW").style.height=document.getElementById("mmedia-gSSFGvKW").scrollWidth*0.76+"px";
             window.onresize = function(){
-              document.getElementById("mmedia-cVyATFwE").style.height=document.getElementById("mmedia-cVyATFwE").scrollWidth*0.76+"px";
+              document.getElementById("mmedia-gSSFGvKW").style.height=document.getElementById("mmedia-gSSFGvKW").scrollWidth*0.76+"px";
             };
         </script>
         
-
 <p>| 配置项          | 默认    | 描述                                                         |
 | :————– | :—— | :———————————————————– |
 | bvid            |         | 视频 bv 号，bvid、aid 和 av 必填一项，推荐使用 bvid          |
@@ -1191,39 +1139,23 @@ abbrlink:
 | margin          | <code>auto</code>  | 位置，css 属性，例： <code>"margin:auto"</code> <code>"margin:0 0 0 auto"</code>   |</p>
 <h3 id="YOUTUBE"><a href="#YOUTUBE" class="headerlink" title="YOUTUBE"></a>YOUTUBE</h3><p>也可以等hexo-tag-mmedia插件支持</p>
 <pre class="line-numbers language-none"><code class="language-none">npm install hexo-tag-youtube-responsive --save<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-
-
 <h2 id="添加音乐"><a href="#添加音乐" class="headerlink" title="添加音乐"></a>添加音乐</h2><pre class="line-numbers language-none"><code class="language-none">npm install hexo-tag-cplayer --save<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <p>添加像这样的代码到你的文章中。<code>cplayer</code> 将会生成在那里。</p>
 <pre class="line-numbers language-none"><code class="language-none">{% cplayer [autoplay] [yaml|cson|json] %}
 # type your config here
 {% endcplayer %}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-
 <h2 id="SEO优化"><a href="#SEO优化" class="headerlink" title="SEO优化"></a>SEO优化</h2><pre class="line-numbers language-none"><code class="language-none">npm install hexo-generator-seo-friendly-sitemap --save<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-
-
 <pre class="line-numbers language-none"><code class="language-none">sitemap:
     path: sitemap.xml<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-
 <h3 id="友好链接"><a href="#友好链接" class="headerlink" title="友好链接"></a><a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo-filter-nofollow/">友好链接</a></h3><pre class="line-numbers language-none"><code class="language-none">npm i hexo-filter-nofollow --save<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <pre class="line-numbers language-none"><code class="language-none">nofollow:
   enable: true
   field: site
   exclude:
     - 'exclude1.com'
     - 'exclude2.com'<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-
-
-
-
 <h2 id="推送链接"><a href="#推送链接" class="headerlink" title="推送链接"></a><a target="_blank" rel="noopener" href="https://github.com/ludoviclefevre/hexo-generator-seo-friendly-sitemap">推送链接</a></h2><p>请认真认读<a target="_blank" rel="noopener" href="https://cjh0613.com/20200603HexoSubmitUrlsToSearchEngine.html#%E5%85%AC%E5%85%B1%E4%BB%93%E5%BA%93%E4%B8%8E%E5%AF%86%E9%92%A5%E5%A4%84%E7%90%86">该文档</a>并配置</p>
 <h2 id="文章加密"><a href="#文章加密" class="headerlink" title="文章加密"></a><a target="_blank" rel="noopener" href="https://github.com/D0n9X1n/hexo-blog-encrypt/blob/master/ReadMe.zh.md">文章加密</a></h2><pre class="line-numbers language-none"><code class="language-none">npm install --save hexo-blog-encrypt<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <p><code>_config.yml</code></p>
 <pre class="line-numbers language-none"><code class="language-none"># Security
 encrypt: # hexo-blog-encrypt
@@ -1235,10 +1167,8 @@ encrypt: # hexo-blog-encrypt
   template: &lt;div id="hexo-blog-encrypt" data-wpm="{{hbeWrongPassMessage}}" data-whm="{{hbeWrongHashMessage}}"&gt;&lt;div class="hbe-input-container"&gt;&lt;input type="password" id="hbePass" placeholder="{{hbeMessage}}" /&gt;&lt;label&gt;{{hbeMessage}}&lt;/label&gt;&lt;div class="bottom-line"&gt;&lt;/div&gt;&lt;/div&gt;&lt;script id="hbeData" type="hbeData" data-hmacdigest="{{hbeHmacDigest}}"&gt;{{hbeEncryptedData}}&lt;/script&gt;&lt;/div&gt;
   wrong_pass_message: 抱歉, 这个密码看着不太对, 请再试试.
   wrong_hash_message: 抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
 <h2 id="添加看板娘"><a href="#添加看板娘" class="headerlink" title="添加看板娘"></a>添加<a target="_blank" rel="noopener" href="https://github.com/EYHN/hexo-helper-live2d">看板娘</a></h2><p>安装模块:</p>
 <pre class="line-numbers language-none"><code class="language-none">npm install --save hexo-helper-live2d<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <blockquote>
 <p>  试试 <code>yarn add hexo-helper-live2d</code>, 据说高能的yarn会比垃圾npm少很多麻烦呢。 <a target="_blank" rel="noopener" href="https://yarn.bootcss.com/">Yarn</a></p>
 </blockquote>
@@ -1254,7 +1184,6 @@ encrypt: # hexo-blog-encrypt
 		height: 300      #模型高度
 	mobile:
 		show: false      #是否在手机端显示<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
 <p>cdn版</p>
 <pre class="line-numbers language-none"><code class="language-none">live2d:
 	enable: true
@@ -1267,9 +1196,6 @@ encrypt: # hexo-blog-encrypt
 		height: 250      #模型高度
 	mobile:
 		show: false      #是否在手机端显示<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-
-
 <h3 id="用法"><a href="#用法" class="headerlink" title="用法"></a>用法</h3><p>有三种方法添加模块名</p>
 <p> <strong>a. live2d_models子目录名称</strong></p>
 <ol>
@@ -1283,15 +1209,9 @@ encrypt: # hexo-blog-encrypt
 <p>示例: <code>./wives/wanko</code></p>
 <p> <strong>c. npm 模块名</strong></p>
 <pre class="line-numbers language-none"><code class="language-none">npm install live2d-widget-model-z16<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-
-
 <p> <strong>d. 你的CDN</strong></p>
 <p>如果你是没有CDN会死星人,直接将 <code>.model.json</code> 的url地址输入 <code>model.use</code>.</p>
 <h2 id="添加追番页面"><a href="#添加追番页面" class="headerlink" title="添加追番页面"></a>添加追番页面</h2><pre class="line-numbers language-none"><code class="language-none">npm install hexo-bilibili-bangumi --save<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-
-
 <p>将下面的配置写入站点的配置文件 <code>_config.yml</code> 里(不是主题的配置文件).</p>
 <pre class="line-numbers language-none"><code class="language-none">bangumi:
   enable: true
@@ -1305,7 +1225,6 @@ encrypt: # hexo-blog-encrypt
   color:
   webp:
   progress:<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
 <ul>
 <li>  <strong>enable</strong>: 是否启用</li>
 <li>  <strong>path</strong>: 番剧页面路径，默认<code>bangumis/index.html</code></li>
@@ -1320,14 +1239,12 @@ encrypt: # hexo-blog-encrypt
 <li>  <strong>progress</strong>: 获取番剧数据时是否显示进度条，默认<code>true</code></li>
 </ul>
 <h2 id="图片懒加载"><a href="#图片懒加载" class="headerlink" title="图片懒加载"></a><a target="_blank" rel="noopener" href="https://github.com/Troy-Yang/hexo-lazyload-image">图片懒加载</a></h2><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><pre class="line-numbers language-none"><code class="language-none">npm install hexo-lazyload-image --save<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <h3 id="用法-1"><a href="#用法-1" class="headerlink" title="用法"></a>用法</h3><p>首先<code>_config.yml</code>从您的hexo项目中添加配置。</p>
 <pre class="line-numbers language-none"><code class="language-none">lazyload：
    enable：true 
   onlypost：false ＃可选
   loadingImg：＃可选，例如./images/loading.gif 
   isSPA：false ＃可选<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
 <p><strong>Onlypost</strong></p>
 <ul>
 <li>  如果为true，则仅帖子或页面中的图像将支持延迟加载。</li>
@@ -1354,13 +1271,11 @@ encrypt: # hexo-blog-encrypt
 <pre class="line-numbers language-none"><code class="language-none">return htmlContent.replace(/&lt;img(\s*?)src="(.*?)"(.*?)&gt;/gi, function (str, p1, p2) {
         return str.replace(p2, loadingImage + '" data-original="' + p2);
     });<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-
 <p>关于simple-lazyload，这个是懒加载替换脚本的核心，原来使用jquery-lazyload插件，后来觉得没必要，最终还是自己写了个简单版。】</p>
 <p>这是插件作者写的，但是他并没有把我的文章图片成功变成懒加载</p>
 <p><strong>挖坑</strong>：等博主学完JS及Hexo的API使用看下能不能将其魔改吧</p>
 <h2 id="Markown高级渲染"><a href="#Markown高级渲染" class="headerlink" title="Markown高级渲染"></a><a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo-renderer-marked">Markown高级渲染</a></h2><p>安装</p>
 <pre class="line-numbers language-none"><code class="language-none">npm install hexo-renderer-marked --save<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <p>添加配置 <code>_config.yml</code>.</p>
 <pre class="line-numbers language-none"><code class="language-none">marked:
   gfm: true
@@ -1384,20 +1299,20 @@ encrypt: # hexo-blog-encrypt
     nofollow: false
   disableNunjucks: false
   descriptionLists: true<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
 <ul>
 <li></li>
 <li></li>
-<li><pre><code>**gfm-**启用[GitHub风格的降价](https://help.github.com/articles/github-flavored-markdown)</code></pre>
+<li><pre><code>**gfm-**启用[GitHub风格的降价](https://help.github.com/articles/github-flavored-markdown)
+</code></pre>
 </li>
-<li><p>  **pedantic-**尽量遮盖部分<code>markdown.pl</code>。不要修复任何原始的降价错误或不良行为。</p>
+<li><p>  <strong>pedantic-</strong>尽量遮盖部分<code>markdown.pl</code>。不要修复任何原始的降价错误或不良行为。</p>
 </li>
-<li><p>  **breaks-**启用GFM<a target="_blank" rel="noopener" href="https://help.github.com/articles/github-flavored-markdown#newlines">换行</a>。此选项要求该<code>gfm</code>选项为true。</p>
+<li><p>  <strong>breaks-</strong>启用GFM<a target="_blank" rel="noopener" href="https://help.github.com/articles/github-flavored-markdown#newlines">换行</a>。此选项要求该<code>gfm</code>选项为true。</p>
 </li>
-<li><p>  **smartLists-**使用比原始减价更聪明的列表行为。</p>
+<li><p>  <strong>smartLists-</strong>使用比原始减价更聪明的列表行为。</p>
 </li>
-<li><p>**smartypant-**对引号和破折号使用“智能”印刷标点符号。</p>
-<p>  <strong>quotes</strong> - Defines the double and single quotes used for substituting regular quotes if <strong>smartypants</strong> is enabled.</p>
+<li><p><strong>smartypant-</strong>对引号和破折号使用“智能”印刷标点符号。</p>
+<p><strong>quotes</strong> - Defines the double and single quotes used for substituting regular quotes if <strong>smartypants</strong> is enabled.</p>
 <ul>
 <li>Example: ‘«»“”’<ul>
 <li>  “double” will be turned into «single»</li>
@@ -1407,28 +1322,28 @@ encrypt: # hexo-blog-encrypt
 <li>  Both double and single quotes substitution must be specified, otherwise it will be silently ignored.</li>
 </ul>
 </li>
-<li><p>  **ModifyAnchors-**将anchorId转换为小写（<code>1</code>）或大写（<code>2</code>）。</p>
+<li><p>  <strong>ModifyAnchors-</strong>将anchorId转换为小写（<code>1</code>）或大写（<code>2</code>）。</p>
 </li>
 <li><p>  <strong>自动链接</strong>-为网址启用自动链接。例如<code>https://hexo.io</code>将成为<code>&lt;a href="https://hexo.io"&gt;https://hexo.io&lt;/a&gt;</code>。</p>
 </li>
 <li><p>mangle-</p>
-<p>  使用HTML字符引用转义自动链接的电子邮件地址。</p>
+<p>使用HTML字符引用转义自动链接的电子邮件地址。</p>
 <ul>
 <li>  这是为了掩盖垃圾邮件机器人使用的<em>基本</em>爬网程序的电子邮件地址，同时仍可让网络浏览器读取。</li>
 </ul>
 </li>
 <li><p>  <strong>sanitizeUrl</strong> -删除的网址开头<code>javascript:</code>，<code>vbscript:</code>和<code>data:</code>。</p>
 </li>
-<li><p>  **headerIds-**插入标头ID，例如<code>&lt;h1 id="value"&gt;text&lt;/h1&gt;</code>。对于将标题链接插入每个段落很有用。</p>
+<li><p>  <strong>headerIds-</strong>插入标头ID，例如<code>&lt;h1 id="value"&gt;text&lt;/h1&gt;</code>。对于将标题链接插入每个段落很有用。</p>
 </li>
 <li><p>anchorAlias-</p>
-<p>  启用自定义标头ID</p>
+<p>启用自定义标头ID</p>
 <ul>
 <li>  例如：<code>## [foo](#bar)</code>，id将被设置为“ bar”。</li>
 <li>  需要启用<strong>headerIds</strong>。</li>
 </ul>
 </li>
-<li><p>  **lazyload-**通过<code>loading="lazy"</code>属性延迟加载图像。</p>
+<li><p>  <strong>lazyload-</strong>通过<code>loading="lazy"</code>属性延迟加载图像。</p>
 </li>
 </ul>
 <h6 id="参考链接："><a href="#参考链接：" class="headerlink" title="参考链接："></a><strong>参考链接：</strong></h6>
@@ -2407,11 +2322,11 @@ $(function () {
     <script src="https://cdn.jsdelivr.net/gh/guhailong18/blog/libs/instantpage/instantpage.js" type="module"></script>
     
 
-<script>
+<script src="https://cdn.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js"></script><script>L2Dwidget.init({"model":{"jsonPath":"https://cdn.jsdelivr.net/npm/live2d-widget-model-z16@1.0.5/assets/z16.model.json"},"display":{"position":"left","width":120,"height":250},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script><script>
             window.imageLazyLoadSetting = {
                 isSPA: false,
                 processImages: null,
             };
-        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=i;var e=n.imageLazyLoadSetting.isSPA,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function i(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight||document.documentElement.clientHeight)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},n.src=i}()}i(),n.addEventListener("scroll",function(){var t,e;t=i,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script><script src="https://cdn.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js"></script><script>L2Dwidget.init({"model":{"jsonPath":"https://cdn.jsdelivr.net/npm/live2d-widget-model-z16@1.0.5/assets/z16.model.json"},"display":{"position":"left","width":120,"height":250},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=i;var e=n.imageLazyLoadSetting.isSPA,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function i(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight||document.documentElement.clientHeight)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},n.src=i}()}i(),n.addEventListener("scroll",function(){var t,e;t=i,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script></body>
 
 </html>

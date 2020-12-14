@@ -812,12 +812,11 @@
                 <h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>SQLite是一个进程内库，它实现了一个自足的、无服务器的、零配置的、事务性的SQL数据库引擎。SQLite的代码在公共领域，因此可以免费用于任何目的，无论是商业还是私人。SQLite是世界上部署最广泛的数据库，其应用数量之多，我们无法统计，其中包括几个备受瞩目的项目。</p>
 <p>（这个数据库非常小，只有几百kb，且易于安装，非常适合练习和做小项目使用）</p>
 <h2 id="1-安装SQLite"><a href="#1-安装SQLite" class="headerlink" title="1.安装SQLite"></a>1.安装SQLite</h2><p>去<a target="_blank" rel="noopener" href="https://www.sqlite.org/download.html">官方页面下载</a>SQLite，需要下载 <strong>sqlite-tools-win32-*.zip</strong> 和 <strong>sqlite-dll-win32-*.zip</strong> 压缩文件。（dll的64位应该也可以用）</p>
-<img src="./images/loading.gif" data-original="https://i.loli.net/2020/12/08/TRuabjfdLrzhQK9.png" alt="20201208085105" style="zoom:80%;">
-
+<p><img src="./images/loading.gif" data-original="https://i.loli.net/2020/12/08/TRuabjfdLrzhQK9.png" alt="20201208085105" style="zoom:80%;"></p>
 <p>博主现在使用的是3.34的版本</p>
 <p>并在此文件夹下解压上面两个压缩文件，将得到 sqlite3.def、sqlite3.dll 和 sqlite3.exe 文件，把对应文件的位置添加到环境变量Path。</p>
 <p>打开cmd，使用 <strong>sqlite3</strong> 命令，将显示如下结果</p>
-<p><img src="./images/loading.gif" data-original="https://i.loli.net/2020/12/08/rMNyHwpa6hXEAYU.png" alt="image-20201208085422762"></p>
+<p><img src="./images/loading.gif" data-original="https://i.loli.net/2020/12/08/rMNyHwpa6hXEAYU.png" alt="image-20201208085422762" loading="lazy"></p>
 <p>注：红色的英文的意思是：连接到一个内存中的临时数据库</p>
 <h2 id="2-连接SQLite"><a href="#2-连接SQLite" class="headerlink" title="2.连接SQLite"></a>2.连接SQLite</h2><p>在 Java 程序中使用 SQLite 之前，我们需要确保机器上已经有 SQLite JDBC Driver 驱动程序和 Java。可以查看 Java 教程了解如何在计算机上安装 Java。现在，我们来看看如何在机器上安装 SQLite JDBC 驱动程序。</p>
 <p>下载对应版本的jar，并把它添加到对应IDE的jar路径，如果是intellij可以参考这篇文档，如果是使用cmd的可以参考<a target="_blank" rel="noopener" href="https://www.runoob.com/sqlite/sqlite-java.html">此教程</a></p>
@@ -874,9 +873,8 @@
     <span class="token punctuation">}</span>
   <span class="token punctuation">}</span>
 <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
 <p>运行后，如果有如下输出，这说明配置成功：</p>
-<p><img src="./images/loading.gif" data-original="https://i.loli.net/2020/12/08/bSNJ3nmFy74duox.png" alt="image-20201208091432594"></p>
+<p><img src="./images/loading.gif" data-original="https://i.loli.net/2020/12/08/bSNJ3nmFy74duox.png" alt="image-20201208091432594" loading="lazy"></p>
 <h6 id="参考链接："><a href="#参考链接：" class="headerlink" title="参考链接："></a><strong>参考链接：</strong></h6><p><a target="_blank" rel="noopener" href="https://www.runoob.com/sqlite/sqlite-java.html">菜鸟</a></p>
 
                 
@@ -1822,11 +1820,11 @@ $(function () {
     <script src="https://cdn.jsdelivr.net/gh/guhailong18/blog/libs/instantpage/instantpage.js" type="module"></script>
     
 
-<script>
+<script src="https://cdn.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js"></script><script>L2Dwidget.init({"model":{"jsonPath":"https://cdn.jsdelivr.net/npm/live2d-widget-model-z16@1.0.5/assets/z16.model.json"},"display":{"position":"left","width":120,"height":250},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script><script>
             window.imageLazyLoadSetting = {
                 isSPA: false,
                 processImages: null,
             };
-        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=i;var e=n.imageLazyLoadSetting.isSPA,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function i(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight||document.documentElement.clientHeight)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},n.src=i}()}i(),n.addEventListener("scroll",function(){var t,e;t=i,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script><script src="https://cdn.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js"></script><script>L2Dwidget.init({"model":{"jsonPath":"https://cdn.jsdelivr.net/npm/live2d-widget-model-z16@1.0.5/assets/z16.model.json"},"display":{"position":"left","width":120,"height":250},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=i;var e=n.imageLazyLoadSetting.isSPA,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function i(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight||document.documentElement.clientHeight)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},n.src=i}()}i(),n.addEventListener("scroll",function(){var t,e;t=i,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script></body>
 
 </html>

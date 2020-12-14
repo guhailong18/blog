@@ -816,7 +816,6 @@
 <pre class="line-numbers language-none"><code class="language-none">&lt;div&gt;
     &lt;p&gt;&lt;/p&gt;
 &lt;/div&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-
 <p>如果 <strong></strong></p><div> 有个属性 <strong>color: red</strong>，则这个属性将被 <strong></strong><p><strong></strong> 继承，即 <strong></strong></p><p> 也拥有属性 <strong>color: red</strong>。</p>
 <p>由上可见，当网页比较复杂， HTML 结构嵌套较深时，一个标签的样式将深受其祖先标签样式的影响。影响的规则是：</p>
 <p><strong>CSS 优先规则1：</strong> 最近的祖先样式比其他祖先样式优先级高。</p>
@@ -827,7 +826,6 @@
         &lt;div class="son"&gt;&lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
 <p>如果我们把一个标签从祖先那里继承来的而自身没有的属性叫做”祖先样式”，那么”直接样式”就是一个标签直接拥有的属性。又有如下规则：</p>
 <p><strong>CSS 优先规则2：</strong>“直接样式”比”祖先样式”优先级高。</p>
 <p>例2：</p>
@@ -835,7 +833,6 @@
 &lt;div style="color: red"&gt;
     &lt;div class="son" style="color: blue"&gt;&lt;/div&gt;
 &lt;/div&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-
 <h2 id="选择器的优先级"><a href="#选择器的优先级" class="headerlink" title="选择器的优先级"></a>选择器的优先级</h2><p>上面讨论了一个标签从祖先继承来的属性，现在讨论标签自有的属性。在讨论 CSS 优先级之前，先说说 CSS 7 种基础的选择器：</p>
 <ul>
 <li>  ID 选择器， 如 #id{}</li>
@@ -861,7 +858,6 @@
 div {
     color: grey;
 }<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
 <p>最终的 color 为 black，因为内联样式比其他选择器的优先级高。</p>
 <p>所有 CSS 的选择符由上述 7 种基础的选择器或者组合而成，组合的方式有 3 种：</p>
 <ul>
@@ -884,7 +880,6 @@ div {
 div .con-span {
     color: blue;
 }<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
 <p>由规则 4 可见，<span> 的 color 为 red。</span></p>
 <p>如果外部样式表和内部样式表中的样式发生冲突会出现什么情况呢？这与样式表在 HTML 文件中所处的位置有关。样式被应用的位置越在下面则优先级越高，其实这仍然可以用规则 4 来解释。</p>
 <p>例5：</p>
@@ -908,9 +903,8 @@ div {
 div {
     background: grey;
 }<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
 <p>从顺序上看，内部样式在最下面，被最晚引用，所以 </p><div> 的背景色为 blue。<p></p>
-<p>上面代码中，**@import** 语句必须出现在内部样式之前，否则文件引入无效。当然不推荐使用 <strong>@import</strong> 的方式引用外部样式文件，原因见另一篇博客：<a target="_blank" rel="noopener" href="https://www.runoob.com/w3cnote/html-import-css-method.html">CSS 引入方式</a>。</p>
+<p>上面代码中，<strong>@import</strong> 语句必须出现在内部样式之前，否则文件引入无效。当然不推荐使用 <strong>@import</strong> 的方式引用外部样式文件，原因见另一篇博客：<a target="_blank" rel="noopener" href="https://www.runoob.com/w3cnote/html-import-css-method.html">CSS 引入方式</a>。</p>
 <p>CSS 还提供了一种可以完全忽略以上规则的方法，当你一定、必须确保某一个特定的属性要显示时，可以使用这个技术。</p>
 <p><strong>CSS 优先规则5：</strong>属性后插有 <strong>!important</strong> 的属性拥有最高优先级。若同时插有 <strong>!important</strong>，则再利用规则 3、4 判断优先级。</p>
 <p>例6：</p>
@@ -926,7 +920,6 @@ p {
 .father .son {
     background: blue;
 }<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
 <p>虽然 .father .son 拥有更高的权值，但选择器 p 中的 background 属性被插入了 !important， 所以 </p><p> 的 background 为 red。</p>
 <h2 id="错误的说法"><a href="#错误的说法" class="headerlink" title="错误的说法"></a>错误的说法</h2><p>在学习过程中，你可能发现给选择器加权值的说法，即 ID 选择器权值为 100，类选择器权值为 10，标签选择器权值为 1，当一个选择器由多个 ID 选择器、类选择器或标签选择器组成时，则将所有权值相加，然后再比较权值。这种说法其实是有问题的。比如一个由 11 个类选择器组成的选择器和一个由 1 个 ID 选择器组成的选择器指向同一个标签，按理说 110 &gt; 100，应该应用前者的样式，然而事实是应用后者的样式。错误的原因是：<strong>权重的进制是并不是十进制，CSS 权重进制在 IE6 为 256，后来扩大到了 65536，现代浏览器则采用更大的数量。</strong>。还是拿刚刚的例子说明。11 个类选择器组成的选择器的总权值为 110，但因为 11 个均为类选择器，所以其实总权值最多不能超过 100， 你可以理解为 99.99，所以最终应用后者样式。</p>
 <h2 id="5"><a href="#5" class="headerlink" title="5."></a>5.</h2><h6 id="参考链接："><a href="#参考链接：" class="headerlink" title="参考链接："></a><strong>参考链接：</strong></h6></div></div>
@@ -1901,11 +1894,11 @@ $(function () {
     <script src="https://cdn.jsdelivr.net/gh/guhailong18/blog/libs/instantpage/instantpage.js" type="module"></script>
     
 
-<script>
+<script src="https://cdn.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js"></script><script>L2Dwidget.init({"model":{"jsonPath":"https://cdn.jsdelivr.net/npm/live2d-widget-model-z16@1.0.5/assets/z16.model.json"},"display":{"position":"left","width":120,"height":250},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script><script>
             window.imageLazyLoadSetting = {
                 isSPA: false,
                 processImages: null,
             };
-        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=i;var e=n.imageLazyLoadSetting.isSPA,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function i(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight||document.documentElement.clientHeight)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},n.src=i}()}i(),n.addEventListener("scroll",function(){var t,e;t=i,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script><script src="https://cdn.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js"></script><script>L2Dwidget.init({"model":{"jsonPath":"https://cdn.jsdelivr.net/npm/live2d-widget-model-z16@1.0.5/assets/z16.model.json"},"display":{"position":"left","width":120,"height":250},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=i;var e=n.imageLazyLoadSetting.isSPA,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function i(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight||document.documentElement.clientHeight)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},n.src=i}()}i(),n.addEventListener("scroll",function(){var t,e;t=i,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script></body>
 
 </html>

@@ -805,7 +805,7 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <h4 id="二、如何获取应用机密-client-secret-和应用-ID-client-id-？"><a href="#二、如何获取应用机密-client-secret-和应用-ID-client-id-？" class="headerlink" title="二、如何获取应用机密(client secret)和应用 ID(client_id)？"></a>二、如何获取应用机密(client secret)和应用 ID(client_id)？</h4><ol>
-<li><p>登录：<a target="_blank" rel="noopener" href="https://portal.azure.com/?l=zh-hans.zh-cn#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade">https://portal.azure.com/?l=zh-hans.zh-cn#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade</a></p>
+<li><p>登录：https://portal.azure.com/?l=zh-hans.zh-cn#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade</p>
 </li>
 <li><p>点击新注册</p>
 </li>
@@ -813,14 +813,12 @@
 <pre class="line-numbers language-none"><code class="language-none">- 名称：随便填
 - 受支持的帐户类型：选择“任何组织目录中的帐户和个人 Microsoft 帐户”
 - 重定向 URI (可选)：Web - https://pyoneauth.github.io/<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-
 <p>  点击创建，进入下一步</p>
-<p>  *<strong>创建之后，看到应用程序(客户端) ID，复制到上方应用 ID(client_id)</strong></p>
+<p>  <strong>*创建之后，看到应用程序(客户端) ID，复制到上方应用 ID(client_id)</strong></p>
 <p><strong>3. 开启权限：第2步创建应用程序之后，进入该应用的概述页面。</strong></p>
 <p>  1）点击：API权限</p>
 <p>  2）选择：添加权限：</p>
 <pre class="line-numbers language-none"><code class="language-none">Microsoft Graph – 委派的权限 – Files - Files.ReadWrite 和 Files.ReadWrite.All <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <ol start="4">
 <li><p>创建秘钥：第2步创建应用程序之后，进入该应用的概述页面。</p>
 <p>1）点击：证书和密码</p>
@@ -829,7 +827,7 @@
 </ol>
 <p>​    说明：随便填写</p>
 <p>​    截止期限：1年内</p>
-<p>  *<strong>3）点击保存，得到秘钥值，复制到上方应用机密(client secret)</strong></p>
+<p>  <strong>*3）点击保存，得到秘钥值，复制到上方应用机密(client secret)</strong></p>
 
                 
             </div>
@@ -1802,11 +1800,11 @@ $(function () {
     <script src="https://cdn.jsdelivr.net/gh/guhailong18/blog/libs/instantpage/instantpage.js" type="module"></script>
     
 
-<script>
+<script src="https://cdn.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js"></script><script>L2Dwidget.init({"model":{"jsonPath":"https://cdn.jsdelivr.net/npm/live2d-widget-model-z16@1.0.5/assets/z16.model.json"},"display":{"position":"left","width":120,"height":250},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script><script>
             window.imageLazyLoadSetting = {
                 isSPA: false,
                 processImages: null,
             };
-        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=i;var e=n.imageLazyLoadSetting.isSPA,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function i(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight||document.documentElement.clientHeight)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},n.src=i}()}i(),n.addEventListener("scroll",function(){var t,e;t=i,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script><script src="https://cdn.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js"></script><script>L2Dwidget.init({"model":{"jsonPath":"https://cdn.jsdelivr.net/npm/live2d-widget-model-z16@1.0.5/assets/z16.model.json"},"display":{"position":"left","width":120,"height":250},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=i;var e=n.imageLazyLoadSetting.isSPA,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function i(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight||document.documentElement.clientHeight)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},n.src=i}()}i(),n.addEventListener("scroll",function(){var t,e;t=i,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script></body>
 
 </html>

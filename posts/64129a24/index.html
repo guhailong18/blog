@@ -819,34 +819,24 @@
             <div id="articleContent">
                 <h2 id="查看mysql-默认端口号和修改端口号"><a href="#查看mysql-默认端口号和修改端口号" class="headerlink" title="查看mysql 默认端口号和修改端口号"></a>查看mysql 默认端口号和修改端口号</h2><p>先登录mysql</p>
 <pre class="line-numbers language-none"><code class="language-none">mysql -u root -p<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <p>再使用命令查看端口号</p>
 <pre class="line-numbers language-none"><code class="language-none">show global variables like 'port';<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <p>若要修改端口，编辑/etc/my.cnf文件（window可直接编辑）</p>
 <pre class="line-numbers language-none"><code class="language-none">vi my.cnf<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <p>重新启动mysql</p>
 <pre class="line-numbers language-none"><code class="language-none">/etc/init.d/mysqld restart  
 或 service mysql restart<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-
 <h2 id="显示所有的数据库"><a href="#显示所有的数据库" class="headerlink" title="显示所有的数据库"></a><strong>显示所有的数据库</strong></h2><p>登录MySQL，输入：</p>
 <pre class="line-numbers language-none"><code class="language-none">show databases;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <h4 id="创建数据库"><a href="#创建数据库" class="headerlink" title="创建数据库"></a><strong>创建数据库</strong></h4><p>创建数据库的命令为：</p>
 <pre class="line-numbers language-none"><code class="language-none">create database &lt;数据库名&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <h4 id="删除数据库"><a href="#删除数据库" class="headerlink" title="删除数据库"></a><strong>删除数据库</strong></h4><pre class="line-numbers language-none"><code class="language-none">drop database &lt;数据库名&gt;；<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <p>例：</p>
 <pre class="line-numbers language-none"><code class="language-none">drop database mydatabase;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <h4 id="打开数据库"><a href="#打开数据库" class="headerlink" title="打开数据库"></a><strong>打开数据库</strong></h4><pre class="line-numbers language-none"><code class="language-none">use mydatabase;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <p>mydatabase为你的数据库名</p>
 <h4 id="创建数据库表"><a href="#创建数据库表" class="headerlink" title="创建数据库表"></a><strong>创建数据库表</strong></h4><p>打开数据库后，可以使用创建数据表命令，在已打开的数据库中创建一个新表。创建一个新表的命令为：</p>
 <pre class="line-numbers language-none"><code class="language-none">create table &lt;表名&gt; ( &lt;字段名1&gt; &lt;类型1&gt; [,..&lt;字段名n&gt; &lt;类型n&gt;]);<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 
                 
             </div>
@@ -1827,11 +1817,11 @@ $(function () {
     <script src="https://cdn.jsdelivr.net/gh/guhailong18/blog/libs/instantpage/instantpage.js" type="module"></script>
     
 
-<script>
+<script src="https://cdn.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js"></script><script>L2Dwidget.init({"model":{"jsonPath":"https://cdn.jsdelivr.net/npm/live2d-widget-model-z16@1.0.5/assets/z16.model.json"},"display":{"position":"left","width":120,"height":250},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script><script>
             window.imageLazyLoadSetting = {
                 isSPA: false,
                 processImages: null,
             };
-        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=i;var e=n.imageLazyLoadSetting.isSPA,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function i(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight||document.documentElement.clientHeight)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},n.src=i}()}i(),n.addEventListener("scroll",function(){var t,e;t=i,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script><script src="https://cdn.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js"></script><script>L2Dwidget.init({"model":{"jsonPath":"https://cdn.jsdelivr.net/npm/live2d-widget-model-z16@1.0.5/assets/z16.model.json"},"display":{"position":"left","width":120,"height":250},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=i;var e=n.imageLazyLoadSetting.isSPA,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function i(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight||document.documentElement.clientHeight)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},n.src=i}()}i(),n.addEventListener("scroll",function(){var t,e;t=i,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script></body>
 
 </html>

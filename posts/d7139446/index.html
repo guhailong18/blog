@@ -847,13 +847,6 @@ def main():
 #当前程序被当作主程序运行时， __ name__被自动赋值为固定的字符串__main__;当它被当作模块被其他文件调用时，自动被赋值为模块所在的文件名
 if __name__ == '__main__':
     main()<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-
-
-
-
-
-
 <p>在这里就顺便记一下if <strong>name</strong> == ‘<strong>main</strong>‘的具体用法及说明（其实我之前真的不是很理解这行代码）</p>
 <p><code>__name__本身其实就是一个变量，当前程序被当作主程序运行时， __ name__被自动赋值为固定的字符串__main__;当它被当作模块被其他文件调用时，自动被赋值为模块所在的文件名</code></p>
 <h3 id="报错解决："><a href="#报错解决：" class="headerlink" title="报错解决："></a>报错解决：</h3><p>忽然发现是少打了一个字母，上面的代码是修改过的，请放心使用！(￣▽￣)~*</p>
@@ -878,7 +871,6 @@ with imageio.get_writer(gif_path, mode='I') as writer:
         writer.append_data(imageio.imread(frames_path.format(i=i)))
 
 optimize(gif_path)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
 <p>这是官方的GIF优化的方法！</p>
 <p><strong>其他有趣的操作！</strong></p>
 <h2 id="图片操作"><a href="#图片操作" class="headerlink" title="图片操作"></a>图片操作</h2><p><strong>将指定颜色变透明 只能保存 png jpg</strong></p>
@@ -918,7 +910,6 @@ optimize(gif_path)<span aria-hidden="true" class="line-numbers-rows"><span></spa
           }
       return imageDes;
   }<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
 <p><strong>按倍率缩小图片</strong></p>
 <pre class="line-numbers language-none"><code class="language-none">/**
    * 按倍率缩小图片
@@ -949,7 +940,6 @@ optimize(gif_path)<span aria-hidden="true" class="line-numbers-rows"><span></spa
           e.printStackTrace();
       }
   }<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
 <p><strong>指定图形的长和宽</strong></p>
 <pre><code> /**
   * 指定图形的长和宽
@@ -977,8 +967,9 @@ optimize(gif_path)<span aria-hidden="true" class="line-numbers-rows"><span></spa
      } catch (Exception e) {
          e.printStackTrace();
      }
- }</code></pre>
-<p>更多操作请看：<a target="_blank" rel="noopener" href="https://blog.csdn.net/baidu_28665563/article/details/82887485">https://blog.csdn.net/baidu_28665563/article/details/82887485</a></p>
+ }
+</code></pre>
+<p>更多操作请看：https://blog.csdn.net/baidu_28665563/article/details/82887485</p>
 
                 
             </div>
@@ -1955,11 +1946,11 @@ $(function () {
     <script src="https://cdn.jsdelivr.net/gh/guhailong18/blog/libs/instantpage/instantpage.js" type="module"></script>
     
 
-<script>
+<script src="https://cdn.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js"></script><script>L2Dwidget.init({"model":{"jsonPath":"https://cdn.jsdelivr.net/npm/live2d-widget-model-z16@1.0.5/assets/z16.model.json"},"display":{"position":"left","width":120,"height":250},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script><script>
             window.imageLazyLoadSetting = {
                 isSPA: false,
                 processImages: null,
             };
-        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=i;var e=n.imageLazyLoadSetting.isSPA,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function i(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight||document.documentElement.clientHeight)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},n.src=i}()}i(),n.addEventListener("scroll",function(){var t,e;t=i,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script><script src="https://cdn.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js"></script><script>L2Dwidget.init({"model":{"jsonPath":"https://cdn.jsdelivr.net/npm/live2d-widget-model-z16@1.0.5/assets/z16.model.json"},"display":{"position":"left","width":120,"height":250},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=i;var e=n.imageLazyLoadSetting.isSPA,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function i(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight||document.documentElement.clientHeight)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},n.src=i}()}i(),n.addEventListener("scroll",function(){var t,e;t=i,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script></body>
 
 </html>

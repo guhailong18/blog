@@ -743,12 +743,12 @@
                                 <span class="chip bg-color">matlab</span>
                             </a>
                         
-                            <a href="/tags/math/">
-                                <span class="chip bg-color">math</span>
-                            </a>
-                        
                             <a href="/tags/%E5%85%A5%E9%97%A8/">
                                 <span class="chip bg-color">入门</span>
+                            </a>
+                        
+                            <a href="/tags/math/">
+                                <span class="chip bg-color">math</span>
                             </a>
                         
                     </div>
@@ -827,301 +827,84 @@
 <p>matlab（矩阵实验室),一个强大的数学工具。不扯其他的，matlab就是把大量函数封装起来起来，让所有人就算不知道实现原理都可以解决高难度的数学问题的工具，学matlab就是学它的函数的使用，并且记住什么函数有什么用，几乎没有什么特别要学习的语法，有编程基础的稍微看下官方文档，改改自己的习惯就好了。（所以我也不讲语法啦，直接看函数）</p>
 <p>简单的记录一下Matlab的一些简单运用，希望可以印象深一些！</p>
 <h2 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h2><p><strong>这些函数都很重要，需要牢记</strong></p>
-<h3 id="输出函数"><a href="#输出函数" class="headerlink" title="输出函数"></a>输出函数</h3><table>
-<thead>
-<tr>
-<th><a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/matlab/ref/ans.html"><code>ans</code></a></th>
-<th>最近计算的答案</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/matlab/ref/clc.html"><code>clc</code></a></td>
-<td>清空命令行窗口</td>
-</tr>
-<tr>
-<td><a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/matlab/ref/diary.html"><code>diary</code></a></td>
-<td>将命令行窗口文本记录到日志文件中</td>
-</tr>
-<tr>
-<td><a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/matlab/ref/format.html"><code>format</code></a></td>
-<td>设置命令行窗口输出显示格式</td>
-</tr>
-<tr>
-<td><a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/matlab/ref/home.html"><code>home</code></a></td>
-<td>发送光标复位</td>
-</tr>
-<tr>
-<td><a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/matlab/ref/iskeyword.html"><code>iskeyword</code></a></td>
-<td>确定输入是否为 MATLAB 关键字</td>
-</tr>
-<tr>
-<td><a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/matlab/ref/more.html"><code>more</code></a></td>
-<td>控制命令行窗口中的分页输出</td>
-</tr>
-</tbody></table>
-<h3 id="基本算术函数"><a href="#基本算术函数" class="headerlink" title="基本算术函数"></a>基本算术函数</h3><h4 id="加法"><a href="#加法" class="headerlink" title="加法"></a>加法</h4><table>
-<thead>
-<tr>
-<th><a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/matlab/ref/plus.html"><code>plus</code></a></th>
-<th>加法</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/matlab/ref/uplus.html"><code>uplus</code></a></td>
-<td>一元加法</td>
-</tr>
-<tr>
-<td><a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/matlab/ref/sum.html"><code>sum</code></a></td>
-<td>数组元素总和</td>
-</tr>
-<tr>
-<td><a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/matlab/ref/cumsum.html"><code>cumsum</code></a></td>
-<td>累积和</td>
-</tr>
-<tr>
-<td><a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/matlab/ref/movsum.html"><code>movsum</code></a></td>
-<td>移动总和</td>
-</tr>
-</tbody></table>
-<h4 id="减法"><a href="#减法" class="headerlink" title="减法"></a>减法</h4><table>
-<thead>
-<tr>
-<th><a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/matlab/ref/minus.html"><code>minus</code></a></th>
-<th>减法</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/matlab/ref/uminus.html"><code>uminus</code></a></td>
-<td>一元减法</td>
-</tr>
-<tr>
-<td><a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/matlab/ref/diff.html"><code>diff</code></a></td>
-<td>差分和近似导数</td>
-</tr>
-</tbody></table>
-<h4 id="乘法"><a href="#乘法" class="headerlink" title="乘法"></a>乘法</h4><table>
-<thead>
-<tr>
-<th><a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/matlab/ref/times.html"><code>times</code></a></th>
-<th>按元素乘法</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/matlab/ref/mtimes.html"><code>mtimes</code></a></td>
-<td>矩阵乘法</td>
-</tr>
-<tr>
-<td><a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/matlab/ref/prod.html"><code>prod</code></a></td>
-<td>数组元素的乘积</td>
-</tr>
-<tr>
-<td><a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/matlab/ref/cumprod.html"><code>cumprod</code></a></td>
-<td>累计乘积</td>
-</tr>
-</tbody></table>
-<h4 id="除法"><a href="#除法" class="headerlink" title="除法"></a>除法</h4><table>
-<thead>
-<tr>
-<th><a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/matlab/ref/rdivide.html"><code>rdivide</code></a></th>
-<th>数组右除</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/matlab/ref/ldivide.html"><code>ldivide</code></a></td>
-<td>数组左除</td>
-</tr>
-<tr>
-<td><a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/matlab/ref/mrdivide.html"><code>mrdivide</code></a></td>
-<td>对线性方程组 xA = B 求解 x</td>
-</tr>
-<tr>
-<td><a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/matlab/ref/mldivide.html"><code>mldivide</code></a></td>
-<td>对线性方程组 Ax = B 求解 x</td>
-</tr>
-</tbody></table>
-<h4 id="幂"><a href="#幂" class="headerlink" title="幂"></a>幂</h4><table>
-<thead>
-<tr>
-<th><a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/matlab/ref/power.html"><code>power</code></a></th>
-<th>按元素求幂</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/matlab/ref/mpower.html"><code>mpower</code></a></td>
-<td>矩阵幂</td>
-</tr>
-</tbody></table>
+<h3 id="输出函数"><a href="#输出函数" class="headerlink" title="输出函数"></a>输出函数</h3><p>| <a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/matlab/ref/ans.html"><code>ans</code></a>   | 最近计算的答案                   |
+| ———————————————————— | ——————————– |
+| <a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/matlab/ref/clc.html"><code>clc</code></a>   | 清空命令行窗口                   |
+| <a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/matlab/ref/diary.html"><code>diary</code></a> | 将命令行窗口文本记录到日志文件中 |
+| <a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/matlab/ref/format.html"><code>format</code></a> | 设置命令行窗口输出显示格式       |
+| <a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/matlab/ref/home.html"><code>home</code></a> | 发送光标复位                     |
+| <a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/matlab/ref/iskeyword.html"><code>iskeyword</code></a> | 确定输入是否为 MATLAB 关键字     |
+| <a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/matlab/ref/more.html"><code>more</code></a> | 控制命令行窗口中的分页输出       |</p>
+<h3 id="基本算术函数"><a href="#基本算术函数" class="headerlink" title="基本算术函数"></a>基本算术函数</h3><h4 id="加法"><a href="#加法" class="headerlink" title="加法"></a>加法</h4><p>| <a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/matlab/ref/plus.html"><code>plus</code></a> | 加法         |
+| ———————————————————— | ———— |
+| <a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/matlab/ref/uplus.html"><code>uplus</code></a> | 一元加法     |
+| <a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/matlab/ref/sum.html"><code>sum</code></a>   | 数组元素总和 |
+| <a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/matlab/ref/cumsum.html"><code>cumsum</code></a> | 累积和       |
+| <a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/matlab/ref/movsum.html"><code>movsum</code></a> | 移动总和     |</p>
+<h4 id="减法"><a href="#减法" class="headerlink" title="减法"></a>减法</h4><p>| <a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/matlab/ref/minus.html"><code>minus</code></a> | 减法           |
+| ———————————————————— | ————– |
+| <a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/matlab/ref/uminus.html"><code>uminus</code></a> | 一元减法       |
+| <a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/matlab/ref/diff.html"><code>diff</code></a> | 差分和近似导数 |</p>
+<h4 id="乘法"><a href="#乘法" class="headerlink" title="乘法"></a>乘法</h4><p>| <a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/matlab/ref/times.html"><code>times</code></a> | 按元素乘法     |
+| ———————————————————— | ————– |
+| <a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/matlab/ref/mtimes.html"><code>mtimes</code></a> | 矩阵乘法       |
+| <a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/matlab/ref/prod.html"><code>prod</code></a> | 数组元素的乘积 |
+| <a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/matlab/ref/cumprod.html"><code>cumprod</code></a> | 累计乘积       |</p>
+<h4 id="除法"><a href="#除法" class="headerlink" title="除法"></a>除法</h4><p>| <a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/matlab/ref/rdivide.html"><code>rdivide</code></a> | 数组右除                   |
+| ———————————————————— | ————————– |
+| <a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/matlab/ref/ldivide.html"><code>ldivide</code></a> | 数组左除                   |
+| <a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/matlab/ref/mrdivide.html"><code>mrdivide</code></a> | 对线性方程组 xA = B 求解 x |
+| <a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/matlab/ref/mldivide.html"><code>mldivide</code></a> | 对线性方程组 Ax = B 求解 x |</p>
+<h4 id="幂"><a href="#幂" class="headerlink" title="幂"></a>幂</h4><p>| <a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/matlab/ref/power.html"><code>power</code></a> | 按元素求幂 |
+| ———————————————————— | ———- |
+| <a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/matlab/ref/mpower.html"><code>mpower</code></a> | 矩阵幂     |</p>
 <h2 id="符号"><a href="#符号" class="headerlink" title="符号"></a>符号</h2><p>有些可以直接用符号的就用符号，没必要用函数，符号个人感觉更直观，和日常接触的数学符号类似。</p>
-<h3 id="算术运算符"><a href="#算术运算符" class="headerlink" title="算术运算符"></a>算术运算符</h3><table>
-<thead>
-<tr>
-<th align="left">符号</th>
-<th align="left">角色</th>
-<th align="left">函数</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left"><strong><code>+</code></strong></td>
-<td align="left">加法</td>
-<td align="left"><a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/matlab/ref/plus.html"><code>plus</code></a></td>
-</tr>
-<tr>
-<td align="left"><strong><code>+</code></strong></td>
-<td align="left">一元加法</td>
-<td align="left"><a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/matlab/ref/uplus.html"><code>uplus</code></a></td>
-</tr>
-<tr>
-<td align="left"><strong><code>-</code></strong></td>
-<td align="left">减法</td>
-<td align="left"><a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/matlab/ref/minus.html"><code>minus</code></a></td>
-</tr>
-<tr>
-<td align="left"><strong><code>-</code></strong></td>
-<td align="left">一元减法</td>
-<td align="left"><a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/matlab/ref/uminus.html"><code>uminus</code></a></td>
-</tr>
-<tr>
-<td align="left"><strong><code>.\*</code></strong></td>
-<td align="left">按元素乘法</td>
-<td align="left"><a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/matlab/ref/times.html"><code>times</code></a></td>
-</tr>
-<tr>
-<td align="left"><strong><code>\*</code></strong></td>
-<td align="left">矩阵乘法</td>
-<td align="left"><a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/matlab/ref/mtimes.html"><code>mtimes</code></a></td>
-</tr>
-<tr>
-<td align="left"><strong><code>./</code></strong></td>
-<td align="left">按元素右除</td>
-<td align="left"><a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/matlab/ref/rdivide.html"><code>rdivide</code></a></td>
-</tr>
-<tr>
-<td align="left"><strong><code>/</code></strong></td>
-<td align="left">矩阵右除</td>
-<td align="left"><a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/matlab/ref/mrdivide.html"><code>mrdivide</code></a></td>
-</tr>
-<tr>
-<td align="left"><strong><code>.\</code></strong></td>
-<td align="left">按元素左除</td>
-<td align="left"><a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/matlab/ref/ldivide.html"><code>ldivide</code></a></td>
-</tr>
-<tr>
-<td align="left"><strong><code>\</code></strong></td>
-<td align="left">矩阵左除（也称为<em>反斜杠</em>）</td>
-<td align="left"><a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/matlab/ref/mldivide.html"><code>mldivide</code></a></td>
-</tr>
-<tr>
-<td align="left"><strong><code>.^</code></strong></td>
-<td align="left">按元素求幂</td>
-<td align="left"><a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/matlab/ref/power.html"><code>power</code></a></td>
-</tr>
-<tr>
-<td align="left"><strong><code>^</code></strong></td>
-<td align="left">矩阵幂</td>
-<td align="left"><a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/matlab/ref/mpower.html"><code>mpower</code></a></td>
-</tr>
-<tr>
-<td align="left"><strong><code>.'</code></strong></td>
-<td align="left">转置</td>
-<td align="left"><a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/matlab/ref/transpose.html"><code>transpose</code></a></td>
-</tr>
-<tr>
-<td align="left"><strong><code>'</code></strong></td>
-<td align="left">复共轭转置</td>
-<td align="left"></td>
-</tr>
-</tbody></table>
-<h3 id="关系运算符"><a href="#关系运算符" class="headerlink" title="关系运算符"></a>关系运算符</h3><table>
-<thead>
-<tr>
-<th align="left">符号</th>
-<th align="left">角色</th>
-<th align="left">更多信息</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left"><strong><code>==</code></strong></td>
-<td align="left">等于</td>
-<td align="left"><a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/matlab/ref/eq.html"><code>eq</code></a></td>
-</tr>
-<tr>
-<td align="left"><strong><code>~=</code></strong></td>
-<td align="left">不等于</td>
-<td align="left"><a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/matlab/ref/ne.html"><code>ne</code></a></td>
-</tr>
-<tr>
-<td align="left"><strong><code>&gt;</code></strong></td>
-<td align="left">大于</td>
-<td align="left"><a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/matlab/ref/gt.html"><code>gt</code></a></td>
-</tr>
-<tr>
-<td align="left"><strong><code>&gt;=</code></strong></td>
-<td align="left">大于或等于</td>
-<td align="left"><a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/matlab/ref/ge.html"><code>ge</code></a></td>
-</tr>
-<tr>
-<td align="left"><strong><code>&lt;</code></strong></td>
-<td align="left">小于</td>
-<td align="left"><a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/matlab/ref/lt.html"><code>lt</code></a></td>
-</tr>
-<tr>
-<td align="left"><strong><code>&lt;=</code></strong></td>
-<td align="left">小于或等于</td>
-<td align="left"><a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/matlab/ref/le.html"><code>le</code></a></td>
-</tr>
-</tbody></table>
-<h3 id="逻辑运算符"><a href="#逻辑运算符" class="headerlink" title="逻辑运算符"></a>逻辑运算符</h3><table>
-<thead>
-<tr>
-<th align="left">符号</th>
-<th align="left">角色</th>
-<th align="left">更多信息</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left"><strong><code>&amp;</code></strong></td>
-<td align="left">逻辑 AND</td>
-<td align="left"><a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/matlab/ref/and.html"><code>and</code></a></td>
-</tr>
-<tr>
-<td align="left">**`</td>
-<td align="left">`**</td>
-<td align="left">逻辑 OR</td>
-</tr>
-<tr>
-<td align="left"><strong><code>&amp;&amp;</code></strong></td>
-<td align="left">逻辑 AND（具有短路功能）</td>
-<td align="left">[`Logical Operators: Short-Circuit &amp;&amp;</td>
-</tr>
-<tr>
-<td align="left">**`</td>
-<td align="left"></td>
-<td align="left">`**</td>
-</tr>
-<tr>
-<td align="left"><strong><code>~</code></strong></td>
-<td align="left">逻辑非</td>
-<td align="left"><a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/matlab/ref/not.html"><code>not</code></a></td>
-</tr>
-</tbody></table>
+<h3 id="算术运算符"><a href="#算术运算符" class="headerlink" title="算术运算符"></a>算术运算符</h3><p>| 符号      | 角色                       | 函数                                                         |
+| :——– | :————————- | :———————————————————– |
+| <strong><code>+</code></strong>   | 加法                       | <a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/matlab/ref/plus.html"><code>plus</code></a> |
+| <strong><code>+</code></strong>   | 一元加法                   | <a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/matlab/ref/uplus.html"><code>uplus</code></a> |
+| <strong><code>-</code></strong>   | 减法                       | <a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/matlab/ref/minus.html"><code>minus</code></a> |
+| <strong><code>-</code></strong>   | 一元减法                   | <a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/matlab/ref/uminus.html"><code>uminus</code></a> |
+| <strong><code>.\*</code></strong> | 按元素乘法                 | <a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/matlab/ref/times.html"><code>times</code></a> |
+| <strong><code>\*</code></strong>  | 矩阵乘法                   | <a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/matlab/ref/mtimes.html"><code>mtimes</code></a> |
+| <strong><code>./</code></strong>  | 按元素右除                 | <a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/matlab/ref/rdivide.html"><code>rdivide</code></a> |
+| <strong><code>/</code></strong>   | 矩阵右除                   | <a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/matlab/ref/mrdivide.html"><code>mrdivide</code></a> |
+| <strong><code>.\</code></strong>  | 按元素左除                 | <a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/matlab/ref/ldivide.html"><code>ldivide</code></a> |
+| <strong><code>\</code></strong>   | 矩阵左除（也称为<em>反斜杠</em>） | <a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/matlab/ref/mldivide.html"><code>mldivide</code></a> |
+| <strong><code>.^</code></strong>  | 按元素求幂                 | <a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/matlab/ref/power.html"><code>power</code></a> |
+| <strong><code>^</code></strong>   | 矩阵幂                     | <a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/matlab/ref/mpower.html"><code>mpower</code></a> |
+| <strong><code>.'</code></strong>  | 转置                       | <a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/matlab/ref/transpose.html"><code>transpose</code></a> |
+| <strong><code>'</code></strong>   | 复共轭转置                 |                                                              |</p>
+<h3 id="关系运算符"><a href="#关系运算符" class="headerlink" title="关系运算符"></a>关系运算符</h3><p>| 符号     | 角色       | 更多信息                                                 |
+| :——- | :——— | :——————————————————- |
+| <strong><code>==</code></strong> | 等于       | <a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/matlab/ref/eq.html"><code>eq</code></a> |
+| <strong><code>~=</code></strong> | 不等于     | <a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/matlab/ref/ne.html"><code>ne</code></a> |
+| <strong><code>&gt;</code></strong>  | 大于       | <a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/matlab/ref/gt.html"><code>gt</code></a> |
+| <strong><code>&gt;=</code></strong> | 大于或等于 | <a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/matlab/ref/ge.html"><code>ge</code></a> |
+| <strong><code>&lt;</code></strong>  | 小于       | <a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/matlab/ref/lt.html"><code>lt</code></a> |
+| <strong><code>&lt;=</code></strong> | 小于或等于 | <a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/matlab/ref/le.html"><code>le</code></a> |</p>
+<h3 id="逻辑运算符"><a href="#逻辑运算符" class="headerlink" title="逻辑运算符"></a>逻辑运算符</h3><p>| 符号     | 角色                     | 更多信息                                                     |
+| :——- | :———————– | :———————————————————– |
+| <strong><code>&amp;</code></strong>  | 逻辑 AND                 | <a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/matlab/ref/and.html"><code>and</code></a>   |
+| <strong><code>|</code></strong>  | 逻辑 OR                  | <a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/matlab/ref/or.html"><code>or</code></a>     |
+| <strong><code>&amp;&amp;</code></strong> | 逻辑 AND（具有短路功能） | <a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/matlab/ref/logicaloperatorsshortcircuit.html"><code>Logical Operators: Short-Circuit &amp;&amp; ||</code></a> |
+| <strong><code>||</code></strong> | 逻辑 OR（具有短路功能）  |                                                              |
+| <strong><code>~</code></strong>  | 逻辑非                   | <a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/matlab/ref/not.html"><code>not</code></a>   |</p>
 <p>先记住这些就够了，其他的以后用得着的时候再说。</p>
 <h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><p><code>…</code> :续行符，(命令太长，一行不够使的时候)</p>
 <p><code>cd</code>:当前文件夹</p>
 <p><code>path</code>:设置搜索文件路径（例：path(path,’d:\work’))或设置路径</p>
 <h2 id="1-解多项式和绘图"><a href="#1-解多项式和绘图" class="headerlink" title="1.解多项式和绘图"></a>1.解多项式和绘图</h2><h3 id="法一"><a href="#法一" class="headerlink" title="法一"></a>法一</h3><pre class="line-numbers language-none"><code class="language-none">p = [2,1,9];  %从x零次方开始，右到左依次增加
 r = roots(p)  %输出解<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-
 <h5 id="绘图："><a href="#绘图：" class="headerlink" title="绘图："></a>绘图：</h5><pre class="line-numbers language-none"><code class="language-none">x= -8:0.1:8   %x的取值-8~8，隔0.1一个点
 y1 = x.*x-3*x+1;   %函数
 y2=zeros(size(x));   %x轴
 plot(x,y1,x,y2);<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-
 <h3 id="法二"><a href="#法二" class="headerlink" title="法二"></a>法二</h3><p>x = fzero(fun,x0) 尝试求出 fun(x) = 0 的点 x。此解是 fun(x) 变号的位置 - fzero 无法求函数（例如 x^2）的根</p>
 <p>示例：</p>
 <pre class="line-numbers language-none"><code class="language-none">fun = @(x)x*x-3*x+1;
 x0 = 3;   %也可是区间
 x = fzero(fun,x0)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-
 <p>f = @myfunction; %通过在函数名称前添加一个 <code>@</code> 符号来为函数创建句柄</p>
 <p>(函数句柄是一种存储指向函数的关联关系的 MATLAB® 数据类型。间接调用函数使您在调用该函数时无需考虑调用位置。)</p>
 <h3 id="法三"><a href="#法三" class="headerlink" title="法三"></a>法三</h3><p><code>x = fsolve(fun,x0,options)</code>用中指定的优化选项求解方程<code>options</code>。使用<a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/optim/ug/optim.problemdef.optimizationproblem.optimoptions.html"><code>optimoptions</code></a>设置这些选项。</p>
@@ -1147,14 +930,13 @@ x = fzero(fun,x0)<span aria-hidden="true" class="line-numbers-rows"><span></span
 <h2 id="3-循环及条件语句"><a href="#3-循环及条件语句" class="headerlink" title="3.循环及条件语句"></a>3.循环及条件语句</h2><pre class="line-numbers language-none"><code class="language-none">for index = values
    statements
 end<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-
 <ul>
 <li><p>  <code>initVal</code>:<code>endVal</code> - <code>index</code> 变量从 <code>initVal</code> 至 <code>endVal</code> 按 <code>1</code> 递增，重复执行 <code>statements</code> 直到 <code>index</code> 大于 <code>endVal</code>。</p>
 </li>
 <li><p>  <code>initVal</code>:<code>step</code>:<code>endVal</code> - 每次迭代时按值 <code>step</code> 对 <code>index</code> 进行递增，或在 <code>step</code> 是负数时对 <code>index</code> 进行递减。</p>
 </li>
 <li><p><code>valArray</code> - 每次迭代时从数组 <code>valArray</code> 的后续列创建列向量 <code>index</code>。例如，在第一次迭代时，<code>index = valArray(:,1)</code>。循环最多执行 <code>n</code> 次，其中 <code>n</code> 是 <code>valArray</code> 的列数，由 <code>numel(valArray(1,:))</code> 给定。输入 <code>valArray</code> 可属于任何 MATLAB® 数据类型，包括字符向量、元胞数组或结构体。</p>
-<p>  示例：<strong>创建一个 10 阶 Hilbert 矩阵</strong></p>
+<p>示例：<strong>创建一个 10 阶 Hilbert 矩阵</strong></p>
 </li>
 </ul>
 <pre class="line-numbers language-none"><code class="language-none">s = 10;
@@ -1165,28 +947,14 @@ for c = 1:s
         H(r,c) = 1/(r+c-1);
     end
 end<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-
-
-
-
-
-
 <h2 id="4"><a href="#4" class="headerlink" title="4."></a>4.</h2><h2 id="5-size函数"><a href="#5-size函数" class="headerlink" title="5.size函数"></a>5.size函数</h2><p>先出来个矩阵</p>
 <pre class="line-numbers language-none"><code class="language-none">A = <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-
-
 <pre class="line-numbers language-none"><code class="language-none">dsize = size(A)<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-
-
 <pre class="line-numbers language-none"><code class="language-none">[dx,dy] = size(A)<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <p>dx为行数，dy为列数</p>
-<h4 id="最后推荐个在线Matlab的网站："><a href="#最后推荐个在线Matlab的网站：" class="headerlink" title="最后推荐个在线Matlab的网站："></a>最后推荐个在线Matlab的网站：</h4><p><a target="_blank" rel="noopener" href="https://octave-online.net/#">https://octave-online.net/#</a></p>
+<h4 id="最后推荐个在线Matlab的网站："><a href="#最后推荐个在线Matlab的网站：" class="headerlink" title="最后推荐个在线Matlab的网站："></a>最后推荐个在线Matlab的网站：</h4><p>https://octave-online.net/#</p>
 <p>（试了好几个在线的网站，发现这个特别好，除了全是英文对我很是难受以外，其他堪称完美，而且免费，当然电脑好的一路推荐安装软件）</p>
-<h6 id="参考链接："><a href="#参考链接：" class="headerlink" title="参考链接："></a><strong>参考链接：</strong></h6><p><a target="_blank" rel="noopener" href="https://matlabacademy.mathworks.com/R2019b/cn/portal.html?course=gettingstarted#chapter=7&amp;lesson=1&amp;section=1">https://matlabacademy.mathworks.com/R2019b/cn/portal.html?course=gettingstarted#chapter=7&amp;lesson=1&amp;section=1</a></p>
+<h6 id="参考链接："><a href="#参考链接：" class="headerlink" title="参考链接："></a><strong>参考链接：</strong></h6><p>https://matlabacademy.mathworks.com/R2019b/cn/portal.html?course=gettingstarted#chapter=7&amp;lesson=1&amp;section=1</p>
 
                 
             </div>
@@ -1259,12 +1027,12 @@ end<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span>
                                     <span class="chip bg-color">matlab</span>
                                 </a>
                             
-                                <a href="/tags/math/">
-                                    <span class="chip bg-color">math</span>
-                                </a>
-                            
                                 <a href="/tags/%E5%85%A5%E9%97%A8/">
                                     <span class="chip bg-color">入门</span>
+                                </a>
+                            
+                                <a href="/tags/math/">
+                                    <span class="chip bg-color">math</span>
                                 </a>
                             
                         </div>
@@ -2170,11 +1938,11 @@ $(function () {
     <script src="https://cdn.jsdelivr.net/gh/guhailong18/blog/libs/instantpage/instantpage.js" type="module"></script>
     
 
-<script>
+<script src="https://cdn.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js"></script><script>L2Dwidget.init({"model":{"jsonPath":"https://cdn.jsdelivr.net/npm/live2d-widget-model-z16@1.0.5/assets/z16.model.json"},"display":{"position":"left","width":120,"height":250},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script><script>
             window.imageLazyLoadSetting = {
                 isSPA: false,
                 processImages: null,
             };
-        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=i;var e=n.imageLazyLoadSetting.isSPA,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function i(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight||document.documentElement.clientHeight)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},n.src=i}()}i(),n.addEventListener("scroll",function(){var t,e;t=i,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script><script src="https://cdn.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js"></script><script>L2Dwidget.init({"model":{"jsonPath":"https://cdn.jsdelivr.net/npm/live2d-widget-model-z16@1.0.5/assets/z16.model.json"},"display":{"position":"left","width":120,"height":250},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=i;var e=n.imageLazyLoadSetting.isSPA,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function i(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight||document.documentElement.clientHeight)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},n.src=i}()}i(),n.addEventListener("scroll",function(){var t,e;t=i,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script></body>
 
 </html>

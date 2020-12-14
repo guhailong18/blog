@@ -815,10 +815,8 @@
                 <p><strong>docker images :</strong> 列出本地镜像。</p>
 <h3 id="获取镜像"><a href="#获取镜像" class="headerlink" title="获取镜像"></a>获取镜像</h3><p>例，载入 ubuntu 镜像</p>
 <pre class="line-numbers language-none"><code class="language-none">docker pull ubuntu<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <h3 id="启动容器"><a href="#启动容器" class="headerlink" title="启动容器"></a>启动容器</h3><p>ubuntu 镜像启动一个容器，参数为以命令行模式进入该容器：</p>
 <pre class="line-numbers language-none"><code class="language-none">docker run -it ubuntu /bin/bash<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <p>参数说明：</p>
 <ul>
 <li><strong>-i</strong>: 交互式操作。</li>
@@ -831,35 +829,28 @@
 <p>docker start 启动一个已停止的容器：docker start b750bbbcfd88 （此参数为ID）</p>
 <h3 id="后台运行"><a href="#后台运行" class="headerlink" title="后台运行"></a>后台运行</h3><p><strong>-d</strong> 指定容器的运行模式</p>
 <pre class="line-numbers language-none"><code class="language-none">docker run -itd --name ubuntu-test ubuntu /bin/bash<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <p><strong>注：</strong>加了 <strong>-d</strong> 参数默认不会进入容器，想要进入容器需要使用指令 <strong>docker exec</strong></p>
 <h3 id="停止一个容器"><a href="#停止一个容器" class="headerlink" title="停止一个容器"></a>停止一个容器</h3><pre class="line-numbers language-none"><code class="language-none">docker stop &lt;容器 ID&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <h3 id="进入容器"><a href="#进入容器" class="headerlink" title="进入容器"></a>进入容器</h3><p><strong>docker exec</strong>：推荐大家使用 docker exec 命令，因为此退出容器终端，不会导致容器的停止。</p>
 <pre class="line-numbers language-none"><code class="language-none">docker exec -it 243c32535da7 /bin/bash<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <h3 id="导出和导入容器"><a href="#导出和导入容器" class="headerlink" title="导出和导入容器"></a>导出和导入容器</h3><p>使用 <strong>docker export</strong> 命令。</p>
 <pre class="line-numbers language-none"><code class="language-none">docker export 1e560fca3906 &gt; ubuntu.tar<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <h3 id="删除容器"><a href="#删除容器" class="headerlink" title="删除容器"></a>删除容器</h3><p><strong>docker rm</strong> 命令：</p>
 <pre class="line-numbers language-none"><code class="language-none">docker rm -f 1e560fca3906<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <p>下面的命令可以清理掉所有处于终止状态的容器。</p>
 <p>$ docker container prune</p>
 <h2 id="运行一个-web-应用"><a href="#运行一个-web-应用" class="headerlink" title="运行一个 web 应用"></a>运行一个 web 应用</h2><pre class="line-numbers language-none"><code class="language-none">runoob@runoob:~# docker pull training/webapp  # 载入镜像
 runoob@runoob:~# docker run -d -P training/webapp python app.py<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-
 <p>参数说明:</p>
 <ul>
-<li>**-d:**让容器在后台运行。</li>
-<li>**-P:**将容器内部使用的网络端口映射到我们使用的主机上。</li>
+<li><strong>-d:</strong>让容器在后台运行。</li>
+<li><strong>-P:</strong>将容器内部使用的网络端口映射到我们使用的主机上。</li>
 </ul>
 <h2 id="查看-WEB-应用容器"><a href="#查看-WEB-应用容器" class="headerlink" title="查看 WEB 应用容器"></a>查看 WEB 应用容器</h2><p>docker ps</p>
 <p>Docker 开放了 5000 端口（默认 Python Flask 端口）映射到主机端口 32769 上。</p>
 <p>这时我们可以通过浏览器访问WEB应用</p>
 <p>可以通过 -p 参数来设置不一样的端口：</p>
 <pre class="line-numbers language-none"><code class="language-none">runoob@runoob:~$ docker run -d -p 5000:5000 training/webapp python app.py<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <h2 id="查看-WEB-应用程序日志"><a href="#查看-WEB-应用程序日志" class="headerlink" title="查看 WEB 应用程序日志"></a>查看 WEB 应用程序日志</h2><p>docker logs [ID或者名字] 可以查看容器内部的标准输出。</p>
 <p><strong>-f:</strong> 让 <strong>docker logs</strong> 像使用 <strong>tail -f</strong> 一样来输出容器内部的标准输出。</p>
 <p>从上面，我们可以看到应用程序使用的是 5000 端口并且能够查看到应用程序的访问日志。</p>
@@ -1840,11 +1831,11 @@ $(function () {
     <script src="https://cdn.jsdelivr.net/gh/guhailong18/blog/libs/instantpage/instantpage.js" type="module"></script>
     
 
-<script>
+<script src="https://cdn.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js"></script><script>L2Dwidget.init({"model":{"jsonPath":"https://cdn.jsdelivr.net/npm/live2d-widget-model-z16@1.0.5/assets/z16.model.json"},"display":{"position":"left","width":120,"height":250},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script><script>
             window.imageLazyLoadSetting = {
                 isSPA: false,
                 processImages: null,
             };
-        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=i;var e=n.imageLazyLoadSetting.isSPA,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function i(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight||document.documentElement.clientHeight)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},n.src=i}()}i(),n.addEventListener("scroll",function(){var t,e;t=i,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script><script src="https://cdn.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js"></script><script>L2Dwidget.init({"model":{"jsonPath":"https://cdn.jsdelivr.net/npm/live2d-widget-model-z16@1.0.5/assets/z16.model.json"},"display":{"position":"left","width":120,"height":250},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=i;var e=n.imageLazyLoadSetting.isSPA,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function i(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight||document.documentElement.clientHeight)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},n.src=i}()}i(),n.addEventListener("scroll",function(){var t,e;t=i,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script></body>
 
 </html>

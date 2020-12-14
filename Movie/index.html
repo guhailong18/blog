@@ -803,24 +803,16 @@
 			<script>
 				console.error("TypeError: Cannot set property 'url=https' of undefined");
 			</script>
-
 <pre class="line-numbers language-none"><code class="language-none">{% dplayer "url=https://moeplayer.b0.upaiyun.com/dplayer/hikarunara.mp4" "addition=https://dplayer.daoapp.io/bilibili?aid=4157142" "api=https://api.prprpr.me/dplayer/" "pic=https://moeplayer.b0.upaiyun.com/dplayer/hikarunara.jpg" "id=9E2E3368B56CDBB4" "loop=yes" "theme=#FADFA3" "autoplay=false" "token=tokendemo" %}
 {% dplayer 'url=some.mp4' "id=someid" "api=https://api.prprpr.me/dplayer/" "addition=/some.json" 'code=player.on("loadstart",function(){console.log("loadstart")})' "autoplay" %} <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-
 
 			<script>
 				console.error("TypeError: Cannot set property '“url=https' of undefined");
 			</script>
 
-
-
-
 			<script>
 				console.error("TypeError: Cannot set property '“url=blob' of undefined");
 			</script>
-
-
-
 <video class="dplayer-video dplayer-video-current" webkit-playsinline="" playsinline="" poster="https://i.loli.net/2019/06/06/5cf8c5d9c57b510947.png" crossorigin="anonymous" preload="auto" src="https://api.dogecloud.com/player/get.mp4?vcode=5ac682e6f8231991&amp;userId=17&amp;ext=.mp4" __idm_id__="478951426" data-vscid="epuwcmxq2">
     <track kind="metadata" default="" src="https://cn-south-17-dplayer-49648867.oss.dogecdn.com/hikarunara.vtt">
 </video>
@@ -828,7 +820,7 @@
 
 
 
-<div id="player"></div>
+<p></p><div id="player"></div>
 <script type="text/javascript" src="https://player.dogecloud.com/js/loader"></script>
 <script type="text/javascript">
 var player = new DogePlayer({
@@ -837,19 +829,8 @@ var player = new DogePlayer({
     vcode: '9dbfeac71787bfbb',
     autoPlay: false
 });
-</script>
-
-
-
-
-
-<iframe id="dogePlayerFrame" src="https://player.dogecloud.com/web/player.html?vcode=9dbfeac71787bfbb&amp;userId=914&amp;autoPlay=false&amp;inFrame=true" allowfullscreen="true" msallowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" oallowfullscreen="true" allowtransparency="true" scrolling="no" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen" referrerpolicy="unsafe-url"></iframe>
-------
-
-
-
-
-<video class="dplayer-video dplayer-video-current" webkit-playsinline="" playsinline="" poster="https://i.loli.net/2019/06/06/5cf8c5d9c57b510947.png" crossorigin="anonymous" preload="auto" src="https://api.dogecloud.com/player/get.mp4?vcode=9dbfeac71787bfbb&amp;userId=914&amp;ext=.mp4" __idm_id__="478951426" data-vscid="epuwcmxq2">
+</script><p></p>
+<h2 id=""><a href="#" class="headerlink" title=""></a><iframe id="dogePlayerFrame" src="https://player.dogecloud.com/web/player.html?vcode=9dbfeac71787bfbb&amp;userId=914&amp;autoPlay=false&amp;inFrame=true" allowfullscreen="true" msallowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" oallowfullscreen="true" allowtransparency="true" scrolling="no" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen" referrerpolicy="unsafe-url"></iframe></h2><video class="dplayer-video dplayer-video-current" webkit-playsinline="" playsinline="" poster="https://i.loli.net/2019/06/06/5cf8c5d9c57b510947.png" crossorigin="anonymous" preload="auto" src="https://api.dogecloud.com/player/get.mp4?vcode=9dbfeac71787bfbb&amp;userId=914&amp;ext=.mp4" __idm_id__="478951426" data-vscid="epuwcmxq2">
     <track kind="metadata" default="" src="https://cn-south-17-dplayer-49648867.oss.dogecdn.com/hikarunara.vtt">
 </video>
 
@@ -882,9 +863,6 @@ var player = new DogePlayer({
 
 
 <h2 id="插件使用方法："><a href="#插件使用方法：" class="headerlink" title="插件使用方法："></a><a target="_blank" rel="noopener" href="https://github.com/MoePlayer/hexo-tag-dplayer">插件使用方法：</a></h2><h3 id="用法"><a href="#用法" class="headerlink" title="用法"></a>用法</h3><pre class="line-numbers language-none"><code class="language-none">{% dplayer key=value ... %}<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-
-
 <pre class="line-numbers language-none"><code class="language-none">dplayer options:
     'autoplay', 'loop', 'screenshot', 'hotkey', 'mutex', 'dmunlimited' : bool options, use "yes" "y" "true" "1" "on" or just without value to enable
     'preload', 'theme', 'lang', 'logo', 'url', 'pic', 'thumbnails', 'vidtype', 'suburl', 'subtype', 'subbottom', 'subcolor', 'subcolor', 'id', 'api', 'token', 'addition', 'dmuser' : string arguments
@@ -893,7 +871,6 @@ container options:
     'width', 'height' : string, used in container element style
 other:
     'code' : value of this key will be append to script tag<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
 <p>示例：</p>
 <pre class="line-numbers language-none"><code class="language-none">{% dplayer "url=https://moeplayer.b0.upaiyun.com/dplayer/hikarunara.mp4" "addition=https://dplayer.daoapp.io/bilibili?aid=4157142" "api=https://api.prprpr.me/dplayer/" "pic=https://moeplayer.b0.upaiyun.com/dplayer/hikarunara.jpg" "id=9E2E3368B56CDBB4" "loop=yes" "theme=#FADFA3" "autoplay=false" "token=tokendemo" %}
 {% dplayer 'url=some.mp4' "id=someid" "api=https://api.prprpr.me/dplayer/" "addition=/some.json" 'code=player.on("loadstart",function(){console.log("loadstart")})' "autoplay" %} <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
@@ -1835,11 +1812,11 @@ $(function () {
     <script src="https://cdn.jsdelivr.net/gh/guhailong18/blog/libs/instantpage/instantpage.js" type="module"></script>
     
 
-<script>
+<script src="https://cdn.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js"></script><script>L2Dwidget.init({"model":{"jsonPath":"https://cdn.jsdelivr.net/npm/live2d-widget-model-z16@1.0.5/assets/z16.model.json"},"display":{"position":"left","width":120,"height":250},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script><script>
             window.imageLazyLoadSetting = {
                 isSPA: false,
                 processImages: null,
             };
-        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=i;var e=n.imageLazyLoadSetting.isSPA,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function i(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight||document.documentElement.clientHeight)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},n.src=i}()}i(),n.addEventListener("scroll",function(){var t,e;t=i,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script><script src="https://cdn.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js"></script><script>L2Dwidget.init({"model":{"jsonPath":"https://cdn.jsdelivr.net/npm/live2d-widget-model-z16@1.0.5/assets/z16.model.json"},"display":{"position":"left","width":120,"height":250},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=i;var e=n.imageLazyLoadSetting.isSPA,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function i(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight||document.documentElement.clientHeight)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},n.src=i}()}i(),n.addEventListener("scroll",function(){var t,e;t=i,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script></body>
 
 </html>

@@ -817,19 +817,16 @@
 <h2 id="1-挂载OD"><a href="#1-挂载OD" class="headerlink" title="1.挂载OD"></a>1.挂载OD</h2><h2 id="2-挂载GD"><a href="#2-挂载GD" class="headerlink" title="2.挂载GD"></a>2.挂载GD</h2><p>挂载</p>
 <pre class="line-numbers language-none"><code class="language-none">rclone mount onedrive-guke:/ /home/one-guke --copy-links --n
 o-gzip-encoding --no-check-certificate --allow-other --allow-non-empty --umask 000<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-
 <h3 id="开机自动挂载"><a href="#开机自动挂载" class="headerlink" title="开机自动挂载"></a>开机自动挂载</h3><ul>
 <li>  下载并编辑自启脚本</li>
 </ul>
 <pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">wget -N git.io/rcloned &amp;&amp; nano rcloned<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <ul>
 <li>  修改内容：</li>
 </ul>
 <pre class="line-numbers language-none"><code class="language-none">NAME="Onedrive" #Rclone配置时填写的name
 REMOTE=''  #远程文件夹，网盘里的挂载的一个文件夹，留空为整个网盘
 LOCAL='/Onedrive'  #挂载地址，VPS本地挂载目录<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-
 <ul>
 <li>  设置开机自启</li>
 </ul>
@@ -838,7 +835,6 @@ chmod +x /etc/init.d/rcloned
 update-rc.d -f rcloned defaults # Debian/Ubuntu
 chkconfig rcloned on # CentOS
 bash /etc/init.d/rcloned start<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
 <p>看到 <code>[信息] rclone 启动成功 !</code> 即可。</p>
 <h4 id="管理"><a href="#管理" class="headerlink" title="管理"></a>管理</h4><p>开始挂载 <code>bash /etc/init.d/rcloned start</code></p>
 <p>停止挂载 <code>bash /etc/init.d/rcloned stop</code></p>
@@ -848,7 +844,6 @@ bash /etc/init.d/rcloned start<span aria-hidden="true" class="line-numbers-rows"
 update-rc.d -f rcloned remove # Debian/Ubuntu
 chkconfig rcloned off # CentOS
 rm -f /etc/init.d/rcloned<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-
 <h2 id="5-常用Rclone命令"><a href="#5-常用Rclone命令" class="headerlink" title="5.常用Rclone命令"></a>5.常用Rclone命令</h2><pre class="line-numbers language-none"><code class="language-none">### 文件上传
 rclone copy /home/backup gdrive:backup  # 本地路径 配置名字:网盘文件夹路径
 ### 文件下载
@@ -890,11 +885,8 @@ rclone dedupe - 交互式查找重复文件，进行删除/重命名操作。
 重启：systemctl restart rclone
 停止：systemctl stop rclone
 状态：systemctl status rclone<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-
-
-<h6 id="参考链接："><a href="#参考链接：" class="headerlink" title="参考链接："></a><strong>参考链接：</strong></h6><p><a target="_blank" rel="noopener" href="https://sunpma.com/659.html">https://sunpma.com/659.html</a></p>
-<p><a target="_blank" rel="noopener" href="https://p3terx.com/archives/linux-vps-uses-rclone-to-mount-network-drives-such-as-onedrive-and-google-drive.html">https://p3terx.com/archives/linux-vps-uses-rclone-to-mount-network-drives-such-as-onedrive-and-google-drive.html</a></p>
+<h6 id="参考链接："><a href="#参考链接：" class="headerlink" title="参考链接："></a><strong>参考链接：</strong></h6><p>https://sunpma.com/659.html</p>
+<p>https://p3terx.com/archives/linux-vps-uses-rclone-to-mount-network-drives-such-as-onedrive-and-google-drive.html</p>
 
                 
             </div>
@@ -1863,11 +1855,11 @@ $(function () {
     <script src="https://cdn.jsdelivr.net/gh/guhailong18/blog/libs/instantpage/instantpage.js" type="module"></script>
     
 
-<script>
+<script src="https://cdn.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js"></script><script>L2Dwidget.init({"model":{"jsonPath":"https://cdn.jsdelivr.net/npm/live2d-widget-model-z16@1.0.5/assets/z16.model.json"},"display":{"position":"left","width":120,"height":250},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script><script>
             window.imageLazyLoadSetting = {
                 isSPA: false,
                 processImages: null,
             };
-        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=i;var e=n.imageLazyLoadSetting.isSPA,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function i(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight||document.documentElement.clientHeight)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},n.src=i}()}i(),n.addEventListener("scroll",function(){var t,e;t=i,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script><script src="https://cdn.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js"></script><script>L2Dwidget.init({"model":{"jsonPath":"https://cdn.jsdelivr.net/npm/live2d-widget-model-z16@1.0.5/assets/z16.model.json"},"display":{"position":"left","width":120,"height":250},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=i;var e=n.imageLazyLoadSetting.isSPA,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function i(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight||document.documentElement.clientHeight)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},n.src=i}()}i(),n.addEventListener("scroll",function(){var t,e;t=i,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script></body>
 
 </html>

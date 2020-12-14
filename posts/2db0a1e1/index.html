@@ -811,149 +811,106 @@
             <div id="articleContent">
                 <h2 id="SSH终端输入："><a href="#SSH终端输入：" class="headerlink" title="SSH终端输入："></a>SSH终端输入：</h2><p>1.查看面板入口：</p>
 <pre class="line-numbers language-none"><code class="language-none">/etc/init.d/bt default<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <p>2.关闭安全入口：</p>
 <pre class="line-numbers language-none"><code class="language-none">rm -f /www/server/panel/data/admin_path.pl<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <p>停止</p>
 <pre class="line-numbers language-none"><code class="language-none">/etc/init.d/bt stop<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <p>启动</p>
 <pre class="line-numbers language-none"><code class="language-none">/etc/init.d/bt start<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <p>重启</p>
 <pre class="line-numbers language-none"><code class="language-none">/etc/init.d/bt restart<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <p>卸载</p>
 <pre class="line-numbers language-none"><code class="language-none">/etc/init.d/bt stop &amp;&amp; chkconfig --del bt &amp;&amp; rm -f /etc/init.d/bt &amp;&amp; rm -rf /www/server/panel<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <p>查看当前面板端口</p>
 <pre class="line-numbers language-none"><code class="language-none">cat /www/server/panel/data/port.pl<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <p>修改面板端口，如要改成8881（centos 6 系统）</p>
 <pre class="line-numbers language-none"><code class="language-none">echo '8881' &gt; /www/server/panel/data/port.pl &amp;&amp; /etc/init.d/bt restart
 iptables -I INPUT -p tcp -m state --state NEW -m tcp --dport 8881 -j ACCEPT
 service iptables save
 service iptables restart<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-
 <p>修改面板端口，如要改成8881（centos 7 系统）</p>
 <pre class="line-numbers language-none"><code class="language-none">echo '8881' &gt; /www/server/panel/data/port.pl &amp;&amp; /etc/init.d/bt restart
 firewall-cmd --permanent --zone=public --add-port=8881/tcp
 firewall-cmd --reload<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-
 <p>强制修改MySQL管理(root)密码，如要改成123456</p>
 <pre class="line-numbers language-none"><code class="language-none">cd /www/server/panel &amp;&amp; python tools.py root 123456<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <p>修改面板密码，如要改成123456</p>
 <pre class="line-numbers language-none"><code class="language-none">cd /www/server/panel &amp;&amp; python tools.py panel 123456<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <p>查看宝塔日志</p>
 <pre class="line-numbers language-none"><code class="language-none">cat /tmp/panelBoot.pl<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <p>查看软件安装日志</p>
 <pre class="line-numbers language-none"><code class="language-none">cat /tmp/panelExec.log<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <p>站点配置文件位置</p>
 <pre class="line-numbers language-none"><code class="language-none">/www/server/panel/vhost<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <p>删除域名绑定面板</p>
 <pre class="line-numbers language-none"><code class="language-none">rm -f /www/server/panel/data/domain.conf<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <p>清理登陆限制</p>
 <pre class="line-numbers language-none"><code class="language-none">rm -f /www/server/panel/data/*.login<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <p>查看面板授权IP</p>
 <pre class="line-numbers language-none"><code class="language-none">cat /www/server/panel/data/limitip.conf<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <p>关闭访问限制</p>
 <pre class="line-numbers language-none"><code class="language-none">rm -f /www/server/panel/data/limitip.conf<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <p>查看许可域名</p>
 <pre class="line-numbers language-none"><code class="language-none">cat /www/server/panel/data/domain.conf<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <p>关闭面板SSL</p>
 <pre class="line-numbers language-none"><code class="language-none">rm -f /www/server/panel/data/ssl.pl &amp;&amp; /etc/init.d/bt restart<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <p>查看面板错误日志</p>
 <pre class="line-numbers language-none"><code class="language-none">cat /tmp/panelBoot<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <p>查看数据库错误日志</p>
 <pre class="line-numbers language-none"><code class="language-none">cat /www/server/data/*.err<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <p>站点配置文件目录(nginx)</p>
 <pre class="line-numbers language-none"><code class="language-none">/www/server/panel/vhost/nginx<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <p>站点配置文件目录(apache)</p>
 <pre class="line-numbers language-none"><code class="language-none">/www/server/panel/vhost/apache<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <p>站点默认目录</p>
 <pre class="line-numbers language-none"><code class="language-none">/www/wwwroot<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <p>数据库备份目录</p>
 <pre class="line-numbers language-none"><code class="language-none">/www/backup/database<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <p>站点备份目录</p>
 <pre class="line-numbers language-none"><code class="language-none">/www/backup/site<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <p>站点日志</p>
 <pre class="line-numbers language-none"><code class="language-none">/www/wwwlogs<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-
-
 <h1 id="破解版"><a href="#破解版" class="headerlink" title="破解版"></a><a target="_blank" rel="noopener" href="https://www.tangguoya.com/318.html">破解版</a></h1><p><a target="_blank" rel="noopener" href="https://www.tangguoya.com/318.html">地址</a></p>
 <h2 id="安装专业宝塔"><a href="#安装专业宝塔" class="headerlink" title="安装专业宝塔"></a>安装专业宝塔</h2><p>Centos安装脚本 <strong>面板端口：8888</strong></p>
 <p>Source Code</p>
 <pre class="line-numbers language-none"><code class="language-none">yum install -y wget &amp;&amp; wget -O install.sh https://download.youko.me/install/install_6.0.sh &amp;&amp; sh install.sh<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <p>试验性Centos/Ubuntu/Debian安装命令 独立运行环境（py3.7） 可能存在少量兼容性问题 不断优化中</p>
 <p>Source Code</p>
 <pre class="line-numbers language-none"><code class="language-none">curl -sSO https://download.youko.me/install/install_panel.sh &amp;&amp; bash install_panel.sh<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <p>Ubuntu/Deepin安装脚本</p>
 <p>Source Code</p>
 <pre class="line-numbers language-none"><code class="language-none">wget -O install.sh https://download.youko.me/install/install-ubuntu_6.0.sh &amp;&amp; sudo bash install.sh<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <p>Debian安装脚本</p>
 <p>Source Code</p>
 <pre class="line-numbers language-none"><code class="language-none">wget -O install.sh https://download.youko.me/install/install-ubuntu_6.0.sh &amp;&amp; bash install.sh<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <p>Fedora安装脚本</p>
 <p>Source Code</p>
 <pre class="line-numbers language-none"><code class="language-none">wget -O install.sh https://download.youko.me/install/install_6.0.sh &amp;&amp; bash install.sh<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <p><strong>Linux面板7.4.5升级命令（已安装面板或旧版本或免费版升级专业版）</strong></p>
 <p>Source Code</p>
 <pre class="line-numbers language-none"><code class="language-none">curl https://download.youko.me/install/update6.sh|bash<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <p>Nginx/Apache官方防火墙安装命令</p>
 <p>Source Code</p>
 <pre class="line-numbers language-none"><code class="language-none">Nginx直接面板安装防火墙使用 / Apache先面板安装防火墙在使用bt命令20修复！<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <hr>
 <h2 id="安装企业宝塔"><a href="#安装企业宝塔" class="headerlink" title="安装企业宝塔"></a>安装企业宝塔</h2><p>Centos安装脚本 <strong>面板端口：8888</strong></p>
 <p>Source Code</p>
 <pre class="line-numbers language-none"><code class="language-none">yum install -y wget &amp;&amp; wget -O install.sh https://download.youko.me/ltd/install/install_6.0.sh &amp;&amp; sh install.sh<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <p>试验性Centos/Ubuntu/Debian安装命令 独立运行环境（py3.7） 可能存在少量兼容性问题 不断优化中</p>
 <p>Source Code</p>
 <pre class="line-numbers language-none"><code class="language-none">curl -sSO https://download.youko.me/ltd/install/install_panel.sh &amp;&amp; bash install_panel.sh<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <p>Ubuntu/Deepin安装脚本</p>
 <p>Source Code</p>
 <pre class="line-numbers language-none"><code class="language-none">wget -O install.sh https://download.youko.me/ltd/install/install-ubuntu_6.0.sh &amp;&amp; sudo bash install.sh<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <p>Debian安装脚本</p>
 <p>Source Code</p>
 <pre class="line-numbers language-none"><code class="language-none">wget -O install.sh https://download.youko.me/ltd/install/install-ubuntu_6.0.sh &amp;&amp; bash install.sh<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <p>Fedora安装脚本</p>
 <p>Source Code</p>
 <pre class="line-numbers language-none"><code class="language-none">wget -O install.sh https://download.youko.me/ltd/install/install_6.0.sh &amp;&amp; bash install.sh<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <p><strong>Linux面板7.4.5升级命令（已安装面板或旧版本或免费版升级企业版）</strong></p>
 <p>Source Code</p>
 <pre class="line-numbers language-none"><code class="language-none">curl https://download.youko.me/ltd/install/update6.sh|bash<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <p>Nginx/Apache官方防火墙安装命令</p>
 <p>Source Code</p>
 <pre class="line-numbers language-none"><code class="language-none">Nginx直接面板安装防火墙使用 / Apache先面板安装防火墙在使用bt命令20修复！<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
@@ -1924,11 +1881,11 @@ $(function () {
     <script src="https://cdn.jsdelivr.net/gh/guhailong18/blog/libs/instantpage/instantpage.js" type="module"></script>
     
 
-<script>
+<script src="https://cdn.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js"></script><script>L2Dwidget.init({"model":{"jsonPath":"https://cdn.jsdelivr.net/npm/live2d-widget-model-z16@1.0.5/assets/z16.model.json"},"display":{"position":"left","width":120,"height":250},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script><script>
             window.imageLazyLoadSetting = {
                 isSPA: false,
                 processImages: null,
             };
-        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=i;var e=n.imageLazyLoadSetting.isSPA,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function i(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight||document.documentElement.clientHeight)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},n.src=i}()}i(),n.addEventListener("scroll",function(){var t,e;t=i,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script><script src="https://cdn.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js"></script><script>L2Dwidget.init({"model":{"jsonPath":"https://cdn.jsdelivr.net/npm/live2d-widget-model-z16@1.0.5/assets/z16.model.json"},"display":{"position":"left","width":120,"height":250},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=i;var e=n.imageLazyLoadSetting.isSPA,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function i(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight||document.documentElement.clientHeight)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},n.src=i}()}i(),n.addEventListener("scroll",function(){var t,e;t=i,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script></body>
 
 </html>

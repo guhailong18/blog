@@ -813,123 +813,78 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>hexo new “name”       # 新建文章<br>hexo new page “name” # 新建页面<br>hexo g               # 生成页面<br>hexo d               # 部署<br>hexo g -d             # 生成页面并部署<br>hexo s               # 本地预览<br>hexo clean           # 清除缓存和已生成的静态文件<br>hexo help             # 帮助</p>
-<table>
-<thead>
-<tr>
-<th><code>-d</code>, <code>--deploy</code></th>
-<th>文件生成后立即部署网站</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><code>-w</code>, <code>--watch</code></td>
-<td>监视文件变动</td>
-</tr>
-<tr>
-<td><code>-b</code>, <code>--bail</code></td>
-<td>生成过程中如果发生任何未处理的异常则抛出异常</td>
-</tr>
-<tr>
-<td><code>-f</code>, <code>--force</code></td>
-<td>强制重新生成文件 Hexo 引入了差分机制，如果 <code>public</code> 目录存在，那么 <code>hexo g</code> 只会重新生成改动的文件。 使用该参数的效果接近 <code>hexo clean &amp;&amp; hexo generate</code></td>
-</tr>
-</tbody></table>
+                <p>hexo new “name”       # 新建文章
+hexo new page “name” # 新建页面
+hexo g               # 生成页面
+hexo d               # 部署
+hexo g -d             # 生成页面并部署
+hexo s               # 本地预览
+hexo clean           # 清除缓存和已生成的静态文件
+hexo help             # 帮助</p>
+<p>| <code>-d</code>, <code>--deploy</code> | 文件生成后立即部署网站                                       |
+| —————- | ———————————————————— |
+| <code>-w</code>, <code>--watch</code>  | 监视文件变动                                                 |
+| <code>-b</code>, <code>--bail</code>   | 生成过程中如果发生任何未处理的异常则抛出异常                 |
+| <code>-f</code>, <code>--force</code>  | 强制重新生成文件 Hexo 引入了差分机制，如果 <code>public</code> 目录存在，那么 <code>hexo g</code> 只会重新生成改动的文件。 使用该参数的效果接近 <code>hexo clean &amp;&amp; hexo generate</code> |</p>
 <h3 id="安全模式"><a href="#安全模式" class="headerlink" title="安全模式"></a>安全模式</h3><pre class="line-numbers language-none"><code class="language-none">$ hexo --safe<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <p>在安全模式下，不会载入插件和脚本。</p>
 <h3 id="简洁模式"><a href="#简洁模式" class="headerlink" title="简洁模式"></a>简洁模式</h3><pre class="line-numbers language-none"><code class="language-none">$ hexo --silent<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <p>隐藏终端信息。</p>
 <h3 id="调试模式"><a href="#调试模式" class="headerlink" title="调试模式"></a>调试模式</h3><pre class="line-numbers language-none"><code class="language-none">$ hexo --debug<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <p>在终端中显示调试信息并记录到 <code>debug.log</code></p>
 <p>Front-matter 是文件最上方以 <code>---</code> 分隔的区域，用于指定个别文件的变量，举例来说：</p>
 <pre class="line-numbers language-none"><code class="language-none">---
 title: Hello World
 date: 2013/7/13 20:46:25
 ---<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-
 <p>以下是预先定义的参数，您可在模板中使用这些参数值并加以利用。</p>
-<table>
-<thead>
-<tr>
-<th align="left">参数</th>
-<th align="left">描述</th>
-<th align="left">默认值</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left"><code>layout</code></td>
-<td align="left">布局</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left"><code>title</code></td>
-<td align="left">标题</td>
-<td align="left">文章的文件名</td>
-</tr>
-<tr>
-<td align="left"><code>date</code></td>
-<td align="left">建立日期</td>
-<td align="left">文件建立日期</td>
-</tr>
-<tr>
-<td align="left"><code>updated</code></td>
-<td align="left">更新日期</td>
-<td align="left">文件更新日期</td>
-</tr>
-<tr>
-<td align="left"><code>comments</code></td>
-<td align="left">开启文章的评论功能</td>
-<td align="left">true</td>
-</tr>
-<tr>
-<td align="left"><code>tags</code></td>
-<td align="left">标签（不适用于分页）</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left"><code>categories</code></td>
-<td align="left">分类（不适用于分页）</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left"><code>permalink</code></td>
-<td align="left">覆盖文章网址</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left"><code>keywords</code></td>
-<td align="left">仅用于 meta 标签和 Open Graph 的关键词（不推荐使用）</td>
-<td align="left"></td>
-</tr>
-</tbody></table>
+<p>| 参数         | 描述                                                 | 默认值       |
+| :———– | :————————————————— | :———– |
+| <code>layout</code>     | 布局                                                 |              |
+| <code>title</code>      | 标题                                                 | 文章的文件名 |
+| <code>date</code>       | 建立日期                                             | 文件建立日期 |
+| <code>updated</code>    | 更新日期                                             | 文件更新日期 |
+| <code>comments</code>   | 开启文章的评论功能                                   | true         |
+| <code>tags</code>       | 标签（不适用于分页）                                 |              |
+| <code>categories</code> | 分类（不适用于分页）                                 |              |
+| <code>permalink</code>  | 覆盖文章网址                                         |              |
+| <code>keywords</code>   | 仅用于 meta 标签和 Open Graph 的关键词（不推荐使用） |              |</p>
 <h2 id="分类和标签"><a href="#分类和标签" class="headerlink" title="分类和标签"></a>分类和标签</h2><p>只有文章支持分类和标签，您可以在 Front-matter 中设置。在其他系统中，分类和标签听起来很接近，但是在 Hexo 中两者有着明显的差别：分类具有顺序性和层次性，也就是说 <code>Foo, Bar</code> 不等于 <code>Bar, Foo</code>；而标签没有顺序和层次。</p>
 <pre class="line-numbers language-none"><code class="language-none">categories:
 - Diary
 tags:
 - PS3
 - Games<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p>Commands:<br>  clean     删除生成的文件和缓存。<br>  config    获取或设置配置。<br>  deploy    部署你的网站。<br>  generate  生成静态文件。<br>  help      得到命令的帮助。<br>  init      创建一个新的Hexo文件夹。<br>  list      列出网站的信息<br>  migrate   将您的站点从其他系统迁移到Hexo。<br>  new       创建一个新帖子。<br>  publish   将草稿从_drafts移到_posts文件夹。<br>  render    Render files with renderer plugins.<br>  server    启动服务器。<br>  version   显示版本信息。</p>
-<p>public     #网站文件<br>themes     #主题文件夹，用来存放主题，后面在美化博客的时候经常要用<br>source     #存放用户文件，主要存放用户写的文章，图片等等。<br>_config.yml     #网站的配置信息，要跟主题里的配置信息分开，主题文件夹里也有一个同名的文件，后面配置的时候经常用它们俩。</p>
+<p>Commands:
+  clean     删除生成的文件和缓存。
+  config    获取或设置配置。
+  deploy    部署你的网站。
+  generate  生成静态文件。
+  help      得到命令的帮助。
+  init      创建一个新的Hexo文件夹。
+  list      列出网站的信息
+  migrate   将您的站点从其他系统迁移到Hexo。
+  new       创建一个新帖子。
+  publish   将草稿从<em>drafts移到</em>posts文件夹。
+  render    Render files with renderer plugins.
+  server    启动服务器。
+  version   显示版本信息。</p>
+<p>public     #网站文件
+themes     #主题文件夹，用来存放主题，后面在美化博客的时候经常要用
+source     #存放用户文件，主要存放用户写的文章，图片等等。
+_config.yml     #网站的配置信息，要跟主题里的配置信息分开，主题文件夹里也有一个同名的文件，后面配置的时候经常用它们俩。</p>
 <p>以下命令来查看所有全局安装的模块：</p>
 <pre class="line-numbers language-none"><code class="language-none">$ npm list -g<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <p>以下命令来卸载 Node.js 模块。</p>
 <pre class="line-numbers language-none"><code class="language-none">$ npm uninstall express<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <h2 id="更新模块"><a href="#更新模块" class="headerlink" title="更新模块"></a>更新模块</h2><p>我们可以使用以下命令更新模块：</p>
 <pre class="line-numbers language-none"><code class="language-none">$ npm update express<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <hr>
 <h2 id="搜索模块"><a href="#搜索模块" class="headerlink" title="搜索模块"></a>搜索模块</h2><p>使用以下来搜索模块：</p>
 <pre class="line-numbers language-none"><code class="language-none">$ npm search express<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <hr>
 <h2 id="创建模块"><a href="#创建模块" class="headerlink" title="创建模块"></a>创建模块</h2><p>创建模块，package.json 文件是必不可少的。我们可以使用 NPM 生成 package.json 文件，生成的文件包含了基本的结果。</p>
 <pre class="line-numbers language-none"><code class="language-none">$ npm init<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <ul>
 <li>NPM提供了很多命令，例如<code>install</code>和<code>publish</code>，使用<code>npm help</code>可查看所有命令。</li>
 <li>使用<code>npm help </code>可查看某条命令的详细帮助，例如<code>npm help install</code>。</li>
@@ -939,7 +894,19 @@ tags:
 <li>使用<code>npm cache clear</code>可以清空NPM本地缓存，用于对付使用相同版本号发布新版本代码的人。</li>
 <li>使用<code>npm unpublish @</code>可以撤销发布自己发布过的某个版本代码。</li>
 </ul>
-<p>npm install<br>npm install hexo-deployer-git –save//部署到git<br>（下面选择安装）<br>npm install hexo-generator-feed –save //建立RSS订阅<br>npm install hexo-generator-sitemap –save //建立站点地图<br>npm install hexo-generator-searchdb //本地搜索<br>npm install hexo-blog-encrypt –save //博文加密<br>npm install hexo-sage-posts –save //隐藏博文<br>npm install hexo-tag-aplayer //音频播放器<br>npm install hexo-tag-dplayer //视频播放器<br>npm install hexo-filter-mermaid-diagrams //mermaid<br>npm install hexo-pdf –save //pdf在线阅读<br>npm install hexo-baidu-url-submit –save //百度推送</p>
+<p>npm install
+npm install hexo-deployer-git –save//部署到git
+（下面选择安装）
+npm install hexo-generator-feed –save //建立RSS订阅
+npm install hexo-generator-sitemap –save //建立站点地图
+npm install hexo-generator-searchdb //本地搜索
+npm install hexo-blog-encrypt –save //博文加密
+npm install hexo-sage-posts –save //隐藏博文
+npm install hexo-tag-aplayer //音频播放器
+npm install hexo-tag-dplayer //视频播放器
+npm install hexo-filter-mermaid-diagrams //mermaid
+npm install hexo-pdf –save //pdf在线阅读
+npm install hexo-baidu-url-submit –save //百度推送</p>
 <h3 id="压缩："><a href="#压缩：" class="headerlink" title="压缩："></a>压缩：</h3><p>生成博文是执行 <code>hexo g &amp;&amp; gulp</code> 就会根据 <code>gulpfile.js</code> 中的配置，对 public 目录中的静态资源文件进行压缩。</p>
 <p>当你想要压缩的话执行上面命令就行，压缩后再上传部署</p>
 
@@ -1265,12 +1232,12 @@ tags:
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E6%A0%87%E7%AD%BE/">
-                        <span class="chip bg-color">标签</span>
-                    </a>
-                    
                     <a href="/tags/markdown/">
                         <span class="chip bg-color">markdown</span>
+                    </a>
+                    
+                    <a href="/tags/%E6%A0%87%E7%AD%BE/">
+                        <span class="chip bg-color">标签</span>
                     </a>
                     
                 </div>
@@ -1918,11 +1885,11 @@ $(function () {
     <script src="https://cdn.jsdelivr.net/gh/guhailong18/blog/libs/instantpage/instantpage.js" type="module"></script>
     
 
-<script>
+<script src="https://cdn.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js"></script><script>L2Dwidget.init({"model":{"jsonPath":"https://cdn.jsdelivr.net/npm/live2d-widget-model-z16@1.0.5/assets/z16.model.json"},"display":{"position":"left","width":120,"height":250},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script><script>
             window.imageLazyLoadSetting = {
                 isSPA: false,
                 processImages: null,
             };
-        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=i;var e=n.imageLazyLoadSetting.isSPA,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function i(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight||document.documentElement.clientHeight)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},n.src=i}()}i(),n.addEventListener("scroll",function(){var t,e;t=i,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script><script src="https://cdn.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js"></script><script>L2Dwidget.init({"model":{"jsonPath":"https://cdn.jsdelivr.net/npm/live2d-widget-model-z16@1.0.5/assets/z16.model.json"},"display":{"position":"left","width":120,"height":250},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=i;var e=n.imageLazyLoadSetting.isSPA,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function i(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight||document.documentElement.clientHeight)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},n.src=i}()}i(),n.addEventListener("scroll",function(){var t,e;t=i,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script></body>
 
 </html>

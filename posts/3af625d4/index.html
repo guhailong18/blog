@@ -812,33 +812,29 @@
                 <h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p><strong>Hexo是什么？</strong></p>
 <p><strong>GitHub Pages是什么？</strong></p>
 <p>GitHub Pages 是由 GitHub 官方提供的一种免费的静态站点托管服务，让我们可以在 GitHub 仓库里托管和发布自己的静态网站页面。我把它理解为动态网站的主机。功能都很类似。</p>
-<h2 id="1-安装"><a href="#1-安装" class="headerlink" title="1.安装"></a>1.安装</h2><p>**1.**Hexo基于Node.js，搭建中还需要npm（Node.js自带）和git，因此我们需要首先搭建本地环境。安装Node.js和Git。</p>
+<h2 id="1-安装"><a href="#1-安装" class="headerlink" title="1.安装"></a>1.安装</h2><p><strong>1.</strong>Hexo基于Node.js，搭建中还需要npm（Node.js自带）和git，因此我们需要首先搭建本地环境。安装Node.js和Git。</p>
 <p>Node.js安装：</p>
-<p><strong>Node.js官网：<a target="_blank" rel="noopener" href="https://nodejs.org/zh-cn/">https://nodejs.org/zh-cn/</a></strong></p>
+<p><strong>Node.js官网：https://nodejs.org/zh-cn/</strong></p>
 <p>进入官网后下载Windows（x64）长期支持版。</p>
 <p>安装Git：</p>
-<p><strong>Git官网下载网址：<a target="_blank" rel="noopener" href="https://git-scm.com/downloads">https://git-scm.com/downloads</a></strong></p>
+<p><strong>Git官网下载网址：https://git-scm.com/downloads</strong></p>
 <p>选择自己的平台，我选择Windows。点击下载。</p>
 <p>下面验证Node.js和Git是否安装成功，也就是本地环境是否搭建成功。Win+R打开运行。输入cmd，进入命令提示符。</p>
 <p>依次输入：（注意输入法在英文状态下）</p>
 <pre class="line-numbers language-none"><code class="language-none">node -v
 npm -v
 git --version<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-
-<img src="./images/loading.gif" data-original="https://cdn.jsdelivr.net/gh/guhailong18/picture/img/20201209090437.png" alt="20201209090437" style="zoom:80%;">
-
+<p><img src="./images/loading.gif" data-original="https://cdn.jsdelivr.net/gh/guhailong18/picture/img/20201209090437.png" alt="20201209090437" style="zoom:80%;"></p>
 <p>若如上图所示，则表明安装成功！</p>
 <p>2.注册github</p>
 <p>下来在桌面或者哪儿都可以，鼠标右键，点击【Git Bash Here】。</p>
 <p>依次输入：</p>
 <pre class="line-numbers language-none"><code class="language-none">git config --global user.name "GitHub用户名"
 git config --global user.email "GitHub邮箱"<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-
 <p>3.生成ssh并连接</p>
 <p>（如果想在多平台部署请忽略这步，直接看2,3）</p>
 <p>输入：</p>
 <pre class="line-numbers language-none"><code class="language-none">ssh-keygen -t rsa -C "GitHub邮箱" <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <p>然后一路回车。创建SSH密匙。</p>
 <p>进入下面路径，如果不显示的记得选择显示隐藏的项目。</p>
 <p><strong>路径：C：\用户\用户名\ .ssh</strong></p>
@@ -849,7 +845,6 @@ git config --global user.email "GitHub邮箱"<span aria-hidden="true" class="lin
 <p>title自己随便取，把刚才复制的密匙粘贴到Key中，点击Add SSH Key添加完成。</p>
 <p>打开Git Bash，输入：</p>
 <pre class="line-numbers language-none"><code class="language-none">ssh -T git@github.com<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <p>出现Are you sure……的时候输入yes回车。</p>
 <p>最后显示You’ve successfully……的时候表示连接成功。</p>
 <p>点击右上角加号，点击New repository新建GitHub Pages仓库。</p>
@@ -860,11 +855,9 @@ git config --global user.email "GitHub邮箱"<span aria-hidden="true" class="lin
 <p><strong>博客的地址为:https://用户名.github.io</strong></p>
 <p>首先安装hexo-deployer-git。输入：</p>
 <pre class="line-numbers language-none"><code class="language-none">npm install hexo-deployer-git --save<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <p>耐心等待</p>
 <h2 id="2-多SSH连接"><a href="#2-多SSH连接" class="headerlink" title="2.多SSH连接"></a>2.多SSH连接</h2><pre class="line-numbers language-none"><code class="language-none">ssh-keygen -t rsa -C "xxxxxx@xxx.com" -f "id_rsa_gitee"
 ssh-keygen -t rsa -C "xxxxxx@xxx.com" -f "id_rsa_github"<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-
 <p>在.ssh目录下创建config文件，添加如下内容：</p>
 <pre class="line-numbers language-none"><code class="language-none"># github
 Host github.com
@@ -1843,11 +1836,11 @@ $(function () {
     <script src="https://cdn.jsdelivr.net/gh/guhailong18/blog/libs/instantpage/instantpage.js" type="module"></script>
     
 
-<script>
+<script src="https://cdn.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js"></script><script>L2Dwidget.init({"model":{"jsonPath":"https://cdn.jsdelivr.net/npm/live2d-widget-model-z16@1.0.5/assets/z16.model.json"},"display":{"position":"left","width":120,"height":250},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script><script>
             window.imageLazyLoadSetting = {
                 isSPA: false,
                 processImages: null,
             };
-        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=i;var e=n.imageLazyLoadSetting.isSPA,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function i(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight||document.documentElement.clientHeight)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},n.src=i}()}i(),n.addEventListener("scroll",function(){var t,e;t=i,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script><script src="https://cdn.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js"></script><script>L2Dwidget.init({"model":{"jsonPath":"https://cdn.jsdelivr.net/npm/live2d-widget-model-z16@1.0.5/assets/z16.model.json"},"display":{"position":"left","width":120,"height":250},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=i;var e=n.imageLazyLoadSetting.isSPA,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function i(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight||document.documentElement.clientHeight)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},n.src=i}()}i(),n.addEventListener("scroll",function(){var t,e;t=i,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script></body>
 
 </html>

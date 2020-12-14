@@ -813,7 +813,7 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h6 id="1-查看-linux-服务器的系统信息-内核"><a href="#1-查看-linux-服务器的系统信息-内核" class="headerlink" title="1.查看*linux**服务器的系统信息(内核***)"></a>1.查看*<strong>linux**<em>服务器的系统信息(</em></strong>内核***)</h6><p>在linux命令行下输入shell指令：uname -a</p>
+                <h6 id="1-查看linux服务器的系统信息-内核"><a href="#1-查看linux服务器的系统信息-内核" class="headerlink" title="1.查看linux服务器的系统信息(内核)"></a>1.查看<strong><em>linux</em></strong>服务器的系统信息(<strong><em>内核</em></strong>)</h6><p>在linux命令行下输入shell指令：uname -a</p>
 <h6 id="2-查看操作系统的版本-以redhat为例，其他的同理"><a href="#2-查看操作系统的版本-以redhat为例，其他的同理" class="headerlink" title="2.查看操作系统的版本(以redhat为例，其他的同理)"></a><strong><em>2.查看操作系统的版本</em></strong>(以redhat为例，其他的同理)</h6><p>cat /etc/redhat-release  或  cat /etc/issue</p>
 <h2 id="netstat、lsof查看端口"><a href="#netstat、lsof查看端口" class="headerlink" title="netstat、lsof查看端口"></a>netstat、lsof查看端口</h2><h3 id="netstat"><a href="#netstat" class="headerlink" title="netstat"></a>netstat</h3><p>netstat用来查看系统当前系统网络状态信息，包括端口，连接情况等，常用方式如下：</p>
 <ul>
@@ -824,8 +824,10 @@
 <li>-n : 不进行DNS解析</li>
 <li>-a 显示所有连接的端口</li>
 </ul>
-<p>直接查看端口命令。netstat -an | grep 22<br> note：22就是改为要查询的端口</p>
-<h3 id="lsof"><a href="#lsof" class="headerlink" title="lsof"></a>lsof</h3><p><a target="_blank" rel="noopener" href="http://www.cnblogs.com/peida/archive/2013/02/26/2932972.html">参考链接</a><br> lsof的作用是列出当前系统打开文件(list open files)，不过通过-i参数也能查看端口的连接情况，-i后跟冒号端口可以查看指定端口信息，直接-i是系统当前所有打开的端口</p>
+<p>直接查看端口命令。netstat -an | grep 22
+ note：22就是改为要查询的端口</p>
+<h3 id="lsof"><a href="#lsof" class="headerlink" title="lsof"></a>lsof</h3><p><a target="_blank" rel="noopener" href="http://www.cnblogs.com/peida/archive/2013/02/26/2932972.html">参考链接</a>
+ lsof的作用是列出当前系统打开文件(list open files)，不过通过-i参数也能查看端口的连接情况，-i后跟冒号端口可以查看指定端口信息，直接-i是系统当前所有打开的端口</p>
 <ul>
 <li>-a 列出打开文件存在的进程</li>
 <li>-c&lt;进程名&gt; 列出指定进程所打开的文件</li>
@@ -847,14 +849,11 @@
 </ol>
 <p>（注：如果是centos系统的话，数字填的是PID下面的，其他系统类似）</p>
 <h3 id="添加环境变量"><a href="#添加环境变量" class="headerlink" title="添加环境变量"></a>添加环境变量</h3><h6 id="直接修改-PATH值："><a href="#直接修改-PATH值：" class="headerlink" title="直接修改$PATH值："></a>直接修改$PATH值：</h6><pre class="line-numbers language-none"><code class="language-none">export PATH=$PATH:/要添加的路径<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <p>或者 </p>
 <pre class="line-numbers language-none"><code class="language-none">export PATH=/要添加的路径$PATH<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <p>注意PATH后没有空格</p>
 <p>例：</p>
 <pre class="line-numbers language-none"><code class="language-none">export PATH="/home/ubuntu/anaconda3/bin:$PATH"<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <p>生效方法：立即生效</p>
 <p>有效期限：临时改变，只能在当前的终端窗口中有效，当前窗口关闭后就会恢复原有的path配置</p>
 <p>用户局限：仅对当前用户</p>
@@ -878,9 +877,15 @@
 <p>有效期限：永久有效</p>
 <p>用户局限：对所有用户</p>
 <h4 id="查找文件"><a href="#查找文件" class="headerlink" title="查找文件"></a>查找文件</h4><p>1.按照文件名查找</p>
-<p>　　　　(1)find / -name httpd.conf　　#在根目录下查找文件httpd.conf，表示在整个硬盘查找<br>　　　　(2)find /etc -name httpd.conf　　#在/etc目录下文件httpd.conf<br>　　　　(3)find /etc -name ‘<em>srm</em>‘　　#使用通配符*(0或者任意多个)。表示在/etc目录下查找文件名中含有字符串‘srm’的文件<br>　　　　(4)find . -name ‘srm*’ 　　#表示当前目录下查找文件名开头是字符串‘srm’的文件</p>
+<p>　　　　(1)find / -name httpd.conf　　#在根目录下查找文件httpd.conf，表示在整个硬盘查找
+　　　　(2)find /etc -name httpd.conf　　#在/etc目录下文件httpd.conf
+　　　　(3)find /etc -name ‘<em>srm</em>‘　　#使用通配符<em>(0或者任意多个)。表示在/etc目录下查找文件名中含有字符串‘srm’的文件
+　　　　(4)find . -name ‘srm</em>‘ 　　#表示当前目录下查找文件名开头是字符串‘srm’的文件</p>
 <p>　2.按照文件特征查找 　　　</p>
-<p>　　　　(1)find / -amin -10 　　# 查找在系统中最后10分钟访问的文件(access time)<br>　　　　(2)find / -atime -2　　 # 查找在系统中最后48小时访问的文件<br>　　　　(3)find / -empty 　　# 查找在系统中为空的文件或者文件夹<br>　　　　(4)find / -group cat 　　# 查找在系统中属于 group为cat的文件</p>
+<p>　　　　(1)find / -amin -10 　　# 查找在系统中最后10分钟访问的文件(access time)
+　　　　(2)find / -atime -2　　 # 查找在系统中最后48小时访问的文件
+　　　　(3)find / -empty 　　# 查找在系统中为空的文件或者文件夹
+　　　　(4)find / -group cat 　　# 查找在系统中属于 group为cat的文件</p>
 <p>3.使用混合查找方式查找文件</p>
 <p>　　　　参数有： ！，-and(-a)，-or(-o)。</p>
 <p>　　　　(1)find /tmp -size +10000c -and -mtime +2 　　#在/tmp目录下查找大于10000字节并在最后2分钟内修改的文件</p>
@@ -1861,11 +1866,11 @@ $(function () {
     <script src="https://cdn.jsdelivr.net/gh/guhailong18/blog/libs/instantpage/instantpage.js" type="module"></script>
     
 
-<script>
+<script src="https://cdn.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js"></script><script>L2Dwidget.init({"model":{"jsonPath":"https://cdn.jsdelivr.net/npm/live2d-widget-model-z16@1.0.5/assets/z16.model.json"},"display":{"position":"left","width":120,"height":250},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script><script>
             window.imageLazyLoadSetting = {
                 isSPA: false,
                 processImages: null,
             };
-        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=i;var e=n.imageLazyLoadSetting.isSPA,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function i(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight||document.documentElement.clientHeight)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},n.src=i}()}i(),n.addEventListener("scroll",function(){var t,e;t=i,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script><script src="https://cdn.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js"></script><script>L2Dwidget.init({"model":{"jsonPath":"https://cdn.jsdelivr.net/npm/live2d-widget-model-z16@1.0.5/assets/z16.model.json"},"display":{"position":"left","width":120,"height":250},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=i;var e=n.imageLazyLoadSetting.isSPA,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function i(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight||document.documentElement.clientHeight)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},n.src=i}()}i(),n.addEventListener("scroll",function(){var t,e;t=i,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script></body>
 
 </html>

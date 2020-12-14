@@ -812,12 +812,11 @@
                 <h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>因为一时兴起把手机和电脑都修改了字体，所以现在想把博客的字体也修改一下。</p>
 <h2 id="1"><a href="#1" class="headerlink" title="1."></a>1.</h2><p>开始寻找字体的CSS文件，在hexo-theme-matery\source\css\matery.css里可以修改字体的大小，能看懂英文的大致就能知道自己修改的是哪里的字体了</p>
 <pre class="line-numbers language-none"><code class="language-none">font-size: 3rem;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <p>在160行左右，会看到</p>
 <pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token property">font-family</span><span class="token punctuation">:</span> Inconsolata<span class="token punctuation">,</span> Monaco<span class="token punctuation">,</span> Consolas<span class="token punctuation">,</span> <span class="token string">'Courier New'</span><span class="token punctuation">,</span> Courier<span class="token punctuation">,</span> monospace<span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <p>这些是修改代码字体的</p>
-<h2 id="2"><a href="#2" class="headerlink" title="2."></a>2.</h2><p>我们可以看出来第一个字体变量是题目的字体，第二个是其余部分的字体。<br>因为我们是中文博客，所以肯定希望能改成一些比较漂亮的中文字体，但是显而易见，你改成<code>宋体</code>是不合理的，因为第一会出现乱码情况，第二Hexo也不接受中文名字的字体。所以我们需要使用中文字体的英文名称。下面是中文字体对应的英文名称。</p>
+<h2 id="2"><a href="#2" class="headerlink" title="2."></a>2.</h2><p>我们可以看出来第一个字体变量是题目的字体，第二个是其余部分的字体。
+因为我们是中文博客，所以肯定希望能改成一些比较漂亮的中文字体，但是显而易见，你改成<code>宋体</code>是不合理的，因为第一会出现乱码情况，第二Hexo也不接受中文名字的字体。所以我们需要使用中文字体的英文名称。下面是中文字体对应的英文名称。</p>
 <pre class="line-numbers language-none"><code class="language-none">新细明体：PMingLiU 
 细明体：MingLiU 
 标楷体：DFKai-SB 
@@ -858,7 +857,6 @@
 标楷体：BiauKai 
 苹果丽中黑：Apple LiGothic Medium 
 苹果丽细宋：Apple LiSung Light <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
 <p>我们只要将自己喜欢字体的英文名加到这两个变量的第一个前面就可以了，有多个字体是为了预防在某些场合前面的字体出现异常，后面的字体可以替代一下。下面是我的定义。</p>
 <h6 id="参考链接："><a href="#参考链接：" class="headerlink" title="参考链接："></a><strong>参考链接：</strong></h6>
                 
@@ -1808,11 +1806,11 @@ $(function () {
     <script src="https://cdn.jsdelivr.net/gh/guhailong18/blog/libs/instantpage/instantpage.js" type="module"></script>
     
 
-<script>
+<script src="https://cdn.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js"></script><script>L2Dwidget.init({"model":{"jsonPath":"https://cdn.jsdelivr.net/npm/live2d-widget-model-z16@1.0.5/assets/z16.model.json"},"display":{"position":"left","width":120,"height":250},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script><script>
             window.imageLazyLoadSetting = {
                 isSPA: false,
                 processImages: null,
             };
-        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=i;var e=n.imageLazyLoadSetting.isSPA,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function i(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight||document.documentElement.clientHeight)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},n.src=i}()}i(),n.addEventListener("scroll",function(){var t,e;t=i,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script><script src="https://cdn.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js"></script><script>L2Dwidget.init({"model":{"jsonPath":"https://cdn.jsdelivr.net/npm/live2d-widget-model-z16@1.0.5/assets/z16.model.json"},"display":{"position":"left","width":120,"height":250},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=i;var e=n.imageLazyLoadSetting.isSPA,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function i(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight||document.documentElement.clientHeight)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},n.src=i}()}i(),n.addEventListener("scroll",function(){var t,e;t=i,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script></body>
 
 </html>

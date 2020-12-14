@@ -761,7 +761,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    565
+                    564
                 </div>
                 
 
@@ -813,7 +813,6 @@
     #去掉无关内容
     remove=re.compile(r'                            |\n|&lt;/br&gt;|\.*')
     datalist=[]<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
 <pre><code>for i in range(0,10):
     url=baseurl+str(i*25)
     html=askURL(url)
@@ -857,12 +856,20 @@
         datalist.append(data)
 
 time.sleep(5)
-return datalist</code></pre>
-<p>def saveData(datalist,savepath):<br>    book=openpyxl.Workbook()<br>    sheet = book.create_sheet(“豆瓣电影Top250”)<br>    #sheet=book.add_sheet(‘豆瓣电影Top250’,cell_overwrite_ok=True)<br>    col=(‘电影详情链接’,’图片链接’,’影片中文名’,’影片外国名’, ‘评分’,’评价数’,’概况’,’相关信息’)</p>
-<pre><code>sheet.append(col)  #添加列头</code></pre>
-<p>​<br>    for i in range(0,250):<br>        data=datalist[i]<br>        for j in range(0,8):<br>            sheet.cell(row = (i+2),column = (j+1),value = data[j]) </p>
-<p>#openpyxl中的单元格计数从1开始, 加上第一行是列头, 要多跳一个<br>#openpyxl中的计数和Excel内的计数方式一致, 但和常规编程从0开始的方式相左</p>
-<pre><code>book.save(savepath) #保存</code></pre>
+return datalist
+</code></pre>
+<p>def saveData(datalist,savepath):
+    book=openpyxl.Workbook()
+    sheet = book.create_sheet(“豆瓣电影Top250”)
+    #sheet=book.add_sheet(‘豆瓣电影Top250’,cell_overwrite_ok=True)
+    col=(‘电影详情链接’,’图片链接’,’影片中文名’,’影片外国名’, ‘评分’,’评价数’,’概况’,’相关信息’)
+
+    sheet.append(col)  #添加列头</p>
+<p>​<br>    for i in range(0,250):
+        data=datalist[i]
+        for j in range(0,8):
+            sheet.cell(row = (i+2),column = (j+1),value = data[j]) </p>
+<h1 id="openpyxl中的单元格计数从1开始-加上第一行是列头-要多跳一个"><a href="#openpyxl中的单元格计数从1开始-加上第一行是列头-要多跳一个" class="headerlink" title="openpyxl中的单元格计数从1开始, 加上第一行是列头, 要多跳一个"></a>openpyxl中的单元格计数从1开始, 加上第一行是列头, 要多跳一个</h1><h1 id="openpyxl中的计数和Excel内的计数方式一致-但和常规编程从0开始的方式相左"><a href="#openpyxl中的计数和Excel内的计数方式一致-但和常规编程从0开始的方式相左" class="headerlink" title="openpyxl中的计数和Excel内的计数方式一致, 但和常规编程从0开始的方式相左"></a>openpyxl中的计数和Excel内的计数方式一致, 但和常规编程从0开始的方式相左</h1><pre><code>book.save(savepath) #保存</code></pre>
 
                 
             </div>
@@ -1815,11 +1822,11 @@ $(function () {
     <script src="https://cdn.jsdelivr.net/gh/guhailong18/blog/libs/instantpage/instantpage.js" type="module"></script>
     
 
-<script>
+<script src="https://cdn.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js"></script><script>L2Dwidget.init({"model":{"jsonPath":"https://cdn.jsdelivr.net/npm/live2d-widget-model-z16@1.0.5/assets/z16.model.json"},"display":{"position":"left","width":120,"height":250},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script><script>
             window.imageLazyLoadSetting = {
                 isSPA: false,
                 processImages: null,
             };
-        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=i;var e=n.imageLazyLoadSetting.isSPA,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function i(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight||document.documentElement.clientHeight)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},n.src=i}()}i(),n.addEventListener("scroll",function(){var t,e;t=i,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script><script src="https://cdn.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js"></script><script>L2Dwidget.init({"model":{"jsonPath":"https://cdn.jsdelivr.net/npm/live2d-widget-model-z16@1.0.5/assets/z16.model.json"},"display":{"position":"left","width":120,"height":250},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=i;var e=n.imageLazyLoadSetting.isSPA,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function i(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight||document.documentElement.clientHeight)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},n.src=i}()}i(),n.addEventListener("scroll",function(){var t,e;t=i,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script></body>
 
 </html>
