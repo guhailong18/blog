@@ -525,7 +525,7 @@
         
         <li><div class="divider"></div></li>
         <li>
-            <a href="https://github.com/guhailong18/blog" class="waves-effect waves-light" target="_blank">
+            <a href="https://github.com/upupoo108" class="waves-effect waves-light" target="_blank">
                 <i class="fab fa-github-square fa-fw"></i>Fork Me
             </a>
         </li>
@@ -582,7 +582,7 @@
     }
 </style>
 
-<a href="https://github.com/guhailong18/blog" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+<a href="https://github.com/upupoo108" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
    data-tooltip="Fork Me" data-position="left" data-delay="50">
     <svg viewBox="0 0 250 250" aria-hidden="true">
         <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
@@ -736,7 +736,7 @@
                 
                 <a href="/categories/matlab/" title="matlab: 4">
                     <span class="chip center-align waves-effect waves-light
-                             chip-default "
+                             chip-active "
                             style="background-color: #85C1E9;">matlab
                         <span class="tag-length">4</span>
                     </span>
@@ -754,7 +754,7 @@
                 
                 <a href="/categories/Matlab/" title="Matlab: 3">
                     <span class="chip center-align waves-effect waves-light
-                             chip-active "
+                             chip-default "
                             style="background-color: #F9E79F;">Matlab
                         <span class="tag-length">3</span>
                     </span>
@@ -972,34 +972,36 @@
             
             <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/posts/5f4eb293/">
+                    <a href="/posts/a764b71d/">
                         <div class="card-image tag-image">
                             
                             
-                            <img src="./images/loading.gif" data-original="https://cdn.jsdelivr.net/gh/guhailong18/blog/medias/featureimages/7.jpg" class="responsive-img" alt="Matlab之数据处理">
+                            <img src="./images/loading.gif" data-original="https://cdn.jsdelivr.net/gh/guhailong18/blog/medias/featureimages/8.jpg" class="responsive-img" alt="matlab之灰度预测">
                             
-                            <span class="card-title">Matlab之数据处理</span>
+                            <span class="card-title">matlab之灰度预测</span>
                         </div>
                     </a>
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                
-概述
+                                概述这次来学习一下比较简单的灰度预测吧，学习数学建模的道路还真是挺艰难的
 
-如果要学习数学建模的话，数据处理是一个必须要学习的，不然就算你有了一堆的数据，不会处理也没有啥用，这篇文章主要来学习matlab数据处理的一些入门级的操作和使用。（其实我更喜欢用python处理数据，有兴趣的可以看下《python
+1.clear
+syms a b;
+c=[a b]';
+A=[89677,99215,109655,120333,135823,159878,182321,2094
                             
                         </div>
                         <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-09
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-16
                             </span>
                             <span class="publish-author">
                                 
                                 <i class="fas fa-bookmark fa-fw icon-category"></i>
                                 
-                                <a href="/categories/Matlab/" class="post-category">
-                                    Matlab
+                                <a href="/categories/matlab/" class="post-category">
+                                    matlab
                                 </a>
                                 
                                 
@@ -1010,8 +1012,16 @@
                     
                     <div class="card-action article-tags">
                         
-                        <a href="/tags/Matlab/">
-                            <span class="chip bg-color">Matlab</span>
+                        <a href="/tags/matlab/">
+                            <span class="chip bg-color">matlab</span>
+                        </a>
+                        
+                        <a href="/tags/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/">
+                            <span class="chip bg-color">数学建模</span>
+                        </a>
+                        
+                        <a href="/tags/%E7%81%B0%E5%BA%A6%E9%A2%84%E6%B5%8B/">
+                            <span class="chip bg-color">灰度预测</span>
                         </a>
                         
                     </div>
@@ -1021,41 +1031,35 @@
             
             <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/posts/808a9a84/">
+                    <a href="/posts/7f9aa56f/">
                         <div class="card-image tag-image">
                             
                             
-                            <img src="./images/loading.gif" data-original="https://cdn.jsdelivr.net/gh/guhailong18/blog/medias/featureimages/10.jpg" class="responsive-img" alt="Matlab之蚂蚁算法的实现">
+                            <img src="./images/loading.gif" data-original="https://cdn.jsdelivr.net/gh/guhailong18/blog/medias/featureimages/8.jpg" class="responsive-img" alt="Matlab矩阵及其相关运算">
                             
-                            <span class="card-title">Matlab之蚂蚁算法的实现</span>
+                            <span class="card-title">Matlab矩阵及其相关运算</span>
                         </div>
                     </a>
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                概述1.2.3.代码的实现重点还是来看下代码吧。（代码有些长，函数的参数一些解释都放在上面了，方便查阅）
-%% 数据准备
-% 清空环境变量
-clear all
-clc
+                                
+概述
 
-% 程序运行计时开始
-t0 = clock;
-
-%导入数据
-citys
+经过了简单的入门后，就要开始对Matlab的矩阵相关的运算开始学习了，因为矩阵在数据分析和处理方面起到相当重要的作用，必须得好好学习并且能熟练运用。（虽然之前的基础也没有打好，有时间就去回顾吧！)
+1.矩阵的创建matlab矩阵的
                             
                         </div>
                         <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-09
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-08
                             </span>
                             <span class="publish-author">
                                 
                                 <i class="fas fa-bookmark fa-fw icon-category"></i>
                                 
-                                <a href="/categories/Matlab/" class="post-category">
-                                    Matlab
+                                <a href="/categories/matlab/" class="post-category">
+                                    matlab
                                 </a>
                                 
                                 
@@ -1066,8 +1070,20 @@ citys
                     
                     <div class="card-action article-tags">
                         
-                        <a href="/tags/Matlab/">
-                            <span class="chip bg-color">Matlab</span>
+                        <a href="/tags/matlab/">
+                            <span class="chip bg-color">matlab</span>
+                        </a>
+                        
+                        <a href="/tags/math/">
+                            <span class="chip bg-color">math</span>
+                        </a>
+                        
+                        <a href="/tags/%E7%9F%A9%E9%98%B5/">
+                            <span class="chip bg-color">矩阵</span>
+                        </a>
+                        
+                        <a href="/tags/%E9%AB%98%E4%BB%A3/">
+                            <span class="chip bg-color">高代</span>
                         </a>
                         
                     </div>
@@ -1077,13 +1093,13 @@ citys
             
             <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/posts/74688fe1/">
+                    <a href="/posts/60cd3000/">
                         <div class="card-image tag-image">
                             
                             
-                            <img src="./images/loading.gif" data-original="https://cdn.jsdelivr.net/gh/guhailong18/blog/medias/featureimages/3.jpg" class="responsive-img" alt="Matlab求定积分的部分方法">
+                            <img src="./images/loading.gif" data-original="https://cdn.jsdelivr.net/gh/guhailong18/blog/medias/featureimages/14.jpg" class="responsive-img" alt="Matlab基础入门笔记">
                             
-                            <span class="card-title">Matlab求定积分的部分方法</span>
+                            <span class="card-title">Matlab基础入门笔记</span>
                         </div>
                     </a>
                     <div class="card-content article-content">
@@ -1092,8 +1108,7 @@ citys
                                 
 概述
 
-这次部分的基础代码就不解释了，不了解的可以去看我上次的一篇文章《》，挺详细的，要是还有不懂得就去百度吧！
-1.2.3.参考链接：
+matlab（矩阵实验室),一个强大的数学工具。不扯其他的，matlab就是把大量函数封装起来起来，让所有人就算不知道实现原理都可以解决高难度的数学问题的工具，学matlab就是学它的函数的使用，并且记住什么函数有什么用，几乎没有
                             
                         </div>
                         <div class="publish-info">
@@ -1104,8 +1119,8 @@ citys
                                 
                                 <i class="fas fa-bookmark fa-fw icon-category"></i>
                                 
-                                <a href="/categories/Matlab/" class="post-category">
-                                    Matlab
+                                <a href="/categories/matlab/" class="post-category">
+                                    matlab
                                 </a>
                                 
                                 
@@ -1116,8 +1131,79 @@ citys
                     
                     <div class="card-action article-tags">
                         
-                        <a href="/tags/Matlab/">
-                            <span class="chip bg-color">Matlab</span>
+                        <a href="/tags/%E7%AC%94%E8%AE%B0/">
+                            <span class="chip bg-color">笔记</span>
+                        </a>
+                        
+                        <a href="/tags/matlab/">
+                            <span class="chip bg-color">matlab</span>
+                        </a>
+                        
+                        <a href="/tags/%E5%85%A5%E9%97%A8/">
+                            <span class="chip bg-color">入门</span>
+                        </a>
+                        
+                        <a href="/tags/math/">
+                            <span class="chip bg-color">math</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/posts/aefaa648/">
+                        <div class="card-image tag-image">
+                            
+                            
+                            <img src="./images/loading.gif" data-original="https://cdn.jsdelivr.net/gh/guhailong18/blog/medias/featureimages/15.jpg" class="responsive-img" alt="MATLAB求导方法笔记">
+                            
+                            <span class="card-title">MATLAB求导方法笔记</span>
+                        </div>
+                    </a>
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                matlab求导命令diff调用格式:
+diff(函数) ， 求的一阶导数；
+diff(函数， n) ，求的n阶导数(n是具体整数)；
+diff(函数，变量名)，求对的偏导数；
+diff(函数， 变量名，n)，求对的n阶偏导数；
+matla
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-02-09
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/matlab/" class="post-category">
+                                    matlab
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/MATLAB/">
+                            <span class="chip bg-color">MATLAB</span>
+                        </a>
+                        
+                        <a href="/tags/%E6%B1%82%E5%AF%BC/">
+                            <span class="chip bg-color">求导</span>
+                        </a>
+                        
+                        <a href="/tags/%E7%AC%94%E8%AE%B0/">
+                            <span class="chip bg-color">笔记</span>
                         </a>
                         
                     </div>
@@ -1256,7 +1342,7 @@ citys
             
         </div>
         <div class="col s12 m4 l4 social-link social-statis">
-    <a href="https://github.com/guke1" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+    <a href="https://github.com/upupoo108" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
         <i class="fab fa-github"></i>
     </a>
 
@@ -1536,11 +1622,6 @@ $(function () {
 
 	
     
-    <script type="text/javascript" color="0,0,255"
-        pointColor="0,0,255" opacity='0.7'
-        zIndex="-1" count="89"
-        src="https://cdn.jsdelivr.net/gh/guhailong18/blog/libs/background/canvas-nest.js"></script>
-    
 
     
     
@@ -1556,116 +1637,11 @@ $(function () {
     <script src="https://cdn.jsdelivr.net/gh/guhailong18/blog/libs/instantpage/instantpage.js" type="module"></script>
     
 
-<script>
+<script src="https://cdn.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js"></script><script>L2Dwidget.init({"model":{"jsonPath":"https://cdn.jsdelivr.net/npm/live2d-widget-model-z16@1.0.5/assets/z16.model.json"},"display":{"position":"left","width":120,"height":250},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script><script>
             window.imageLazyLoadSetting = {
                 isSPA: false,
                 processImages: null,
             };
-        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=i;var e=n.imageLazyLoadSetting.isSPA,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function i(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight||document.documentElement.clientHeight)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},n.src=i}()}i(),n.addEventListener("scroll",function(){var t,e;t=i,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script><script src="https://cdn.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js"></script><script>L2Dwidget.init({"model":{"jsonPath":"https://cdn.jsdelivr.net/npm/live2d-widget-model-z16@1.0.5/assets/z16.model.json"},"display":{"position":"left","width":120,"height":250},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
-
-</html>
-击烟花爆炸效果 -->
-    
-    
-    <!-- 背景樱花飘落特效 -->
-    
-        <script type="text/javascript">
-        //只在桌面版网页启用特效，更换了链接，樱花数量变少
-			var windowWidth = $(window).width();
-			if (windowWidth > 768) {
-				document.write('<script src="https://cdn.jsdelivr.net/gh/fz6m/Private-web@1.2/js/sakura/sakura-small.js"><\/script>');
-			}
-        </script>
-    
-
-    <!-- 背景雪花飘落特效 -->
-    
-
-    <!-- 鼠标点击文字特效-->
-    
-    
-    <!-- 更改鼠标样式-->
-    
-		<style>
-			body{
-				background: #3f3f3f;
-				cursor: url(https://cdn.jsdelivr.net/gh/TRHX/CDN-for-itrhx.com@2.1.6/images/mouse.cur), url(https://cdn.jsdelivr.net/gh/guhailong18/guhailong18.github.io/Ori%20And%20The%20Blind%20Forest%20Cursor.cur), auto;
-			}
-		</style>
-	
-	<!-- 预加载-->
-	
-<div id='loader'>
-	
-	<div class="outer_box">
-	<div class='loader_overlay'></div>
-	<div class='loader_cogs'>
-		<div class='loader_cogs__top'>
-			<div class='top_part'></div>
-			<div class='top_part'></div>
-			<div class='top_part'></div>
-			<div class='top_hole'></div>
-		</div>
-		<div class='loader_cogs__left'>
-			<div class='left_part'></div>
-			<div class='left_part'></div>
-			<div class='left_part'></div>
-			<div class='left_hole'></div>
-		</div>
-		<div class='loader_cogs__bottom'>
-			<div class='bottom_part'></div>
-			<div class='bottom_part'></div>
-			<div class='bottom_part'></div>
-			<div class='bottom_hole'></div>
-		</div>
-		<p style="text-align:center">&nbsp;&nbsp;&nbsp;loading...</p>
-	</div>
-	</div>
-  
-</div>
-
-<script>
-  var endLoading = function () {
-    document.body.style.overflow = 'auto';
-    document.getElementById('loader').classList.add("loaded");
-  }
-  window.addEventListener('load',endLoading);
-</script>
-
-
-    <!-- 古客魔改 End -->
-    
-    
-
-    
-
-	
-    
-    <script type="text/javascript" color="0,0,255"
-        pointColor="0,0,255" opacity='0.7'
-        zIndex="-1" count="89"
-        src="https://cdn.jsdelivr.net/gh/guhailong18/blog/libs/background/canvas-nest.js"></script>
-    
-
-    
-    
-    <script type="text/javascript" size="130" alpha='0.4'
-        zIndex="-1" src="https://cdn.jsdelivr.net/gh/guhailong18/blog/libs/background/ribbon.min.js" async="async"></script>
-    
-
-    
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/guhailong18/blog/libs/background/ribbon-dynamic.js" async="async"></script>
-    
-
-    
-    <script src="https://cdn.jsdelivr.net/gh/guhailong18/blog/libs/instantpage/instantpage.js" type="module"></script>
-    
-
-<script>
-            window.imageLazyLoadSetting = {
-                isSPA: false,
-                processImages: null,
-            };
-        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=i;var e=n.imageLazyLoadSetting.isSPA,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function i(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight||document.documentElement.clientHeight)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},n.src=i}()}i(),n.addEventListener("scroll",function(){var t,e;t=i,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script><script src="https://cdn.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js"></script><script>L2Dwidget.init({"model":{"jsonPath":"https://cdn.jsdelivr.net/npm/live2d-widget-model-z16@1.0.5/assets/z16.model.json"},"display":{"position":"left","width":120,"height":250},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=i;var e=n.imageLazyLoadSetting.isSPA,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function i(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight||document.documentElement.clientHeight)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},n.src=i}()}i(),n.addEventListener("scroll",function(){var t,e;t=i,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script></body>
 
 </html>
