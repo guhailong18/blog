@@ -4,7 +4,14 @@
 
     <url>
         <loc>http://blog.guke.cf/tags/2020/</loc>
-        <lastmod>2020-12-14T14:22:20.647Z</lastmod>
+        <lastmod>2020-12-14T15:04:24.857Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://blog.guke.cf/tags/hexo/</loc>
+        <lastmod>2020-12-14T14:50:48.878Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -39,13 +46,6 @@
 
     <url>
         <loc>http://blog.guke.cf/tags/%E4%B8%BB%E9%A2%98/</loc>
-        <lastmod>2020-12-13T02:43:08.910Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>http://blog.guke.cf/tags/hexo/</loc>
         <lastmod>2020-12-13T02:43:08.910Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>

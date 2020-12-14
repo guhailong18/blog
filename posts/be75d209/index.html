@@ -774,14 +774,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    4.2k
+                    4.6k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    18 分
+                    20 分
                 </div>
                 
 
@@ -979,10 +979,10 @@ abbrlink:
 
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
             <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
-            <div id="mmedia-gokvEpkT" style="margin-bottom: 20px; width: "></div>
+            <div id="mmedia-CFgvgjZB" style="margin-bottom: 20px; width: "></div>
         <script>
-          var ap_gokvEpkT = new APlayer({
-            element: document.getElementById("mmedia-gokvEpkT"),
+          var ap_CFgvgjZB = new APlayer({
+            element: document.getElementById("mmedia-CFgvgjZB"),
             narrow: false,
             autoplay: false,
             showlrc: false,
@@ -996,7 +996,7 @@ abbrlink:
             undefined
           });
           window.aplayers || (window.aplayers = []);
-          window.aplayers.push(ap_gokvEpkT);
+          window.aplayers.push(ap_CFgvgjZB);
         </script>
 <p>| 配置项      | 默认    | 描述                                               |
 | :———- | :—— | :————————————————- |
@@ -1046,10 +1046,10 @@ abbrlink:
 <pre class="line-numbers language-text" data-language="text"><code class="language-text">{% dplayer "url:KeyCastOW.mp4" "id:DDEC4F882C0B66FAD" "addition:addition0" "addition:addition1" %}<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>演示效果：</p>
 <p>1、</p>
-<div id="mmedia-JLsTsgvl"></div><script src="https://cdn.jsdelivr.net/npm/dplayer/dist/DPlayer.min.js"></script>
+<div id="mmedia-dcoQgrZz"></div><script src="https://cdn.jsdelivr.net/npm/dplayer/dist/DPlayer.min.js"></script>
       <script>
-        var dp_JLsTsgvl = new DPlayer({
-            container: document.getElementById('mmedia-JLsTsgvl'),
+        var dp_dcoQgrZz = new DPlayer({
+            container: document.getElementById('mmedia-dcoQgrZz'),
             autoplay: false,
             theme: '#b7daff',
             loop: false,
@@ -1067,7 +1067,7 @@ abbrlink:
             highlight: [],
             undefined
         });
-        dp_JLsTsgvl.on("fullscreen", function () { if (/Android|webOS|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) { screen.orientation.lock("landscape"); }});
+        dp_dcoQgrZz.on("fullscreen", function () { if (/Android|webOS|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) { screen.orientation.lock("landscape"); }});
         
       </script>
         
@@ -1116,12 +1116,12 @@ abbrlink:
 
         <style>.bbplayer{width: 100%; max-width: 850px; margin: auto}</style>
         <div class="bbplayer">
-        <iframe class="bbplayer" id="mmedia-gSSFGvKW" src="//player.bilibili.com/player.html?aid=60016166&amp;page=1&amp;high_quality=1&amp;danmaku=true" allowfullscreen="no" scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts allow-popups"></iframe>
+        <iframe class="bbplayer" id="mmedia-mCvSwiDM" src="//player.bilibili.com/player.html?aid=60016166&amp;page=1&amp;high_quality=1&amp;danmaku=true" allowfullscreen="no" scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts allow-popups"></iframe>
         </div>
         <script>
-            document.getElementById("mmedia-gSSFGvKW").style.height=document.getElementById("mmedia-gSSFGvKW").scrollWidth*0.76+"px";
+            document.getElementById("mmedia-mCvSwiDM").style.height=document.getElementById("mmedia-mCvSwiDM").scrollWidth*0.76+"px";
             window.onresize = function(){
-              document.getElementById("mmedia-gSSFGvKW").style.height=document.getElementById("mmedia-gSSFGvKW").scrollWidth*0.76+"px";
+              document.getElementById("mmedia-mCvSwiDM").style.height=document.getElementById("mmedia-mCvSwiDM").scrollWidth*0.76+"px";
             };
         </script>
         
@@ -1277,33 +1277,30 @@ encrypt: # hexo-blog-encrypt
 <h2 id="Markown高级渲染"><a href="#Markown高级渲染" class="headerlink" title="Markown高级渲染"></a><a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo-renderer-marked">Markown高级渲染</a></h2><p>安装</p>
 <pre class="line-numbers language-none"><code class="language-none">npm install hexo-renderer-marked --save<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>添加配置 <code>_config.yml</code>.</p>
-<pre class="line-numbers language-none"><code class="language-none">marked:
-  gfm: true
-  pedantic: false
-  breaks: true
-  smartLists: true
-  smartypants: true
-  quotes: '“”‘’'
-  modifyAnchors: 0
-  anchorAlias: false
-  autolink: true
-  mangle: true
-  sanitizeUrl: false
-  headerIds: true
-  lazyload: false
-  prependRoot: false
-  postAsset: false
-  external_link:
-    enable: false
-    exclude: []
-    nofollow: false
-  disableNunjucks: false
-  descriptionLists: true<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml"><span class="token key atrule">marked</span><span class="token punctuation">:</span>
+  <span class="token key atrule">gfm</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+  <span class="token key atrule">pedantic</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+  <span class="token key atrule">breaks</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+  <span class="token key atrule">smartLists</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+  <span class="token key atrule">smartypants</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+  <span class="token key atrule">quotes</span><span class="token punctuation">:</span> <span class="token string">'“”‘’'</span>
+  <span class="token key atrule">modifyAnchors</span><span class="token punctuation">:</span> <span class="token number">0</span>
+  <span class="token key atrule">anchorAlias</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+  <span class="token key atrule">autolink</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+  <span class="token key atrule">mangle</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+  <span class="token key atrule">sanitizeUrl</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+  <span class="token key atrule">headerIds</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+  <span class="token key atrule">lazyload</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+  <span class="token key atrule">prependRoot</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+  <span class="token key atrule">postAsset</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+  <span class="token key atrule">external_link</span><span class="token punctuation">:</span>
+    <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+    <span class="token key atrule">exclude</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+    <span class="token key atrule">nofollow</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+  <span class="token key atrule">disableNunjucks</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+  <span class="token key atrule">descriptionLists</span><span class="token punctuation">:</span> <span class="token boolean important">true</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <ul>
-<li></li>
-<li></li>
-<li><pre><code>**gfm-**启用[GitHub风格的降价](https://help.github.com/articles/github-flavored-markdown)
-</code></pre>
+<li><p>  <strong>gfm-</strong>启用<a target="_blank" rel="noopener" href="https://help.github.com/articles/github-flavored-markdown">GitHub风格的降价</a></p>
 </li>
 <li><p>  <strong>pedantic-</strong>尽量遮盖部分<code>markdown.pl</code>。不要修复任何原始的降价错误或不良行为。</p>
 </li>
@@ -1311,15 +1308,16 @@ encrypt: # hexo-blog-encrypt
 </li>
 <li><p>  <strong>smartLists-</strong>使用比原始减价更聪明的列表行为。</p>
 </li>
-<li><p><strong>smartypant-</strong>对引号和破折号使用“智能”印刷标点符号。</p>
-<p><strong>quotes</strong> - Defines the double and single quotes used for substituting regular quotes if <strong>smartypants</strong> is enabled.</p>
+<li><p>  <strong>smartypant-</strong>对引号和破折号使用“智能”印刷标点符号。</p>
+</li>
+<li><p><strong>quotes</strong> - Defines the double and single quotes used for substituting regular quotes if <strong>smartypants</strong> is enabled</p>
 <ul>
-<li>Example: ‘«»“”’<ul>
-<li>  “double” will be turned into «single»</li>
-<li>  ‘single’ will be turned into “single”</li>
+<li>例如：“«»””<ul>
+<li>  “双”将变成“单”</li>
+<li>  “单”将变成“单”</li>
 </ul>
 </li>
-<li>  Both double and single quotes substitution must be specified, otherwise it will be silently ignored.</li>
+<li>  必须指定双引号和单引号替换，否则将被忽略。</li>
 </ul>
 </li>
 <li><p>  <strong>ModifyAnchors-</strong>将anchorId转换为小写（<code>1</code>）或大写（<code>2</code>）。</p>
@@ -1345,7 +1343,55 @@ encrypt: # hexo-blog-encrypt
 </li>
 <li><p>  <strong>lazyload-</strong>通过<code>loading="lazy"</code>属性延迟加载图像。</p>
 </li>
+<li><p>prependRoot-</p>
+<p>将根值<strong>附加</strong>到（内部）图像路径。</p>
+<ul>
+<li>  范例<code>_config.yml</code>：</li>
 </ul>
+</li>
+</ul>
+<pre class="line-numbers language-none"><code class="language-none">root: /blog/<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<ul>
+<li><p>  <code>![text](/path/to/image.jpg)</code> becomes <code>&lt;img src="/blog/path/to/image.jpg" alt="text"&gt;</code></p>
+</li>
+<li><p>postAsset-将</p>
+<p>发布资产的图像路径解析为相对路径，并在</p>
+<p><code>post_asset_folder</code></p>
+<p>启用后<strong>附加</strong>根值。</p>
+<ul>
+<li>  “ image.jpg”位于“ /2020/01/02/foo/image.jpg”，它是“ / 2020/01/02 / foo /”的后期资产。</li>
+<li>  <code>![](image.jpg)</code> 变成 <code>&lt;img src="/2020/01/02/foo/image.jpg"&gt;</code></li>
+<li>  需要启用<strong>prependRoot</strong>。</li>
+</ul>
+</li>
+<li><p>外部链接</p>
+<ul>
+<li><p>  <strong>enable</strong>-在新标签页中打开外部链接。</p>
+</li>
+<li><p>exclude-排除主机名。在适用时指定子域，包括www</p>
+<ul>
+<li>  示例：<code>[foo](http://bar.com)</code>成为<code>&lt;a href="http://bar.com" target="_blank" rel="noopener"&gt;foo&lt;/a&gt;</code></li>
+</ul>
+</li>
+<li><p>nofollow-添加</p>
+<pre class="line-numbers language-none"><code class="language-none">rel="noopener external nofollow noreferrer"<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>到所有外部链接以确保安全，隐私和SEO。阅读更多。可以启用，无论<code>external_link.enable</code></p>
+<ul>
+<li>  示例：<code>[foo](http://bar.com)</code>成为<code>&lt;a href="http://bar.com" rel="noopener external nofollow noreferrer"&gt;foo&lt;/a&gt;</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>  <strong>disableNunjucks</strong>：如果为true，则不会呈现Nunjucks标签<code>{{ }}</code>或<code>{% %}</code>（通常由<a target="_blank" rel="noopener" href="https://hexo.io/docs/tag-plugins">标签插件使用</a>）。</p>
+</li>
+<li><p>descriptionLists：启用对描述列表语法的支持。</p>
+<ul>
+<li>  当前的描述列表语法既不是<a target="_blank" rel="noopener" href="http://commonmark.org/">CommonMark</a>也不是<a target="_blank" rel="noopener" href="https://github.github.com/gfm/#task-list-items-extension-">GFM</a>，<code>hexo-renderer-marked</code>仅提供向后兼容的选项。</li>
+<li>  通过禁用<code>descriptionLists</code>，降价渲染性能将会得到提高<strong>了很多</strong>。</li>
+</ul>
+</li>
+</ul>
+<p>有关更多选项，请参见<a target="_blank" rel="noopener" href="https://marked.js.org/using_advanced#options">标记</a>。由于此插件实现了自定义功能，因此某些“标记”选项可能无法正常使用。随时向我们提出一个<a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo-renderer-marked/issues">问题</a>以进行澄清。</p>
 <h6 id="参考链接："><a href="#参考链接：" class="headerlink" title="参考链接："></a><strong>参考链接：</strong></h6>
                 
             </div>
@@ -1954,7 +2000,7 @@ encrypt: # hexo-blog-encrypt
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">73.8k</span>&nbsp;字
+                class="white-color">74.2k</span>&nbsp;字
             
             
             
@@ -2322,11 +2368,11 @@ $(function () {
     <script src="https://cdn.jsdelivr.net/gh/guhailong18/blog/libs/instantpage/instantpage.js" type="module"></script>
     
 
-<script src="https://cdn.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js"></script><script>L2Dwidget.init({"model":{"jsonPath":"https://cdn.jsdelivr.net/npm/live2d-widget-model-z16@1.0.5/assets/z16.model.json"},"display":{"position":"left","width":120,"height":250},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script><script>
+<script>
             window.imageLazyLoadSetting = {
                 isSPA: false,
                 processImages: null,
             };
-        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=i;var e=n.imageLazyLoadSetting.isSPA,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function i(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight||document.documentElement.clientHeight)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},n.src=i}()}i(),n.addEventListener("scroll",function(){var t,e;t=i,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script></body>
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=i;var e=n.imageLazyLoadSetting.isSPA,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function i(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight||document.documentElement.clientHeight)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},n.src=i}()}i(),n.addEventListener("scroll",function(){var t,e;t=i,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script><script src="https://cdn.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js"></script><script>L2Dwidget.init({"model":{"jsonPath":"https://cdn.jsdelivr.net/npm/live2d-widget-model-z16@1.0.5/assets/z16.model.json"},"display":{"position":"left","width":120,"height":250},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
 
 </html>
