@@ -3,23 +3,8 @@
 
 
     <sitemap>
-        <loc>http://blog.guke.cf/post-sitemap.xml</loc>
-        <lastmod>2020-12-15T00:44:03.259Z</lastmod>
-    </sitemap>
-
-    <sitemap>
         <loc>http://blog.guke.cf/page-sitemap.xml</loc>
-        <lastmod>2020-12-10T02:29:13.616Z</lastmod>
-    </sitemap>
-
-    <sitemap>
-        <loc>http://blog.guke.cf/category-sitemap.xml</loc>
-        <lastmod>2020-12-15T00:44:03.259Z</lastmod>
-    </sitemap>
-
-    <sitemap>
-        <loc>http://blog.guke.cf/tag-sitemap.xml</loc>
-        <lastmod>2020-12-15T00:44:03.259Z</lastmod>
+        
     </sitemap>
 
 </sitemapindex>
