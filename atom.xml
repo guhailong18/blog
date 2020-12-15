@@ -6,7 +6,7 @@
   <link href="http://blog.guke.cf/atom.xml" rel="self"/>
   
   <link href="http://blog.guke.cf/"/>
-  <updated>2020-12-13T14:26:16.409Z</updated>
+  <updated>2020-12-15T00:11:39.688Z</updated>
   <id>http://blog.guke.cf/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>JavaScript入门及常用库</title>
+    <link href="http://blog.guke.cf/posts/6c789b8c/"/>
+    <id>http://blog.guke.cf/posts/6c789b8c/</id>
+    <published>2020-12-14T23:34:36.000Z</published>
+    <updated>2020-12-15T00:11:39.688Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot; title=&quot;概述&quot;&gt;&lt;/a&gt;概述&lt;/h2&gt;&lt;p&gt;网上推荐看的教程&lt;/p&gt;
+&lt;p&gt;| &lt;a</summary>
+        
+      
+    
+    
+    
+    
+    <category term="2020" scheme="http://blog.guke.cf/tags/2020/"/>
+    
+  </entry>
   
   <entry>
     <title>HTML简单入门</title>
@@ -480,32 +504,6 @@
     
     
     <category term="hexo" scheme="http://blog.guke.cf/tags/hexo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>2020年度读书计划</title>
-    <link href="http://blog.guke.cf/posts/6ca3572e/"/>
-    <id>http://blog.guke.cf/posts/6ca3572e/</id>
-    <published>2020-03-19T08:09:59.000Z</published>
-    <updated>2020-12-11T01:14:45.164Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;ul&gt;
-&lt;li&gt;&lt;h2 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot; title=&quot;概述&quot;&gt;&lt;/a&gt;概述&lt;/h2&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;1&quot;&gt;&lt;a href=&quot;#1&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="读书" scheme="http://blog.guke.cf/categories/%E8%AF%BB%E4%B9%A6/"/>
-    
     
   </entry>
   
