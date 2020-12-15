@@ -3,6 +3,20 @@
 
 
     <url>
+        <loc>http://blog.guke.cf/tags/%E4%B8%BB%E9%A2%98/</loc>
+        <lastmod>2020-12-15T05:56:52.621Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://blog.guke.cf/tags/hexo/</loc>
+        <lastmod>2020-12-15T05:56:52.621Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>http://blog.guke.cf/tags/%E5%AE%9A%E7%A7%AF%E5%88%86/</loc>
         <lastmod>2020-12-15T05:44:13.935Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -40,20 +54,6 @@
     <url>
         <loc>http://blog.guke.cf/tags/2020/</loc>
         <lastmod>2020-12-15T05:43:28.429Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>http://blog.guke.cf/tags/%E4%B8%BB%E9%A2%98/</loc>
-        <lastmod>2020-12-15T05:20:55.613Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>http://blog.guke.cf/tags/hexo/</loc>
-        <lastmod>2020-12-15T05:20:55.613Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
