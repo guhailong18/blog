@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="分类: Matlab, 动漫,编程,数学,读书,古客,IT,python,book,music,spider,爬虫,笔记,share,分享,学习">
+    <meta name="keywords" content="分类: matlab, 动漫,编程,数学,读书,古客,IT,python,book,music,spider,爬虫,笔记,share,分享,学习">
     <meta name="description" content="动漫，编程，数学，读书，相信会有一个是你需要的">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -27,7 +27,7 @@
 </script>
 
 
-    <title>分类: Matlab | 古客のBlog</title>
+    <title>分类: matlab | 古客のBlog</title>
     <link rel="icon" type="image/png" href="https://cdn.jsdelivr.net/gh/guhailong18/blog/favicon1.png">
 
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/guhailong18/blog/libs/awesome/css/all.css">
@@ -736,7 +736,7 @@
                 
                 <a href="/categories/matlab/" title="matlab: 4">
                     <span class="chip center-align waves-effect waves-light
-                             chip-default "
+                             chip-active "
                             style="background-color: #85C1E9;">matlab
                         <span class="tag-length">4</span>
                     </span>
@@ -754,7 +754,7 @@
                 
                 <a href="/categories/Matlab/" title="Matlab: 3">
                     <span class="chip center-align waves-effect waves-light
-                             chip-active "
+                             chip-default "
                             style="background-color: #F9E79F;">Matlab
                         <span class="tag-length">3</span>
                     </span>
@@ -954,6 +954,15 @@
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
                             style="background-color: #F8C471;">测试
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/" title="未分类: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            style="background-color: #FFF;">未分类
                         <span class="tag-length">1</span>
                     </span>
                 </a>
@@ -1359,110 +1368,6 @@ $(function () {
                         }
                         // show search results
                         if (isMatch) {
-                            str += "<li><a href='" + data_url + "' class='search-rcol s12 m4 l4 social-link social-statis">
-    <a href="https://github.com/upupoo108" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
-        <i class="fab fa-github"></i>
-    </a>
-
-
-
-    <a href="mailto:guke@guke.ga" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
-        <i class="fas fa-envelope-open"></i>
-    </a>
-
-
-
-
-
-
-
-    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1930980176" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1930980176" data-position="top" data-delay="50">
-        <i class="fab fa-qq"></i>
-    </a>
-
-
-
-
-
-
-
-    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
-        <i class="fas fa-rss"></i>
-    </a>
-
-</div>
-    </div>
-</footer>
-
-<div class="progress-bar"></div>
-
-
-    <!-- 搜索遮罩框 -->
-<div id="searchModal" class="modal">
-    <div class="modal-content">
-        <div class="search-header">
-            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
-            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
-                   class="search-input">
-        </div>
-        <div id="searchResult"></div>
-    </div>
-</div>
-
-<script type="text/javascript">
-$(function () {
-    var searchFunc = function (path, search_id, content_id) {
-        'use strict';
-        $.ajax({
-            url: path,
-            dataType: "xml",
-            success: function (xmlResponse) {
-                // get the contents from search data
-                var datas = $("entry", xmlResponse).map(function () {
-                    return {
-                        title: $("title", this).text(),
-                        content: $("content", this).text(),
-                        url: $("url", this).text()
-                    };
-                }).get();
-                var $input = document.getElementById(search_id);
-                var $resultContent = document.getElementById(content_id);
-                $input.addEventListener('input', function () {
-                    var str = '<ul class=\"search-result-list\">';
-                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
-                    $resultContent.innerHTML = "";
-                    if (this.value.trim().length <= 0) {
-                        return;
-                    }
-                    // perform local searching
-                    datas.forEach(function (data) {
-                        var isMatch = true;
-                        var data_title = data.title.trim().toLowerCase();
-                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
-                        var data_url = data.url;
-                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
-                        var index_title = -1;
-                        var index_content = -1;
-                        var first_occur = -1;
-                        // only match artiles with not empty titles and contents
-                        if (data_title !== '' && data_content !== '') {
-                            keywords.forEach(function (keyword, i) {
-                                index_title = data_title.indexOf(keyword);
-                                index_content = data_content.indexOf(keyword);
-                                if (index_title < 0 && index_content < 0) {
-                                    isMatch = false;
-                                } else {
-                                    if (index_content < 0) {
-                                        index_content = 0;
-                                    }
-                                    if (i === 0) {
-                                        first_occur = index_content;
-                                    }
-                                }
-                            });
-                        }
-                        // show search results
-                        if (isMatch) {
                             str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
                             var content = data.content.trim().replace(/<[^>]+>/g, "");
                             if (first_occur >= 0) {
@@ -1557,6 +1462,113 @@ $(function () {
         st;
         document.addEventListener("visibilitychange", function () {
             document.hidden ? (document.title = "主人，你竟然抛弃了我(；′⌒`)", clearTimeout(st)) : (document.title =
+                "主人回来啦٩(๑>◡<๑)۶ ", st = setTimeout(function () {
+                    document.title = OriginTitile
+                }, 3e3))
+        })
+    </script>
+
+    <!-- 鼠标点击烟花爆炸效果 -->
+    
+    
+    <!-- 背景樱花飘落特效 -->
+    
+        <script type="text/javascript">
+        //只在桌面版网页启用特效，更换了链接，樱花数量变少
+			var windowWidth = $(window).width();
+			if (windowWidth > 768) {
+				document.write('<script src="https://cdn.jsdelivr.net/gh/fz6m/Private-web@1.2/js/sakura/sakura-small.js"><\/script>');
+			}
+        </script>
+    
+
+    <!-- 背景雪花飘落特效 -->
+    
+
+    <!-- 鼠标点击文字特效-->
+    
+    
+    <!-- 更改鼠标样式-->
+    
+		<style>
+			body{
+				background: #3f3f3f;
+				cursor: url(https://cdn.jsdelivr.net/gh/TRHX/CDN-for-itrhx.com@2.1.6/images/mouse.cur), url(https://cdn.jsdelivr.net/gh/guhailong18/guhailong18.github.io/Ori%20And%20The%20Blind%20Forest%20Cursor.cur), auto;
+			}
+		</style>
+	
+	<!-- 预加载-->
+	
+<div id='loader'>
+	
+	<div class="outer_box">
+	<div class='loader_overlay'></div>
+	<div class='loader_cogs'>
+		<div class='loader_cogs__top'>
+		<div class='top_part'></div>
+		<div class='top_part'></div>
+		<div class='top_part'></div>
+		<div class='top_hole'></div>
+		</div>
+		<div class='loader_cogs__left'>
+		<div class='left_part'></div>
+		<div class='left_part'></div>
+		<div class='left_part'></div>
+		<div class='left_hole'></div>
+		</div>
+		<div class='loader_cogs__bottom'>
+		<div class='bottom_part'></div>
+		<div class='bottom_part'></div>
+		<div class='bottom_part'></div>
+		<div class='bottom_hole'></div>
+		</div>
+		<!-- <p>loading</p> -->
+	</div>
+	</div>
+  
+</div>
+
+<script>
+  var endLoading = function () {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loader').classList.add("loading");
+  }
+  window.addEventListener('load',endLoading);
+</script>
+
+
+    <!-- 古客魔改 End -->
+    
+    
+
+    
+
+	
+    
+
+    
+    
+    <script type="text/javascript" size="130" alpha='0.4'
+        zIndex="-1" src="https://cdn.jsdelivr.net/gh/guhailong18/blog/libs/background/ribbon.min.js" async="async"></script>
+    
+
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/guhailong18/blog/libs/background/ribbon-dynamic.js" async="async"></script>
+    
+
+    
+    <script src="https://cdn.jsdelivr.net/gh/guhailong18/blog/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+<script>
+            window.imageLazyLoadSetting = {
+                isSPA: false,
+                processImages: null,
+            };
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=i;var e=n.imageLazyLoadSetting.isSPA,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function i(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight||document.documentElement.clientHeight)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},n.src=i}()}i(),n.addEventListener("scroll",function(){var t,e;t=i,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script><script src="https://cdn.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js"></script><script>L2Dwidget.init({"model":{"jsonPath":"https://cdn.jsdelivr.net/npm/live2d-widget-model-z16@1.0.5/assets/z16.model.json"},"display":{"position":"left","width":120,"height":250},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+
+</html>
+，你竟然抛弃了我(；′⌒`)", clearTimeout(st)) : (document.title =
                 "主人回来啦٩(๑>◡<๑)۶ ", st = setTimeout(function () {
                     document.title = OriginTitile
                 }, 3e3))

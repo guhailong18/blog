@@ -9,6 +9,13 @@
 
 
     <url>
+        <loc>http://blog.guke.cf/categories/%25E6%259C%25AA%25E5%2588%2586%25E7%25B1%25BB/</loc>
+        <lastmod>2020-12-15T00:44:03.259Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>http://blog.guke.cf/categories/hexo/</loc>
         <lastmod>2020-12-14T15:04:24.857Z</lastmod>
         <changefreq>weekly</changefreq>
