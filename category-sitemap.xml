@@ -9,6 +9,41 @@
 
 
     <url>
+        <loc>http://blog.guke.cf/categories/%25E5%2588%2586%25E4%25BA%25AB%25E7%25BE%258E%25E5%25A5%25BD/</loc>
+        <lastmod>2020-12-16T01:16:51.771Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://blog.guke.cf/categories/%25E5%2589%258D%25E7%25AB%25AF/</loc>
+        <lastmod>2020-12-16T01:00:11.324Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://blog.guke.cf/categories/%25E7%25BD%2591%25E7%259B%2598/</loc>
+        <lastmod>2020-12-16T00:59:08.217Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://blog.guke.cf/categories/%25E6%2595%25B0%25E6%258D%25AE%25E5%25BA%2593/</loc>
+        <lastmod>2020-12-16T00:58:48.364Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://blog.guke.cf/categories/Matlab/</loc>
+        <lastmod>2020-12-16T00:58:27.141Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>http://blog.guke.cf/categories/python/</loc>
         <lastmod>2020-12-15T05:44:13.935Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -30,13 +65,6 @@
     </url>
 
     <url>
-        <loc>http://blog.guke.cf/categories/%25E6%259C%25AA%25E5%2588%2586%25E7%25B1%25BB/</loc>
-        <lastmod>2020-12-15T00:44:03.259Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>http://blog.guke.cf/categories/%25E8%25B5%2584%25E6%25BA%2590%25E5%2588%2586%25E4%25BA%25AB/</loc>
         <lastmod>2020-12-14T08:41:52.056Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -46,27 +74,6 @@
     <url>
         <loc>http://blog.guke.cf/categories/Linux/</loc>
         <lastmod>2020-12-14T08:13:17.660Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>http://blog.guke.cf/categories/uncategorized/</loc>
-        <lastmod>2020-12-13T14:26:16.409Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>http://blog.guke.cf/categories/%25E5%2589%258D%25E7%25AB%25AF/</loc>
-        <lastmod>2020-12-12T02:16:13.332Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>http://blog.guke.cf/categories/Matlab/</loc>
-        <lastmod>2020-12-12T02:16:03.102Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -121,13 +128,6 @@
     </url>
 
     <url>
-        <loc>http://blog.guke.cf/categories/matlab/</loc>
-        <lastmod>2020-12-11T01:12:47.521Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>http://blog.guke.cf/categories/markdown/</loc>
         <lastmod>2020-12-11T01:12:20.477Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -158,13 +158,6 @@
     <url>
         <loc>http://blog.guke.cf/categories/C/</loc>
         <lastmod>2020-12-11T01:09:43.880Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>http://blog.guke.cf/categories/%25E5%2588%2586%25E4%25BA%25AB%25E7%25BE%258E%25E5%25A5%25BD/</loc>
-        <lastmod>2020-12-11T01:09:13.155Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -242,13 +235,6 @@
     <url>
         <loc>http://blog.guke.cf/categories/github/</loc>
         <lastmod>2020-02-04T08:56:32.874Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>http://blog.guke.cf/categories/%25E6%2595%25B0%25E6%258D%25AE%25E5%25BA%2593/</loc>
-        <lastmod>2020-01-30T03:20:34.563Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

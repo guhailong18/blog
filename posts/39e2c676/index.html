@@ -762,21 +762,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-12-15
+                    2020-12-16
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.5k
+                    2k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    6 分
+                    8 分
                 </div>
                 
 
@@ -805,6 +805,128 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>熟悉CSS能够很好地帮助你</p>
+<h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><p>可以参考我的配置</p>
+<pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml"><span class="token key atrule">menu</span><span class="token punctuation">:</span>
+  <span class="token key atrule">主页</span><span class="token punctuation">:</span>
+    <span class="token key atrule">url</span><span class="token punctuation">:</span> /
+    <span class="token key atrule">icon</span><span class="token punctuation">:</span> fas fa<span class="token punctuation">-</span>home
+  <span class="token key atrule">tags</span><span class="token punctuation">:</span>
+    <span class="token key atrule">url</span><span class="token punctuation">:</span> /tags
+    <span class="token key atrule">icon</span><span class="token punctuation">:</span> fas fa<span class="token punctuation">-</span>tags
+  <span class="token key atrule">分类</span><span class="token punctuation">:</span>
+    <span class="token key atrule">url</span><span class="token punctuation">:</span> /categories
+    <span class="token key atrule">icon</span><span class="token punctuation">:</span> fas fa<span class="token punctuation">-</span>bookmark
+  <span class="token key atrule">目录</span><span class="token punctuation">:</span>
+    <span class="token key atrule">icon</span><span class="token punctuation">:</span> fas fa<span class="token punctuation">-</span>list
+    <span class="token key atrule">children</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> About
+        <span class="token key atrule">url</span><span class="token punctuation">:</span> /about
+        <span class="token key atrule">icon</span><span class="token punctuation">:</span> fas fa<span class="token punctuation">-</span>user<span class="token punctuation">-</span>circle
+      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Archives
+        <span class="token key atrule">url</span><span class="token punctuation">:</span> /archives
+        <span class="token key atrule">icon</span><span class="token punctuation">:</span> fas fa<span class="token punctuation">-</span>archive
+      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Contact
+        <span class="token key atrule">url</span><span class="token punctuation">:</span> /contact
+        <span class="token key atrule">icon</span><span class="token punctuation">:</span> fas fa<span class="token punctuation">-</span>comments
+  <span class="token key atrule">友链</span><span class="token punctuation">:</span>
+    <span class="token key atrule">url</span><span class="token punctuation">:</span> /friends/
+    <span class="token key atrule">icon</span><span class="token punctuation">:</span> fas fa<span class="token punctuation">-</span>address<span class="token punctuation">-</span>book
+  <span class="token comment"># 二级菜单写法如下</span>
+  <span class="token key atrule">Medias</span><span class="token punctuation">:</span>
+    <span class="token key atrule">icon</span><span class="token punctuation">:</span> fas fa<span class="token punctuation">-</span>list
+    <span class="token key atrule">children</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> 音乐
+        <span class="token key atrule">url</span><span class="token punctuation">:</span> /music
+        <span class="token key atrule">icon</span><span class="token punctuation">:</span> fas fa<span class="token punctuation">-</span>music
+      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> 电影
+        <span class="token key atrule">url</span><span class="token punctuation">:</span> /movies
+        <span class="token key atrule">icon</span><span class="token punctuation">:</span> fas fa<span class="token punctuation">-</span>film
+      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> 书籍
+        <span class="token key atrule">url</span><span class="token punctuation">:</span> /books
+        <span class="token key atrule">icon</span><span class="token punctuation">:</span> fas fa<span class="token punctuation">-</span>book
+      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> 壁纸
+        <span class="token key atrule">url</span><span class="token punctuation">:</span> /galleries
+        <span class="token key atrule">icon</span><span class="token punctuation">:</span> fas fa<span class="token punctuation">-</span>image
+      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> 追番
+        <span class="token key atrule">url</span><span class="token punctuation">:</span> /bangumis
+        <span class="token key atrule">icon</span><span class="token punctuation">:</span> fas fa<span class="token punctuation">-</span>film
+  <span class="token key atrule">Extension</span><span class="token punctuation">:</span>
+    <span class="token key atrule">icon</span><span class="token punctuation">:</span> fas fa<span class="token punctuation">-</span>list
+    <span class="token key atrule">children</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> 时间
+        <span class="token key atrule">url</span><span class="token punctuation">:</span> /time
+        <span class="token key atrule">icon</span><span class="token punctuation">:</span> fas fa<span class="token punctuation">-</span>image
+      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> 美图
+        <span class="token key atrule">url</span><span class="token punctuation">:</span> /Mito
+        <span class="token key atrule">icon</span><span class="token punctuation">:</span> fas fa<span class="token punctuation">-</span>images
+      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> 导航
+        <span class="token key atrule">url</span><span class="token punctuation">:</span> /navigation
+        <span class="token key atrule">icon</span><span class="token punctuation">:</span> fas fa<span class="token punctuation">-</span>image
+      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> 弹幕室
+        <span class="token key atrule">url</span><span class="token punctuation">:</span> /bb
+        <span class="token key atrule">icon</span><span class="token punctuation">:</span> fas fa<span class="token punctuation">-</span>film
+      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> IP定位
+        <span class="token key atrule">url</span><span class="token punctuation">:</span> /position
+        <span class="token key atrule">icon</span><span class="token punctuation">:</span> fas fa<span class="token punctuation">-</span>book<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>如果想添加图标，在<a target="_blank" rel="noopener" href="https://github.com/blinkfox/hexo-theme-matery/blob/8787525aff430152e3bad80e6588ccae54873363/source/libs/awesome/css/all.css">source/libs/awesome/css/all.css</a></p>
+<p><img src="./images/loading.gif" data-original="https://cdn.jsdelivr.net/gh/guhailong18/picture/img/20201216092237.png" alt="image-20201216092237477"></p>
+<p>这些CSS带吗是啥意思呢？</p>
+<p>解答：</p>
+<p>CSS的 <code>content</code> CSS 属性用于在元素的  <a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/::before"><code>::before</code></a> 和 <a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/::after"><code>::after</code></a> 伪元素中插入内容。使用<code>content</code> 属性插入的内容都是匿名的*<a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/Replaced_element">可替换元素</a>。*</p>
+<p>而<code>content</code> 是图标的Unicode值</p>
+<h3 id="代码示例"><a href="#代码示例" class="headerlink" title="代码示例"></a>代码示例</h3><h4 id="link前面加一个icon"><a href="#link前面加一个icon" class="headerlink" title="link前面加一个icon"></a><a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/content#%E4%BB%A3%E7%A0%81%E4%B8%BE%E4%BE%8B_-_link%E5%89%8D%E9%9D%A2%E5%8A%A0%E4%B8%80%E4%B8%AAicon">link前面加一个icon</a></h4><p>HTML</p>
+<pre class="line-numbers language-html" data-language="html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>http://www.mozilla.org/en-US/<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Home Page<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>CSS</p>
+<pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">a::before</span><span class="token punctuation">{</span>
+    <span class="token property">content</span><span class="token punctuation">:</span> <span class="token url"><span class="token function">url</span><span class="token punctuation">(</span>http://www.mozilla.org/favicon.ico<span class="token punctuation">)</span></span> <span class="token string">" MOZILLA: "</span><span class="token punctuation">;</span>
+    <span class="token property">font</span><span class="token punctuation">:</span>    x-small Arial<span class="token punctuation">,</span>freeSans<span class="token punctuation">,</span>sans-serif<span class="token punctuation">;</span>
+    <span class="token property">color</span><span class="token punctuation">:</span>   gray<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="自定义列表后面加加文字"><a href="#自定义列表后面加加文字" class="headerlink" title="自定义列表后面加加文字"></a><a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/content#%E4%BB%A3%E7%A0%81%E4%B8%BE%E4%BE%8B_-_%E8%87%AA%E5%AE%9A%E4%B9%89%E5%88%97%E8%A1%A8%E5%90%8E%E9%9D%A2%E5%8A%A0%E5%8A%A0%E6%96%87%E5%AD%97">自定义列表后面加加文字</a></h4><p>HTML</p>
+<pre class="line-numbers language-html" data-language="html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>brightIdea<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>This is my first idea<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>and another good idea<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>CSS</p>
+<pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token comment">/* first import the icon from a suitable site */</span>
+<span class="token atrule"><span class="token rule">@import</span> <span class="token url"><span class="token function">url</span><span class="token punctuation">(</span>http://weloveiconfonts.com/api/?family=entypo<span class="token punctuation">)</span></span><span class="token punctuation">;</span></span>
+
+<span class="token selector">.brightIdea li::after</span><span class="token punctuation">{</span>
+    <span class="token property">content</span><span class="token punctuation">:</span> <span class="token string">'\1f4a1'</span><span class="token punctuation">;</span>
+    <span class="token property">font-family</span><span class="token punctuation">:</span> <span class="token string">'entypo'</span><span class="token punctuation">,</span> sans-serif<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="修改all-css"><a href="#修改all-css" class="headerlink" title="修改all.css"></a>修改all.css</h3><p>参数有很多，我们可以随意调整，以下为官方的一个示例</p>
+<pre class="line-numbers language-none"><code class="language-none">/* Step 1: Common Properties: All required to make icons render reliably */
+.icon::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Step 2: Reference Individual Icons */
+.login::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f007";
+}
+
+/* Note: Make sure to include the correct weight and Unicode value for the icon */
+.tps::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+  content: "\f1ea";
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>具体编码可以在<a target="_blank" rel="noopener" href="https://fontawesome.com/cheatsheet">这里</a>查，可以需要翻墙才能完整浏览</p>
 <h2 id="修改页面配色"><a href="#修改页面配色" class="headerlink" title="修改页面配色"></a>修改页面配色</h2><p>查找方法基本就是打开chrome浏览器的检查,选择想要查看的页面元素,然后看他的Style文件,找到关键词之后去hexo-theme-matery主题的css文件中查找后修改即可</p>
 <p>打开 <code>matery/source/css/matery.css</code> 文件 搜索 <code>.bg-color</code> 大概在198行<br>修改<code>background-image</code>属性中<code>linear-gradient</code>内的值即可改成你自己想要的颜色。</p>
 <h2 id="添加文章显示作者名字"><a href="#添加文章显示作者名字" class="headerlink" title="添加文章显示作者名字"></a>添加文章显示作者名字</h2><pre class="line-numbers language-none"><code class="language-none">---------------------- layout/_partial/post-detail.ejs -----------------------
@@ -849,7 +971,9 @@
 
 
 
-<ol>
+
+
+<h2 id="评论区美化"><a href="#评论区美化" class="headerlink" title="评论区美化"></a>评论区美化</h2><h3 id="注册"><a href="#注册" class="headerlink" title="注册"></a>注册</h3><ol>
 <li> 前往 <a target="_blank" rel="noopener" href="https://leancloud.app/">LeanCloud 国际版</a>，注册账号。</li>
 <li> 注册完成之后根据 LeanCloud 的提示绑定手机号和邮箱。</li>
 <li> 绑定完成之后点击<code>创建应用</code>，应用名称随意，接着在<code>结构化数据</code>中创建 <code>class</code>，命名为 <code>shuoshuo</code>。</li>
@@ -860,32 +984,6 @@
 <li> 在最菜单栏中找到设置-&gt; 应用 keys，记下来 <code>AppID</code> 和 <code>AppKey</code> ，一会会用。</li>
 <li> 最后将 <code>_User</code> 中的权限全部调为指定用户，或者数据创建者，为了保证不被篡改用户数据已达到强制发布说说。</li>
 </ol>
-<pre class="line-numbers language-none"><code class="language-none">.bg-color {
-    background-image: linear-gradient(to right, #bf30ac 0%, #0f9d58 100%);
-    opacity: 0.9;
-    /* 透明度*/
-}
-
-.text-color {
-    color: #0f9d58 !important;
-}
-
-.white-color {
-    color: #fff;
-}
-
-.progress-bar {
-    height: 5px;
-    position: fixed;
-    bottom: 0;
-    z-index: 300;
-    background: linear-gradient(to right, #bf30ac 0%, #0f9d58 100%);
-    opacity: 0.7;
-}
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-
-
 <p>算了，大家直接从以下两个链接参考就行：</p>
 <p><a target="_blank" rel="noopener" href="https://chen-shang.github.io/2019/08/15/ji-zhu-zong-jie/hexo/hexo-theme-matery-zhu-ti-you-hua/#toc-heading-8">推荐，全都可以使用</a></p>
 <p><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/2e6ae2123d57">部分过时，仅供参考</a></p>
@@ -895,7 +993,7 @@
 <p><img src="./images/loading.gif" data-original="https://cdn.jsdelivr.net/gh/guhailong18/picture/img/20201210112158.png" alt="image-20201210112158274"></p>
 <p>MD5生成网站</p>
 <p><a target="_blank" rel="noopener" href="https://www.md5hashgenerator.com/">https://www.md5hashgenerator.com/</a></p>
-<h2 id="评论区美化"><a href="#评论区美化" class="headerlink" title="评论区美化"></a>评论区美化</h2><p>路径：<a target="_blank" rel="noopener" href="https://github.com/blinkfox/hexo-theme-matery/tree/8787525aff430152e3bad80e6588ccae54873363/layout">layout</a>/<a target="_blank" rel="noopener" href="https://github.com/blinkfox/hexo-theme-matery/tree/8787525aff430152e3bad80e6588ccae54873363/layout/_partial">_partial</a>/<strong>minivaline.ejs</strong></p>
+<h2 id="添加图片"><a href="#添加图片" class="headerlink" title="添加图片"></a>添加图片</h2><p>路径：<a target="_blank" rel="noopener" href="https://github.com/blinkfox/hexo-theme-matery/tree/8787525aff430152e3bad80e6588ccae54873363/layout">layout</a>/<a target="_blank" rel="noopener" href="https://github.com/blinkfox/hexo-theme-matery/tree/8787525aff430152e3bad80e6588ccae54873363/layout/_partial">_partial</a>/<strong>minivaline.ejs</strong></p>
 <p>教大家一个非常方便定位代码位置的办法，直接在github搜，示例如下：</p>
 <img src="./images/loading.gif" data-original="https://cdn.jsdelivr.net/gh/guhailong18/picture/img/20201213104145.png" alt="20201213104145" style="zoom:80%;">
 
@@ -1596,7 +1694,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">76.4k</span>&nbsp;字
+                class="white-color">77.1k</span>&nbsp;字
             
             
             
@@ -1922,11 +2020,11 @@ $(function () {
     <script src="https://cdn.jsdelivr.net/gh/guhailong18/blog/libs/instantpage/instantpage.js" type="module"></script>
     
 
-<script src="https://cdn.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js"></script><script>L2Dwidget.init({"model":{"jsonPath":"https://cdn.jsdelivr.net/npm/live2d-widget-model-z16@1.0.5/assets/z16.model.json"},"display":{"position":"left","width":120,"height":250},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script><script>
+<script>
             window.imageLazyLoadSetting = {
                 isSPA: false,
                 processImages: null,
             };
-        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=i;var e=n.imageLazyLoadSetting.isSPA,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function i(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight||document.documentElement.clientHeight)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},n.src=i}()}i(),n.addEventListener("scroll",function(){var t,e;t=i,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script></body>
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=i;var e=n.imageLazyLoadSetting.isSPA,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function i(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight||document.documentElement.clientHeight)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},n.src=i}()}i(),n.addEventListener("scroll",function(){var t,e;t=i,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script><script src="https://cdn.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js"></script><script>L2Dwidget.init({"model":{"jsonPath":"https://cdn.jsdelivr.net/npm/live2d-widget-model-z16@1.0.5/assets/z16.model.json"},"display":{"position":"left","width":120,"height":250},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
 
 </html>
