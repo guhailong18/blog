@@ -58,7 +58,7 @@
             <div class="brand-logo">
                 <a href="/" class="waves-effect waves-light">
                     
-                    <img src="./images/loading.gif" data-original="https://cdn.jsdelivr.net/gh/guhailong18/blog/logo.png" class="logo-img" alt="LOGO">
+                    <img src="/images/loading.gif" data-original="https://cdn.jsdelivr.net/gh/guhailong18/blog/logo.png" class="logo-img" alt="LOGO">
                     
                     <span class="logo-span">古客のBlog</span>
                 </a>
@@ -289,7 +289,7 @@
 
     <div class="mobile-head bg-color">
         
-        <img src="./images/loading.gif" data-original="https://cdn.jsdelivr.net/gh/guhailong18/blog/logo.png" class="logo-img circle responsive-img">
+        <img src="/images/loading.gif" data-original="https://cdn.jsdelivr.net/gh/guhailong18/blog/logo.png" class="logo-img circle responsive-img">
         
         <div class="logo-name">古客のBlog</div>
         <div class="logo-desc">
@@ -715,11 +715,11 @@
                 </a>
                 
                 
-                <a href="/tags/2020/" title="2020: 12">
+                <a href="/tags/2020/" title="2020: 13">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
                             data-tagname="2020" style="background-color: #D7BDE2;">2020
-                        <span class="tag-length">12</span>
+                        <span class="tag-length">13</span>
                     </span>
                 </a>
                 
@@ -1649,7 +1649,7 @@
                         <div class="card-image tag-image">
                             
                             
-                            <img src="./images/loading.gif" data-original="https://cdn.jsdelivr.net/gh/guhailong18/blog/medias/featureimages/21.jpg" class="responsive-img" alt="Visual-Studio使用小技巧">
+                            <img src="/images/loading.gif" data-original="https://cdn.jsdelivr.net/gh/guhailong18/blog/medias/featureimages/21.jpg" class="responsive-img" alt="Visual-Studio使用小技巧">
                             
                             <span class="card-title">Visual-Studio使用小技巧</span>
                         </div>
@@ -1737,7 +1737,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">77.1k</span>&nbsp;字
+                class="white-color">77.8k</span>&nbsp;字
             
             
             
@@ -2039,6 +2039,43 @@ $(function () {
 	
 	<!-- 预加载-->
 	
+<div id='loader'>
+	
+	<div class="outer_box">
+	<div class='loader_overlay'></div>
+	<div class='loader_cogs'>
+		<div class='loader_cogs__top'>
+		<div class='top_part'></div>
+		<div class='top_part'></div>
+		<div class='top_part'></div>
+		<div class='top_hole'></div>
+		</div>
+		<div class='loader_cogs__left'>
+		<div class='left_part'></div>
+		<div class='left_part'></div>
+		<div class='left_part'></div>
+		<div class='left_hole'></div>
+		</div>
+		<div class='loader_cogs__bottom'>
+		<div class='bottom_part'></div>
+		<div class='bottom_part'></div>
+		<div class='bottom_part'></div>
+		<div class='bottom_hole'></div>
+		</div>
+		<!-- <p>loading</p> -->
+	</div>
+	</div>
+  
+</div>
+
+<script>
+  var endLoading = function () {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loader').classList.add("loading");
+  }
+  window.addEventListener('load',endLoading);
+</script>
+
 
     <!-- 古客魔改 End -->
     

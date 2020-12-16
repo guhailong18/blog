@@ -3,6 +3,13 @@
 
 
     <url>
+        <loc>http://blog.guke.cf/tags/2020/</loc>
+        <lastmod>2020-12-16T02:03:27.508Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>http://blog.guke.cf/tags/%E4%B8%BB%E9%A2%98/</loc>
         <lastmod>2020-12-16T01:43:26.528Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -33,13 +40,6 @@
     <url>
         <loc>http://blog.guke.cf/tags/%E5%89%8D%E7%AB%AF/</loc>
         <lastmod>2020-12-16T01:16:51.771Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>http://blog.guke.cf/tags/2020/</loc>
-        <lastmod>2020-12-16T01:00:11.324Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

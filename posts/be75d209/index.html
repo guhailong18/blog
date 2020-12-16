@@ -58,7 +58,7 @@
             <div class="brand-logo">
                 <a href="/" class="waves-effect waves-light">
                     
-                    <img src="./images/loading.gif" data-original="https://cdn.jsdelivr.net/gh/guhailong18/blog/logo.png" class="logo-img" alt="LOGO">
+                    <img src="/images/loading.gif" data-original="https://cdn.jsdelivr.net/gh/guhailong18/blog/logo.png" class="logo-img" alt="LOGO">
                     
                     <span class="logo-span">古客のBlog</span>
                 </a>
@@ -289,7 +289,7 @@
 
     <div class="mobile-head bg-color">
         
-        <img src="./images/loading.gif" data-original="https://cdn.jsdelivr.net/gh/guhailong18/blog/logo.png" class="logo-img circle responsive-img">
+        <img src="/images/loading.gif" data-original="https://cdn.jsdelivr.net/gh/guhailong18/blog/logo.png" class="logo-img circle responsive-img">
         
         <div class="logo-name">古客のBlog</div>
         <div class="logo-desc">
@@ -1962,10 +1962,10 @@ encrypt: # hexo-blog-encrypt
                         <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
                     </ul>
                     <div id="alipay">
-                        <img src="./images/loading.gif" data-original="https://cdn.jsdelivr.net/gh/guhailong18/blog/medias/reward/alipay1.jpg" class="reward-img" alt="支付宝打赏二维码">
+                        <img src="/images/loading.gif" data-original="https://cdn.jsdelivr.net/gh/guhailong18/blog/medias/reward/alipay1.jpg" class="reward-img" alt="支付宝打赏二维码">
                     </div>
                     <div id="wechat">
-                        <img src="./images/loading.gif" data-original="https://cdn.jsdelivr.net/gh/guhailong18/blog/medias/reward/wechat.jpg" class="reward-img" alt="微信打赏二维码">
+                        <img src="/images/loading.gif" data-original="https://cdn.jsdelivr.net/gh/guhailong18/blog/medias/reward/wechat.jpg" class="reward-img" alt="微信打赏二维码">
                     </div>
                 </div>
             </div>
@@ -2059,7 +2059,7 @@ encrypt: # hexo-blog-encrypt
                     <div class="card-image">
                         
                         
-                        <img src="./images/loading.gif" data-original="https://cdn.jsdelivr.net/gh/guhailong18/blog/medias/featureimages/27.jpg" class="responsive-img" alt="ejs语法入门">
+                        <img src="/images/loading.gif" data-original="https://cdn.jsdelivr.net/gh/guhailong18/blog/medias/featureimages/27.jpg" class="responsive-img" alt="ejs语法入门">
                         
                         <span class="card-title">ejs语法入门</span>
                     </div>
@@ -2120,7 +2120,7 @@ encrypt: # hexo-blog-encrypt
                     <div class="card-image">
                         
                         
-                        <img src="./images/loading.gif" data-original="https://cdn.jsdelivr.net/gh/guhailong18/blog/medias/featureimages/4.jpg" class="responsive-img" alt="hexo博客搭建全过程">
+                        <img src="/images/loading.gif" data-original="https://cdn.jsdelivr.net/gh/guhailong18/blog/medias/featureimages/4.jpg" class="responsive-img" alt="hexo博客搭建全过程">
                         
                         <span class="card-title">hexo博客搭建全过程</span>
                     </div>
@@ -2378,7 +2378,7 @@ encrypt: # hexo-blog-encrypt
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">77.1k</span>&nbsp;字
+                class="white-color">77.8k</span>&nbsp;字
             
             
             
@@ -2680,6 +2680,43 @@ $(function () {
 	
 	<!-- 预加载-->
 	
+<div id='loader'>
+	
+	<div class="outer_box">
+	<div class='loader_overlay'></div>
+	<div class='loader_cogs'>
+		<div class='loader_cogs__top'>
+		<div class='top_part'></div>
+		<div class='top_part'></div>
+		<div class='top_part'></div>
+		<div class='top_hole'></div>
+		</div>
+		<div class='loader_cogs__left'>
+		<div class='left_part'></div>
+		<div class='left_part'></div>
+		<div class='left_part'></div>
+		<div class='left_hole'></div>
+		</div>
+		<div class='loader_cogs__bottom'>
+		<div class='bottom_part'></div>
+		<div class='bottom_part'></div>
+		<div class='bottom_part'></div>
+		<div class='bottom_hole'></div>
+		</div>
+		<!-- <p>loading</p> -->
+	</div>
+	</div>
+  
+</div>
+
+<script>
+  var endLoading = function () {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loader').classList.add("loading");
+  }
+  window.addEventListener('load',endLoading);
+</script>
+
 
     <!-- 古客魔改 End -->
     
