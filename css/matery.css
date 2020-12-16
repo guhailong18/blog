@@ -1,6 +1,23 @@
 /*全局基础样式*/
+/*超小屏幕下(手机类)的样式*/
+@media only screen and (max-width: 401px) {
+    .container {
+        width: 95%;
+    }
+    header .brand-logo .logo-span {
+        font-size: 1rem;
+    }
+    .bg-cover .title {
+        font-size: 2rem;
+        font-weight: 500;
+        line-height: 1.25em;
+        margin-bottom: 12px;
+        position: relative;
+    }
+}
+
 /*小屏幕下(手机类)的样式*/
-@media only screen and (max-width: 601px) {
+@media only screen and (min-width: 402px) and (max-width: 599px) {
     .container {
         width: 95%;
     }
