@@ -1088,10 +1088,10 @@ abbrlink:
 
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
             <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
-            <div id="mmedia-ikAcrPvL" style="margin-bottom: 20px; width: "></div>
+            <div id="mmedia-zMXaVMwR" style="margin-bottom: 20px; width: "></div>
         <script>
-          var ap_ikAcrPvL = new APlayer({
-            element: document.getElementById("mmedia-ikAcrPvL"),
+          var ap_zMXaVMwR = new APlayer({
+            element: document.getElementById("mmedia-zMXaVMwR"),
             narrow: false,
             autoplay: false,
             showlrc: false,
@@ -1105,7 +1105,7 @@ abbrlink:
             undefined
           });
           window.aplayers || (window.aplayers = []);
-          window.aplayers.push(ap_ikAcrPvL);
+          window.aplayers.push(ap_zMXaVMwR);
         </script>
 
 
@@ -1204,10 +1204,10 @@ abbrlink:
 
 <p>演示效果：</p>
 <p>1、</p>
-<div id="mmedia-KzOoVfnX"></div><script src="https://cdn.jsdelivr.net/npm/dplayer/dist/DPlayer.min.js"></script>
+<div id="mmedia-QWGWclCx"></div><script src="https://cdn.jsdelivr.net/npm/dplayer/dist/DPlayer.min.js"></script>
       <script>
-        var dp_KzOoVfnX = new DPlayer({
-            container: document.getElementById('mmedia-KzOoVfnX'),
+        var dp_QWGWclCx = new DPlayer({
+            container: document.getElementById('mmedia-QWGWclCx'),
             autoplay: false,
             theme: '#b7daff',
             loop: false,
@@ -1225,7 +1225,7 @@ abbrlink:
             highlight: [],
             undefined
         });
-        dp_KzOoVfnX.on("fullscreen", function () { if (/Android|webOS|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) { screen.orientation.lock("landscape"); }});
+        dp_QWGWclCx.on("fullscreen", function () { if (/Android|webOS|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) { screen.orientation.lock("landscape"); }});
         
       </script>
         
@@ -1406,12 +1406,12 @@ abbrlink:
 
         <style>.bbplayer{width: 100%; max-width: 850px; margin: auto}</style>
         <div class="bbplayer">
-        <iframe class="bbplayer" id="mmedia-ePFUwdAD" src="//player.bilibili.com/player.html?aid=60016166&amp;page=1&amp;high_quality=1&amp;danmaku=true" allowfullscreen="no" scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts allow-popups"></iframe>
+        <iframe class="bbplayer" id="mmedia-EhnYdlFE" src="//player.bilibili.com/player.html?aid=60016166&amp;page=1&amp;high_quality=1&amp;danmaku=true" allowfullscreen="no" scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts allow-popups"></iframe>
         </div>
         <script>
-            document.getElementById("mmedia-ePFUwdAD").style.height=document.getElementById("mmedia-ePFUwdAD").scrollWidth*0.76+"px";
+            document.getElementById("mmedia-EhnYdlFE").style.height=document.getElementById("mmedia-EhnYdlFE").scrollWidth*0.76+"px";
             window.onresize = function(){
-              document.getElementById("mmedia-ePFUwdAD").style.height=document.getElementById("mmedia-ePFUwdAD").scrollWidth*0.76+"px";
+              document.getElementById("mmedia-EhnYdlFE").style.height=document.getElementById("mmedia-EhnYdlFE").scrollWidth*0.76+"px";
             };
         </script>
         
@@ -2680,6 +2680,39 @@ $(function () {
 	<!-- 预加载-->
 
     <!-- 古客魔改 End -->
+	
+<div id="loading-container">
+	<p class="loading-text">少女祈祷中 · · ·</p>
+	<div class="loading-image">
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+	</div>
+</div>
+<link rel="stylesheet" type="text/css" href="https://raw.githubusercontent.com/guhailong18/speedup1/master/preloading1.css">
+<script>
+	(function() {
+		const loaded = function() {
+			setTimeout(function() {
+				const loader = document.getElementById("loading-container");
+				loader.className = "fadeout";
+				//使用渐隐的方法淡出loading page
+				// document.getElementById("body-wrap").style.display="flex";
+				setTimeout(function() {
+					loader.style.display = "none";
+				}, 2500);
+			}, 500);
+			//强制显示loading page 1s  
+		};
+		loaded();
+	}
+	)()
+</script>
+
+
+	
     
     
 

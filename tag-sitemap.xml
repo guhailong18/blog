@@ -283,14 +283,14 @@
     </url>
 
     <url>
-        <loc>http://blog.guke.cf/tags/markdown/</loc>
+        <loc>http://blog.guke.cf/tags/%E6%A0%87%E7%AD%BE/</loc>
         <lastmod>2020-12-11T01:12:20.477Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>http://blog.guke.cf/tags/%E6%A0%87%E7%AD%BE/</loc>
+        <loc>http://blog.guke.cf/tags/markdown/</loc>
         <lastmod>2020-12-11T01:12:20.477Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>

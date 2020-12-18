@@ -1183,9 +1183,9 @@ emoji
                         
                         <div class="card-action article-tags">
                             
-                            <a href="/tags/%E6%A0%87%E7%AD%BE/"><span class="chip bg-color">标签</span></a>
-                            
                             <a href="/tags/markdown/"><span class="chip bg-color">markdown</span></a>
+                            
+                            <a href="/tags/%E6%A0%87%E7%AD%BE/"><span class="chip bg-color">标签</span></a>
                             
                         </div>
                         
@@ -1244,9 +1244,9 @@ emoji
                         
                         <div class="card-action article-tags">
                             
-                            <a href="/tags/%E6%95%99%E7%A8%8B/"><span class="chip bg-color">教程</span></a>
-                            
                             <a href="/tags/hexo/"><span class="chip bg-color">hexo</span></a>
+                            
+                            <a href="/tags/%E6%95%99%E7%A8%8B/"><span class="chip bg-color">教程</span></a>
                             
                         </div>
                         
@@ -1780,6 +1780,39 @@ $(function () {
 	<!-- 预加载-->
 
     <!-- 古客魔改 End -->
+	
+<div id="loading-container">
+	<p class="loading-text">少女祈祷中 · · ·</p>
+	<div class="loading-image">
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+	</div>
+</div>
+<link rel="stylesheet" type="text/css" href="https://raw.githubusercontent.com/guhailong18/speedup1/master/preloading1.css">
+<script>
+	(function() {
+		const loaded = function() {
+			setTimeout(function() {
+				const loader = document.getElementById("loading-container");
+				loader.className = "fadeout";
+				//使用渐隐的方法淡出loading page
+				// document.getElementById("body-wrap").style.display="flex";
+				setTimeout(function() {
+					loader.style.display = "none";
+				}, 2500);
+			}, 500);
+			//强制显示loading page 1s  
+		};
+		loaded();
+	}
+	)()
+</script>
+
+
+	
     
     
 
