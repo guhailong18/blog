@@ -285,7 +285,7 @@ mark {
 }
 
 .bg-color {
-    background-image: linear-gradient(to right, #bf30ac 0%, #0f9d58 100%);
+    background-image: linear-gradient(to right, #db4fc9 0%, #0d99d1 100%);
     opacity: 0.9;
     /* 透明度*/
 }
@@ -303,7 +303,7 @@ mark {
     position: fixed;
     bottom: 0;
     z-index: 300;
-    background: linear-gradient(to right, #bf30ac 0%, #0f9d58 100%);
+    background: linear-gradient(to right, #db4fc9 0%, #0d99d1 100%);
     opacity: 0.7;
 }
 
