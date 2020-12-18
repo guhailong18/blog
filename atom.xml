@@ -6,7 +6,7 @@
   <link href="http://blog.guke.cf/atom.xml" rel="self"/>
   
   <link href="http://blog.guke.cf/"/>
-  <updated>2020-12-16T05:48:28.104Z</updated>
+  <updated>2020-12-18T09:30:38.485Z</updated>
   <id>http://blog.guke.cf/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Cloudflare-worker学习</title>
+    <link href="http://blog.guke.cf/posts/92357bf3/"/>
+    <id>http://blog.guke.cf/posts/92357bf3/</id>
+    <published>2020-12-18T08:10:50.000Z</published>
+    <updated>2020-12-18T09:30:38.485Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot; title=&quot;概述&quot;&gt;&lt;/a&gt;概述&lt;/h2&gt;&lt;p&gt;通过 Workers 在边缘运行 JavaScript、Rust、C 和 C++ 等。&lt;/p&gt;
+&lt;h2 id=&quot;1-安装&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    
+    <category term="2020" scheme="http://blog.guke.cf/tags/2020/"/>
+    
+  </entry>
   
   <entry>
     <title>写一个自己的hexo插件</title>
@@ -485,29 +509,6 @@
     
     
     <category term="数模" scheme="http://blog.guke.cf/tags/%E6%95%B0%E6%A8%A1/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>day1数据预处理</title>
-    <link href="http://blog.guke.cf/posts/34ffafde/"/>
-    <id>http://blog.guke.cf/posts/34ffafde/</id>
-    <published>2020-07-13T09:21:18.000Z</published>
-    <updated>2020-12-10T09:44:55.842Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;缺失值处理&quot;&gt;&lt;a href=&quot;#缺失值处理&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="数模" scheme="http://blog.guke.cf/categories/%E6%95%B0%E6%A8%A1/"/>
-    
     
   </entry>
   
