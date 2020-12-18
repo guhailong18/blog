@@ -1642,9 +1642,10 @@
         <div class="row tags-posts">
             
             
-            <div class="article tag-post col s12 m6 l4" data-tags="matlab, 数学建模, 灰度预测" data-aos="fade-up">
+            <div class="article tag-post col s12 m6 l4" data-tags="Matlab" data-aos="fade-up">
                 <div class="card">
-                    <a href="/posts/a764b71d/">
+                    <a href="/posts/5f4eb293/">
+      f="/posts/a764b71d/">
                         <div class="card-image tag-image">
                             
                             
@@ -2104,38 +2105,23 @@ $(function () {
 
     <!-- 古客魔改 End -->
 	
-<div id="loading-container">
-	<p class="loading-text">少女祈祷中 · · ·</p>
-	<div class="loading-image">
-		<div></div>
-		<div></div>
-		<div></div>
-		<div></div>
-		<div></div>
-	</div>
-</div>
-<link rel="stylesheet" type="text/css" href="https://raw.githubusercontent.com/guhailong18/speedup1/master/preloading1.css">
-<script>
-	(function() {
-		const loaded = function() {
-			setTimeout(function() {
-				const loader = document.getElementById("loading-container");
-				loader.className = "fadeout";
-				//使用渐隐的方法淡出loading page
-				// document.getElementById("body-wrap").style.display="flex";
-				setTimeout(function() {
-					loader.style.display = "none";
-				}, 2500);
-			}, 500);
-			//强制显示loading page 1s  
-		};
-		loaded();
-	}
-	)()
-</script>
-
 
 	
+<div id="loader-wrapper">
+    <div id="loader"></div>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+    <div class="load_title">正在加载LoveFeel站点<br><span>V1.0</span></div>
+</div>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/guhailong18/speedup1/preloading2.css">
+<script type="text/javascript">         
+    // 等待所有加载
+    $(window).load(function(){
+        $('body').addClass('loaded');
+        $('#loader-wrapper .load_title').remove();
+    }); 
+</script>  
+
     
     
 
