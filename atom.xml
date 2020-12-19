@@ -307,7 +307,7 @@
     <summary type="html">&lt;p&gt;这是一个分享一些自己心得，爱好以及知识的博客，本人只是一名普通的大学生，不是啥大神。不用抱有太高的期待或是要求，如果能帮助到部分人或是给部分人带来些许快乐，实乃我无上的荣耀…..（此处运用了夸张的手法并省略两千字）&lt;/p&gt;
 &lt;p&gt;邮箱：&lt;a href=&quot;mailto:1097629344@qq.com&quot;&gt;1097629344@qq.com&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;欢迎大家与我交流！!!&lt;img src=&quot;img/08.jpg&quot;&gt;&lt;/p&gt;
-
+&lt;script&gt;var meting_api=&#39;https://musicapi.leanapp.cn?server=:server&amp;type=:type&amp;id=:id&amp;auth=:auth&amp;r=:r&#39;;&lt;/script&gt;
             &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css&quot;&gt;
             &lt;script src=&quot;https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js&quot;&gt;&lt;/script&gt;
             &lt;script src=&quot;https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js&quot;&gt;&lt;/script&gt;
