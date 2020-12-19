@@ -780,14 +780,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    892
+                    1.1k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    3 分
+                    5 分
                 </div>
                 
 
@@ -815,9 +815,7 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <ul>
-<li><h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2></li>
-</ul>
+                <p><strong>以下均为转载</strong></p>
 <p><strong>学习目标</strong>: 学会推送指定文件夹到github的指定仓库！</p>
 <p>目的：全站白嫖jsdelivr的CDN加速（原因：其实<a target="_blank" rel="noopener" href="https://github.com/blinkfox/hexo-theme-matery/blob/develop/README_CN.md">hexo-theme-matery</a>已经非常友好的为我们配置了CDN加速，因但是由于jsdelivr不对超过50M的进行加速，导致我的部分图片的CSS,JS无法正常加载，所以我就想进行多仓库来部署，是图片，JS和CSS放在不同的仓库，但是在网上没有找到别人造好的轮子( Ĭ ^ Ĭ )，只好自己动手了，顺便学习一下Git的相关使用方法，一举两得φ(&gt;ω&lt;*) </p>
 <h2 id="1-创建仓库"><a href="#1-创建仓库" class="headerlink" title="1.创建仓库"></a>1.创建仓库</h2><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token comment"># 当前目录作为Git仓库</span>
@@ -849,7 +847,43 @@ git clone git://github.com/CosmosHua/locate.git new<span aria-hidden="true" clas
 
 
 
-<h2 id="2-Git-基本操作"><a href="#2-Git-基本操作" class="headerlink" title="2.Git 基本操作"></a>2.Git 基本操作</h2><h2 id="3-设置代理"><a href="#3-设置代理" class="headerlink" title="3.设置代理"></a>3.设置代理</h2><h2 id="4"><a href="#4" class="headerlink" title="4."></a>4.</h2><h2 id="5-Git-远程仓库-Github及服务器"><a href="#5-Git-远程仓库-Github及服务器" class="headerlink" title="5.Git 远程仓库(Github及服务器)"></a>5.Git 远程仓库(Github及服务器)</h2><h4 id="添加远程库"><a href="#添加远程库" class="headerlink" title="添加远程库"></a>添加远程库</h4><pre class="line-numbers language-none"><code class="language-none">git remote add [shortname] [url]<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h2 id="2-Git-基本操作"><a href="#2-Git-基本操作" class="headerlink" title="2.Git 基本操作"></a>2.Git 基本操作</h2><h2 id="3-设置代理"><a href="#3-设置代理" class="headerlink" title="3.设置代理"></a>3.设置代理</h2><p>1.http || https协议</p>
+<pre class="line-numbers language-php" data-language="php"><code class="language-php"><span class="token comment">//设置全局代理</span>
+<span class="token comment">//http</span>
+git config <span class="token operator">--</span><span class="token keyword">global</span> https<span class="token punctuation">.</span>proxy http<span class="token punctuation">:</span><span class="token comment">//127.0.0.1:1080</span>
+<span class="token comment">//https</span>
+git config <span class="token operator">--</span><span class="token keyword">global</span> https<span class="token punctuation">.</span>proxy https<span class="token punctuation">:</span><span class="token comment">//127.0.0.1:1080</span>
+<span class="token comment">//使用socks5代理的 例如ss，ssr 1080是windows下ss的默认代理端口,mac下不同，或者有自定义的，根据自己的改</span>
+git config <span class="token operator">--</span><span class="token keyword">global</span> http<span class="token punctuation">.</span>proxy socks5<span class="token punctuation">:</span><span class="token comment">//127.0.0.1:1080</span>
+git config <span class="token operator">--</span><span class="token keyword">global</span> https<span class="token punctuation">.</span>proxy socks5<span class="token punctuation">:</span><span class="token comment">//127.0.0.1:1080</span>
+
+<span class="token comment">//只对github.com使用代理，其他仓库不走代理</span>
+git config <span class="token operator">--</span><span class="token keyword">global</span> http<span class="token punctuation">.</span>https<span class="token punctuation">:</span><span class="token comment">//github.com.proxy socks5://127.0.0.1:1080</span>
+git config <span class="token operator">--</span><span class="token keyword">global</span> https<span class="token punctuation">.</span>https<span class="token punctuation">:</span><span class="token comment">//github.com.proxy socks5://127.0.0.1:1080</span>
+<span class="token comment">//取消github代理</span>
+git config <span class="token operator">--</span><span class="token keyword">global</span> <span class="token operator">--</span><span class="token keyword">unset</span> http<span class="token punctuation">.</span>https<span class="token punctuation">:</span><span class="token comment">//github.com.proxy</span>
+git config <span class="token operator">--</span><span class="token keyword">global</span> <span class="token operator">--</span><span class="token keyword">unset</span> https<span class="token punctuation">.</span>https<span class="token punctuation">:</span><span class="token comment">//github.com.proxy</span>
+
+<span class="token comment">//取消全局代理</span>
+git config <span class="token operator">--</span><span class="token keyword">global</span> <span class="token operator">--</span><span class="token keyword">unset</span> http<span class="token punctuation">.</span>proxy
+git config <span class="token operator">--</span><span class="token keyword">global</span> <span class="token operator">--</span><span class="token keyword">unset</span> https<span class="token punctuation">.</span>proxy<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>2.SSH协议</p>
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token comment">//对于使用git@协议的，可以配置socks5代理</span>
+<span class="token comment">//在~/.ssh/config 文件后面添加几行，没有可以新建一个</span>
+<span class="token comment">//socks5</span>
+Host github<span class="token punctuation">.</span>com
+User git
+ProxyCommand connect <span class="token operator">-</span>S <span class="token number">127.0</span><span class="token punctuation">.</span><span class="token number">0.1</span><span class="token operator">:</span><span class="token number">1080</span> <span class="token operator">%</span>h <span class="token operator">%</span>p
+
+<span class="token comment">//http || https</span>
+Host github<span class="token punctuation">.</span>com
+User git
+ProxyCommand connect <span class="token operator">-</span>H <span class="token number">127.0</span><span class="token number">.0</span><span class="token number">.1</span><span class="token operator">:</span><span class="token number">1080</span> <span class="token operator">%</span>h <span class="token operator">%</span>p<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<h2 id="4"><a href="#4" class="headerlink" title="4."></a>4.</h2><h2 id="5-Git-远程仓库-Github及服务器"><a href="#5-Git-远程仓库-Github及服务器" class="headerlink" title="5.Git 远程仓库(Github及服务器)"></a>5.Git 远程仓库(Github及服务器)</h2><h4 id="添加远程库"><a href="#添加远程库" class="headerlink" title="添加远程库"></a>添加远程库</h4><pre class="line-numbers language-none"><code class="language-none">git remote add [shortname] [url]<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <pre class="line-numbers language-none"><code class="language-none">$ mkdir runoob-git-test                     # 创建测试目录
 $ cd runoob-git-test/                       # 进入测试目录
@@ -1547,7 +1581,7 @@ git push origin master
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">81.8k</span>&nbsp;字
+                class="white-color">82k</span>&nbsp;字
             
             
             

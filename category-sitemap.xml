@@ -10,7 +10,14 @@
 
     <url>
         <loc>http://blog.guke.cf/categories/git/</loc>
-        <lastmod>2020-12-19T02:35:56.750Z</lastmod>
+        <lastmod>2020-12-19T02:40:16.293Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://blog.guke.cf/categories/hexo/</loc>
+        <lastmod>2020-12-19T02:39:26.033Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -67,13 +74,6 @@
     <url>
         <loc>http://blog.guke.cf/categories/%25E5%25AD%25A6%25E4%25B9%25A0%25E8%25AE%25A1%25E5%2588%2592/</loc>
         <lastmod>2020-12-15T05:43:28.429Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>http://blog.guke.cf/categories/hexo/</loc>
-        <lastmod>2020-12-15T00:59:04.729Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
