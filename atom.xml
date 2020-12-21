@@ -6,7 +6,7 @@
   <link href="http://blog.guke.cf/atom.xml" rel="self"/>
   
   <link href="http://blog.guke.cf/"/>
-  <updated>2020-12-18T09:32:19.846Z</updated>
+  <updated>2020-12-21T16:05:43.747Z</updated>
   <id>http://blog.guke.cf/</id>
   
   <author>
@@ -15,6 +15,79 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>脚本化图表参考指南</title>
+    <link href="http://blog.guke.cf/posts/4322a6a4/"/>
+    <id>http://blog.guke.cf/posts/4322a6a4/</id>
+    <published>2020-12-21T15:57:21.000Z</published>
+    <updated>2020-12-21T16:05:43.747Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h6 id=&quot;VLOOK™让你的-Markdown-有了新看法──脚本化图表参考指南MAX-孟兆COPYRIGHT-©-2017-2020-MAX°DESIGN&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="转载" scheme="http://blog.guke.cf/categories/%E8%BD%AC%E8%BD%BD/"/>
+    
+    
+    <category term="2020" scheme="http://blog.guke.cf/tags/2020/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>VLOOK快速参考手册</title>
+    <link href="http://blog.guke.cf/posts/4cb143ec/"/>
+    <id>http://blog.guke.cf/posts/4cb143ec/</id>
+    <published>2020-12-21T15:56:43.000Z</published>
+    <updated>2020-12-21T16:03:55.421Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h6 id=&quot;VLOOK™让你的-Markdown-有了新看法──快速参考手册-最新版本-V9-23-idleMΛX°孟兆COPYRIGHT-©-2016-2020-MAX°DESIGN&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="转载" scheme="http://blog.guke.cf/categories/%E8%BD%AC%E8%BD%BD/"/>
+    
+    
+    <category term="2020" scheme="http://blog.guke.cf/tags/2020/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>书籍笔记导航</title>
+    <link href="http://blog.guke.cf/posts/8a584121/"/>
+    <id>http://blog.guke.cf/posts/8a584121/</id>
+    <published>2020-12-21T15:30:07.000Z</published>
+    <updated>2020-12-21T15:41:08.843Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="2020" scheme="http://blog.guke.cf/tags/2020/"/>
+    
+  </entry>
   
   <entry>
     <title>Cloudflare-worker学习</title>
@@ -297,30 +370,6 @@
   </entry>
   
   <entry>
-    <title>我的第一篇博客——自我介绍</title>
-    <link href="http://blog.guke.cf/posts/6007b04d/"/>
-    <id>http://blog.guke.cf/posts/6007b04d/</id>
-    <published>2020-12-08T14:57:23.322Z</published>
-    <updated>2020-01-29T13:11:05.920Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;这是一个分享一些自己心得，爱好以及知识的博客，本人只是一名普通的大学生，不是啥大神。不用抱有太高的期待或是要求，如果能帮助到部分人或是给部分人带来些许快乐，实乃我无上的荣耀…..（此处运用了夸张的手法并省略两千字）&lt;/p&gt;
-&lt;p&gt;邮箱：&lt;a href=&quot;mailto:1097629344@qq.com&quot;&gt;1097629344@qq.com&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;欢迎大家与我交流！!!&lt;img src=&quot;img/08.jpg&quot;&gt;&lt;/p&gt;
-&lt;script&gt;var meting_api=&#39;https://musicapi.leanapp.cn?server=:server&amp;type=:type&amp;id=:id&amp;auth=:auth&amp;r=:r&#39;;&lt;/script&gt;
-            &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css&quot;&gt;
-            &lt;script src=&quot;https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js&quot;&gt;&lt;/script&gt;
-            &lt;script src=&quot;https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js&quot;&gt;&lt;/script&gt;
-            &lt;meting-js id=&quot;60198&quot; server=&quot;netease&quot; type=&quot;playlist&quot; autoplay=&quot;true&quot; mutex=&quot;false&quot; listmaxheight=&quot;340px&quot; preload=&quot;none&quot; theme=&quot;#ad7a86&quot;&gt;&lt;/meting-js&gt;</summary>
-    
-    
-    
-    
-    <category term="自述" scheme="http://blog.guke.cf/tags/%E8%87%AA%E8%BF%B0/"/>
-    
-  </entry>
-  
-  <entry>
     <title>搜索引擎的高级用法</title>
     <link href="http://blog.guke.cf/posts/9efa773a/"/>
     <id>http://blog.guke.cf/posts/9efa773a/</id>
@@ -458,59 +507,6 @@
     
     
     <category term="JAVA" scheme="http://blog.guke.cf/tags/JAVA/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>rclone挂载onedrive</title>
-    <link href="http://blog.guke.cf/posts/defdc5f2/"/>
-    <id>http://blog.guke.cf/posts/defdc5f2/</id>
-    <published>2020-10-01T07:43:14.000Z</published>
-    <updated>2020-12-11T01:14:11.031Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot; title=&quot;概述&quot;&gt;&lt;/a&gt;概述&lt;/h2&gt;&lt;p&gt;本文讲述使用rclone下挂载OD和GD。&lt;/p&gt;
-&lt;h2 id=&quot;1-挂载OD&quot;&gt;&lt;a href=&quot;#1-挂载OD&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="小技巧" scheme="http://blog.guke.cf/categories/%E5%B0%8F%E6%8A%80%E5%B7%A7/"/>
-    
-    
-    <category term="rclone" scheme="http://blog.guke.cf/tags/rclone/"/>
-    
-    <category term="onedrive" scheme="http://blog.guke.cf/tags/onedrive/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Lingo笔记一</title>
-    <link href="http://blog.guke.cf/posts/54fec95d/"/>
-    <id>http://blog.guke.cf/posts/54fec95d/</id>
-    <published>2020-07-19T08:54:52.000Z</published>
-    <updated>2020-12-11T01:12:00.945Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot; title=&quot;概述&quot;&gt;&lt;/a&gt;概述&lt;/h2&gt;&lt;h2 id=&quot;1&quot;&gt;&lt;a href=&quot;#1&quot; class=&quot;headerlink&quot; title=&quot;1.&quot;&gt;&lt;/a&gt;1.&lt;/h2&gt;&lt;img</summary>
-        
-      
-    
-    
-    
-    <category term="数模" scheme="http://blog.guke.cf/categories/%E6%95%B0%E6%A8%A1/"/>
-    
-    
-    <category term="数模" scheme="http://blog.guke.cf/tags/%E6%95%B0%E6%A8%A1/"/>
     
   </entry>
   
