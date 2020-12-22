@@ -1,81 +1,4 @@
-/*全局基础样式*/
-/*超小屏幕下(手机类)的样式*/
-@media only screen and (max-width: 501px) {
-    .container {
-        width: 95%;
-    }
-    header .brand-logo .logo-span {
-        font-size: 12px;
-    }
-    .bg-cover .title {
-        font-size: 15px;
-        font-weight: 500;
-        line-height: 1em;
-        margin-bottom: 10px;
-        position: relative;
-    }
-}
 
-/*小屏幕下(手机类)的样式*/
-@media only screen and (min-width: 502px) and (max-width: 599px) {
-    .container {
-        width: 95%;
-    }
-    header .brand-logo .logo-span {
-        font-size: 1rem;
-    }
-    .bg-cover .title {
-        font-size: 3rem;
-        font-weight: 700;
-        line-height: 1.85em;
-        margin-bottom: 20px;
-        position: relative;
-    }
-}
-
-/*中等屏幕下(平板类)的样式*/
-@media only screen and (min-width: 600px) and (max-width: 992px) {
-    .container {
-        width: 90%;
-    }
-    header .brand-logo .logo-span {
-        font-size: 2rem;
-    }
-    .bg-cover .title {
-        font-size: 4rem;
-        font-weight: 700;
-        line-height: 1.85em;
-        margin-bottom: 20px;
-        position: relative;
-    }
-}
-
-/*大屏幕下(桌面类)的样式*/
-@media only screen and (min-width: 993px) {
-    .container {
-        width: 90%;
-        max-width: 1125px;
-    }
-
-    .head-container {
-        position: absolute;
-        padding: 0 30px;
-        width: 100%;
-    }
-
-    .post-container {
-        width: 90%;
-        margin: 0 auto;
-        max-width: 1250px;
-    }
-    .bg-cover .title {
-        font-size: 4rem;
-        font-weight: 700;
-        line-height: 1.85em;
-        margin-bottom: 20px;
-        position: relative;
-    }    
-}
 
 body {
     background-color: #eaeaea;
@@ -2184,4 +2107,83 @@ footer .copy-right {
     height: 50px;
     padding: 0;
     margin: 0;
+}
+
+/*全局基础样式*/
+/*超小屏幕下(手机类)的样式*/
+@media only screen and (max-width: 501px) {
+    .container {
+        width: 95%;
+    }
+	header .brand-logo .logo-span {
+	    font-size: 1.2rem !important;
+	}
+    .bg-cover .title {
+        font-size: 15px !important;
+        font-weight: 500;
+        line-height: 1em;
+        margin-bottom: 10px;
+        position: relative;
+    }
+}
+
+/*小屏幕下(手机类)的样式*/
+@media only screen and (min-width: 502px) and (max-width: 599px) {
+    .container {
+        width: 95%;
+    }
+    header .brand-logo .logo-span {
+        font-size: 1.5rem !important;
+    }
+    .bg-cover .title {
+        font-size: 2rem !important;
+        font-weight: 700;
+        line-height: 1.85em;
+        margin-bottom: 20px;
+        position: relative;
+    }
+}
+
+/*中等屏幕下(平板类)的样式*/
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+    .container {
+        width: 90%;
+    }
+    header .brand-logo .logo-span {
+        font-size: 2rem;
+    }
+    .bg-cover .title {
+        font-size: 4rem;
+        font-weight: 700;
+        line-height: 1.85em;
+        margin-bottom: 20px;
+        position: relative;
+    }
+}
+
+/*大屏幕下(桌面类)的样式*/
+@media only screen and (min-width: 993px) {
+    .container {
+        width: 90%;
+        max-width: 1125px;
+    }
+
+    .head-container {
+        position: absolute;
+        padding: 0 30px;
+        width: 100%;
+    }
+
+    .post-container {
+        width: 90%;
+        margin: 0 auto;
+        max-width: 1250px;
+    }
+    .bg-cover .title {
+        font-size: 4rem;
+        font-weight: 700;
+        line-height: 1.85em;
+        margin-bottom: 20px;
+        position: relative;
+    }    
 }

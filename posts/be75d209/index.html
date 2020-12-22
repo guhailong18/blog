@@ -756,14 +756,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    4.6k
+                    4.8k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    20 分
+                    21 分
                 </div>
                 
 
@@ -1074,10 +1074,10 @@ abbrlink:
 
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
             <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
-            <div id="mmedia-tcXZFjHV" style="margin-bottom: 20px; width: "></div>
+            <div id="mmedia-DmFbkAtp" style="margin-bottom: 20px; width: "></div>
         <script>
-          var ap_tcXZFjHV = new APlayer({
-            element: document.getElementById("mmedia-tcXZFjHV"),
+          var ap_DmFbkAtp = new APlayer({
+            element: document.getElementById("mmedia-DmFbkAtp"),
             narrow: false,
             autoplay: false,
             showlrc: false,
@@ -1091,7 +1091,7 @@ abbrlink:
             undefined
           });
           window.aplayers || (window.aplayers = []);
-          window.aplayers.push(ap_tcXZFjHV);
+          window.aplayers.push(ap_DmFbkAtp);
         </script>
 
 
@@ -1186,10 +1186,10 @@ abbrlink:
 
 <p>演示效果：</p>
 <p>1、</p>
-<div id="mmedia-UnjUiCCa"></div><script src="https://cdn.jsdelivr.net/npm/dplayer/dist/DPlayer.min.js"></script>
+<div id="mmedia-epAoBGGf"></div><script src="https://cdn.jsdelivr.net/npm/dplayer/dist/DPlayer.min.js"></script>
       <script>
-        var dp_UnjUiCCa = new DPlayer({
-            container: document.getElementById('mmedia-UnjUiCCa'),
+        var dp_epAoBGGf = new DPlayer({
+            container: document.getElementById('mmedia-epAoBGGf'),
             autoplay: false,
             theme: '#b7daff',
             loop: false,
@@ -1207,7 +1207,7 @@ abbrlink:
             highlight: [],
             undefined
         });
-        dp_UnjUiCCa.on("fullscreen", function () { if (/Android|webOS|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) { screen.orientation.lock("landscape"); }});
+        dp_epAoBGGf.on("fullscreen", function () { if (/Android|webOS|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) { screen.orientation.lock("landscape"); }});
         
       </script>
         
@@ -1378,12 +1378,12 @@ abbrlink:
 
         <style>.bbplayer{width: 100%; max-width: 850px; margin: auto}</style>
         <div class="bbplayer">
-        <iframe class="bbplayer" id="mmedia-wmzZXsik" src="//player.bilibili.com/player.html?aid=60016166&amp;page=1&amp;high_quality=1&amp;danmaku=true" allowfullscreen="no" scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts allow-popups"></iframe>
+        <iframe class="bbplayer" id="mmedia-yklRDhpq" src="//player.bilibili.com/player.html?aid=60016166&amp;page=1&amp;high_quality=1&amp;danmaku=true" allowfullscreen="no" scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts allow-popups"></iframe>
         </div>
         <script>
-            document.getElementById("mmedia-wmzZXsik").style.height=document.getElementById("mmedia-wmzZXsik").scrollWidth*0.76+"px";
+            document.getElementById("mmedia-yklRDhpq").style.height=document.getElementById("mmedia-yklRDhpq").scrollWidth*0.76+"px";
             window.onresize = function(){
-              document.getElementById("mmedia-wmzZXsik").style.height=document.getElementById("mmedia-wmzZXsik").scrollWidth*0.76+"px";
+              document.getElementById("mmedia-yklRDhpq").style.height=document.getElementById("mmedia-yklRDhpq").scrollWidth*0.76+"px";
             };
         </script>
         
@@ -1576,6 +1576,11 @@ encrypt: # hexo-blog-encrypt
 <li>  <strong>webp</strong>: 番剧封面使用<code>webp</code>格式(此格式在<code>safari</code>浏览器下不显示，但是图片大小可以缩小 100 倍左右), 默认<code>true</code></li>
 <li>  <strong>progress</strong>: 获取番剧数据时是否显示进度条，默认<code>true</code></li>
 </ul>
+<p>但是在这个主题会有个Bug，点击在看会弹出一个窗口，罪魁祸首是/libs/materialize/materialize.min.js</p>
+<p><img src="/images/loading.gif" data-original="https://cdn.jsdelivr.net/gh/guhailong18/picture/img/20201222124834.png" alt="image-20201222124834444"></p>
+<p>parentNode 属性可返回某节点的父节点，如果指定的节点没有父节点则返回 <em>null</em> 。</p>
+<p>经过测试，把e&amp;&amp;n.call(e,t)删掉就好了</p>
+<p><code>call()</code> 方法使用一个指定的 <code>this</code> 值和单独给出的一个或多个参数来调用一个函数。</p>
 <h2 id="图片懒加载"><a href="#图片懒加载" class="headerlink" title="图片懒加载"></a><a target="_blank" rel="noopener" href="https://github.com/Troy-Yang/hexo-lazyload-image">图片懒加载</a></h2><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><pre class="line-numbers language-none"><code class="language-none">npm install hexo-lazyload-image --save<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <h3 id="用法-1"><a href="#用法-1" class="headerlink" title="用法"></a>用法</h3><p>首先<code>_config.yml</code>从您的hexo项目中添加配置。</p>
@@ -2348,7 +2353,7 @@ encrypt: # hexo-blog-encrypt
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">96.5k</span>&nbsp;字
+                class="white-color">96.8k</span>&nbsp;字
             
             
             

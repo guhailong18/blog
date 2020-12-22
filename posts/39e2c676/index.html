@@ -744,21 +744,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-12-16
+                    2020-12-22
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    2k
+                    2.2k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    8 分
+                    9 分
                 </div>
                 
 
@@ -909,6 +909,19 @@
 }<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <p>具体编码可以在<a target="_blank" rel="noopener" href="https://fontawesome.com/cheatsheet">这里</a>查，可以需要翻墙才能完整浏览</p>
+<h2 id="匹配不同屏幕"><a href="#匹配不同屏幕" class="headerlink" title="匹配不同屏幕"></a>匹配不同屏幕</h2><p><code>@media</code>在媒体查询中使用该规则为不同的媒体类型/设备应用不同的样式。</p>
+<p>媒体查询可用于检查许多事情，例如：</p>
+<ul>
+<li>  视口的宽度和高度</li>
+<li>  设备的宽度和高度</li>
+<li>  方向（平板电脑/手机处于横向还是纵向模式？）</li>
+<li>  解析度</li>
+</ul>
+<p>命名使用了@media重写css样式但是依然@media里面的样式失效。</p>
+<p>原因在于css选择器优先级问题，后面的css样式优先级大于前面的。</p>
+<p>@media screen and (max-width: 800px) {}的样式应该放到后面，不应该放到没有@media的前面。</p>
+<p>吐槽：有些坑，被主题设计者坑了一把，他竟然没考虑优先级的问题，</p>
+<p>解决：把前面的放在后面就好了</p>
 <h2 id="修改页面配色"><a href="#修改页面配色" class="headerlink" title="修改页面配色"></a>修改页面配色</h2><p>查找方法基本就是打开chrome浏览器的检查,选择想要查看的页面元素,然后看他的Style文件,找到关键词之后去hexo-theme-matery主题的css文件中查找后修改即可</p>
 <p>打开 <code>matery/source/css/matery.css</code> 文件 搜索 <code>.bg-color</code> 大概在198行<br>修改<code>background-image</code>属性中<code>linear-gradient</code>内的值即可改成你自己想要的颜色。</p>
 <h2 id="添加文章显示作者名字"><a href="#添加文章显示作者名字" class="headerlink" title="添加文章显示作者名字"></a>添加文章显示作者名字</h2><pre class="line-numbers language-none"><code class="language-none">---------------------- layout/_partial/post-detail.ejs -----------------------
@@ -1676,7 +1689,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">96.5k</span>&nbsp;字
+                class="white-color">96.8k</span>&nbsp;字
             
             
             
