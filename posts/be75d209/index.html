@@ -257,15 +257,6 @@
       </li>
       
       <li>
-        <a href="/bb">
-          
-          <i class="fas fa-film" style="margin-top: -20px; zoom: 0.6;"></i>
-          
-          <span>弹幕室</span>
-        </a>
-      </li>
-      
-      <li>
         <a href="/position">
           
           <i class="fas fa-book" style="margin-top: -20px; zoom: 0.6;"></i>
@@ -496,16 +487,6 @@
 				   <i class="fa fas fa-image" style="position: absolute;left:28px" ></i>
 			      
 		          <span>导航</span>
-                  </a>
-                </li>
-              
-                <li>
-
-                  <a href="/bb " style="margin-left:50px">
-				  
-				   <i class="fa fas fa-film" style="position: absolute;left:28px" ></i>
-			      
-		          <span>弹幕室</span>
                   </a>
                 </li>
               
@@ -768,7 +749,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-12-19
+                    2020-12-22
                 </div>
                 
 
@@ -891,7 +872,17 @@ abbrlink:
 
 
 <h2 id="添加emoji表情支持"><a href="#添加emoji表情支持" class="headerlink" title="添加emoji表情支持"></a>添加emoji表情支持</h2><p>本主题新增了对<code>emoji</code>表情的支持，使用到了 <a target="_blank" rel="noopener" href="https://npm.taobao.org/package/hexo-filter-github-emojis">hexo-filter-github-emojis</a> 的 Hexo 插件来支持 <code>emoji</code>表情的生成，把对应的<code>markdown emoji</code>语法（<code>::</code>,例如：<code>:smile:</code>）转变成会跳跃的<code>emoji</code>表情，安装命令如下：</p>
-<pre class="line-numbers language-none"><code class="language-none"><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-none"><code class="language-none">npm install hexo-filter-github-emojis --save<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>在 Hexo 根目录下的 <code>_config.yml</code> 文件中，新增以下的配置项：</p>
+<pre class="line-numbers language-none"><code class="language-none">githubEmojis:
+  enable: true
+  className: github-emoji
+  inject: true
+  styles:
+  customEmojis:<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
 
 <h2 id="添加-RSS-订阅支持"><a href="#添加-RSS-订阅支持" class="headerlink" title="添加 RSS 订阅支持"></a>添加 RSS 订阅支持</h2><p>本主题中还使用到了 <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo-generator-feed">hexo-generator-feed</a> 的 Hexo 插件来做 <code>RSS</code>，安装命令如下：</p>
 <pre class="line-numbers language-none"><code class="language-none">npm install hexo-generator-feed --save<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
@@ -1083,10 +1074,10 @@ abbrlink:
 
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
             <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
-            <div id="mmedia-PyLOrYrC" style="margin-bottom: 20px; width: "></div>
+            <div id="mmedia-tcXZFjHV" style="margin-bottom: 20px; width: "></div>
         <script>
-          var ap_PyLOrYrC = new APlayer({
-            element: document.getElementById("mmedia-PyLOrYrC"),
+          var ap_tcXZFjHV = new APlayer({
+            element: document.getElementById("mmedia-tcXZFjHV"),
             narrow: false,
             autoplay: false,
             showlrc: false,
@@ -1100,7 +1091,7 @@ abbrlink:
             undefined
           });
           window.aplayers || (window.aplayers = []);
-          window.aplayers.push(ap_PyLOrYrC);
+          window.aplayers.push(ap_tcXZFjHV);
         </script>
 
 
@@ -1195,10 +1186,10 @@ abbrlink:
 
 <p>演示效果：</p>
 <p>1、</p>
-<div id="mmedia-ENHWSWBq"></div><script src="https://cdn.jsdelivr.net/npm/dplayer/dist/DPlayer.min.js"></script>
+<div id="mmedia-UnjUiCCa"></div><script src="https://cdn.jsdelivr.net/npm/dplayer/dist/DPlayer.min.js"></script>
       <script>
-        var dp_ENHWSWBq = new DPlayer({
-            container: document.getElementById('mmedia-ENHWSWBq'),
+        var dp_UnjUiCCa = new DPlayer({
+            container: document.getElementById('mmedia-UnjUiCCa'),
             autoplay: false,
             theme: '#b7daff',
             loop: false,
@@ -1216,7 +1207,7 @@ abbrlink:
             highlight: [],
             undefined
         });
-        dp_ENHWSWBq.on("fullscreen", function () { if (/Android|webOS|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) { screen.orientation.lock("landscape"); }});
+        dp_UnjUiCCa.on("fullscreen", function () { if (/Android|webOS|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) { screen.orientation.lock("landscape"); }});
         
       </script>
         
@@ -1387,12 +1378,12 @@ abbrlink:
 
         <style>.bbplayer{width: 100%; max-width: 850px; margin: auto}</style>
         <div class="bbplayer">
-        <iframe class="bbplayer" id="mmedia-hmAjLHAm" src="//player.bilibili.com/player.html?aid=60016166&amp;page=1&amp;high_quality=1&amp;danmaku=true" allowfullscreen="no" scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts allow-popups"></iframe>
+        <iframe class="bbplayer" id="mmedia-wmzZXsik" src="//player.bilibili.com/player.html?aid=60016166&amp;page=1&amp;high_quality=1&amp;danmaku=true" allowfullscreen="no" scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts allow-popups"></iframe>
         </div>
         <script>
-            document.getElementById("mmedia-hmAjLHAm").style.height=document.getElementById("mmedia-hmAjLHAm").scrollWidth*0.76+"px";
+            document.getElementById("mmedia-wmzZXsik").style.height=document.getElementById("mmedia-wmzZXsik").scrollWidth*0.76+"px";
             window.onresize = function(){
-              document.getElementById("mmedia-hmAjLHAm").style.height=document.getElementById("mmedia-hmAjLHAm").scrollWidth*0.76+"px";
+              document.getElementById("mmedia-wmzZXsik").style.height=document.getElementById("mmedia-wmzZXsik").scrollWidth*0.76+"px";
             };
         </script>
         
@@ -1461,17 +1452,16 @@ abbrlink:
 
 
 
-<h2 id="添加音乐"><a href="#添加音乐" class="headerlink" title="添加音乐"></a>添加音乐</h2><pre class="line-numbers language-none"><code class="language-none">npm install hexo-tag-cplayer --save<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h2 id="添加音乐"><a href="#添加音乐" class="headerlink" title="添加音乐"></a><a target="_blank" rel="noopener" href="https://github.com/EYHN/hexo-tag-cplayer">添加音乐</a></h2><pre class="line-numbers language-none"><code class="language-none">npm install hexo-tag-cplayer --save<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <p>添加像这样的代码到你的文章中。<code>cplayer</code> 将会生成在那里。</p>
 <pre class="line-numbers language-none"><code class="language-none">{% cplayer [autoplay] [yaml|cson|json] %}
 # type your config here
 {% endcplayer %}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 
-<h2 id="SEO优化"><a href="#SEO优化" class="headerlink" title="SEO优化"></a>SEO优化</h2><pre class="line-numbers language-none"><code class="language-none">npm install hexo-generator-seo-friendly-sitemap --save<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h2 id="SEO优化"><a href="#SEO优化" class="headerlink" title="SEO优化"></a><a target="_blank" rel="noopener" href="https://github.com/ludoviclefevre/hexo-generator-seo-friendly-sitemap">SEO优化</a></h2><pre class="line-numbers language-none"><code class="language-none">npm install hexo-generator-seo-friendly-sitemap --save<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-
-
+<p>生成站点地图</p>
 <pre class="line-numbers language-none"><code class="language-none">sitemap:
     path: sitemap.xml<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
@@ -1555,7 +1545,7 @@ encrypt: # hexo-blog-encrypt
 
 <p> <strong>d. 你的CDN</strong></p>
 <p>如果你是没有CDN会死星人,直接将 <code>.model.json</code> 的url地址输入 <code>model.use</code>.</p>
-<h2 id="添加追番页面"><a href="#添加追番页面" class="headerlink" title="添加追番页面"></a>添加追番页面</h2><pre class="line-numbers language-none"><code class="language-none">npm install hexo-bilibili-bangumi --save<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h2 id="添加追番页面"><a href="#添加追番页面" class="headerlink" title="添加追番页面"></a><a target="_blank" rel="noopener" href="https://github.com/HCLonely/hexo-bilibili-bangumi">添加追番页面</a></h2><pre class="line-numbers language-none"><code class="language-none">npm install hexo-bilibili-bangumi --save<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 
 
@@ -2358,7 +2348,7 @@ encrypt: # hexo-blog-encrypt
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">96.4k</span>&nbsp;字
+                class="white-color">96.5k</span>&nbsp;字
             
             
             
