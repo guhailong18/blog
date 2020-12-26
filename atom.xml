@@ -6,7 +6,7 @@
   <link href="http://blog.guke.cf/atom.xml" rel="self"/>
   
   <link href="http://blog.guke.cf/"/>
-  <updated>2020-12-21T16:07:31.545Z</updated>
+  <updated>2020-12-26T15:39:22.558Z</updated>
   <id>http://blog.guke.cf/</id>
   
   <author>
@@ -15,6 +15,54 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>正则表达式入门</title>
+    <link href="http://blog.guke.cf/posts/a89d29ca/"/>
+    <id>http://blog.guke.cf/posts/a89d29ca/</id>
+    <published>2020-12-26T15:10:40.000Z</published>
+    <updated>2020-12-26T15:39:22.558Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="2020" scheme="http://blog.guke.cf/tags/2020/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>如何使文章在CSDN,简书,博客园等多平台发布</title>
+    <link href="http://blog.guke.cf/posts/bb6cddf7/"/>
+    <id>http://blog.guke.cf/posts/bb6cddf7/</id>
+    <published>2020-12-23T23:57:05.000Z</published>
+    <updated>2020-12-25T05:00:30.336Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot; title=&quot;概述&quot;&gt;&lt;/a&gt;概述&lt;/h2&gt;&lt;p&gt;总所周知，如果我们想让文章能被更多的人看到，应该尽可能的在多个平台进行发布，国内比较著名的有博客园，&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="未分类" scheme="http://blog.guke.cf/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/"/>
+    
+    
+    <category term="2020" scheme="http://blog.guke.cf/tags/2020/"/>
+    
+  </entry>
   
   <entry>
     <title>脚本化图表参考指南</title>
@@ -46,7 +94,7 @@
     <link href="http://blog.guke.cf/posts/4cb143ec/"/>
     <id>http://blog.guke.cf/posts/4cb143ec/</id>
     <published>2020-12-21T15:56:43.000Z</published>
-    <updated>2020-12-21T16:07:31.554Z</updated>
+    <updated>2020-12-23T13:19:32.138Z</updated>
     
     
       
@@ -71,7 +119,7 @@
     <link href="http://blog.guke.cf/posts/8a584121/"/>
     <id>http://blog.guke.cf/posts/8a584121/</id>
     <published>2020-12-21T15:30:07.000Z</published>
-    <updated>2020-12-21T16:07:31.537Z</updated>
+    <updated>2020-12-23T15:33:06.177Z</updated>
     
     
       
@@ -96,7 +144,7 @@
     <link href="http://blog.guke.cf/posts/92357bf3/"/>
     <id>http://blog.guke.cf/posts/92357bf3/</id>
     <published>2020-12-18T08:10:50.000Z</published>
-    <updated>2020-12-18T09:32:19.846Z</updated>
+    <updated>2020-12-26T00:41:50.686Z</updated>
     
     
       
@@ -227,7 +275,7 @@
     <link href="http://blog.guke.cf/posts/2e742d51/"/>
     <id>http://blog.guke.cf/posts/2e742d51/</id>
     <published>2020-12-11T01:04:36.000Z</published>
-    <updated>2020-12-11T05:25:32.931Z</updated>
+    <updated>2020-12-23T13:12:32.503Z</updated>
     
     
       
@@ -239,6 +287,10 @@
       
     
     
+    
+    <category term="转载" scheme="http://blog.guke.cf/categories/%E8%BD%AC%E8%BD%BD/"/>
+    
+    <category term="git" scheme="http://blog.guke.cf/categories/%E8%BD%AC%E8%BD%BD/git/"/>
     
     
     <category term="2020" scheme="http://blog.guke.cf/tags/2020/"/>
@@ -307,7 +359,7 @@
     <link href="http://blog.guke.cf/posts/be75d209/"/>
     <id>http://blog.guke.cf/posts/be75d209/</id>
     <published>2020-12-10T01:15:49.000Z</published>
-    <updated>2020-12-22T15:06:47.396Z</updated>
+    <updated>2020-12-23T13:30:08.714Z</updated>
     
     
       
@@ -376,14 +428,14 @@
     <link href="http://blog.guke.cf/posts/9efa773a/"/>
     <id>http://blog.guke.cf/posts/9efa773a/</id>
     <published>2020-12-08T02:00:30.000Z</published>
-    <updated>2020-12-11T01:09:18.105Z</updated>
+    <updated>2020-12-23T15:35:17.927Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h2 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot; title=&quot;概述&quot;&gt;&lt;/a&gt;概述&lt;/h2&gt;&lt;h2 id=&quot;1&quot;&gt;&lt;a href=&quot;#1&quot; class=&quot;headerlink&quot; title=&quot;1.&quot;&gt;&lt;/a&gt;1.&lt;/h2&gt;&lt;h2</summary>
+    <summary type="html">&lt;h2 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot; title=&quot;概述&quot;&gt;&lt;/a&gt;概述&lt;/h2&gt;&lt;h2 id=&quot;1&quot;&gt;&lt;a href=&quot;#1&quot; class=&quot;headerlink&quot; title=&quot;1.&quot;&gt;&lt;/a&gt;1.&lt;/h2&gt;&lt;p&gt;&lt;a</summary>
         
       
     
@@ -461,54 +513,6 @@
     
     
     
-    
-  </entry>
-  
-  <entry>
-    <title>tmm使用指南</title>
-    <link href="http://blog.guke.cf/posts/834930d9/"/>
-    <id>http://blog.guke.cf/posts/834930d9/</id>
-    <published>2020-11-28T10:59:41.000Z</published>
-    <updated>2020-12-11T01:14:05.411Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot; title=&quot;概述&quot;&gt;&lt;/a&gt;概述&lt;/h2&gt;&lt;h2 id=&quot;1&quot;&gt;&lt;a href=&quot;#1&quot; class=&quot;headerlink&quot; title=&quot;1.&quot;&gt;&lt;/a&gt;1.&lt;/h2&gt;&lt;h2</summary>
-        
-      
-    
-    
-    
-    <category term="影视" scheme="http://blog.guke.cf/categories/%E5%BD%B1%E8%A7%86/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Java类-入门</title>
-    <link href="http://blog.guke.cf/posts/61aeea2d/"/>
-    <id>http://blog.guke.cf/posts/61aeea2d/</id>
-    <published>2020-10-05T07:02:36.000Z</published>
-    <updated>2020-12-11T01:10:45.941Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot; title=&quot;概述&quot;&gt;&lt;/a&gt;概述&lt;/h2&gt;&lt;h2 id=&quot;1&quot;&gt;&lt;a href=&quot;#1&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="JAVA" scheme="http://blog.guke.cf/categories/JAVA/"/>
-    
-    
-    <category term="JAVA" scheme="http://blog.guke.cf/tags/JAVA/"/>
     
   </entry>
   
